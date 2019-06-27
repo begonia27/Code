@@ -256,16 +256,16 @@
 ## 第二十九题
 
 * a.2行
-* b.5行
-* c.8行
-* d.4行
+* b.16行
+* c.64行
+* d.16行
 
 ## 第三十题
 
-* a.5行
-* b.5行
-* c.8行
-* d.7行
+* a.2行
+* b.16行
+* c.64行
+* d.32行
 
 ## 第三十一题
 
@@ -336,12 +336,12 @@
 
 * b.
 
-|p|$\neg p$|$p \vee \neg p$|
+|p|$\neg p$|$p \leftrightarrow \neg p$|
 |----|----|----|
-|T|F|T|
-|T|F|T|
-|F|T|T|
-|F|T|T|
+|T|F|F|
+|T|F|F|
+|F|T|F|
+|F|T|F|
 
 * c.
 
@@ -354,13 +354,117 @@
 
 * d.
 
- |p|q|$p \wedge q$|$p \vee q$|
- |----|----|----|----|
- |T|T|T|T|
- |T|F|F|T|
- |F|T|F|T|
- |F|F|F|F|
+ |p|q|$p \wedge q$|$p \vee q$|$(p \wedge q) \rightarrow (p \vee q)$
+ |----|----|----|----|----|
+ |T|T|T|T|T|
+ |T|F|F|T|T|
+ |F|T|F|T|T|
+ |F|F|F|F|T|
 
 * e.
   
- 
+ |p|q|$\neg q$|$p \leftrightarrow q$|$q \rightarrow \neg p$|$(q \rightarrow \neg p) \leftrightarrow (p \leftrightarrow q)$|
+|----|----|----|----|----|----|
+|T|T|T|T|T|T|
+|T|F|T|F|T|F|
+|F|T|T|F|T|F|
+|F|F|F|T|T|T|
+
+* f.
+  
+|p|q|$\neg q$|$p \leftrightarrow q$|$p \leftrightarrow \neg q$|$(p \leftrightarrow q) \bigoplus (p \leftrightarrow \neg q)$|
+|----|----|----|----|----|----|
+|T|T|F|T|F|T|
+|T|F|T|F|T|T|
+|F|T|F|T|T|F|
+|F|F|T|T|T|F|
+
+## 第三十三题
+
+* a.
+
+|p|q|$p \vee q$|$p \bigoplus q$|$(p \vee q) \rightarrow (p \bigoplus q)$
+|----|----|----|----|----|
+|T|F|T|T|T|
+|T|T|T|F|F|
+|F|F|F|F|T|
+|F|T|F|T|T|
+
+* b.
+  
+|p|q|$p \bigoplus q$|$p \wedge q$|$(p \bigoplus q) \rightarrow (p \wedge q)$|
+|----|----|----|----|----|
+|T|T|F|T|T|
+|T|F|T|F|F|
+|F|T|T|F|F|
+|F|F|F|F|T|
+
+* c.
+
+|p|q|$p \vee q$|$p \wedge q$|$(p \vee q) \bigoplus (p \wedge q)$
+|----|----|----|----|----|
+|T|T|T|T|F|
+|T|F|T|F|T|
+|F|T|T|F|T|
+|F|F|F|F|F|
+
+* d.
+  
+|p|q|$\neg p$|$p \leftrightarrow q$|$\neg p \leftrightarrow q$|$(p \leftrightarrow q) \bigoplus (\neg p \leftrightarrow q)$
+|----|----|----|----|----|----|
+|T|T|F|T|F|T|
+|T|F|F|F|T|T|
+|F|T|T|F|T|T|
+|F|F|T|T|F|T|
+
+* e.
+  
+|p|q|$\neg p$|r|$\neg r$|$(p \leftrightarrow q)$|$(\neg p \leftrightarrow \neg r)$|$(p \rightarrow q) \bigoplus (\neg p \leftrightarrow \neg r)$|
+|----|----|----|----|----|----|----|----|
+|T|T|F|T|F|T|T|F|
+|T|T|F|F|T|T|F|T|
+|T|F|F|F|T|F|F|F|
+|T|F|F|T|F|F|T|T|
+|F|T|T|T|F|F|F|F|
+|F|F|T|T|F|T|F|T|
+|F|T|T|F|T|F|T|T|
+|F|F|T|F|T|T|T|F|
+
+* f.
+  
+|p|q|$\neg q$|$p \bigoplus q$|$p \bigoplus \neg q$|$(p \bigoplus q) \rightarrow (p \bigoplus \neg q)$|
+|----|----|----|----|----|----|
+|T|T|F|F|T|T|
+|T|F|T|T|F|F|
+|F|T|F|T|F|F|
+|F|F|T|F|T|T|
+
+## 第三十四题
+
+* a.
+  
+|p|q|$p \bigoplus q$
+|----|----|----|
+|T|F|T|
+|T|T|F|
+|F|F|F|
+|F|T|T|
+
+* b.
+  
+|p|$\neg p$|$p \bigoplus \neg p$|
+|----|----|----|----|
+|T|F|T|
+|T|T|F|
+|F|F|F|
+|F|T|T|
+
+* c.
+  
+|p|q|$\neg q$|$p \bigoplus \neg q$|
+|----|----|----|----|
+|T|T|F|T|
+|T|F|T|F|
+|F|T|F|F|
+|F|F|T|T|
+
