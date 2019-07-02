@@ -443,20 +443,20 @@
 
 * a.
   
-|p|q|$p \bigoplus q$
+|p|p|$p \bigoplus q$
 |----|----|----|
-|T|F|T|
+|T|T|F|
 |T|T|F|
 |F|F|F|
-|F|T|T|
+|F|F|F|
 
 * b.
   
 |p|$\neg p$|$p \bigoplus \neg p$|
 |----|----|----|----|
 |T|F|T|
-|T|T|F|
-|F|F|F|
+|T|F|T|
+|F|T|T|
 |F|T|T|
 
 * c.
@@ -468,3 +468,98 @@
 |F|T|F|F|
 |F|F|T|T|
 
+## 第三十五题
+
+* a.
+
+|p|q|$\neg q$|$p \rightarrow \neg q$
+|----|----|----|----|
+|T|T|F|F|
+|T|T|F|F|
+|F|F|T|T|
+|F|F|T|T|
+
+* b.
+
+|p|$\neg p$|$\neg p \leftrightarrow q$|
+|----|----|----|
+|T|F|F|
+|T|F|F|
+|F|T|F|
+|F|T|F|
+
+* c.
+  
+|p|q|$\neg p$|$p \rightarrow q$|$\neg p \rightarrow q$|$(p \rightarrow q) \vee (\neg p \rightarrow q)$|
+|----|----|----|----|----|----|
+|T|T|F|T|T|T|
+|T|F|F|F|T|T|
+|F|T|T|T|T|T|
+|F|F|T|T|F|T|
+
+* d.
+  
+|p|q|$\neg p$|$p \rightarrow q$|$\neg p \rightarrow q$|$(p \rightarrow q) \wedge (\neg \rightarrow q)$|
+|----|----|----|----|----|----|
+|T|T|F|T|T|T|
+|T|F|F|F|T|F|
+|F|T|T|T|T|T|
+|F|F|T|T|F|F|
+
+* e.
+  
+|p|q|$\neg p$|$p \leftrightarrow q$|$\neg p \leftrightarrow q$|$(p \rightarrow q) \vee (\neg p \leftrightarrow q)$|
+|----|----|----|----|----|----|
+|T|T|F|T|F|T|
+|T|F|F|F|T|T|
+|F|T|T|F|T|T|
+|F|F|T|T|F|T|
+
+* f.
+  
+|p|q|$\neg p$|$\neg q$|$\neg p \leftrightarrow \neg q$|$p \leftrightarrow q$|$(\neg p \leftrightarrow \neg q) \leftrightarrow (p \leftrightarrow q)$|
+|----|----|----|----|----|----|----|
+|T|T|F|F|T|T|T|
+|T|F|F|T|F|F|T|
+|F|T|T|F|F|F|T|
+|F|F|T|T|T|T|T|
+
+## 第三十六题
+
+* a.
+  
+|p|q|r|$p \vee q$|$(p \vee q) \vee r$|
+|----|----|----|----|----|
+|T|T|T|T|T|
+|T|T|F|T|T|
+|T|F|T|T|T|
+|T|F|F|T|T|
+|F|T|F|T|T|
+|F|F|T|F|T|
+|F|F|F|F|F|
+
+* b.
+  
+|p|q|r|$p \vee q$|$(p \vee q) \wedge r$|
+|----|----|----|----|----|
+|T|T|T|T|T|
+|T|T|F|T|F|
+|T|F|T|T|T|
+|T|F|F|T|F|
+|F|T|T|T|T|
+|F|T|F|T|F|
+|F|F|T|F|F|
+|F|F|F|F|F|
+
+* c.
+  
+|p|q|r|$p \wedge q$|$(p \wedge q) \vee r$|
+|----|----|----|----|----|
+|T|T|T|T|T|
+|T|T|F|T|T|
+|T|F|T|F|T|
+|T|F|F|F|F|
+|F|T|T|F|T|
+|F|T|F|F|F|
+|F|F|T|T|T|
+|F|F|F|T|T|
