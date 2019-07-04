@@ -262,8 +262,8 @@
 
 ## 第三十题
 
-* a.2行
-* b.16行
+* a.4行
+* b.8行
 * c.64行
 * d.32行
 
@@ -563,3 +563,124 @@
 |F|T|F|F|F|
 |F|F|T|T|T|
 |F|F|F|T|T|
+
+* d.
+  
+|p|q|r|$p \wedge q$|$(p \wedge q) \wedge r$|
+|----|----|----|----|----|
+|T|T|T|T|T|
+|T|T|F|T|F|
+|T|F|T|F|F|
+|T|F|F|F|F|
+|F|T|T|F|F|
+|F|T|F|F|F|
+|F|F|T|F|F|
+|F|F|F|F|F|
+
+* e.
+  
+|p|q|r|$\neg r$|$p \vee q$|$(p \vee q)\wedge \neg r$|
+|----|----|----|----|----|----|
+|T|T|T|F|T|F|
+|T|T|F|T|T|T|
+|T|F|T|F|T|F|
+|T|F|F|T|T|T|
+|F|T|T|F|T|F|
+|F|T|F|T|T|T|
+|F|F|T|F|F|F|
+|F|F|F|T|F|F|
+
+* f.
+  
+|p|q|r|$\neg r$|$p \wedge q$|$(p \wedge q) \vee \neg r$|
+|----|----|----|----|----|----|
+|T|T|T|F|T|T|
+|T|T|F|T|T|T|
+|T|F|T|F|F|F|
+|T|F|F|T|F|T|
+|F|T|T|F|F|F|
+|F|T|F|T|F|T|
+|F|F|T|F|F|F\
+|F|F|F|T|F|T|
+
+## 第三十七题
+
+* a.
+  
+|p|q|$\neg q$|r|$\neg q \vee r$|$p \rightarrow (\neg q \rightarrow r)$|
+|----|----|----|----|----|----|
+|T|T|F|T|T|T|
+|T|T|F|F|F|F|
+|T|F|T|T|T|T|
+|T|F|T|F|T|T|
+|F|T|F|T|T|T|
+|F|T|F|F|F|T|
+|F|F|T|T|T|T|
+|F|F|T|F|T|T|
+
+
+## 第三十八题
+
+* |p|q|r|s|$p \rightarrow q$|$(p \rightarrow q) \rightarrow r$|$((p \rightarrow q) \rightarrow r) \rightarrow s$|
+|----|----|----|----|----|----|----|
+|T|T|T|T|T|T|T|
+|T|T|T|F|T|T|F|
+|T|T|F|T|T|F|T|
+|T|T|F|F|T|F|T|
+|T|F|T|T|F|T|T|
+|T|F|T|F|F|T|F|
+|T|F|F|T|F|T|T|
+|T|F|F|F|F|T|F|
+|F|T|T|T|T|T|T|
+|F|T|T|F|T|T|F|
+|F|T|F|T|T|F|T|
+|F|T|F|F|T|F|T|
+|F|F|T|T|T|T|T|
+|F|F|T|F|T|T|F|
+|F|F|F|T|T|F|T|
+|F|F|F|F|T|F|T|
+
+## 第三十九题
+
+* |p|q|r|s|$p \leftrightarrow q$|$r \leftrightarrow s$|$(p \leftrightarrow q) \leftrightarrow (r \leftrightarrow s)$|
+|----|----|----|----|----|----|----|
+|T|T|T|T|T|T|T|
+|T|T|T|F|T|F|F|
+|T|T|F|T|T|F|F|
+|T|T|F|F|T|T|T|
+|T|F|T|T|F|T|F|
+|T|F|T|F|F|F|T|
+|T|F|F|T|F|F|T|
+|T|F|F|F|F|T|F|
+|F|T|T|T|T|T|T|
+|F|T|T|F|F|F|T|
+|F|T|F|T|F|F|T|
+|F|T|F|F|T|T|T|
+|F|F|T|T|F|T|F|
+|F|F|T|F|T|F|F|
+|F|F|F|T|F|F|T|
+|F|F|F|F|T|T|T|
+
+## 第四十题（穷举法）
+
+* 当p q r 为真时,有$(p \vee \neg q) \wedge (q \vee \neg r) \wedge (r \vee \neg p) \leftrightarrow (T \vee F) \wedge (T \vee F) \wedge (T \vee F) \leftrightarrow T \wedge T \wedge T \leftrightarrow T$。
+
+* 当p q r 为假时,有$(p \vee \neg q) \wedge (q \vee \neg r) \wedge (r \vee \neg p) \leftrightarrow (F \vee T) \wedge (F \vee T) \wedge (F \vee T) \leftrightarrow T \wedge T \wedge T \leftrightarrow T$。
+
+* 当p为真，q 为真，r为假时，有$(p \vee \neg q) \wedge (q \vee \neg r) \wedge (r \vee \neg p) \leftrightarrow (T \vee F) \wedge (T \vee T) \wedge (F \vee F) \leftrightarrow T \wedge T \wedge F \leftrightarrow F$。
+  
+* 当p为真，q 为假，r为真时，有$(p \vee \neg q) \wedge (q \vee \neg r) \wedge (r \vee \neg p) \leftrightarrow (T \vee T) \wedge (F \vee F) \wedge (T \vee F) \leftrightarrow T \wedge F \wedge F \leftrightarrow F$。
+  
+* 当p为真，q 为假，r为假时，有$(p \vee \neg q) \wedge (q \vee \neg r) \wedge (r \vee \neg p) \leftrightarrow (T \vee T) \wedge (F \vee F) \wedge (T \vee F) \leftrightarrow T \wedge F \wedge F \leftrightarrow F$。
+  
+* 当p为假，q 为真，r为假时，有$(p \vee \neg q) \wedge (q \vee \neg r) \wedge (r \vee \neg p) \leftrightarrow (F \vee F) \wedge (T \vee T) \wedge (F \vee T) \leftrightarrow F \wedge T \wedge F \leftrightarrow F$。
+  
+* 当p为假，q 为真，r为真时，有$(p \vee \neg q) \wedge (q \vee \neg r) \wedge (r \vee \neg p) \leftrightarrow (F \vee F) \wedge (T \vee F) \wedge (T \vee T) \leftrightarrow F \wedge T \wedge T \leftrightarrow F$。
+  
+* 当p为假，q 为假，r为真时，有$(p \vee \neg q) \wedge (q \vee \neg r) \wedge (r \vee \neg p) \leftrightarrow (F \vee T) \wedge (F \vee F) \wedge (T \vee T) \leftrightarrow F \wedge F \wedge T \leftrightarrow F$。
+
+* 即p、q、r真值相同时，$(p \vee \neg q) \wedge (q \vee \neg r) \wedge (r \vee \neg p)$都为真，p、q、r真值不同时，$(p \vee \neg q) \wedge (q \vee \neg r) \wedge (r \vee \neg p)$都为假。 
+
+## 第四十题
+
+* 
