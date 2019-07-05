@@ -683,4 +683,27 @@
 
 ## 第四十题
 
-* 
+* 令$a = (p \vee \neg q)$，$b = (q \vee \neg r)$,$c = (r \vee \neg p)$,则$(p \vee \neg q) \wedge (q \vee \neg r) \wedge (r \vee \neg p)$ = $a \wedge b \wedge c$。
+  
+* 当$p,q,r$真值相同时，有两种情况：即$p,q,r$同为真或同为假。
+  
+* 当$p,q,r$同为真时，$a = (T \wedge F)$,$b = (T \wedge F)$,$c = (T \wedge F)$，$a \wedge b \wedge c = T \wedge T \wedge T$，得到$T$，其最终结果为真。
+* 当$p,q,r$同为假时，$a = (F \wedge T)$,$b = (F \wedge T)$,$c = (F \wedge T)$，$a \wedge b \wedge c = T \wedge T \wedge T$，得到$T$，其最终结果为真。
+
+* 当$p,q,r$真值不同时，即$p,q,r$至少有一个为真并且至少有一个为假时，可得$a$,$b$,$c$中有一个为$T \wedge F$,有一个为$F \wedge T$,有一个为$F \wedge F$。因此$F \wedge F$可得到$F$,因此$a \wedge b \wedge c$一定等于$F$，所以其最终结果为假。
+  
+* 综上所述，$p,q,r$真值相同时，$(p \vee \neg q) \wedge (q \vee \neg r) \wedge (r \vee \neg p)$为真，而在其他情况下为假。
+
+## 第四十一题
+
+* 令$a = (p \vee q \vee r)$,$b =（\neg p \vee \neg q \vee \neg r）$,则$(p \vee q \vee r) \wedge（\neg p \vee \neg q \vee \neg r) = a \wedge b$。
+
+* 当$p,q,r$真值不同，即$p,q,r$至少有一个为真并且有一个为假时，可得$a,b$中有一个为$T \vee F$,有一个为$F \vee T$,即$a = T$, $b = T$,因此$T \wedge T$一定等于$F$,所以其最终结果为真。
+
+* 当$p,q,r$真值相同时，有两种情况：即$p,q,r$同为真或同为假。
+  
+* $p,q,r$同为真时，$a = (T \vee T \vee T)$,$b = (F \vee F \vee F)$,$a \wedge b = F$。所以其最终结果为真。
+* $p,q,r$同为假时，$a = (F \vee F \vee F)$,$b = (T \vee T \vee T)$,$a \wedge b = F$。所以其最终结果为真。
+  
+* 综上所述，当$p,q,r$真值不同，即$p,q,r$至少有一个为真并且有一个为假时，$(p \vee q \vee r) \wedge（\neg p \vee \neg q \vee \neg r)$其最终结果为真,而在其他情况下为假。
+  
