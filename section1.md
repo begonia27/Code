@@ -618,10 +618,9 @@
 |F|F|T|T|T|T|
 |F|F|T|F|T|T|
 
-
 ## 第三十八题
 
-* |p|q|r|s|$p \rightarrow q$|$(p \rightarrow q) \rightarrow r$|$((p \rightarrow q) \rightarrow r) \rightarrow s$|
+|p|q|r|s|$p \rightarrow q$|$(p \rightarrow q) \rightarrow r$|$((p \rightarrow q) \rightarrow r) \rightarrow s$|
 |----|----|----|----|----|----|----|
 |T|T|T|T|T|T|T|
 |T|T|T|F|T|T|F|
@@ -642,7 +641,7 @@
 
 ## 第三十九题
 
-* |p|q|r|s|$p \leftrightarrow q$|$r \leftrightarrow s$|$(p \leftrightarrow q) \leftrightarrow (r \leftrightarrow s)$|
+|p|q|r|s|$p \leftrightarrow q$|$r \leftrightarrow s$|$(p \leftrightarrow q) \leftrightarrow (r \leftrightarrow s)$|
 |----|----|----|----|----|----|----|
 |T|T|T|T|T|T|T|
 |T|T|T|F|T|F|F|
@@ -707,3 +706,69 @@
   
 * 综上所述，当$p,q,r$真值不同，即$p,q,r$至少有一个为真并且有一个为假时，$(p \vee q \vee r) \wedge（\neg p \vee \neg q \vee \neg r)$其最终结果为真,而在其他情况下为假。
   
+## 第四十二题
+
+* a. x = 1
+
+* b. x = 1
+
+* c. x = 2
+
+* d. x = 1
+
+## 第四十三题
+
+* a. 
+
+|x|y|OR|AND|XOR|
+|----|----|----|----|----|
+|T|F|T|T|F|
+|F|T|T|F|T|
+|T|F|T|F|T|
+|T|F|T|F|T|
+|T|F|T|F|T|
+|T|F|T|F|T|
+|F|T|T|F|T|
+
+* b.
+
+|x|y|OR|AND|XOR|
+|----|----|----|----|----|
+|T|F|T|F|T|
+|T|F|T|F|T|
+|T|F|T|F|T|
+|T|F|T|F|T|
+|T|T|T|T|F|
+|F|F|F|F|F|
+|T|T|T|T|F|
+|F|F|F|F|F|
+
+* c. 
+
+|x|y|OR|AND|XOR|
+|----|----|----|----|----|
+|F|T|T|F|T|
+|F|F|F|F|F|
+|F|F|F|F|F|
+|T|T|T|T|F|
+|T|F|T|F|T|
+|F|T|T|F|T|
+|F|F|F|F|F|
+|F|F|F|F|F|
+|T|F|T|F|T|
+
+* d.
+
+|x|y|OR|AND|XOR|
+|----|----|----|----|----|
+|T|F|T|F|T|
+|T|F|T|F|T|
+|T|F|T|F|T|
+|T|F|T|F|T|
+|T|F|T|F|T|
+|T|F|T|F|T|
+|T|F|T|F|T|
+|T|F|T|F|T|
+|T|F|T|F|T|
+|T|F|T|F|T|
+
