@@ -772,3 +772,67 @@
 |T|F|T|F|T|
 |T|F|T|F|T|
 
+## 第四十四题
+
+* a.
+
+|x|y|z|$y \vee z$|$x \wedge (y \vee z)$|
+|----|----|----|----|----|
+|T|F|T|T|T|
+|T|T|T|T|T|
+|F|F|F|F|F|
+|F|T|T|T|F|
+|F|T|T|T|F|
+
+* b.
+
+|x|y|z|$x \wedge y$|$(x \wedge y) \vee z$|
+|----|----|----|----|----|
+|F|T|F|F|F|
+|T|F|T|F|T|
+|T|T|F|T|T|
+|T|F|F|F|F|
+|T|T|F|T|T|
+
+* c.
+  
+|x|y|z|$x \bigoplus y$|$(x \bigoplus y) \bigoplus z$|
+|----|----|----|----|----|
+|F|T|F|T|T|
+|T|T|T|F|T|
+|F|F|F|F|F|
+|T|T|F|F|F|
+|F|T|F|T|T|
+
+* d.
+  
+|x|y|z|$x \vee y$|$z \vee x$|$(x \vee y) \wedge (z \vee x)$|
+|----|----|----|----|----|----|
+|T|F|T|T|T|T|
+|T|T|F|T|T|T|
+|F|F|F|F|F|F|
+|T|T|F|T|T|T|
+|T|F|T|T|T|T|
+
+## 第四十五题
+
+* a.语句Fred不幸福的真值是：0.2  
+* b.语句John不幸福的真值是：0.6
+
+## 第四十六题
+
+* a.语句Fred和John都幸福的真值是：0.4
+* b.语句Fred和John都不觉得幸福的真值是：0.2
+
+## 第四十七题
+
+* a.语句Fred幸福或John幸福的真值是：0.8
+* b.语句Fred不幸福或John不幸福的真值是：0.6
+
+## 第四十八题
+
+* a.语句“本语句为假”不是命题。
+
+## 第四十九题
+
+## 第五十题
