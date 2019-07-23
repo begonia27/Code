@@ -3,9 +3,11 @@
 ## 第一题
 
 * a.波士顿是马萨诸塞州首府（真值是：波士顿是马萨诸塞州首府
-* b.迈阿密是佛罗里达州首府（真值是：迈阿密是佛罗里达州首府）
+* b.迈阿密是佛罗里达州首府（真值是：迈阿密不是佛罗里达州首府）
 * c.2 + 3 = 5；（真值是：2 + 3 = 5）
 * d.5 + 7 = 10 （真值是：5 + 7 = 12）
+* e.否
+* f.否
 
 ## 第二题
 
@@ -16,7 +18,7 @@
 
 * a.Mei没有一台MP3播放器
 * b.新泽西有污染
-* c.2 + 1 = 3
+* c.2 + 1 ！= 3
 * d.缅因州的夏天不热也不晒
 
 ## 第四题
@@ -28,8 +30,8 @@
   
 ## 第五题
 
-* a.Steve的笔记本电脑有大于100GB的空闲磁盘空间
-* b.Zach阻止来自Jennifer的邮件和短信
+* a.Steve的笔记本电脑没有大于100GB的空闲磁盘空间
+* b.Zach，没有阻止来自Jennifer的邮件和短信
 * c.7 * 11 * 13 != 999
 * d.Diane周日骑自行车没有骑100英里
 
@@ -65,10 +67,11 @@
 * a.在新泽西海岸附近没有发现鲨鱼
 * b.在新泽西海岸游泳是允许的，并且在其附近发现过鲨鱼
 * c.在新泽西海岸游泳附近是不被允许的，或者在其海岸附近发现过鲨鱼
+* d.如果在新泽西海岸游泳是允许的，那么在其附近没有发现过鲨鱼
 * e.如果在新泽西海岸没有发现鲨鱼，那么在新泽西海岸游泳是允许的
 * f.如果在新泽西海岸没有发现鲨鱼，那么在新泽西海岸游泳是不被允许的
 * g.在新泽西海岸游泳是允许的，当且仅当在其附近发现过鲨鱼
-* h.在新泽西海岸游泳是不被允许的，并且在新泽西海岸游泳是允许的或者在其附近没有发现鲨鱼
+* h.在新泽西海岸游泳是不被允许的，并且或者在新泽西海岸游泳是允许的或者在其附近没有发现鲨鱼
 
 ## 第十题
 
@@ -98,9 +101,9 @@
 * a.p&q $p \wedge q$
 * b.p&!q $p \wedge \neg q$
 * c.$!p \wedge !q$
-* d.p同或q
+* d.p同或q $p \bigotimes q$
 * e.p→q $p \rightarrow q$
-* f.p异或q
+* f.p异或q $p \bigoplus q$
 * g.$p \leftrightarrow q$
 
 ## 第十二题
@@ -271,7 +274,7 @@
 
 * a.
   
-|p|$\neg p$|$p \wedge \neg q$|
+|p|$\neg p$|$p \wedge \neg p$|
 |----|----|----|
 |T|T|T|
 |T|F|F|
@@ -280,7 +283,7 @@
 
 * b.
   
-|p|$\neg p$|$p \vee \neg q$|
+|p|$\neg p$|$p \vee \neg p$|
 |----|----|----|
 |T|T|T|
 |T|F|T|
@@ -307,10 +310,10 @@
 
 * e.
   
-|p|q|$\neg p$|$\neg q$|$p \rightarrow q$|$\neg q\rightarrow \neg p$|$(p \rightarrow q) \leftrightarrow\ (\neg p \rightarrow \neg q)$|
+|p|q|$\neg p$|$\neg q$|$p \rightarrow q$|$\neg q\rightarrow \neg p$|$(p \rightarrow q) \leftrightarrow\ (\neg q \rightarrow \neg p)$|
 |----|----|----|----|----|----|----|----|
 |T|T|F|F|T|T|T|
-|T|F|F|T|F|T|F|
+|T|F|F|T|F|T|T|
 |F|T|T|F|T|F|F|
 |F|F|T|T|T|T|T|
 
@@ -443,7 +446,7 @@
 
 * a.
   
-|p|p|$p \bigoplus q$
+|p|p|$p \bigoplus p$
 |----|----|----|
 |T|T|F|
 |T|T|F|
@@ -467,6 +470,33 @@
 |T|F|T|F|
 |F|T|F|F|
 |F|F|T|T|
+
+* d.
+
+|p|q|$\neg p$|$\neg q$|$\neg p \bigoplus \neg q$|
+|----|----|----|----|----|
+|T|T|F|F|F|
+|T|F|F|T|T|
+|F|T|T|F|T|
+|F|F|T|T|F|
+
+* e.
+
+|p|q|$\neg q$|$p \bigoplus q$|$p \bigoplus \neg q$|$(p \bigoplus q) \vee (p \bigoplus \neg q)$|
+|----|----|----|----|----|----|
+|T|T|F|F|T|T|
+|T|F|T|T|F|T|
+|F|T|F|T|F|T|
+|F|F|T|F|T|T|
+
+* f.
+  
+|p|q|$\neg q$|$p \bigoplus q$|$p \bigoplus \neg q$|$(p \bigoplus q) \wedge (p \bigoplus \neg q)$|
+|----|----|----|----|----|----|
+|T|T|F|F|T|F|
+|T|F|T|T|F|F|
+|F|T|F|T|F|F|
+|F|F|T|F|T|F|
 
 ## 第三十五题
 
@@ -499,7 +529,7 @@
 
 * d.
   
-|p|q|$\neg p$|$p \rightarrow q$|$\neg p \rightarrow q$|$(p \rightarrow q) \wedge (\neg \rightarrow q)$|
+|p|q|$\neg p$|$p \rightarrow q$|$\neg p \rightarrow q$|$(p \rightarrow q) \wedge (\neg p \rightarrow q)$|
 |----|----|----|----|----|----|
 |T|T|F|T|T|T|
 |T|F|F|F|T|F|
@@ -508,7 +538,7 @@
 
 * e.
   
-|p|q|$\neg p$|$p \leftrightarrow q$|$\neg p \leftrightarrow q$|$(p \rightarrow q) \vee (\neg p \leftrightarrow q)$|
+|p|q|$\neg p$|$p \leftrightarrow q$|$\neg p \leftrightarrow q$|$(p \leftrightarrow q) \vee (\neg p \leftrightarrow q)$|
 |----|----|----|----|----|----|
 |T|T|F|T|F|T|
 |T|F|F|F|T|T|
@@ -607,7 +637,7 @@
 
 * a.
   
-|p|q|$\neg q$|r|$\neg q \vee r$|$p \rightarrow (\neg q \rightarrow r)$|
+|p|q|$\neg q$|r|$\neg q \vee r$|$p \rightarrow (\neg q \vee r)$|
 |----|----|----|----|----|----|
 |T|T|F|T|T|T|
 |T|T|F|F|F|F|
@@ -617,6 +647,72 @@
 |F|T|F|F|F|T|
 |F|F|T|T|T|T|
 |F|F|T|F|T|T|
+
+* b.
+  
+|p|q|r|$\neg p$|$q \rightarrow r$|$\neg p \rightarrow (q \rightarrow r)$|
+|----|----|----|----|----|----|
+|T|T|T|F|T|T|
+|T|T|F|F|F|T|
+|T|F|T|F|T|T|
+|T|F|F|F|T|T|
+|F|T|T|T|T|T|
+|F|T|F|T|F|F|
+|F|F|T|T|T|T|
+|F|F|F|T|T|T|
+
+* c.
+  
+|p|q|r|$\neg p$|$p \rightarrow q$|$\neg p \rightarrow r$|$(p \rightarrow q) \vee (\neg p \rightarrow r)$|
+|----|----|----|----|----|----|----|
+|T|T|T|F|T|T|T|
+|T|T|F|F|T|T|T|
+|T|F|T|F|F|T|T|
+|T|F|F|F|F|T|T|
+|F|T|T|T|T|T|T|
+|F|T|F|T|T|F|T|
+|F|F|T|T|T|T|T|
+|F|F|F|T|T|F|T|
+
+* d.
+
+|p|q|r|$\neg p$|$p \rightarrow q$|$\neg p \rightarrow r$|$(p \rightarrow q) \wedge (\neg p \rightarrow r)$|
+|----|----|----|----|----|----|----|
+|T|T|T|F|T|T|T|
+|T|T|F|F|T|T|T|
+|T|F|T|F|F|T|F|
+|T|F|F|F|F|T|F|
+|F|T|T|T|T|T|T|
+|F|T|F|T|T|F|F|
+|F|F|T|T|T|T|T|
+|F|F|F|T|T|F|F|
+
+
+* e.
+  
+|p|q|r|$\neg q$|$p \leftrightarrow q$|$\neg q \leftrightarrow r$|$(p \leftrightarrow q) \leftrightarrow (\neg q \leftrightarrow r)$|
+|----|----|----|----|----|----|----|
+|T|T|T|F|T|T|T|
+|T|T|F|F|T|T|T|
+|T|F|T|F|F|T|F|
+|T|F|F|F|F|T|F|
+|F|T|T|T|T|T|T|
+|F|T|F|T|T|F|F|
+|F|F|T|T|T|T|T|
+|F|F|F|T|T|F|F|
+
+* f.
+  
+|p|q|r|$\neg p$|$\neg q$|$\neg p \leftrightarrow \neg q$|$q \leftrightarrow r$|$(\neg p \leftrightarrow \neg q) \leftrightarrow (q \leftrightarrow r)$|
+|----|----|----|----|----|----|----|----|
+|T|T|T|F|F|T|T|T|
+|T|T|F|F|F|T|F|F|
+|T|F|T|F|T|F|F|T|
+|T|F|F|F|T|F|T|F|
+|F|T|T|T|F|F|T|F|
+|F|F|F|T|F|F|T|F|
+|F|T|T|T|T|T|T|T|
+|F|F|F|T|T|T|T|T|
 
 ## 第三十八题
 
