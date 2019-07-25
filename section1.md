@@ -13,6 +13,9 @@
 
 * a.在缅因州没有黑苍蝇（真值是：在缅因州有黑苍蝇）
 * b.月亮是由绿色的奶酪构成的（真值是：月亮不是由绿色的奶酪构成的）
+* c.否
+* d.否
+* f.否
 
 ## 第三题
 
@@ -23,10 +26,10 @@
 
 ## 第四题
 
-* a.Jennifer和Teja是朋友
+* a.Jennifer和Teja不是朋友
 * b.面包师说的一打没有13个
-* c.Abby每天发送100多条文本信息
-* d.121是一个完全平方数
+* c.Abby每天发送的短信不超过101条
+* d.121不是一个完全平方数
   
 ## 第五题
 
@@ -37,30 +40,30 @@
 
 ## 第六题
 
-* a.智能手机B的RAM是三款手机中最多的
-* b.智能手机C比智能手机B具有更多的ROM或者更高分辨率的相机
-* c.智能手机B不比智能手机C具有更多的RAM和更多的ROM和更高分辨率的相机
-* d.如果智能手机A比智能手机C具有更多的RAM、相同的ROM，则它也具有更高分辨率的相机
-* e.智能手机A比智能手机B具有更多的RAM当且仅当智能手机B比智能手机A具有更多的RAM
+* a.T,智能手机B的RAM是三款手机中最多的
+* b.T,智能手机C比智能手机B具有更多的ROM或者更高分辨率的相机
+* c.F,智能手机B不比智能手机C具有更多的RAM和更多的ROM和更高分辨率的相机
+* d.F,如果智能手机A比智能手机C具有更多的RAM、相同的ROM，则它也具有更高分辨率的相机
+* e.F,智能手机A比智能手机B具有更多的RAM当且仅当智能手机B比智能手机A具有更多的RAM
 
 ## 第七题
 
-* a.Acme媒体的年收入最多
-* b.Nadir软件公司的净利润最少并且Acme计算机公司的年收入最多
-* c.Acme计算机公司的净利润最多或者quixote媒体的净利润最多
-* d.如果Quixote媒体的利润最少，则Acme计算机公司的年收入最多
-* e.Nadir软件公司的净利润最少当且仅当Acme计算机公司的年收入最多
+* a.F,Acme媒体的年收入最多
+* b.T,Nadir软件公司的净利润最少并且Acme计算机公司的年收入最多
+* c.T,Acme计算机公司的净利润最多或者quixote媒体的净利润最多
+* d.T,如果Quixote媒体的利润最少，则Acme计算机公司的年收入最多
+* e.T,Nadir软件公司的净利润最少当且仅当Acme计算机公司的年收入最多
 
 ## 第八题
 
 * a.本周我没有买一张彩票
-* b.本周我买了一张彩票，或者我赢得了百万美元大奖
+* b.要么本周我买了一张彩票，或者我赢得了百万美元大奖
 * c.如果本周我买了一张彩票，那么我赢得了百万美元大奖
-* d.本周我买了一张彩票，并且我赢的了百万美元大奖
+* d.本周我买了一张彩票，并且我赢得了百万美元大奖
 * e.我赢得了百万美元大奖，当且仅当我买了一张彩票
 * f.如果本周我没有买一张彩票，那么我也没有赢得百万美元大奖
-* g.本周我没有买一张彩排，并且我也没有赢得百万美元大奖
-* h.本周我没有买一张彩票，或者本周我买了一张彩票并且我赢得了百万美元大奖
+* g.本周我没有买一张彩票，并且我也没有赢得百万美元大奖
+* h.要么本周我没有买一张彩票，或者本周我买了一张彩票并且我赢得了百万美元大奖
 
 ## 第九题
 
@@ -69,7 +72,7 @@
 * c.在新泽西海岸游泳附近是不被允许的，或者在其海岸附近发现过鲨鱼
 * d.如果在新泽西海岸游泳是允许的，那么在其附近没有发现过鲨鱼
 * e.如果在新泽西海岸没有发现鲨鱼，那么在新泽西海岸游泳是允许的
-* f.如果在新泽西海岸没有发现鲨鱼，那么在新泽西海岸游泳是不被允许的
+* f.如果在新泽西海岸不允许游泳，那么在海岸附近没有发现鲨鱼
 * g.在新泽西海岸游泳是允许的，当且仅当在其附近发现过鲨鱼
 * h.在新泽西海岸游泳是不被允许的，并且或者在新泽西海岸游泳是允许的或者在其附近没有发现鲨鱼
 
@@ -79,10 +82,10 @@
 * b.选举已经有了结果或者选票已经计数完毕
 * c.选举还没有结果并且选票已经计数完毕
 * d.如果选票已经计数完毕，那么选举已经有了结果
-* e.如果选票没有计数完毕，那么选举已经有了结果
+* e.如果选票没有计数完毕，那么选举还没有结果
 * f.如果选举没有结果，那么选票没有计数完毕
 * g.选举已经有了结果，当且仅当选票已经计数完毕
-* h.选票没有计数完毕或者选举没有结果并且选票已经计数完毕
+* h.要么选票没有计数完毕或者选举没有结果并且选票已经计数完毕
 
 ## 第十一题
 
@@ -98,13 +101,13 @@
 > * 任意 /forall
 > * 存在 /exists
 
-* a.p&q $p \wedge q$
-* b.p&!q $p \wedge \neg q$
-* c.$!p \wedge !q$
-* d.p同或q $p \bigotimes q$
-* e.p→q $p \rightarrow q$
-* f.p异或q $p \bigoplus q$
-* g.$p \leftrightarrow q$
+* a.$p \wedge q$
+* b.$p \wedge \neg q$
+* c.$\neg p \wedge \neg q$
+* d.$p \vee q$
+* e.$p \rightarrow q$
+* f.$（p\vee q）\wedge (p \rightarrow \neg q)$
+* g.$q \leftrightarrow p$
 
 ## 第十二题
 
@@ -113,7 +116,7 @@
 * c.如果你错过了期终考试，那么你这门课不及格
 * d.你得了流感或者你错过了期终考试或者这门课你及格了
 * e.如果你得流感了，那么你这门课不及格，或者如果你错过了期终考试，那么这门课你不及格
-* f.你得了流感并且你错过了期终考试或者你没有错过期终考试并且这门课你及格了
+* f.要么你得了流感并且你错过了期终考试或者你没有错过期终考试并且这门课你及格了
   
 ## 第十三题
 
@@ -121,26 +124,26 @@
 * b.$p \wedge \neg q$
 * c.$p \rightarrow q$
 * d.$\neg p \rightarrow \neg q$
-* e.$p \leftrightarrow q$
+* e.$\neg p \leftrightarrow \neg q$
 * f.$q \wedge \neg p$
-* g.$q \leftrightarrow p$
+* g.$q \rightarrow p$
 
 ## 第十四题
 
 * a.$r \wedge \neg q$
 * b.$p \wedge q\wedge r$
-* c.$r \leftrightarrow q$
-* d.$p \wedge q \wedge r$
+* c.$r \rightarrow q$
+* d.$p \wedge \neg q \wedge r$
 * e.$(p \wedge q) \rightarrow r$
 * f.$r \leftrightarrow (q \vee p)$
 
 ## 第十五题
 
-* a.$r \wedge p$
-* b.$p \wedge q \wedge r$
-* c.$(r \rightarrow q) \leftrightarrow q$
-* d.$\neg q \wedge (p \wedge r)$
-* e.$(\neg r \wedge p) \rightarrow q$
+* a.$r \wedge \neg p$
+* b.$\neg p \wedge q \wedge r$
+* c.$r \rightarrow (q \leftrightarrow \neg )q$
+* d.$\neg q \wedge p \wedge r$
+* e.$(q \rightarrow (\neg r \wedge \neg p)) \wedge \neg ((\neg r \wedge \neg p ) \rightarrow q)$
 * f.$(p \wedge r) \rightarrow q$
 
 ## 第十六题
@@ -164,19 +167,19 @@
 * c.F
 * d.T
 
-## 第十九提
+## 第十九题
 
 * a.异或，因为晚餐只能选择咖啡或者茶的其中一种
 * b.同或，因为3个数字和8个字符也符合口令的要求
-* c.异或，因为先修课程只能选择从数论课程和密码课程其中的一种来修
-* d.同或，因为你可以同时使用美元和欧元组成的钱币来支付
+* c.同或，因为学过数论课程和密码课程的学生更符合学习先修课的要求
+* d.异或，因为你理论上虽然可以同时使用美元和欧元组成的钱币来支付，但实际上商店的老板可能不太同意
 
 ## 第二十题
 
 * a.同或，因为同时具有C++和JAVA经验的人也符合要求
 * b.异或，因为午餐只能选择汤或者沙拉其中之一
 * c.同或，因为同时持有护照和选民登记卡的人也符合入境的要求
-* d.异或，因为该物品只有两种存在的可能性，这两种可能性不能同时存在
+* d.同或，两种说法都符合要求，但同或的解释更符合要求。这个短语意味着不在研究期刊发表的论文的教员很可能被解雇，即使他们一定要发表
 
 ## 第二十一题
 
@@ -199,9 +202,9 @@
 
 * a.如果吹东北风，那么就会下雪
 * b.如果天暖持续一周，那么苹果树就会开花
-* c.如果活塞队打败了湖人队，那么他们就赢得了冠军
-* d.如果想要到达朗斯峰的顶峰，那么必须要走8公里
-* e.如果想要得到终身教授的职位，那么闻名世界就够了
+* c.如果活塞队赢得了冠军，那么他们就打败了湖人队
+* d.如果想要到达朗斯峰的顶峰，那么必须要走8英里
+* e.如果你闻名世界，那么你就能得到终身教授的职位
 * f.如果你驾车超过400英里，那么你需要买汽油
 * g.如果你购买的CD机不超过90天，那么保修单是有效的
 * h.如果水不太凉，那么Jan要去游泳
@@ -212,7 +215,7 @@
 * b.如果你生在美国，那么你就会成为美国公民
 * c.如果你保存好课本，那么它会是你未来其他课程有用的参考书
 * d.如果红翼队的守门员表现出色，那么队伍将赢得斯坦利杯
-* e.如果你最最好的信誉，那么你将获得这一职位
+* e.如果你有最好的信誉，那么你将获得这一职位
 * f.如果有风暴，那么沙滩会受到侵蚀
 * g.如果有一个有效的口令，那么才能登录到服务器
 * h.如果你不是太晚爬山，那么你能登顶
@@ -234,12 +237,12 @@
 
 ## 第二十七题
 
-* a.逆命题：我明天去滑雪，如果今天下雪
-* a.否命题：今天没有下雪，我明天就不去滑雪
-* a.逆否命题：我明天不去滑雪，如果今天不下雪
-* b.逆命题：我来上课，如果有测验
+* a.逆命题：我明天去滑雪，如果今天下雪的话
+* a.否命题：如果今天没有下雪，那么我明天就不去滑雪
+* a.逆否命题：我明天不去滑雪，那么今天一定不下雪
+* b.逆命题：如果我来上课，那么就会有测验
 * b.否命题：今天没有测验，我就不来上课
-* b.逆否命题：我不来上课，如果没有测验
+* b.逆否命题：如果我今天不来上课，那么就不会有测验
 * c.逆命题：一个正整数数没有它自身和以外的因子，这个正整数就是素数
 * c.否命题：一个正整数不是素数，这个正整数有1和它自身以外的因子
 * c.逆否命题：一个正整数数有1和它自身以外的因子，这个正整数就不是素数
@@ -276,19 +279,15 @@
   
 |p|$\neg p$|$p \wedge \neg p$|
 |----|----|----|
-|T|T|T|
 |T|F|F|
 |F|T|F|
-|F|F|F|
 
 * b.
   
 |p|$\neg p$|$p \vee \neg p$|
 |----|----|----|
-|T|T|T|
 |T|F|T|
 |F|T|T|
-|F|F|F|
 
 * c.
 
@@ -313,8 +312,8 @@
 |p|q|$\neg p$|$\neg q$|$p \rightarrow q$|$\neg q\rightarrow \neg p$|$(p \rightarrow q) \leftrightarrow\ (\neg q \rightarrow \neg p)$|
 |----|----|----|----|----|----|----|----|
 |T|T|F|F|T|T|T|
-|T|F|F|T|F|T|T|
-|F|T|T|F|T|F|F|
+|T|F|F|T|F|F|T|
+|F|T|T|F|T|T|T|
 |F|F|T|T|T|T|T|
 
 * f.
@@ -333,8 +332,6 @@
 |p|$\neg p$|$p \rightarrow \neg p$|
 |----|----|----|
 |T|F|F|
-|T|F|F|
-|F|T|T|
 |F|T|T|
 
 * b.
@@ -342,8 +339,6 @@
 |p|$\neg p$|$p \leftrightarrow \neg p$|
 |----|----|----|
 |T|F|F|
-|T|F|F|
-|F|T|F|
 |F|T|F|
 
 * c.
@@ -366,12 +361,12 @@
 
 * e.
   
- |p|q|$\neg q$|$p \leftrightarrow q$|$q \rightarrow \neg p$|$(q \rightarrow \neg p) \leftrightarrow (p \leftrightarrow q)$|
+ |p|q|$\neg p$|$p \leftrightarrow q$|$q \rightarrow \neg p$|$(q \rightarrow \neg p) \leftrightarrow (p \leftrightarrow q)$|
 |----|----|----|----|----|----|
-|T|T|T|T|T|T|
-|T|F|T|F|T|F|
-|F|T|T|F|T|F|
-|F|F|F|T|T|T|
+|T|T|F|F|T|F|
+|T|F|F|T|F|F|
+|F|T|T|T|F|F|
+|F|F|T|T|T|T|
 
 * f.
   
@@ -379,8 +374,8 @@
 |----|----|----|----|----|----|
 |T|T|F|T|F|T|
 |T|F|T|F|T|T|
-|F|T|F|T|T|F|
-|F|F|T|T|T|F|
+|F|T|F|F|T|T|
+|F|F|T|T|F|T|
 
 ## 第三十三题
 
@@ -388,10 +383,10 @@
 
 |p|q|$p \vee q$|$p \bigoplus q$|$(p \vee q) \rightarrow (p \bigoplus q)$
 |----|----|----|----|----|
-|T|F|T|T|T|
 |T|T|T|F|F|
+|T|F|T|T|T|
+|F|T|T|T|T|
 |F|F|F|F|T|
-|F|T|F|T|T|
 
 * b.
   
@@ -422,16 +417,16 @@
 
 * e.
   
-|p|q|$\neg p$|r|$\neg r$|$(p \leftrightarrow q)$|$(\neg p \leftrightarrow \neg r)$|$(p \rightarrow q) \bigoplus (\neg p \leftrightarrow \neg r)$|
+|p|q|r|$\neg p$|$\neg r$|$(p \leftrightarrow q)$|$(\neg p \leftrightarrow \neg r)$|$(p \rightarrow q) \bigoplus (\neg p \leftrightarrow \neg r)$|
 |----|----|----|----|----|----|----|----|
-|T|T|F|T|F|T|T|F|
+|T|T|T|F|F|T|T|F|
 |T|T|F|F|T|T|F|T|
+|T|F|T|F|F|F|T|T|
 |T|F|F|F|T|F|F|F|
-|T|F|F|T|F|F|T|T|
 |F|T|T|T|F|F|F|F|
-|F|F|T|T|F|T|F|T|
-|F|T|T|F|T|F|T|T|
-|F|F|T|F|T|T|T|F|
+|F|F|F|T|T|F|T|T|
+|F|T|T|T|F|T|F|T|
+|F|F|F|T|T|T|T|F|
 
 * f.
   
@@ -449,8 +444,6 @@
 |p|p|$p \bigoplus p$
 |----|----|----|
 |T|T|F|
-|T|T|F|
-|F|F|F|
 |F|F|F|
 
 * b.
@@ -458,8 +451,6 @@
 |p|$\neg p$|$p \bigoplus \neg p$|
 |----|----|----|----|
 |T|F|T|
-|T|F|T|
-|F|T|T|
 |F|T|T|
 
 * c.
@@ -505,18 +496,18 @@
 |p|q|$\neg q$|$p \rightarrow \neg q$
 |----|----|----|----|
 |T|T|F|F|
-|T|T|F|F|
-|F|F|T|T|
+|T|F|T|T|
+|F|T|F|T|
 |F|F|T|T|
 
 * b.
 
-|p|$\neg p$|$\neg p \leftrightarrow q$|
-|----|----|----|
-|T|F|F|
-|T|F|F|
-|F|T|F|
-|F|T|F|
+|p|q|$\neg p$|$\neg p \leftrightarrow q$|
+|----|----|----|----|
+|T|T|F|F|
+|T|F|F|T|
+|F|T|T|T|
+|F|F|T|F|
 
 * c.
   
@@ -630,7 +621,7 @@
 |T|F|F|T|F|T|
 |F|T|T|F|F|F|
 |F|T|F|T|F|T|
-|F|F|T|F|F|F\
+|F|F|T|F|F|F|
 |F|F|F|T|F|T|
 
 ## 第三十七题
@@ -690,16 +681,16 @@
 
 * e.
   
-|p|q|r|$\neg q$|$p \leftrightarrow q$|$\neg q \leftrightarrow r$|$(p \leftrightarrow q) \leftrightarrow (\neg q \leftrightarrow r)$|
+|p|q|r|$\neg q$|$p \leftrightarrow q$|$\neg q \leftrightarrow r$|$(p \leftrightarrow q) \vee (\neg q \leftrightarrow r)$|
 |----|----|----|----|----|----|----|
-|T|T|T|F|T|T|T|
+|T|T|T|F|T|F|T|
 |T|T|F|F|T|T|T|
-|T|F|T|F|F|T|F|
-|T|F|F|F|F|T|F|
-|F|T|T|T|T|T|T|
-|F|T|F|T|T|F|F|
+|T|F|T|T|F|T|T|
+|T|F|F|T|F|F|F|
+|F|T|T|F|F|F|F|
+|F|T|F|F|F|T|T|
 |F|F|T|T|T|T|T|
-|F|F|F|T|T|F|F|
+|F|F|F|T|T|F|T|
 
 * f.
   
@@ -710,8 +701,8 @@
 |T|F|T|F|T|F|F|T|
 |T|F|F|F|T|F|T|F|
 |F|T|T|T|F|F|T|F|
-|F|F|F|T|F|F|T|F|
-|F|T|T|T|T|T|T|T|
+|F|T|F|T|F|F|F|T|
+|F|F|T|T|T|T|F|F|
 |F|F|F|T|T|T|T|T|
 
 ## 第三十八题
@@ -747,13 +738,13 @@
 |T|F|T|F|F|F|T|
 |T|F|F|T|F|F|T|
 |T|F|F|F|F|T|F|
-|F|T|T|T|T|T|T|
+|F|T|T|T|F|T|F|
 |F|T|T|F|F|F|T|
 |F|T|F|T|F|F|T|
-|F|T|F|F|T|T|T|
-|F|F|T|T|F|T|F|
+|F|T|F|F|F|T|F|
+|F|F|T|T|T|T|T|
 |F|F|T|F|T|F|F|
-|F|F|F|T|F|F|T|
+|F|F|F|T|T|F|F|
 |F|F|F|F|T|T|T|
 
 ## 第四十题（穷举法）
@@ -818,7 +809,7 @@
 
 |x|y|OR|AND|XOR|
 |----|----|----|----|----|
-|T|F|T|T|F|
+|T|F|T|F|T|
 |F|T|T|F|T|
 |T|F|T|F|T|
 |T|F|T|F|T|
@@ -830,13 +821,13 @@
 
 |x|y|OR|AND|XOR|
 |----|----|----|----|----|
-|T|F|T|F|T|
-|T|F|T|F|T|
-|T|F|T|F|T|
+|T|T|T|T|F|
 |T|F|T|F|T|
 |T|T|T|T|F|
+|T|F|T|F|T|
+|F|T|T|T|T|
 |F|F|F|F|F|
-|T|T|T|T|F|
+|F|T|T|T|T|
 |F|F|F|F|F|
 
 * c. 
@@ -847,6 +838,7 @@
 |F|F|F|F|F|
 |F|F|F|F|F|
 |T|T|T|T|F|
+|T|F|T|F|T|
 |T|F|T|F|T|
 |F|T|T|F|T|
 |F|F|F|F|F|
