@@ -159,3 +159,91 @@
 
 * 因此，可以有一下三种邀请方法。第一种：三个人都不邀请。第二种：只邀请$Jasmine$,第三种：邀请$Jasmine$和$Kanti$。
   
+## 第十九题
+
+* 令$p$为$A$是骑士，令$q$为$B$是骑士。令$\neg p$为$A$是无赖，令$\neg q$为$B$是无赖
+* 则根据题意可得：$A$说的话为$\neg p \vee \neg q$
+* 因此可以得到：$（\neg p \vee \neg p)\leftrightarrow p$
+* |$p$|$q$|$\neg p$|$\neg q$|$（\neg p \vee \neg p)$|$（\neg p \vee \neg p)\leftrightarrow p$|
+  |----|----|----|----|----|----|
+  |0|0|1|1|1|0|
+  |0|1|1|0|1|1|
+  |1|0|0|1|1|0|
+  |1|1|0|0|1|0|
+
+* 由上所述：当$（\neg p \vee \neg q）\leftrightarrow p$为1时，$p$为0，$q$为1
+* 则因此可以得到：$A$是无赖，$B$是无赖。
+
+## 第二十题
+
+* 令$p$为$A$是骑士，令$q$为$B$是骑士。令$\neg p$为$A$是无赖，令$\neg q$为$B$是无赖
+* 则根据题意可得：$A$说的话为$p \wedge q$，$B$说的话为$\neg p$
+* 因此可以得到：$(p \wedge q)\leftrightarrow q$和$\neg p \leftrightarrow q$
+* |$p$|$q$|$\neg p$|$\neg q$|$(p \wedge q)\leftrightarrow q$|
+  |----|----|----|----|----|
+  |0|0|1|1|
+  |0|1|1|0|
+  |1|0|0|1|
+  |1|1|0|0|
+ 
+* |p|q|$\neg p$|$\neg p \leftrightarrow q$|
+  |----|----|----|----|
+  |0|0|1|0|
+  |0|1|1|1|
+  |1|0|0|1|
+  |1|1|0|0|
+
+* 由上所述：当$(p \wedge q)\leftrightarrow q$为1时，$p$为0，$q$为1
+* 则因此可以得到：$A$是无赖，$B$是骑士。
+
+## 第二十一题
+
+* 令$p$为$A$是骑士，令$q$为$B$是骑士。令$\neg p$为$A$是无赖，令$\neg q$为$B$是无赖
+* 则根据题意可得：$A$说的话为$p \vee \neg q$
+* 因此可以得到：$(p \vee \neg q) \leftrightarrow p$
+* |$p$|$q$|$\neg q$|$p \vee \neg q$|$(p \vee \neg q)\leftrightarrow p$|
+  |----|----|----|----|----|
+  |0|0|1|1|0|
+  |0|1|0|0|1|
+  |1|0|1|1|1|
+  |1|1|0|1|1|
+  
+* 由上所述：当$(p \vee \neg q) \leftrightarrow p$为1时，p为0或1，q为1或0，以及q为1或1
+* 则因此可以得到一下信息：$A$和$B$的身份不能确定，$A$有可能是骑士也有可能是无赖，$B$也有可能是骑士也有可能是无赖
+
+## 第二十二题
+
+* 令$p$为$A$是骑士，令$q$为$B$是骑士。令$\neg p$为$A$是无赖，令$\neg q$为$B$是无赖
+* 则根据题意可得：$A$说的话为$p$,$B$说的话为$q$
+* 因此可以得到：$p \leftrightarrow p$和$q \leftrightarrow q$
+* |p|q|$p\leftrightarrow p$|
+  |----|----|----|
+  |0|0|1|
+  |0|0|1|
+  |1|1|1|
+  |1|1|1|
+  
+* |p|q|$q \leftrightarrow q$|
+  |----|----|----|
+  |0|0|1|
+  |1|1|1|
+  |0|0|1|
+  |1|1|1|
+
+* 由上所述：当$p \leftrightarrow p$为1时，p为0或1，当$q \leftrightarrow q$时，p为0或0，以及q为0或1，q为1或0，以及q为1或1
+* 则因此可以得到以下信息：$A$和$B$的身份不能确定，$A$有可能是骑士也有可能是无赖，$B$也有可能是骑士也有可能是无赖
+
+## 第二十三题
+
+* 令$p$为$A$是骑士，令$q$为$B$是骑士。令$\neg p$为$A$是无赖，令$\neg q$为$B$是无赖
+* 则根据题意可得：$A$说的话为$\neg p \wedge \neg q$
+* 因此可以得到：$(\neg p \wedge \neg q) \leftrightarrow p$
+* |p|q|\neg p|\neg q|$\neg p\leftrightarrow \neg q$|
+  |----|----|----|----|----|----|
+  |0|0|1|1|1|0|
+  |0|1|1|0|0|1|
+  |1|0|0|1|0|0|
+  |1|1|0|0|0|0|
+
+* 由上所述：当$\neg p \wedge \neg q$为1时，p为0,q为1
+* 则因此可以得到以下信息：$A$和$B$均为骑士。
