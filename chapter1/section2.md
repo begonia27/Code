@@ -455,3 +455,11 @@
 * 根据第一个人的话：“他知道如果f的薪水不是最高的，那么j的薪水最高”可以得出结论：j的薪水高于m和f。
 * 根据第二个人的话：“他知道如果j的薪水不是最低的，那么m的薪水最高”可以得出结论：m的薪水高于j，j的薪水高于f。
 * 根据前两个结论可以看出，j和m的大小关系描述不同，因此确定不了f和j以及m的相对薪水。
+
+## 第三十四题
+
+* 令$Kevin为k$,令$Heather为h$,$令Randi为r$，$令Vajiy为v$,$令Abby为a$
+* 根据题意可得：$k \bigotimes h$,$r \bigoplus v$,$a \rightarrow r$,$v \bigotimes h \vee (\neg v \wedge \neg h)$,$h \rightarrow (a \wedge k)$
+
+* |k|h|r|v|a|$\neg h$|$\neg v$|$k \bigoplus h$|$r \bigoplus v$|$a \rightarrow r$|$v \bigotimes h \vee (\neg v \wedge \neg h)$|$h \rightarrow (a \wedge k)$|
+* 
