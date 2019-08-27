@@ -43,8 +43,7 @@
 * 令系统处于多用户状态为$a$，令系统运行正常为$b$，令核心程序起作用为$c$
 * 根据题意可得如下：$a \leftrightarrow b$,$b \rightarrow c$,$\neg c \vee \neg a$,$\neg a \vee a$,$a$
 
-* 真值表为：
-  |$a$|$b$|$c$|$\neg a$|$\neg c$|$a \leftrightarrow b$|$b \rightarrow c$|$\neg c \vee \neg a$|$\neg a \vee \neg a$|$a$|
+* |$a$|$b$|$c$|$\neg a$|$\neg c$|$a \leftrightarrow b$|$b \rightarrow c$|$\neg c \vee \neg a$|$\neg a \vee \neg a$|$a$|
   |----|----|----|----|----|----|----|----|----|----|
   |0|0|0|1|1|1|1|1|1|0|
   |0|0|1|1|0|1|1|1|1|0|
@@ -62,8 +61,7 @@
 * 令用户软件进行升级为$a$,令用户不能访问文件系统为$b$,令用户能保存新文件为$c$。
 * 根据题意可得如下：$a \rightarrow b$,$\neg b \rightarrow c$,$\neg c \rightarrow \neg a$
 
-* 真值表为：
-  |$a$|$b$|$c$|$\neg a$|$\neg b$|$\neg c$|$a \rightarrow b$|$\neg b \rightarrow c$|$\neg c \rightarrow \neg a$|
+* |$a$|$b$|$c$|$\neg a$|$\neg b$|$\neg c$|$a \rightarrow b$|$\neg b \rightarrow c$|$\neg c \rightarrow \neg a$|
   |----|----|----|----|----|----|----|----|----|
   |0|0|0|1|1|1|1|0|1|
   |0|0|1|1|1|0|1|1|1|
@@ -79,8 +77,7 @@
 * 令路由器向边缘系统发送分组为$a$,令路由器支持新的地址空间为$b$，令安装最新版本的软件为$c$。
 * 根据题意可得如下：$a \rightarrow b$,$b \rightarrow c$,$c \rightarrow a$,$\neg b$
 
-* 真值表为：
-  |$a$|$b$|$c$|$a \rightarrow b$|$b \rightarrow c$|$c \rightarrow a$|$\neg b$|
+* |$a$|$b$|$c$|$a \rightarrow b$|$b \rightarrow c$|$c \rightarrow a$|$\neg b$|
   |----|----|----|----|----|----|----|
   |0|0|0|1|1|1|1|
   |0|0|1|1|1|0|1|
@@ -98,8 +95,7 @@
 * 令文件系统未加锁未$a$,令新消息将被排队为$b$,令系统正常运行为$c$
 * 根据题意可得如下：$a \rightarrow b$,$a \leftrightarrow c$,$b \rightarrow d$,$a \rightarrow d$,$\neg d$
   
-* 真值表为：
-  |$a$|$b$|$c$|$d$|$a \rightarrow b$|$a \rightarrow c$|$b \rightarrow d$|$a \rightarrow d$|$\neg d$|
+* |$a$|$b$|$c$|$d$|$a \rightarrow b$|$a \rightarrow c$|$b \rightarrow d$|$a \rightarrow d$|$\neg d$|
   |----|----|----|----|----|----|----|----|----|
   |0|0|0|0|1|1|1|1|1|
   |0|0|0|1|1|1|1|1|0|
@@ -180,7 +176,7 @@
 * 则根据题意可得：$A$说的话为$p \wedge q$，$B$说的话为$\neg p$
 * 因此可以得到：$(p \wedge q)\leftrightarrow q$和$\neg p \leftrightarrow q$
 * |$p$|$q$|$\neg p$|$\neg q$|$(p \wedge q)\leftrightarrow q$|
-  |----|----|----|----|----|
+  |----|----|----|----|
   |0|0|1|1|
   |0|1|1|0|
   |1|0|0|1|
@@ -452,3 +448,4 @@
 * $s和j$说的话相悖，所以第六种可能性成立。
 * $s和j$说的话相悖，所以第七种可能性不成立。
 * $若s和j以及w$均为清白者，但三人说的话互相矛盾，因此第八种可能性不成立。
+
