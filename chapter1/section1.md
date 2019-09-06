@@ -1,4 +1,4 @@
-# 第一章节
+# 第一节
 
 ## 第一题
 
@@ -678,7 +678,6 @@
 |F|F|T|T|T|T|T|
 |F|F|F|T|T|F|F|
 
-
 * e.
   
 |p|q|r|$\neg q$|$p \leftrightarrow q$|$\neg q \leftrightarrow r$|$(p \leftrightarrow q) \vee (\neg q \leftrightarrow r)$|
@@ -765,7 +764,7 @@
   
 * 当p为假，q 为假，r为真时，有$(p \vee \neg q) \wedge (q \vee \neg r) \wedge (r \vee \neg p) \leftrightarrow (F \vee T) \wedge (F \vee F) \wedge (T \vee T) \leftrightarrow F \wedge F \wedge T \leftrightarrow F$。
 
-* 即p、q、r真值相同时，$(p \vee \neg q) \wedge (q \vee \neg r) \wedge (r \vee \neg p)$都为真，p、q、r真值不同时，$(p \vee \neg q) \wedge (q \vee \neg r) \wedge (r \vee \neg p)$都为假。 
+* 即p、q、r真值相同时，$(p \vee \neg q) \wedge (q \vee \neg r) \wedge (r \vee \neg p)$都为真，p、q、r真值不同时，$(p \vee \neg q) \wedge (q \vee \neg r) \wedge (r \vee \neg p)$都为假。
 
 ## 第四十题
 
@@ -805,7 +804,7 @@
 
 ## 第四十三题
 
-* a. 
+* a.
 
 |x|y|OR|AND|XOR|
 |----|----|----|----|----|
@@ -830,7 +829,7 @@
 |F|T|T|T|T|
 |F|F|F|F|F|
 
-* c. 
+* c.
 
 |x|y|OR|AND|XOR|
 |----|----|----|----|----|
