@@ -137,3 +137,76 @@
 * c.令James年轻为$p$,令James强壮为$q$.则James年轻并且强壮可以写作$p \wedge q$,用摩根第一定律，$\neg (p \wedge q) \equiv \neg p \vee \neg q$.因此命题的否定为James不年轻或者James不强壮。
 
 * d.令Rita将搬到俄勒冈州为$p$,令Rita将搬到华盛顿为$q$，则Rita将搬到俄勒冈州或华盛顿去可以写作$p \vee q$,用摩根第二定律，$\neg (p \vee q) \equiv \neg p \wedge \neg q$.因此命题的否定可以写作Rita不会搬到俄勒冈州和不会搬到华盛顿去。
+
+## 第九题
+
+* a.$(p \wedge q) \rightarrow p$
+  |$p$|$q$|$p \wedge q$|$(p \wedge q) \rightarrow p$|
+  |----|----|----|----|
+  |0|0|0|1|
+  |0|1|0|1|
+  |1|0|0|1|
+  |1|1|1|1|
+
+* b.$p \rightarrow (p \vee q)$
+  |$p$|$q$|$p \vee q$|$p \rightarrow (p \vee q)$|
+  |----|----|----|----|
+  |0|0|0|1|
+  |0|1|0|1|
+  |1|0|1|1|
+  |1|1|1|1|
+
+* c.$\neg p \rightarrow (p \vee q)$
+  |$p$|$q$|$\neg p$|$p \rightarrow q$|$\neg p \rightarrow (p \rightarrow q)$|
+  |----|----|----|----|----|
+  |0|0|1|1|1|
+  |0|1|1|1|1|
+  |1|0|0|0|1|
+  |1|1|0|1|1|
+
+* d.$(p \wedge q) \rightarrow (p \rightarrow q)$
+  |$p$|$q$|$p \wedge q$|$p \rightarrow q$|$(p \wedge q) \rightarrow (p \rightarrow q)$|
+  |----|----|----|----|----|
+  |0|0|0|1|1|
+  |0|1|0|1|1|
+  |1|0|0|0|1|
+  |1|1|1|1|1|
+  
+* e.$\neg (p \rightarrow q) \rightarrow p$
+  |$p$|$q$|$p \rightarrow q$|$\neg (p \rightarrow q)$|$\neg (p \rightarrow q) \rightarrow p$|
+  |----|----|----|----|----|
+  |0|0|1|0|1|
+  |0|1|1|0|1|
+  |1|0|0|1|1|
+  |1|1|1|0|1|
+
+* f.$\neg (p \rightarrow q) \rightarrow \neg p$
+  |$p$|$q$|$p \rightarrow q$|$\neg (p \rightarrow q)$|$\neg q$|$\neg (p \rightarrow q) \rightarrow \neg p$|
+  |----|----|----|----|----|----|
+  |0|0|0|1|1|1|
+  |0|1|1|0|0|1|
+  |1|0|0|1|1|1|
+  |1|1|1|0|0|1|
+
+## 第十题
+
+* a.$[\neg p \wedge (p \vee q)] \rightarrow q$
+  |$p$|$q$|$p \vee q$|$\neg p$|$\neg p \wedge (p \vee q)$|$[\neg p \wedge (p \vee q) ] \rightarrow q$|
+  |----|----|----|----|----|----|
+  |0|0|0|1|0|0|
+  |0|1|1|1|1|1|
+  |1|0|1|0|0|1|
+  |1|1|1|0|0|1|
+
+* b.$[(p \rightarrow q) \wedge (q \rightarrow r)] \rightarrow (p \rightarrow r)$
+  |$p$|$q$|$r$|$p \rightarrow q$|$q \rightarrow r$|$p \rightarrow r$|$(p \rightarrow q) \wedge (q \rightarrow r)$|$[(p \rightarrow q) \wedge (q \rightarrow r)] \rightarrow (p \rightarrow r)$
+  |----|----|----|----|----|----|----|----|
+  |0|0|0|0|0|0|0|1|
+  |0|0|1|0|1|1|0|1|
+  |0|1|0|1|1|0|0|0|
+  |0|1|1|1|1|1|1|1|
+  |1|0|0|0|1|0|0|1|
+  |1|0|1|0|1|1|0|1|
+  |1|1|0|1|0|0|0|1|
+  |1|1|1|1|1|1|1|1|
+  
