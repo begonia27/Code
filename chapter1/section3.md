@@ -210,3 +210,26 @@
   |1|1|0|1|0|0|0|1|
   |1|1|1|1|1|1|1|1|
   
+* c.$[p \wedge (p \rightarrow q)] \rightarrow q$
+  |$p$|$q$|$p \rightarrow q$|$p \wedge (p \rightarrow q)$|$[p \wedge (p \rightarrow q)] \rightarrow q$|
+  |----|----|----|----|----|
+  |0|0|1|0|1|
+  |0|1|1|0|1|
+  |1|0|0|0|1|
+  |1|1|1|1|1|
+
+* d.$[(p \vee q)\wedge (p \rightarrow r) \wedge (q \rightarrow r)] \rightarrow r$
+  |$p$|$q$|$r$|$p \vee q$|$p \rightarrow r$|$q \rightarrow r$|$(p \vee q) \wedge (p \rightarrow r)$|$[(p \vee q) \wedge (p \rightarrow r) \wedge (q \rightarrow r)]$|$[(p \vee q) \wedge (p \rightarrow r) \wedge (q \rightarrow r)] \rightarrow r$|
+  |----|----|----|----|----|----|----|----|----|
+  |0|0|0|0|1|1|0|0|1|
+  |0|0|1|0|1|1|0|0|1|
+  |0|1|0|0|0|0|0|0|1|
+  |0|1|1|0|1|1|0|0|1|
+  |1|0|0|0|0|1|0|0|1|
+  |1|0|1|0|1|1|0|0|1|
+  |1|1|0|1|0|0|0|0|1|
+  |1|1|1|1|1|1|1|1|1|
+
+## 第十一题
+
+* a.$(p \wedge q) \rightarrow p$ 
