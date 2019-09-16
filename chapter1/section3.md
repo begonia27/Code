@@ -232,4 +232,7 @@
 
 ## 第十一题
 
-* a.$(p \wedge q) \rightarrow p$ 
+* a.$(p \wedge q) \rightarrow p \equiv \ (p\wedge q) \vee p$    由例三
+    $(p \wedge q) \rightarrow p \equiv \neg (p \wedge q) \vee p$    由摩根第一定律
+    $(p \wedge q) \rightarrow p \equiv \neg p \vee \p \vee q    由结合律
+    $(p \wedge q) \rightarrow p \equiv \T \vee p    由支配率
