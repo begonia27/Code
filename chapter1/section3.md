@@ -232,7 +232,94 @@
 
 ## 第十一题
 
-* a.$(p \wedge q) \rightarrow p \equiv \ (p\wedge q) \vee p$    由例三
-    $(p \wedge q) \rightarrow p \equiv \neg (p \wedge q) \vee p$    由摩根第一定律
-    $(p \wedge q) \rightarrow p \equiv \neg p \vee \p \vee q    由结合律
-    $(p \wedge q) \rightarrow p \equiv \T \vee p    由支配率
+* a.$(p \wedge q) \rightarrow p \equiv \neg (p \wedge q) \vee p$
+$(p \wedge q) \rightarrow p \equiv (\neg p \vee \neg q) \vee p$
+$(p \wedge q) \rightarrow p \equiv (\neg p) \vee (\neg q \vee p)$
+$(p \wedge q) \rightarrow p \equiv T \vee (\neg q \vee p)$
+$(p \wedge q) \rightarrow p \equiv T$
+
+* b.$p \rightarrow (p \vee q) \equiv \neg p \vee (p \vee q)$
+$p \rightarrow (p \vee q) \equiv (\neg p \vee p) \vee q$
+$p \rightarrow (p \vee q) \equiv T \vee q$
+$p \rightarrow (p \vee q) \equiv T$
+
+* c.$\neg p \rightarrow (p \rightarrow q) \equiv \neg (\neg p) \vee (p \rightarrow q)$
+$\neg p \rightarrow (p \rightarrow q) \equiv p \vee (\neg p \vee q)$
+$\neg p \rightarrow (p \rightarrow q) \equiv (p \vee p) \vee q$
+$\neg p \rightarrow (p \rightarrow q) \equiv T \vee q$
+$\neg p \rightarrow (p \rightarrow q) \equiv T$
+
+* d.$(p \wedge q) \rightarrow (p \rightarrow q) \equiv \neg (p \wedge q) \vee (p \rightarrow q)$
+$(p \wedge q) \rightarrow (p \rightarrow q) \equiv \neg (p \wedge q) \vee (p \rightarrow q)$
+$(p \wedge q) \rightarrow (p \rightarrow q) \equiv \neg p \vee (\neg q \vee q)$
+$(p \wedge q) \rightarrow (p \rightarrow q) \equiv \neg p \vee T$
+$(p \wedge q) \rightarrow (p \rightarrow q) \equiv T$
+
+* e.$\neg (p \rightarrow q) \rightarrow p \equiv \neg [\neg (p \rightarrow q)] \vee p$
+$\neg (p \rightarrow q) \rightarrow p \equiv \neg [\neg (\neg p \vee q)] \vee p$
+$\neg (p \rightarrow q) \rightarrow p \equiv \neg (p \wedge \neg q) \vee p$
+$\neg (p \rightarrow q) \rightarrow p \equiv (\neg p \vee q) \vee p$
+$\neg (p \rightarrow q) \rightarrow p \equiv (\neg p \vee p) \vee q$
+$\neg (p \rightarrow q) \rightarrow p \equiv T  \vee q$
+$\neg (p \rightarrow q) \rightarrow p \equiv T$
+
+* f.$\neg (p \rightarrow q) \rightarrow \neg q \equiv \neg [\neg (p \rightarrow q)] vee \neg q$
+$\neg (p \rightarrow q) \rightarrow \neg q \equiv \neg [\neg (\neg p \vee q)] \vee \neg q$
+$\neg (p \rightarrow q) \rightarrow \neg q \equiv \neg (p \wedge \neg q) \vee \neg q$
+$\neg (p \rightarrow q) \rightarrow \neg q \equiv (\neg p \vee q) \vee \neg q$
+$\neg (p \rightarrow q) \rightarrow \neg q \equiv \neg p \vee (q \vee \neg q)$
+$\neg (p \rightarrow q) \rightarrow \neg q \equiv \neg p \vee T$
+$\neg (p \rightarrow q) \rightarrow \neg q \equiv T$
+
+## 第十二题
+
+* a.$[\neg p \wedge (p \vee q)] \rightarrow q \equiv \neg [(\neg p \wedge (p \vee q)] \vee p$
+$[\neg p \wedge (p \vee q)] \rightarrow q \equiv [p \vee \neg (p \vee q)] \vee q$
+$[\neg p \wedge (p \vee q)] \rightarrow q \equiv [p \vee (\neg p \wedge \neg q)] \vee q$
+$[\neg p \wedge (p \vee q)] \rightarrow q \equiv [(p \vee \neg p) \wedge (p \vee \neg q)] \vee q$
+$[\neg p \wedge (p \vee q)] \rightarrow q \equiv [T \wedge (p \vee \neg q)] \vee q$
+$[\neg p \wedge (p \vee q)] \rightarrow q \equiv (p \vee \neg q) \vee q$
+$[\neg p \wedge (p \vee q)] \rightarrow q \equiv \vee (\neg p \vee q)$
+$[\neg p \wedge (p \vee q)] \rightarrow q \equiv p \vee T$
+$[\neg p \wedge (p \vee q)] \rightarrow q \equiv T$
+
+* b.$[(p \rightarrow q) \wedge (q \rightarrow r)] \rightarrow (p \rightarrow r) \equiv \neg [(p \rightarrow q) \wedge (q \rightarrow r)] \vee (p \rightarrow r)$
+$[(p \rightarrow q) \wedge (q \rightarrow r)] \rightarrow (p \rightarrow r) \equiv \neg [(\neg p \vee q) \wedge (\neg q \vee r)] (\neg p \vee r)$
+$[(p \rightarrow q) \wedge (q \rightarrow r)] \rightarrow (p \rightarrow r) \equiv [[\neg (\neg p \vee q) \wedge (\neg q \vee r)]] \vee (\neg p \vee r)$
+$[(p \rightarrow q) \wedge (q \rightarrow r)] \rightarrow (p \rightarrow r) \equiv [(p \wedge \neg q) \vee (q \wedge \neg r)] \vee (\neg r \vee r)$
+$[(p \rightarrow q) \wedge (q \rightarrow r)] \rightarrow (p \rightarrow r) \equiv [[(p \wedge \neg q) \wedge (\neg q \vee q)] \vee [(p \wedge \neg p) \vee \neg r]] \vee (\neg p \vee r)$
+$[(p \rightarrow q) \wedge (q \rightarrow r)] \rightarrow (p \rightarrow r) \equiv [(p \vee q) \wedge (p\neg q \vee q)] \vee [(p \vee \neg r) \wedge (\neg p \vee \neg r)] \vee (\neg p \vee r)$
+$[(p \rightarrow q) \wedge (q \rightarrow r)] \rightarrow (p \rightarrow r) \equiv [(p \vee q) \vee [(p \wedge \neg q) \vee \neg r]] \vee (\neg p \vee r)$
+$[(p \rightarrow q) \wedge (q \rightarrow r)] \rightarrow (p \rightarrow r) \equiv [[(p \vee q) \vee (p \vee \neg q) \vee [(p \vee q) \vee \neg r]] \vee (\neg p \vee r)$
+$[(p \rightarrow q) \wedge (q \rightarrow r)] \rightarrow (p \rightarrow r) \equiv [[p \vee (q \vee \neg q)] \vee [(p \vee q)]\vee \neg r]]$
+$[(p \rightarrow q) \wedge (q \rightarrow r)] \rightarrow (p \rightarrow r) \equiv [(p \vee T) \vee [(p \vee q) \vee \neg r]] \vee (\neg p \vee r)$
+$[(p \rightarrow q) \wedge (q \rightarrow r)] \rightarrow (p \rightarrow r) \equiv T\ \vee [(p \vee q) \vee \neg r] \vee (\neg p \vee r)$
+$[(p \rightarrow q) \wedge (q \rightarrow r)] \rightarrow (p \rightarrow r) \equiv T \vee (\neg p \vee r)$
+$[(p \rightarrow q) \wedge (q \rightarrow r)] \rightarrow (p \rightarrow r) \equiv T$
+
+* c.$[p \wedge (p \rightarrow q)] \rightarrow q \equiv [p \wedge (\neg p \vee q)] \rightarrow q$
+$[p \wedge (p \rightarrow q)] \rightarrow q \equiv [(p \wedge \neg p) \vee (p \wedge q)] \rightarrow q$
+$[p \wedge (p \rightarrow q)] \rightarrow q \equiv [[(p \wedge \neg p) \vee p] \wedge [(p \wedge \neg p) \vee q]] \rightarrow q$
+$[p \wedge (p \rightarrow q)] \rightarrow q \equiv [(F \vee p) \wedge (F \vee q)] \rightarrow q$
+$[p \wedge (p \rightarrow q)] \rightarrow q \equiv [F \vee (p \wedge q)] \rightarrow q$
+$[p \wedge (p \rightarrow q)] \rightarrow q \equiv (p \wedge q) \rightarrow q$
+$[p \wedge (p \rightarrow q)] \rightarrow q \equiv \neg (p \wedge q) \vee q$
+$[p \wedge (p \rightarrow q)] \rightarrow q \equiv (\neg p \vee \neg q) \vee q$
+$[p \wedge (p \rightarrow q)] \rightarrow q \equiv \neg p \vee (\neg q \vee q)$
+$[p \wedge (p \rightarrow q)] \rightarrow q \equiv \neg p \vee T$
+$[p \wedge (p \rightarrow q)] \rightarrow q \equiv T$
+
+* d.$[(p \vee q) \wedge (p \rightarrow r) \wedge (q \rightarrow r)] \rightarrow r$
+$\equiv [(p \vee q) \wedge [(p \vee q) \rightarrow r]]$
+$\equiv [(p \vee q) \wedge [\neg (p \vee q) \vee r]] \rightarrow r$
+$\equiv [[(p \vee q) \wedge (p \vee q)] \vee [(p \vee q) \wedge r]] \rightarrow r$
+$\equiv [F \vee [(p \vee q) \wedge r] \rightarrow r$
+$\equiv [(p \vee q) \wedge r] \rightarrow r$
+$\equiv \neg [(p \vee q) \wedge r] \vee r$
+$\equiv [\neg ( p \vee q) \vee \neg r] \vee r$
+$\equiv [(\neg p \wedge \neg q) \vee \neg r] \vee r$
+$\equiv (\neg p \wedge \neg q) \vee (\neg r \vee \neg r)$
+$\equiv (\neg p \wedge \neg q) \vee p$
+$\equiv (\neg p \vee p) \wedge (\neg q \vee p)$
+$\equiv T \vee (\neg q \vee p)$
+$\equiv T$
