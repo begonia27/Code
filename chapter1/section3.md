@@ -323,3 +323,86 @@ $\equiv (\neg p \wedge \neg q) \vee p$
 $\equiv (\neg p \vee p) \wedge (\neg q \vee p)$
 $\equiv T \vee (\neg q \vee p)$
 $\equiv T$
+
+## 第十三题
+
+* a.$p \vee (p \wedge q) \equiv p$
+  |$p$|$q$|$p \wedge q$|$p \vee (p \wedge q)$|
+  |----|----|----|----|
+  |0|0|0|0|
+  |0|1|0|0|
+  |1|0|0|1|
+  |1|1|1|1|
+
+* b.$p \wedge (p \vee q) \equiv p$
+  |$p$|$q$|$p \vee q$|$p \wedge (p \vee q)$|
+  |----|----|----|----|
+  |0|0|0|0|
+  |0|1|1|0|
+  |1|0|1|1|
+  |1|1|1|1|
+
+## 第十四题
+
+* $[\neg p \wedge(p \rightarrow q)] \rightarrow \neg q$
+  $\equiv \neg (\neg \wedge (p \rightarrow q)) \vee \neg q$
+  $\equiv (p \vee \neg(p \rightarrow q)) \vee \neg q$
+  $\equiv (p \vee \neg (\neg p \vee q)) \vee \neg q$
+  $\equiv (p \vee (p \vee \neg q)) \vee \neg q$
+  $\equiv (p \vee p) \vee (\neg q \vee \neg q)$
+  $\equiv p \vee p$
+  $\equiv p$
+
+* 所以$(\neg p \wedge (p \rightarrow q)) \rightarrow \neg q$不是永真式
+
+## 第十五题
+
+* $(\neg p \wedge (p \rightarrow )) \rightarrow \neg p$
+  $\equiv \neg (\neg p \wedge (p \rightarrow q)) \vee \neg p$
+  $\equiv (p \vee \neg (p \rightarrow q)) \vee \neg p$
+  $\equiv (p \vee \neg (\neg \vee q)) \vee \neg p$
+  $\equiv (p \vee (p \vee \neg q)) \vee \neg p$
+  $\equiv (p \vee p) \vee (\neg q \vee \neg p)$
+  $\equiv (p \vee \neg p) \vee \neg q$
+  $\equiv T \vee \neg q$
+  $\equiv T$
+
+## 第十六题（表8第3个）
+
+* $p \leftrightarrow q \equiv (p \wedge q) \vee (\neg p \wedge \neg q)$
+  |$p$|$q$|$\neg p$|$\neg q$|$p \leftrightarrow q$|$p \wedge q$|$\neg p \wedge \neg q$|$(p \wedge q) \vee (\neg p \wedge \neg q)$|
+  |----|----|----|----|----|----|----|----|
+  |0|0|1|1|1|0|1|1|
+  |0|1|1|0|0|0|0|0|
+  |1|0|0|1|0|0|0|0|
+  |1|1|0|0|1|1|0|1|
+
+## 第十七题（表8第4个）
+
+* $\neg (p \leftrightarrow q) \equiv p \leftrightarrow \neg q$
+  |$p$|$q$|$\neg q$|$p \leftrightarrow q$|$\neg (p \leftrightarrow q)$|$p \leftrightarrow \neg q$|
+  |----|----|----|----|----|----|
+  |0|0|1|1|0|0|
+  |0|1|0|0|1|1|
+  |1|0|1|0|1|1|
+  |1|1|0|1|0|0|
+
+## 第十八题(表7第2个)
+
+* $p \rightarrow q \equiv \neg q \rightarrow \neg p$
+  |$p$|$q$|$\neg p$|$\neg q$|$p \rightarrow q$|$\neg q \rightarrow \neg p$|
+  |----|----|----|----|----|----|\
+  |0|0|1|1|1|1|
+  |0|1|1|0|1|1|
+  |1|0|0|1|0|0|
+  |1|1|0|0|1|1|
+
+## 表7第1个
+
+* $p \rightarrow q \equiv \neg p \vee q$
+  |$p$|$q$|$\neg p$|$p \rightarrow q$|$\neg p \vee q$|
+  |----|----|----|----|----|
+  |0|0|1|1|1|
+  |0|1|1|1|1|
+  |1|0|0|0|0|
+  |1|1|0|1|1|
