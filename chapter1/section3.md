@@ -391,7 +391,7 @@ $\equiv T$
 
 * $p \rightarrow q \equiv \neg q \rightarrow \neg p$
   |$p$|$q$|$\neg p$|$\neg q$|$p \rightarrow q$|$\neg q \rightarrow \neg p$|
-  |----|----|----|----|----|----|\
+  |----|----|----|----|----|----|
   |0|0|1|1|1|1|
   |0|1|1|0|1|1|
   |1|0|0|1|0|0|
@@ -406,3 +406,136 @@ $\equiv T$
   |0|1|1|1|1|
   |1|0|0|0|0|
   |1|1|0|1|1|
+
+## 第十九题
+
+* $\neg p \leftrightarrow q$
+  $\equiv \neg (\neg p) \leftrightarrow \neg q$
+  $\equiv p \leftrightarrow \neg q$
+
+## 第二十题
+
+* $\neg (p \bigoplus q) \equiv p \leftrightarrow q$
+  |$p$|$q$|$p \bigoplus q$|$\neg (p \bigoplus q)$|$p \leftrightarrow q$|
+  |----|----|----|----|----|
+  |0|0|0|1|1|
+  |0|1|1|0|0|
+  |1|0|1|0|0|
+  |1|1|0|1|1|
+
+## 第二十一题
+
+* $\neg (p \leftrightarrow q) \equiv \neg p \leftrightarrow q$
+  $\equiv p \leftrightarrow \neg q$
+  $\equiv neg p \leftrightarrow \neg (\neg q)$
+  $\equiv neg p \leftrightarrow q$
+
+## 第二十二题
+
+* $(p \rightarrow q) \wedge (p \rightarrow r) \equiv p \rightarrow (q \wedge r)$
+  $\equiv (\neg p \vee q) \wedge (\neg p \vee r)$
+  $\equiv \neg p \vee (q \vee r)$
+  $\equiv p \rightarrow (q \vee r)$
+
+## 第二十三题
+
+* $(p \rightarrow r) \wedge (q \rightarrow r) \equiv (p \vee q) \rightarrow r$
+  $\equiv (\neg p \vee r) \wedge (\neg q \vee r)$
+  $\equiv (\neg p \wedge \neg q) \vee r$
+  $\equiv \neg (p \vee q) \vee r$
+  $\equiv (p \vee q) \rightarrow r$
+
+## 第二十四题
+
+* $(p \rightarrow q) \vee (p \rightarrow r) \equiv p \rightarrow r$
+  $\equiv (\neg p \vee q) \vee (\neg p \vee r)$
+  $\equiv (\neg p \wedge \neg p) \vee (q \vee r)$
+  $\equiv \neg (p \vee p) \vee (q \vee r)$
+  $\equiv \neg p \vee (q \vee r)$
+  $\equiv p \rightarrow (q \vee r)$
+
+## 第二十五题
+
+* $(p \rightarrow r) \vee (q \rightarrow r) \equiv (p \wedge q) \rightarrow r$
+  $\equiv (\neg p \vee r) \vee (\neg q \vee r)$
+  $\equiv (\neg p \vee \neg q) \vee r$
+  $\equiv \neg (p \wedge q) \vee r$
+  $\equiv (p \wedge q) \rightarrow r$
+
+## 第二十六题
+
+* $\neg p \rightarrow (q \rightarrow r) \equiv q \rightarrow (p \vee r)$
+  $\equiv \neg (\neg p) \vee (q \rightarrow r)$
+  $\equiv p \vee (\neg p \vee r)$
+  $\equiv \neg q \vee (p \vee r)$
+  $\equiv q \rightarrow (p \vee rs)$
+
+## 第二十七题
+
+* $p \rightarrow q \equiv (p \rightarrow q) \wedge (q \rightarrow p)$
+  |$p$|$q$|$p \leftrightarrow q$|$p \rightarrow q$|$q \rightarrow p$|$(p \rightarrow q) \wedge (q \rightarrow p)$|
+  |----|----|----|----|----|----|
+  |0|0|1|1|1|1|
+  |0|1|0|1|0|0|
+  |1|0|0|0|1|0|
+  |1|1|1|1|1|1|
+
+## 第二十八题
+
+* $p \leftrightarrow q \equiv \neg p \leftrightarrow \neg q$
+  |$p$|$q$|$\neg p$|$\neg q$|$p \leftrightarrow q$|$\neg p \leftrightarrow q$|
+  |----|----|----|----|----|----|
+  |0|0|1|1|1|1|
+  |0|1|1|0|0|0|
+  |1|0|0|1|0|0|
+  |1|1|0|0|1|1|
+
+## 第二十九题
+
+* $(p \rightarrow q) \wedge (q \rightarrow r) \rightarrow (p \rightarrow r)$
+  $\equiv \neg ((p \rightarrow q) \wedge (q \rightarrow r)) \vee (p \rightarrow r)$
+  $\equiv \neg ((p \rightarrow q) \vee \neg (q \rightarrow r)) \vee (p \rightarrow r)$
+  $\equiv (\neg (\neg p \vee q) \vee \neg (q \vee r)) \vee (\neg p \vee r)$
+  $\equiv ((p \vee \neg q) \vee (q \vee \neg r)) \vee (neg p \vee r)$
+  $\equiv ((p \vee r) \vee (\neg q \vee q)) \vee (\neg p \vee r)$
+  $\equiv ((p \vee r) \vee T) \vee (\neg p \vee r)$
+  $\equiv T \vee (\neg p \vee r)$
+  $\equiv T$
+
+## 第三十题
+
+* $(p \vee q) \wedge (\neg p \vee r) \rightarrow (q \vee r)$
+  $\equiv \neg ((p \vee q) \wedge (\neg p \vee r)) \vee (q \vee r)$
+  $\equiv (\neg (p \vee q) \vee (\neg (\neg p \vee r))) \vee (q \vee r)$
+  $\equiv ((\neg p \wedge \neg q) \vee (p \vee \neg r)) \vee (q \vee r)$
+  $\equiv (\neg p \wedge \neg q) \vee ((p \vee \neg r) \vee (q \vee r))$
+  $\equiv (\neg p \vee \neg q) \vee ((p \vee q) \vee (r \vee \neg r))$
+  $\equiv (\neg p \vee \neg q) \vee ((p \vee q) \vee T)$
+  $\equiv (\neg p \vee \neg q) \vee T$
+  $\equiv T$
+
+## 第三十一题
+
+* a.$(p \rightarrow q \rightarrow r)$
+    |$p$|$q$|$r$|$p \rightarrow q$|$(p \rightarrow q) \rightarrow r$|
+    |----|----|----|----|----|----|
+    |0|0|0|1|0|
+    |0|0|1|1|1|
+    |0|1|0|1|1|
+    |0|1|1|1|1|
+    |1|0|0|0|1|
+    |1|0|1|0|1|
+    |1|1|0|1|0|
+    |1|1|1|1|1|
+
+* b.$p \rightarrow (q \rightarrow r)$
+    |$p$|$q$|$r$|$q \rightarrow r$|$p \rightarrow (q \rightarrow r)$|
+    |----|----|----|----|----|----|
+    |0|0|0|1|1|
+    |0|0|1|1|1|
+    |0|1|0|0|1|
+    |0|1|1|1|1|
+    |1|0|0|1|1|
+    |1|0|1|1|1|
+    |1|1|0|0|0|
+    |1|1|1|1|1|
