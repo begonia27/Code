@@ -680,3 +680,130 @@ $\equiv T$
 ## 第四十五题
 
 * 每一个由$\neg$和$\vee$组成的析取范式都可以推出由$\wedge$组成的式子。又因为43题所提到的所有的析取范式都可以由$\wedge$$\vee$$\neg$来得到，因此$\neg$$\vee$可以构成一个逻辑运算符的功能完备集。
+
+## 第四十六题
+
+* $NAND$
+  |$p$|$q$|$p \mid q$|
+  |----|----|----|
+  |0|0|1|
+  |0|1|1|
+  |1|0|1|
+  |1|1|0|
+
+## 第四十七题
+
+* $p \mid q \equiv \neg (p \wedge q)$
+  |$p$|$q$|$p \mid q$|$ p \wedge q$|$\neg (p \wedge q)$|
+  |----|----|----|----|----|
+  |0|0|1|0|1|
+  |0|1|1|0|1|
+  |1|0|1|0|1|
+  |1|1|0|1|0|
+
+## 第四十八题
+
+* $NOR$
+  |$p$|$q$|$p \downarrow q$|
+  |----|----|----|
+  |0|0|1|
+  |0|1|0|
+  |1|0|0|
+  |1|1|0|
+
+## 第四十九题
+
+* |$p \downarrow q \equiv \neg (p \vee q)$|
+  |$p$|$q$|$p \downarrow q$|$p \vee q$|$\neg (p \vee q)$|
+  |----|----|----|----|----|
+  |0|0|1|0|1|
+  |0|1|0|1|0|
+  |1|0|0|1|0|
+  |1|1|0|1|0|
+
+## 第五十题
+
+* a.$p \downarrow p \equiv \neg p$
+  |$p$|$p \downarrow p$|$\neg p$|
+  |----|----|----|----|
+  |0|1|1|
+  |0|1|1|
+  |1|0|0|
+  |1|0|0|
+
+* b.$(p \downarrow q) \downarrow (p \downarrow q) \equiv p \vee q$
+  |$p$|$q$|$(p \downarrow q) \downarrow (p \downarrow q)$|$p \vee q$|
+  |----|----|----|----|
+  |0|0|0|0|
+  |0|1|1|1|
+  |1|0|1|1|
+  |1|1|1|1|
+
+* c.由表a和表b证明可得：$p \vee q \equiv \neg p$,$(p \downarrow q) \downarrow (p \downarrow q) \equiv p\vee p$，由练习49可得：$p \downarrow q \equiv \neg (p \vee q)$,因此{$\downarrow$}是一个逻辑运算符的功能完备的集。
+
+## 第五十一题
+
+* $p \downarrow q \equiv p \rightarrow q$
+由于第49题证明了$p \downarrow q \equiv \neg (p \vee q)$，而$\neg (p \vee q) \equiv p \rightarrow q$,所以用运算符$\downarrow$来构造一个等价于$p \rightarrow q$的命题就是$p \downarrow q$.
+
+## 第五十二题
+
+* a.$p \mid q \equiv \neg p$
+  |$p$|$p \mid p$|$\neg p$|
+  |----|----|----|----|
+  |0|1|1|
+  |0|1|1|
+  |1|0|0|
+  |1|0|0|
+
+* b.$(p \mid q) \mid (p \mid q) \equiv p \vee q$
+  |$p$|$q$|$(p \mid q) \mid (p \mid q)$|$(p \vee q)$|
+  |----|----|----|----|
+  |0|0|0|0|
+  |0|1|1|1|
+  |1|0|1|1|
+  |1|1|1|1|
+
+* c.由于第五十二题的练习a和b可得：$p \mid p \equiv \neg p$,$(p \mid q) \mid (p \mid q)$ \equiv p \vee q,由练习47可得：$p \mid q \equiv \neg (p \wedge q)$,因此{$\mid$}是一个逻辑运算符的功能完备集。
+
+## 第五十三题
+
+* $p \mid q \equiv q \mid p$
+  |$p$|$q$|$p \mid q$|$q \mid p$|
+  |----|----|----|----|
+  |0|0|1|1|
+  |0|1|0|0|
+  |1|0|0|0|
+  |1|1|0|0|
+
+## 第五十四题
+
+* $p \mid (q \mid r)$
+  |$p$|$q$|$r$|$q \mid r$|$p \mid (q \mid r)$|
+  |----|----|----|----|----|
+  |0|0|0|1|1|
+  |0|0|1|0|1|
+  |0|1|0|0|1|
+  |0|1|1|0|1|
+  |1|0|0|1|0|
+  |1|0|1|0|0|
+  |1|1|0|0|0|
+  |1|1|1|0|0|
+
+  $(p \mid q) \mid r$
+  |$p$|$q$|$r$|$p \mid q$|$(p \mid q) \mid r$|
+  |----|----|----|----|----|
+  |0|0|0|1|0|
+  |0|0|1|1|0|
+  |0|1|0|0|1|
+  |0|1|1|0|0|
+  |1|0|0|0|1|
+  |1|0|1|0|0|
+  |1|1|0|0|1|
+  |1|1|1|0|0|
+
+* 因此$p \mid (q \mid r)$和$(p \mid q) \mid r$不等价
+
+## 第五十五题
+
+* (这道题要看到第十二章的时候再来做)
