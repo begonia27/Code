@@ -852,3 +852,27 @@ $\equiv T$
   |$p为1，q为1，r为1，s为1$|1|1|0|1|1|1|0|1|1|
 
 * 由题可知，第五十九题一共有四种情况符合题意，它们分别是：第一种，当$p$为0，$q$为0，$r$为1，$s$为0；第二种，当$p$为0，$q$为1，$r$为1，$s$为1；第三种，当$p$为1，$q$为0，$r$为0，$s$为0；第四种，当$p$为1，$q$为1，$r$为0，$s$为0。
+
+## 第六十题
+
+## 第六十一题
+
+* a.因为题目要判断$(p \vee \neg q) \wedge (\neg p \vee \neg q)$是否是可满足的，因此$(p \vee \neg q) \wedge (\neg p \vee \neg q)$的结果为$T$视为是可满足的,所以$p \vee \neg q$为$T$,$\neg p \vee \neg q$为$T$。所以当$p$为$F$,$q$为$F$时，$(p \vee \neg q) \wedge (\neg p \vee \neg q)$的结果为$T$,所以它是可满足的。
+
+* b.因为题目要判断$(p \rightarrow q) \wedge (p \rightarrow \neg q) \wedge (\neg p \rightarrow q) \wedge (\neg p \rightarrow \neg q)$是否是可满足的，因此$(p \rightarrow q) \wedge (\neg p \rightarrow \neg q)$的结果为$T$视为是可满足的,所以$p \rightarrow q$为$T$,$p \rightarrow  \neg q$为$T$.由于$p$和$q$分别为0或1时，不满足题目的要求，因此$(p \rightarrow q) \wedge (p \rightarrow \neg q) \wedge (\neg p \rightarrow q) \wedge (\neg p \rightarrow \neg q)$是不可满足的。
+
+* c.因为题目要判断$(p \leftrightarrow q) \wedge (\neg p \leftrightarrow q)$是否是可满足的，因此$(p \leftrightarrow q) \wedge (\neg p \leftrightarrow q)$的结果为$T$视为是可满足的,所以$p \leftrightarrow q$为$T$,$\neg p \leftrightarrow q$的结果为$T$。由于$p$和$q$分别为0或1时，不满足题目的要求，因此$(p \leftrightarrow q) \wedge (\neg p \leftrightarrow q)$是不可满足的。
+
+## 第六十二题
+
+* a.因为题目要判断$(p \vee q \vee \neg r) \wedge (p \vee \neg q \vee \neg s) \wedge (p \vee \neg r \vee \neg s) \wedge (\neg p \vee \neg q \vee \neg s) \wedge (p \vee q \vee \neg s)$是否是可满足的，因此$(p \vee q \vee \neg r) \wedge (p \vee \neg q \vee \neg s) \wedge (p \vee \neg r \vee \neg s) \wedge (\neg p \vee \neg q \vee \neg s) \wedge (\neg p \vee \neg q \vee \neg s) \wedge (p \vee q \neg s)$s的结果为$T$视为是可满足的。所以$p \vee q \vee \neg r$为$T$,$p \vee \neg q \vee \neg s$为$T$,$p \vee \neg r \vee \neg s$为$T$,$\neg p \vee \neg q \vee \neg s$为$T$,$p \vee q \vee \neg s$为$T$.所以有以下这九种情况，该式子是可满足的。第一种，当$p$为0,$q$为0，$r$为0，$s$为0;第二种，当$p$为0,$q$为1，$r$为0，$s$为0;第三种，当$p$为0,$q$为1，$r$为1，$s$为0;第四种，当$p$为1,$q$为0，$r$为0，$s$为0;第五种，当$p$为1,$q$为0，$r$为0，$s$为1;第六种，当$p$为1,$q$为0，$r$为1，$s$为0;第七种，当$p$为1,$q$为0，$r$为1，$s$为1;第八种，当$p$为1,$q$为1，$r$为0，$s$为0;第九种，当$p$为1,$q$为1，$r$为1，$s$为0。
+
+* b.因为题目要判断$(\neg \vee \neg q \vee r) \wedge (\neg p \vee q \vee \neg s) \wedge (p \vee \neg q \neg s) \wedge (\neg p \vee \neg r \vee \neg s) \wedge (p \vee q \vee \neg r) \wedge (p \vee \neg r \vee \neg s)$是否是可满足的，因此$(\neg p \vee \neg q \vee r) \wedge (\neg p \vee q \vee s) \wedge (p \vee \neg q \vee \neg s) \wedge (\neg p \vee \neg r \vee \neg s) \wedge (p \vee q \vee \neg s) \wedge (p \vee \neg r \vee \neg s)$的结果是$T$视为是可满足的，所以$\neg p \vee \neg q \vee r$为$T$,$\neg p \vee q \vee \neg s$为$T$,$p \vee \neg q \vee \neg $为$T$,$\neg p \vee \neg r \vee \neg s$为$T$,$p \vee q \vee \neg r$为$T$,$p \vee \neg r \vee \neg s$为$T$.因此有一下六种情况，该式子是可满足的。第一种，当$p$为0,$q$为0，$r$为0，$s$为0;第二种，当$p$为0,$q$为0，$r$为0，$s$为1;第三种，当$p$为0,$q$为1，$r$为0，$s$为0;第四种，当$p$为0,$q$为1，$r$为1，$s$为0;第五种，当$p$为1,$q$为0，$r$为0，$s$为0;第六种，当$p$为1,$q$为0，$r$为1，$s$为0。
+
+* c.因为题目要判断$(p \vee q \vee r) \wedge (p \vee \neg q \vee s) \wedge (q \vee \neg r \vee s) \wedge (\neg p \vee r \vee s) \wedge (\neg p \vee q \vee \neg s) \wedge (p \vee \neg q \vee \neg r) \wedge (\neg p \vee \neg q \vee s) \wedge (\neg p \vee \neg r \vee \neg s)$是否是可满足的，因此$(p \vee q \vee r) \wedge (p \vee \neg q \vee s) \wedge (q \vee \neg r \vee s) \wedge (\neg p \vee r \vee s) \wedge (\neg p \vee q \vee \neg s) \wedge (p \vee \neg q \vee \neg r) \wedge (\neg p \vee \neg q \vee s) \wedge (\neg p \vee \neg r \vee \neg s)$的结果是$T$视为是可满足的，所以$p \vee q \vee r$为$T$,$p \vee \neg q \vee s$为$T$,$q \vee \neg r \vee s$为$T$,$\neg p \vee r \vee s$为$T$,$\neg p \vee q \vee \neg s$为$T$,$p \vee \neg q \vee \neg r$,为$T$,$\neg p \vee \neg q \vee s$为$T$,$\neg p \vee \neg r \vee \neg s$为$T$.因此有一下三种情况，该式子是可满足的。第一种，当$p$为0,$q$为0，$r$为1，$s$为1;第二种，当$p$为0,$q$为1，$r$为0，$s$为1;第三种，当$p$为1,$q$为1，$r$为0，$s$为1。
+
+## 第六十三题
+
+* 为了对数独谜题编码，令$p(i,j)$表示一个命题，当数$j$位于第$i$行的单元时它为真。因为$i$和$j$的取值范围都是1-4，所以总共有$4 * 4 * 4 = 64$个这样的命题。
+
+* 给定一个数独谜题，我们首先对没一个已知数进行编码。然后我们构造一些符合命题来断言每一行包括了每一个数，每一列包括了每一个数，每一个$2 * 2$的九宫格包含了每一个数，并且每一个单元不包含多于一个数。接下来，我们可以验证，数独谜题可以通过一个真值赋值来求解，该真值赋值为64个$p(i,j)$（其中$i$和$j$的取值范围都是1-4）命题赋值，并且使得所有这些复合命题的合取式为真。
