@@ -935,31 +935,85 @@ $$\bigwedge^2_{r = 0} \bigwedge^2_{s = 0}\bigwedge^9_{n = 1} \bigvee^3_{i = 1} \
 $$\bigwedge^2_{r = 0} \bigwedge^2_{s = 0}\bigwedge^9_{n = 1} \bigwedge^3_{i = 1} \bigvee^3_{j = 1}p(3r+i,3s+j,n) \equiv \bigvee^3_{i = 1}\bigvee^3_{j = 1} P(3r + i,3s + j,1) \wedge \bigvee^3_{i = 1}\bigvee^3_{j = 1} P(3r + i,3s + j,2) \wedge \bigvee^3_{i = 1}\bigvee^3_{j = 1} P(3r + i,3s + j,3)\\
 \wedge \bigvee^3_{i = 1}\bigvee^3_{j = 1} P(3r + i,3s + j,4)\wedge \bigvee^3_{i = 1}\bigvee^3_{j = 1} P(3r + i,3s + j,5)\wedge \bigvee^3_{i = 1}\bigvee^3_{j = 1} P(3r + i,3s + j,6)\wedge \bigvee^3_{i = 1}\bigvee^3_{j = 1} P(3r + i,3s + j,7)\\
 \wedge \bigvee^3_{i = 1}\bigvee^3_{j = 1} P(3r + i,3s + j,8) \wedge \bigvee^3_{i = 1}\bigvee^3_{j = 1} P(3r + i,3s + j,9)\\
-\equiv P(1,1,1) \vee P(1,2,1)···\vee P(1,9,1)\\
-\wedge P(1,1,2) \vee P(1,2,2)···\vee P(1,9,2)\\
-\wedge P(1,1,3) \vee P(1,2,3)···\vee P(1,9,3)\\
-\wedge P(1,1,4) \vee P(1,2,4)···\vee P(1,9,4)\\
-\wedge P(1,1,5) \vee P(1,2,5)···\vee P(1,9,5)\\
-\wedge P(1,1,6) \vee P(1,2,6)···\vee P(1,9,6)\\
-\wedge P(1,1,7) \vee P(1,2,7)···\vee P(1,9,7)\\
-\wedge P(1,1,8) \vee P(1,2,8)···\vee P(1,9,8)\\
-\wedge P(1,1,9) \vee P(1,2,9)···\vee P(1,9,9)\\1
-\wedge P(2,1,1) \vee P(2,2,1)···\vee P(2,9,1)\\
-\wedge P(2,1,2) \vee P(2,2,2)···\vee P(2,9,2)\\
-\wedge P(2,1,3) \vee P(2,2,3)···\vee P(2,9,3)\\
-\wedge P(2,1,4) \vee P(2,2,4)···\vee P(2,9,4)\\
-\wedge P(2,1,5) \vee P(2,2,5)···\vee P(2,9,5)\\
-\wedge P(2,1,6) \vee P(2,2,6)···\vee P(2,9,6)\\
-\wedge P(2,1,7) \vee P(2,2,7)···\vee P(2,9,7)\\
-\wedge P(2,1,8) \vee P(2,2,8)···\vee P(2,9,8)\\
-\wedge P(2,1,9) \vee P(2,2,9)···\vee P(2,9,9)\\2
-\wedge P(2,1,1) \vee P(2,2,1)···\vee P(2,9,1)\\
-\wedge P(2,1,2) \vee P(2,2,2)···\vee P(2,9,2)\\
-\wedge P(2,1,3) \vee P(2,2,3)···\vee P(2,9,3)\\
-\wedge P(2,1,4) \vee P(2,2,4)···\vee P(2,9,4)\\
-\wedge P(2,1,5) \vee P(2,2,5)···\vee P(2,9,5)\\
-\wedge P(2,1,6) \vee P(2,2,6)···\vee P(2,9,6)\\
-\wedge P(2,1,7) \vee P(2,2,7)···\vee P(2,9,7)\\
-\wedge P(2,1,8) \vee P(2,2,8)···\vee P(2,9,8)\\
-\wedge P(2,1,9) \vee P(2,2,9)···\vee P(2,9,9)\\2
+\equiv P(1,1,1) \vee P(1,2,1)···\vee P(1,9,1) \\
+\wedge P(1,1,2) \vee P(1,2,2)···\vee P(1,9,2) \\
+\wedge P(1,1,3) \vee P(1,2,3)···\vee P(1,9,3) \\
+\wedge P(1,1,4) \vee P(1,2,4)···\vee P(1,9,4) \\
+\wedge P(1,1,5) \vee P(1,2,5)···\vee P(1,9,5) \\
+\wedge P(1,1,6) \vee P(1,2,6)···\vee P(1,9,6) \\
+\wedge P(1,1,7) \vee P(1,2,7)···\vee P(1,9,7) \\
+\wedge P(1,1,8) \vee P(1,2,8)···\vee P(1,9,8) \\
+\wedge P(1,1,9) \vee P(1,2,9)···\vee P(1,9,9) \\
+\wedge P(2,1,1) \vee P(2,2,1)···\vee P(2,9,1) \\
+\wedge P(2,1,2) \vee P(2,2,2)···\vee P(2,9,2) \\
+\wedge P(2,1,3) \vee P(2,2,3)···\vee P(2,9,3) \\
+\wedge P(2,1,4) \vee P(2,2,4)···\vee P(2,9,4) \\
+\wedge P(2,1,5) \vee P(2,2,5)···\vee P(2,9,5) \\
+\wedge P(2,1,6) \vee P(2,2,6)···\vee P(2,9,6) \\
+\wedge P(2,1,7) \vee P(2,2,7)···\vee P(2,9,7) \\
+\wedge P(2,1,8) \vee P(2,2,8)···\vee P(2,9,8) \\
+\wedge P(2,1,9) \vee P(2,2,9)···\vee P(2,9,9) \\
+\wedge P(3,1,1) \vee P(3,2,1)···\vee P(3,9,1) \\
+\wedge P(3,1,2) \vee P(3,2,2)···\vee P(3,9,2) \\
+\wedge P(3,1,3) \vee P(3,2,3)···\vee P(3,9,3) \\
+\wedge P(3,1,4) \vee P(3,2,4)···\vee P(3,9,4) \\
+\wedge P(3,1,5) \vee P(3,2,5)···\vee P(3,9,5) \\
+\wedge P(3,1,6) \vee P(3,2,6)···\vee P(3,9,6) \\
+\wedge P(3,1,7) \vee P(3,2,7)···\vee P(3,9,7) \\
+\wedge P(3,1,8) \vee P(3,2,8)···\vee P(3,9,8) \\
+\wedge P(3,1,9) \vee P(3,2,9)···\vee P(3,9,9) \\
+\equiv P(4,1,1) \vee P(4,2,1)···\vee P(4,9,1) \\
+\wedge P(4,1,2) \vee P(4,2,2)···\vee P(4,9,2) \\
+\wedge P(4,1,3) \vee P(4,2,3)···\vee P(4,9,3) \\
+\wedge P(4,1,4) \vee P(4,2,4)···\vee P(4,9,4) \\
+\wedge P(4,1,5) \vee P(4,2,5)···\vee P(4,9,5) \\
+\wedge P(4,1,6) \vee P(4,2,6)···\vee P(4,9,6) \\
+\wedge P(4,1,7) \vee P(4,2,7)···\vee P(4,9,7) \\
+\wedge P(4,1,8) \vee P(4,2,8)···\vee P(4,9,8) \\
+\wedge P(4,1,9) \vee P(4,2,9)···\vee P(4,9,9) \\
+\wedge P(5,1,1) \vee P(5,2,1)···\vee P(5,9,1) \\
+\wedge P(5,1,2) \vee P(5,2,2)···\vee P(5,9,2) \\
+\wedge P(5,1,3) \vee P(5,2,3)···\vee P(5,9,3) \\
+\wedge P(5,1,4) \vee P(5,2,4)···\vee P(5,9,4) \\
+\wedge P(5,1,5) \vee P(5,2,5)···\vee P(5,9,5) \\
+\wedge P(5,1,6) \vee P(5,2,6)···\vee P(5,9,6) \\
+\wedge P(5,1,7) \vee P(5,2,7)···\vee P(5,9,7) \\
+\wedge P(5,1,8) \vee P(5,2,8)···\vee P(5,9,8) \\
+\wedge P(5,1,9) \vee P(5,2,9)···\vee P(5,9,9) \\
+\wedge P(6,1,1) \vee P(6,2,1)···\vee P(6,9,1) \\
+\wedge P(6,1,2) \vee P(6,2,2)···\vee P(6,9,2) \\
+\wedge P(6,1,3) \vee P(6,2,3)···\vee P(6,9,3) \\
+\wedge P(6,1,4) \vee P(6,2,4)···\vee P(6,9,4) \\
+\wedge P(6,1,5) \vee P(6,2,5)···\vee P(6,9,5) \\
+\wedge P(6,1,6) \vee P(6,2,6)···\vee P(6,9,6) \\
+\wedge P(6,1,7) \vee P(6,2,7)···\vee P(6,9,7) \\
+\wedge P(6,1,8) \vee P(6,2,8)···\vee P(6,9,8) \\
+\wedge P(6,1,9) \vee P(6,2,9)···\vee P(6,9,9) \\
+\equiv P(7,1,1) \vee P(7,2,1)···\vee P(7,9,1) \\
+\wedge P(7,1,2) \vee P(7,2,2)···\vee P(7,9,2) \\
+\wedge P(7,1,3) \vee P(7,2,3)···\vee P(7,9,3) \\
+\wedge P(7,1,4) \vee P(7,2,4)···\vee P(7,9,4) \\
+\wedge P(7,1,5) \vee P(7,2,5)···\vee P(7,9,5) \\
+\wedge P(7,1,6) \vee P(7,2,6)···\vee P(7,9,6) \\
+\wedge P(7,1,7) \vee P(7,2,7)···\vee P(7,9,7) \\
+\wedge P(7,1,8) \vee P(7,2,8)···\vee P(7,9,8) \\
+\wedge P(7,1,9) \vee P(7,2,9)···\vee P(7,9,9) \\
+\wedge P(8,1,1) \vee P(8,2,1)···\vee P(8,9,1) \\
+\wedge P(8,1,2) \vee P(8,2,2)···\vee P(8,9,2) \\
+\wedge P(8,1,3) \vee P(8,2,3)···\vee P(8,9,3) \\
+\wedge P(8,1,4) \vee P(8,2,4)···\vee P(8,9,4) \\
+\wedge P(8,1,5) \vee P(8,2,5)···\vee P(8,9,5) \\
+\wedge P(8,1,6) \vee P(8,2,6)···\vee P(8,9,6) \\
+\wedge P(8,1,7) \vee P(8,2,7)···\vee P(8,9,7) \\
+\wedge P(8,1,8) \vee P(8,2,8)···\vee P(8,9,8) \\
+\wedge P(8,1,9) \vee P(8,2,9)···\vee P(8,9,9) \\
+\wedge P(9,1,1) \vee P(9,2,1)···\vee P(9,9,1) \\
+\wedge P(9,1,2) \vee P(9,2,2)···\vee P(9,9,2) \\
+\wedge P(9,1,3) \vee P(9,2,3)···\vee P(9,9,3) \\
+\wedge P(9,1,4) \vee P(9,2,4)···\vee P(9,9,4) \\
+\wedge P(9,1,5) \vee P(9,2,5)···\vee P(9,9,5) \\
+\wedge P(9,1,6) \vee P(9,2,6)···\vee P(9,9,6) \\
+\wedge P(9,1,7) \vee P(9,2,7)···\vee P(9,9,7) \\
+\wedge P(9,1,8) \vee P(9,2,8)···\vee P(9,9,8) \\
+\wedge P(9,1,9) \vee P(9,2,9)···\vee P(9,9,9) \\
 $$
