@@ -911,7 +911,8 @@ $\equiv T$
 $$\bigwedge^9_{i = 1} \bigwedge^9_{n = 1} \bigvee^9_{j = 1}p(i,j,n)$$；首先，要断言第$i$行包含了数$n$，我们构成$$\bigvee^9_{j = 1}P(i,j,n)$$,要断言所有$i$行包含了所有$n$个数，我们将$n$的所有可能的九个可能的式子的析取式再合取，由此可以得到$$\bigwedge^9_{n = 1} \bigvee^9_{j = 1}P(i,j,n)$$.最后要断言每一行包含了每一个值，我们将一共九行的“每一行析取又合取”过的式子再做合取，得到新的公式：$$\bigwedge^9_{i = 1} \bigwedge^9_{n = 1} \bigvee^9_{j = 1}p(i,j,n)$$。
 
 $$\bigwedge^9_{i = 1} \bigwedge^9_{n = 1} \bigvee^9_{j = 1}p(i,j,n) \equiv \bigvee^9_{j = 1} p(i,j,1) \wedge \bigvee^9_{j = 1} p(i,j,2) \wedge \bigvee^9_{j = 1} p(i,j,3) \wedge \bigvee^9_{j = 1} p(i,j,4) \wedge \bigvee^9_{j = 1} p(i,j,5) \wedge \bigvee^9_{j = 1} p(i,j,6) \wedge \bigvee^9_{j = 1} p(i,j,7) \wedge \bigvee^9_{j = 1} p(i,j,8)
-\wedge \bigvee^9_{j = 1} p(i,j,9) \equiv P(i,1,1) \vee P(i,2,1) \vee P(i,3,1) \vee P(i,4,1) \vee P(i,5,1) \vee P(i,6,1) \vee P(i,7,1) \vee P(i,8,1) \vee P(i,9,1)\\
+\wedge \bigvee^9_{j = 1} p(i,j,9)\\
+\equiv P(i,1,1) \vee P(i,2,1) \vee P(i,3,1) \vee P(i,4,1) \vee P(i,5,1) \vee P(i,6,1) \vee P(i,7,1) \vee P(i,8,1) \vee P(i,9,1)\\
 \wedge P(i,1,2) \vee P(i,2,2) \vee P(i,3,2) \vee P(i,4,2) \vee P(i,5,2) \vee P(i,6,2) \vee P(i,7,2) \vee P(i,8,2) \vee P(i,9,2)\\
 \wedge P(i,1,3) \vee P(i,2,3) \vee P(i,3,3) \vee P(i,4,3) \vee P(i,5,3) \vee P(i,6,3) \vee P(i,7,3) \vee P(i,8,3) \vee P(i,9,3)\\
 \wedge P(i,1,4) \vee P(i,2,4)\vee P(i,3,4) \vee P(i,4,4) \vee P(i,5,4) \vee P(i,6,4) \vee P(i,7,4) \vee P(i,8,4) \vee P(i,9,4)\\
@@ -925,8 +926,40 @@ $$\bigwedge^9_{i = 1} \bigwedge^9_{n = 1} \bigvee^9_{j = 1}p(i,j,n) \equiv \bigv
 
 * 在第六十四题的基础上，课后题需要我们解释书中给出的复合命题的构造步骤，该命题断言$9 * 9$数独谜题的每个$3 * 3$九宫格包含了每一个数。
 
-$$\bigwedge^2_{r = 0} \bigwedge^2_{s = 0}\bigwedge^9_{n = 1} \bigwedge^3_{i = 1} \bigvee^3_{j = 1}p(3r+i,3s+j,n)$$
+$$\bigwedge^2_{r = 0} \bigwedge^2_{s = 0}\bigwedge^9_{n = 1} \bigvee^3_{i = 1} \bigvee^3_{j = 1}p(3r+i,3s+j,n)$$
 
 * 首先解释：为什么在这个公式中，r和s的取值范围是0-2，i和j的取值范围是1-3，n的取值范围不变，依旧是1-9。因为在九宫格中，每一个宫的每一行、每一列都被平均分为了三份，所以原本i和j的取值范围从1-9就变成了每一个宫的1-3；而第一个宫的第一个数的坐标是P（1,1,1）。当i和j的值都为1时，$P的坐标公式为：（3 * 0 + 1,3 * 0 + 1，1）$，由此可以推出r和s的取值范围都是0-2。这道题中，$3r+i$代表的纵着的行数，$3s+j$代表的是列数。
 
-* 我们将式子$$\bigwedge^2_{r = 0} \bigwedge^2_{s = 0}\bigwedge^9_{n = 1} \bigwedge^3_{i = 1} \bigvee^3_{j = 1}p(3r+i,3s+j,n)$$展开可以得到：
+* 我们将式子$$\bigwedge^2_{r = 0} \bigwedge^2_{s = 0}\bigwedge^9_{n = 1} \bigvee^3_{i = 1} \bigvee^3_{j = 1}p(3r+i,3s+j,n)$$展开可以得到：
+
+$$\bigwedge^2_{r = 0} \bigwedge^2_{s = 0}\bigwedge^9_{n = 1} \bigwedge^3_{i = 1} \bigvee^3_{j = 1}p(3r+i,3s+j,n) \equiv \bigvee^3_{i = 1}\bigvee^3_{j = 1} P(3r + i,3s + j,1) \wedge \bigvee^3_{i = 1}\bigvee^3_{j = 1} P(3r + i,3s + j,2) \wedge \bigvee^3_{i = 1}\bigvee^3_{j = 1} P(3r + i,3s + j,3)\\
+\wedge \bigvee^3_{i = 1}\bigvee^3_{j = 1} P(3r + i,3s + j,4)\wedge \bigvee^3_{i = 1}\bigvee^3_{j = 1} P(3r + i,3s + j,5)\wedge \bigvee^3_{i = 1}\bigvee^3_{j = 1} P(3r + i,3s + j,6)\wedge \bigvee^3_{i = 1}\bigvee^3_{j = 1} P(3r + i,3s + j,7)\\
+\wedge \bigvee^3_{i = 1}\bigvee^3_{j = 1} P(3r + i,3s + j,8) \wedge \bigvee^3_{i = 1}\bigvee^3_{j = 1} P(3r + i,3s + j,9)\\
+\equiv P(1,1,1) \vee P(1,2,1)···\vee P(1,9,1)\\
+\wedge P(1,1,2) \vee P(1,2,2)···\vee P(1,9,2)\\
+\wedge P(1,1,3) \vee P(1,2,3)···\vee P(1,9,3)\\
+\wedge P(1,1,4) \vee P(1,2,4)···\vee P(1,9,4)\\
+\wedge P(1,1,5) \vee P(1,2,5)···\vee P(1,9,5)\\
+\wedge P(1,1,6) \vee P(1,2,6)···\vee P(1,9,6)\\
+\wedge P(1,1,7) \vee P(1,2,7)···\vee P(1,9,7)\\
+\wedge P(1,1,8) \vee P(1,2,8)···\vee P(1,9,8)\\
+\wedge P(1,1,9) \vee P(1,2,9)···\vee P(1,9,9)\\1
+\wedge P(2,1,1) \vee P(2,2,1)···\vee P(2,9,1)\\
+\wedge P(2,1,2) \vee P(2,2,2)···\vee P(2,9,2)\\
+\wedge P(2,1,3) \vee P(2,2,3)···\vee P(2,9,3)\\
+\wedge P(2,1,4) \vee P(2,2,4)···\vee P(2,9,4)\\
+\wedge P(2,1,5) \vee P(2,2,5)···\vee P(2,9,5)\\
+\wedge P(2,1,6) \vee P(2,2,6)···\vee P(2,9,6)\\
+\wedge P(2,1,7) \vee P(2,2,7)···\vee P(2,9,7)\\
+\wedge P(2,1,8) \vee P(2,2,8)···\vee P(2,9,8)\\
+\wedge P(2,1,9) \vee P(2,2,9)···\vee P(2,9,9)\\2
+\wedge P(2,1,1) \vee P(2,2,1)···\vee P(2,9,1)\\
+\wedge P(2,1,2) \vee P(2,2,2)···\vee P(2,9,2)\\
+\wedge P(2,1,3) \vee P(2,2,3)···\vee P(2,9,3)\\
+\wedge P(2,1,4) \vee P(2,2,4)···\vee P(2,9,4)\\
+\wedge P(2,1,5) \vee P(2,2,5)···\vee P(2,9,5)\\
+\wedge P(2,1,6) \vee P(2,2,6)···\vee P(2,9,6)\\
+\wedge P(2,1,7) \vee P(2,2,7)···\vee P(2,9,7)\\
+\wedge P(2,1,8) \vee P(2,2,8)···\vee P(2,9,8)\\
+\wedge P(2,1,9) \vee P(2,2,9)···\vee P(2,9,9)\\2
+$$
