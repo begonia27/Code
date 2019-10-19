@@ -367,6 +367,8 @@ $\equiv T$
   $\equiv T \vee \neg q$
   $\equiv T$
 
+  * 所以$(\neg p \wedge (p \rightarrow )) \rightarrow \neg p$是永真式。
+
 ## 第十六题（表8第3个）
 
 * $p \leftrightarrow q \equiv (p \wedge q) \vee (\neg p \wedge \neg q)$
@@ -542,7 +544,7 @@ $\equiv T$
 
 ## 第三十二题
 
-* a.$(p \vee q) \rightarrodw r$
+* a.$(p \vee q) \rightarrow r$
     |$p$|$q$|$r$|$p \wedge q$|$(p \wedge q) \rightarrow r$|
     |----|----|----|----|----|
     |0|0|0|0|1|
