@@ -95,3 +95,24 @@
 * $b.\exists n(2n = 3n),为真$
 * $c.\exists n(n = -n),为真$
 * $d.\forall n(3n = 4n),为假$
+
+## 第十四题
+
+* $a.\exists x (x^3 \equiv -1),为真$
+* $b.\exists x (x^4 < x^2),为真$
+* $c.\forall x ((-x)^2 \equiv x^2),为真$
+* $d.\forall x (2x > x)$
+
+## 第十五题
+
+* $\forall n (n^2 >= 0),为真$
+* $\exists n (n^2 = 2),为假$
+* $\forall n (n^2 >= n),为真$
+* $\exists n (n^2 < 0),为真$
+
+## 第十六题
+
+* $\exists x (x^2 = 2),为真$
+* $\exists x (x^2 = -1),为假$
+* $\forall x (x^2 >= 1),为真$
+* $\forall x (x^2 != x),为假$
