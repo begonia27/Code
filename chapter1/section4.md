@@ -222,48 +222,44 @@
 
 ## 第二十六题
 
-* 1.(令论域为所有地球上的人)
-   $\exists (a(x) \rightarrow b(x))(其中b(x)为x去过乌兹别克斯坦)$
-   $\exists x(a(x)(令论域为学校里的人,其中a(x)为x去过乌兹别克斯坦)$
-   $\exists x(a(x,y))(令论域为班上的人,其中a(x)为x去过y)$
-* 2.
-* 3.
-* 4.
-* 5.
+* 1.$\exists x(a(x) \rightarrow b(x))(令论域为所有地球上的人,其中a(x)为x去过乌兹别克斯坦)$
+   $\exists x (a(x)(令论域为学校里的人,其中a(x)为x去过乌兹别克斯坦)$
+   $\exists x (a(x,y))(令论域为班上的人,其中a(x)为x去过y)$
+
+* 2.$\forallx (a(x) \rightarrow b(x))(令论域为所有地球上的人,其中a(x)为x学过微积分和C++)$
+   $\forall x (a(x)\rightarrow b(x))(令论域为学校里的人,其中a(x)为x学过微积分和C++)$
+   $\forall x (c(x \wedge y))(令论域为班上的人,其中c(x)为x学过y)$
+
+* 3.$\neg \exists (a(x) \rightarrow b(x))(令论域为所有地球上的人,其中a(x)为x没有同时拥有自行车和摩托车)$
+   $\neg \exists (a(x) \rightarrow b(x))(令论域为学校里的人,其中a(x)为x没有同时拥有自行车和摩托车)$
+   $\neg \exists (a(x) \rightarrow b(x,y))(令论域为班上的人,其中a(x)为x没有同时拥有y)$
+
+* 4.$\exists x \neg (a(x) \rightarrow b(x))(令论域为所有地球上的人,其中a(x)为x不快乐)$
+   $\exists x \neg b(x)(令论域为学校里的人,其中b(x)为x不快乐)$
+   $\exists x \neg b(x)(令论域为班上的人,其中b(x)为x不快乐)$
+
+* 5.$\forall x (a(x) \rightarrow b(x))(令论域为所有地球上的人，其中a(x)为x生于20世纪)$
+   $\forall x b(x)(令论域为学校里的人，其中b(x)为x生于20世纪)$
+   $\forall x (b(x,y))x(令论域为班上的人，其中b(x)为x生于y)$
+
+## 第二十七题
+
+* 1.$\exists x(a(x) \rightarrow b(x))(论域为所有人，其中a(x)为地球上所有的人x,x如果是学校里的人，则x在越南居住过)$
+   $\exists x \neg a(x)(令论域为学校里的人，其中a(x)为学校里的人x,x在越南居住过)$
+   $\exists x \neg a(x,y)(令论域为班上的人，其中a(x)x在y居住过)$
+
+* 2.$\exists x \neg (a(x) \rightarrow b(x))(论域为所有人，其中a(x)为地球上所有的人x,x如果是学校里的人，则x不会说印地语)$
+   $\exists x \neg (a(x))(令论域为学校里的人，其中a(x)为学校里的人x,x不会说印地语)$
+   $\exists x \neg (a(x,y)(令论域为班上的人，其中a(x)x为x不会y)$
+
+* 3.$\forall x (a(x) \rightarrow b(x))(令论域为所有人，其中a(x)为对于所有人x,)$
 
 
 
 
-  
-## 第二十七题！！！
+## 第二十八题
 
-* a1.$$
-* a2.$$
-* a3.$$
 
-* b1.$$
-* b2.$$
-* b3.$$
-
-* c1.$$
-* c2.$$
-* c3.$$
-
-* d1.$$
-* d2.$$
-* d3.$$
-
-* e1.$$
-* e2.$$
-* e3.$$
-
-## 第二十八题！！！
-
-* a.$对于某些东西z,z不在正确的位置上$
-* b.$对于所有的工具z,z都在正确的位置上并且z的状况良好$
-* c.$对于每样东西z,z都在正确的位置上并且z的状况良好$
-* d.$对于所有的东西z,z都不在正确的位置上并且z的状况良好$
-* e.$对于你的一个工具z,z不在正确的位置上,但是z的状况良好$
 
 ## 第二十九题（）！！！
 
