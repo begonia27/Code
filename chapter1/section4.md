@@ -224,11 +224,11 @@
 
 * 1.$\exists x(a(x) \rightarrow b(x))(令论域为所有地球上的人,其中a(x)为x去过乌兹别克斯坦)$
    $\exists x (a(x)(令论域为学校里的人,其中a(x)为x去过乌兹别克斯坦)$
-   $\exists x (a(x,y))(令论域为班上的人,其中a(x)为x去过y)$
+   $\exists x (a(x,y))(令论域为班上的人,其中a(x,y)为x去过y)$
 
 * 2.$\forallx (a(x) \rightarrow b(x))(令论域为所有地球上的人,其中a(x)为x学过微积分和C++)$
    $\forall x (a(x)\rightarrow b(x))(令论域为学校里的人,其中a(x)为x学过微积分和C++)$
-   $\forall x (c(x \wedge y))(令论域为班上的人,其中c(x)为x学过y)$
+   $\forall x (c(x \wedge y))(令论域为班上的人,其中c(x \wedge y)为x学过y)$
 
 * 3.$\neg \exists (a(x) \rightarrow b(x))(令论域为所有地球上的人,其中a(x)为x没有同时拥有自行车和摩托车)$
    $\neg \exists (a(x) \rightarrow b(x))(令论域为学校里的人,其中a(x)为x没有同时拥有自行车和摩托车)$
@@ -236,42 +236,53 @@
 
 * 4.$\exists x \neg (a(x) \rightarrow b(x))(令论域为所有地球上的人,其中a(x)为x不快乐)$
    $\exists x \neg b(x)(令论域为学校里的人,其中b(x)为x不快乐)$
-   $\exists x \neg b(x)(令论域为班上的人,其中b(x)为x不快乐)$
+   $\exists x \neg b(x)(令论域为班上的人,其中\neg b(x)为x不快乐)$
 
 * 5.$\forall x (a(x) \rightarrow b(x))(令论域为所有地球上的人，其中a(x)为x生于20世纪)$
    $\forall x b(x)(令论域为学校里的人，其中b(x)为x生于20世纪)$
-   $\forall x (b(x,y))x(令论域为班上的人，其中b(x)为x生于y)$
+   $\forall x (b(x,y))x(令论域为班上的人，其中b(x,y)为x生于y)$
 
 ## 第二十七题
 
 * 1.$\exists x(a(x) \rightarrow b(x))(论域为所有人，其中a(x)为地球上所有的人x,x如果是学校里的人，则x在越南居住过)$
    $\exists x \neg a(x)(令论域为学校里的人，其中a(x)为学校里的人x,x在越南居住过)$
-   $\exists x \neg a(x,y)(令论域为班上的人，其中a(x)x在y居住过)$
+   $\exists x \neg a(x,y)(令论域为班上的人，其中a(x,y)x在y居住过)$
 
 * 2.$\exists x \neg (a(x) \rightarrow b(x))(论域为所有人，其中a(x)为地球上所有的人x,x如果是学校里的人，则x不会说印地语)$
    $\exists x \neg (a(x))(令论域为学校里的人，其中a(x)为学校里的人x,x不会说印地语)$
-   $\exists x \neg (a(x,y)(令论域为班上的人，其中a(x)x为x不会y)$
+   $\exists x \neg (a(x,y)(令论域为班上的人，其中\neg a(x,y)x为x不会y)$
 
-* 3.$\forall x (a(x) \rightarrow b(x))(令论域为所有人，其中a(x)为对于所有人x,)$
+* 3.$\forall x (a(x) \rightarrow b(x))(令论域为所有人，其中a(x)为对于所有人x,x如果是学校里的人，那么x会用Java、Prolog和C++)$
+   $\exists x a(x)(令论域为学校里的人，其中a(x)为对于学校里的某个人x,x会用Java、Prolog和C++)$
+   $\exists x a(x,y)(令论域为班上的儿,其中a(x,y)为对于班上的某个人x,x会用y)$
 
+* 4.$\forall x (a(x) \rightarrow b(x))(令论域为所有人，其中a(x)为对于所有人x,x若为班上的人，则x都喜欢吃太泰国食物)$
+   $\forall x (a(x) \rightarrow b(x))(令论域为学校里的人，其中a(x)为对于学校里的人x,x若为班上的人，则x喜欢吃泰国食物)$
+   $\forall x a(x,y)(令论域为班上的人，其中a(x,y)为对于班上的人x,x喜欢吃y)$
 
+* 5.$\exists x \neg (a(x) \rightarrow b(x))(令论域为地球上所有的人,其中a(x)为对于所有的人x,x若为班上的人，则x不会玩曲棍球)$
+   $\exists x \neg (a(x) \rightarrow b(x))(令论域为学校里的人,其中a(x)为对于学校里的人x,x若为班上的人,则x不会玩曲棍球)$
+   $\exists x \neg (a(x,y)(令论域为班上的人，其中\neg a(x,y)为对于班上的人x,x不会y)$
 
+## 第二十八题(a(x)为x在正确的位置上，b(x)为x状况良好)
 
-## 第二十八题
+* a.$\exists x a(x)$
+* b.$\forall x (a(x) \wedge b(x))$
+* c.$\forall x (a(x) \wedge b(x))$
+* d.$\neg \forall x(a(x) \wedge b(x))$
+* e.$\exists x (\neg a(x) \rightarrow b(x))$
 
+## 第二十九题(a(x)为x是永真式，b(x)是矛盾式)
 
-
-## 第二十九题（）！！！
-
-* a.$对于某些东西z,z是永真式$
-* b.$对于矛盾是z,z的否定是永真式$
-* c.$对于两个可能式z,z的析取可以是一个永真式$
-* d.$对于两个可能式z,z的合取式一个永真式$
+* a.$\exists x a(x)$
+* b.$\forall x (\neg b(x) \rightarrow a(x))$
+* c.$\forall x (\neg (a(x) \wedge b(x) \vee \neg (a(x) \wedge b(x)) \rightarrow a(x))$
+* d.$\forall x (a(x) \wedge a(x) \rightarrow a(x))$
 
 ## 第三十题
 
 * a.$P(1,3) \vee P(2,3) \vee P(3,3)$
-* b.$P(1,1) \wedg P(1,2) \wedge P(1,3)$
+* b.$P(1,1) \wedge P(1,2) \wedge P(1,3)$
 * c.$\neg P(2,1) \vee \neg P(2,2) \wedge \neg P(2,3)$
 * d.$\neg P(1,2) \vee \neg P(2,2) \vee \neg P(3,2)$
 
@@ -284,26 +295,26 @@
 
 ## 第三十二题
 
-* a.$有一只狗不长跳蚤$
-* b.$所有的马都会做加法$
-* c.$有一只考拉不会爬树$
-* d.$所有猴子都会说法语$
-* e.$有一只猪不会游泳和捕鱼$
+* a.$\exists x \neg (a(x) \rightarrow b(x))(a(x)为x若为一些狗，则x不长跳蚤)$
+* b.$\exists x \neg (a(x) \rightarrow b(x))(a(x)为x若为一匹马，则x不会做加法)$
+* c.$\forall x \neg (a(x) \rightarrow b(x))(a(x)为x若为一只考拉，则x不会爬树)$
+* d.$\forall x (a(x) \rightarrow b(x))(a(x)为x若为所有的猴子,则x会说法语)$
+* e.$\exists x \neg (a(x) \rightarrow b(x))(a(x)为x若为一只猪，则x不会游泳和捕鱼)$
 
 ## 第三十三题
 
-* a.$没有一只年长的狗会学习新的技巧$
-* b.$只有一只兔子会微积分$
-* c.$一只鸟不会飞$
-* d.$有一只狗会说话$
-* e.$班上只有几个人会法语和俄语$
+* a.$\exists x \neg (a(x) \rightarrow b(x))(a(x)为x若为一些狗，则x不会学习新的技巧)$
+* b.$\forall x \neg (a(x) \rightarrow b(x))(a(x)为x若为所有的兔子，则x不会微积分)$
+* c.$\forall x \neg (a(x) \rightarrow b(x))(a(x)为x若为所有的鸟，则x不会飞)$
+* d.$\neg \forall x \neg a(x)(a(x)为x若为所有的狗，则x不会说话)$
+* e.$\forall x \neg (a(x) \rightarrow b(x))(a(x)为x若为所有的人，则x不会法语和俄语)$
 
 ## 第三十四题
 
-* a.$所有的司机都遵守驾驶速度限制$
-* b.$有一部瑞典电影不严肃$
-* c.$有一个人可以保守秘密$
-* d.$班上所有的人都有良好的心态$
+* a.$\neg \exists x a(x)(所有的司机都遵守驾驶速度限制)$
+* b.$\neg \forall x \neg a(x)(一些瑞典电影很幽默)$
+* c.$\neg \forall x a(x)(有一些人可以保守秘密)$
+* d.$\forall x a(x)(班上所有的人都有良好的心态)$
 
 ## 第三十五题
 
@@ -317,29 +328,32 @@
 * b.$x = \sqrt {2}$
 * c.$x = 0$
 
-## 第三十七题！！！
+## 第三十七题
 
-* a.$对于航空公司的一位乘客z，如果z在一年中飞行里程超过25000英里，或在一年内乘坐航班次数超过25次，则z被确认为贵宾资格$
-* b.$对于一名男选手x，如果x以往最好的成绩在3小时内，那么x可获准参加本次马拉松比赛；对于一名女选手y，如果y以往最好的成绩在3.5小时内，那么y可获准参加本次马拉松比赛$
-* c.$对于一名学生z,z想要取得硕士学位，必须至少修满60个学分，或至少修满45个学分并通过硕士论文答辩，并且所有必修课程的成绩不低于B$
-* d.$对于某个学生z,z在一个学期内修了21个学分课程并且成绩都为A$
+* a.$\exists x ((a(x,25000) \vee (b(x,25)) \rightarrow c(x)))(其中a(x)为乘客x在飞行中超过25000英里,b(x)为乘客x在一年内乘坐航班的次数超过25次),c(x)为乘客x被确认为有贵宾资格$
+* b.$\exists x (a(x,3) \rightarrow b(x))(其中a(x,3)为男选手x的最好成绩在3小时以内，b(x)为男选手x可获准参加马拉松比赛)$
+  b.$\exists x (c(y,3.5) \rightarrow d(x))(其中c(x,3.5为女选手y的最好成绩在3.5小时以内，d(x)为女选手可获准参加马拉松比赛)$
+* c.$\exists x ((a(x,60) \vee (a(x,45) \wedge b(x) \wedge \neg c(x)))\rightarrow d(x))(其中a(x,60)为学生x修满60个学分，a(x,45)为学生x修满45个学分，b(x)为学生x通过硕士论文答辩，c(x)为学生x所有必修课程的成绩低于B,d(x)为学生x取得硕士学位)$
+* d.$\exists x a(x,21) \wedge b(x,A)(其中a(x)为学生x在一星期内修了21个学分课程，b(x)为学生x的学分课程成绩都为A)$
 
 ## 第三十八题
 
-*a.$有一部分系统都处于开放状态$
-*b.$所有的系统都处于故障状态并且处于诊断状态$
-*c.$有一部分系统处于开放状态并且有一部分系统处于诊断状态$
-*d.$有一部分系统处于不可使用的状态$
-*e.$所有的系统都处于不工作的状态$
+* a.$有一些系统处于开放状态$
+* b.$都有的系统都处于故障状态或者所有的系统都处于诊断状态$
+* c.$有一些系统处于开放装态或者有一些系统处于诊断状态$
+* d.$有一些系统不处于可用状态$
+* e.$所有的系统架构都处于不工作状态$
 
 ## 第三十九题
 
-* a.$如果有一部分的打印机p不能提供服务,并且打印机p很忙，那么打印机作业j丢失了$
-* b.$如果所有的打印机p都很忙，那么打印机作业j在队列中$
-* c.$如果有一部分打印作业j在队列中，并且打印作业j丢失了，那么打印机p不能提供服务$
-* d.$如果所有的打印机p很忙并且所有的打印作业j在队列中，那么有部分打印作业j丢失了$
+* a.$如果有一些打印机不能提供服务，并且打印机很忙，那么有一些打印作业会丢失$
+* b.$如果所有的打印机都很忙，那么有一些打印作业会在队列中$
+* c.$如果所有的打印作业在队列中，并且打印作业丢失了，那么有一些打印机不能提供打印服务了$
+* d.$如果所有的打印机都很忙，并且打印作业在队列中，那么有一些打印作业丢失了$
 
-## 第四十题！！！
+## 第四十题
 
-* a.$如果硬盘中的空间z少于30MB时，那么z就会向所有用户发送警告信息$
-* b.$如果检测到系统错误z，那么文件系统中的目录均不能打开$
+* a.$\forall x (a(x) \rightarrow \exists y b(y))(其中a(x,30)是硬盘中的空闲空间不小于30MB,b(y)是系统向用户发送警告消息)$
+* b.$\forall x (a(x) \rightarrow \neg (b(x) \wedge c(x)))(其中a(x)是文件系统有错误，b(x)是文件系统中的目录可以被打开，c(x)是文件能关闭)$
+* c.$\forall x (a(x) \rightarrow \neg b(x))(其中a(x)是有登录用户，b(x)是备份文件系统)$
+* d.$\forall x ((a(x,8) \rightarrow \wedge b(x,56)) \rightarrow c(x)(a(x)是至少有8MB内存，b(x)是连接速度至少为56kbps),c(x)是可以进行视频点播$
