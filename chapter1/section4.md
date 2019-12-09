@@ -357,3 +357,17 @@
 * b.$\forall x (a(x) \rightarrow \neg (b(x) \wedge c(x)))(其中a(x)是文件系统有错误，b(x)是文件系统中的目录可以被打开，c(x)是文件能关闭)$
 * c.$\forall x (a(x) \rightarrow \neg b(x))(其中a(x)是有登录用户，b(x)是备份文件系统)$
 * d.$\forall x ((a(x,8) \rightarrow \wedge b(x,56)) \rightarrow c(x)(a(x)是至少有8MB内存，b(x)是连接速度至少为56kbps),c(x)是可以进行视频点播$
+
+## 第四十一题
+
+* a.$\forall x a(x,10) \rightarrow b(x,1)(其中a(x)是磁盘有10MB以上的空闲空间，b(x是在非空的消息集合中至少可以保存一条邮件消息)$
+* b.$\exists x a(x) \rightarrow \forall y b(y)(其中a(x)是每当有主动报警，b(x)是队列中的消息会被传送出去)$
+* c.$\neg \exists x a(x) \rightarrow \forall x b(x)(其中a(x)是除了主控制台之外，b(x)是诊断控制器跟踪所有的系统状态)$
+* d.$\neg \exists x a(x) \rightarrow \forall x b(x)(其中a(x)是被主叫方列入特殊列表上的参与电话会议的每一方，b(x)是除了被主叫方列入特殊列表上的参与电话会议的每一方都会被记账)$
+
+## 第四十二题(其中a(x)是用户可以访问电子邮箱,b(x)是文件系统是开放状态，c(x)是防火墙处于诊断状态，d(x)是代理服务器处于诊断状态，e(x，100-500)是吞吐量为100-500kbps,f(x)是路由器工作正常)
+
+* a.$\forall x a(x)$
+* b.$\exists x \neg b(x) \rightarrow \forall x a(x)$
+* c.$\exists x d(x) \rightarrow \exists x c(x)$
+* d.$\forall x (a(x,100-500) \wedge \forall x d(x)) \rightarrow \exists x f(x)$
