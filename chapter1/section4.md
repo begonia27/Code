@@ -371,3 +371,15 @@
 * b.$\exists x \neg b(x) \rightarrow \forall x a(x)$
 * c.$\exists x d(x) \rightarrow \exists x c(x)$
 * d.$\forall x (a(x,100-500) \wedge \forall x d(x)) \rightarrow \exists x f(x)$
+
+## 第四十三题
+
+* $\forall x (p(x) \rightarrow Q(x))\equiv \forall x P(x) \rightarrow \forall x Q(x)$
+* $我们可以通过两件事证明\forall x (p(x) \rightarrow Q(x))和\forall x P(x) \rightarrow \forall x Q(x)为真。首先，我们证明如果\forall x (p(x) \rightarrow Q(x))为真，那么\forall x P(x) \rightarrow \forall x Q(x)为真。其次我们证明如果\forall x P(x) \rightarrow \forall x Q(x)为真，那么\forall x (p(x) \rightarrow Q(x))为真。$
+* $因此假设\forall x (p(x) \rightarrow Q(x))为真，这意味着如果a在论域中，那么P(x) \rightarrow Q(x)为真。所以，P(x)为真，且Q(x)为真。因为对论域中每个个体P(x)为真，且Q(a) \rightarrow Q(x)为真都成立。所以我们得出结论，\forall x P(x)和\forall Q(x)都为真。那么接下来，假设\forall x P(x) \rightarrow \forall x Q (x)为真，那么\forall x P(x)为真，且\forall x Q(x)为真。因此，如果a在论域中，那么P(a)为真，且Q(a)为真。可以得出，对于所有的a，P(a)\rightarrow Q(a)为真。因而可以得出\forall x P(x) \rightarrow Q(x)为真，这样我们可以推出结论，\forall x(P(x) \rightarrow Q(x)) \equiv \forall x P(x) \rightarrow \forall x Q(x)$
+
+## 第四十四题
+
+* $\forall x (p(x) \leftrightarrow Q(x))\equiv \forall x P(x) \leftrightarrow \forall x Q(x)$
+* $我们可以通过两件事证明\forall x (p(x) \leftrightarrow Q(x))和\forall x P(x) \leftrightarrow \forall x Q(x)为真。首先，我们证明如果\forall x (p(x) \leftrightarrow Q(x))为真，那么\forall x P(x) \leftrightarrow \forall x Q(x)为真。其次我们证明如果\forall x P(x) \leftrightarrow \forall x Q(x)为真，那么\forall x (p(x) \leftrightarrow Q(x))为真。$
+* $因此假设\forall x (p(x) \leftrightarrow Q(x))为真，这意味着如果a在论域中，那么P(x) \leftrightarrow Q(x)为真。所以，P(x)为真，且Q(x)为真。因为对论域中每个个体P(x)为真，且Q(a) \leftrightarrow Q(x)为真都成立。所以我们得出结论，\forall x P(x)和\forall Q(x)都为真。那么接下来，假设\forall x P(x) \leftrightarrow \forall x Q (x)为真，那么\forall x P(x)为真，且\forall x Q(x)为真。因此，如果a在论域中，那么P(a)为真，且Q(a)为真。可以得出，对于所有的a，P(a)\leftrightarrow Q(a)为真。因而可以得出\forall x P(x) \leftrightarrow Q(x)为真，这样我们可以推出结论，\forall x(P(x) \leftrightarrow Q(x)) \equiv \forall x P(x) \rightarrow \forall x Q(x)$
