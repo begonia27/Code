@@ -42,3 +42,64 @@
 * 在解逻辑谜题中，列逻辑式要非常注意自然语言和逻辑式中对应的关系。千万不能列错。列出式子的下一步就是将各自的语句分别同或$p$或者同或$q$。如果遇到可真可假的情况，比如间谍，可以先将其看做是假的。当一个人说自己是无赖或间谍的时候，直接取非，不用再继续进行同或那个步骤了。其他的情况都要和说话的那个人同或。
 * 逻辑电路的与门、或门以及逆变器的电路图要注意。逆变器代表取非。或门代表取或。与门代表取且。
 * 逆变器是尖三角，或门是稍微凸一点的三角，与门是头比较圆的形状。
+
+## 第三节的总结
+
+* 永真式：一个真值永远为真的“复合命题”叫永真式；矛盾式：真值永远为假的复合命题叫矛盾式。
+* 逻辑等价：在任何可能的情况下，两个符合命题具有相同的真值，此时称他们为逻辑等价。
+* 判定两个复合命题是否等价的方法之一是使用真值表。
+* 当我们用真值表来证明复合命题等价时，每增加一个命题变元真值表的行数就要翻倍；如果一个复合命题由n个命题变元组成，则需要2的n次行。
+* 在等价关系中，T表示永远为真的复合命题，F表示永远为假的复合命题。
+
+### 表6
+
+* $p \wedge T \equiv p$恒等律
+* $p \vee F \equiv p$
+* $p \vee T \equiv T$支配律
+* $p \vee F \equiv F$
+* $p \vee p \equiv p$幂等律
+* $p \wedge p \equiv p$
+* $\neg (\neg p) \equiv p$双重否定律
+* $p \vee q \equiv q \vee p$交换律
+* $p \wedge q \equiv q \wedge p$
+* $(p \vee q) \vee r \equiv p \vee (q \vee r)$ 结合律
+* $(p \wedge q) \wedge r \equiv p \wedge (q \wedge r)$
+* $p \vee (q \wedge r) \equiv (p \vee q) \wedge (p \vee r)$ 分配律
+* $p \wedge (q \vee r) \equiv (p \wedge q) \vee (p \wedge r)$
+* $\neg (p \wedge q) \equiv \neg p \vee \neg q$德·摩根律
+* $\neg (p \vee q) \equiv \neg p \wedge \neg q$
+* $p \vee (p \wedge q) \equiv p$吸收律
+* $p \wedge (p \vee q) \equiv p$
+* $p \vee \neg p \equiv T$否定律
+* $p \wedge \neg p \equiv F$
+
+### 表7
+
+* $p \rightarrow q \equiv \neg p \vee q$
+* $p \rightarrow q \equiv \neg q \rightarrow \neg p$
+* $p \vee q \equiv \neg p \rightarrow q$
+* $p \wedge q \equiv \neg (p \rightarrow \neg q)$
+* $\neg (p \rightarrow q) \equiv p \wedge \neg q$
+* $(p \rightarrow q) \wedge (q \rightarrow r) \equiv p \rightarrow (q \wedge r)$
+* $(p \rightarrow r) \wedge (q \rightarrow r) \equiv (p \vee q) \rightarrow r$
+* $(p \rightarrow q) \vee (p \rightarrow r) \equiv p \rightarrow (q \vee r)$
+* $(p \rightarrow r) \vee (q \rightarrow q) \equiv (p \wedge q) \rightarrow r$
+
+### 表8
+
+* $p \leftrightarrow q \equiv (p \rightarrow q) \wedge (q \rightarrow q)$
+* $p \leftrightarrow q \equiv \neg p \leftrightarrow q \neg q$
+* $p\leftrightarrow q \equiv (p \wedge q) \vee (\neg p \wedge \neg q)$
+* $\neg (p \leftrightarrow q) \equiv p \leftrightarrow \neg q$
+* 以上为表8
+* 德·摩根律可以扩展为$\neg (p1 \vee p2 \vee … \vee pn) \equiv (\neg p1 \wedge \neg p2 \wedge … \wedge pn)$
+* 和    $\neg (p1 \wedge p2 \wedge … \wedge pn) \equiv (\neg p1 \vee \neg p2 \vee … \vee pn)$
+* 采用这种扩展的德·摩根律可以简写为$$\neg (\bigvee^n_{j = 1}p_{j}) \equiv \bigwedge^n_{j = 1}\neg p_{j}$$和$$\neg (\bigwedge^n_{j = 1}p_{j} \equiv \bigvee^n_{j = 1} \neg p_{j}$$
+* 等价式$\neg (p \vee q) \equiv \neg p \wedge \neg q$ 说明一个析取式的否定是由各分命题的否定的合取式组成的
+* 等价式$\neg (p \wedge q) \equiv \neg p \vee \neg q$ 说明一个合取式的否定是由各分命题否定的析取式组成的
+* 命题的可满足性：存在一个对其变元的真值赋值使其为真
+* 命题的不可满足性：当复合命题对所有变元的真值赋值都是假的，则复合命题不满足。
+* 可以用真值表来确定命题是否可满足，也可以对真值表做出一些推理来判断
+* [怎样书写逻辑符号呢？](http://mohu.org/info/symbols/symbols.htm)
+* 下标是_{ }            上标是^{ }        例如：$\bigwedge^2_{i = 1}$
+* 大符号是：逻辑符号的表示字母前加big；例如：$\bigwedge$
