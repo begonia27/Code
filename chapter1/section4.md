@@ -2,13 +2,17 @@
 
 ## 第一题
 
-* a.$p(0)的真值是0 <= 4,为真$
+<!-- * a.$p(0)的真值是0 <= 4,为真$
 * b.$p(4)的真值是4 <= 4,为真$
-* c.$p(6)的真值是6 <= 4,为假$
+* c.$p(6)的真值是6 <= 4,为假$ -->
+
+* a. $p(0)$ 的真值是 $0 <= 4$ ，为真
+* b. $p(4)$ 的真值是 $4 <= 4$ ，为真
+* c. $p(6)$ 的真值是 $6 <= 4$ ，为假
 
 ## 第二题
 
-* a.$单词orange含字母a,为真$
+* a. 单词 *orange* 含字母a,为**真**
 * b.$单词lemon含字母a,为假$
 * c.$单词true含字母a,为假$
 * d.$单词false含字母a,为真$
@@ -383,3 +387,7 @@
 * $\forall x (p(x) \leftrightarrow Q(x))\equiv \forall x P(x) \leftrightarrow \forall x Q(x)$
 * $我们可以通过两件事证明\forall x (p(x) \leftrightarrow Q(x))和\forall x P(x) \leftrightarrow \forall x Q(x)为真。首先，我们证明如果\forall x (p(x) \leftrightarrow Q(x))为真，那么\forall x P(x) \leftrightarrow \forall x Q(x)为真。其次我们证明如果\forall x P(x) \leftrightarrow \forall x Q(x)为真，那么\forall x (p(x) \leftrightarrow Q(x))为真。$
 * $因此假设\forall x (p(x) \leftrightarrow Q(x))为真，这意味着如果a在论域中，那么P(x) \leftrightarrow Q(x)为真。所以，P(x)为真，且Q(x)为真。因为对论域中每个个体P(x)为真，且Q(a) \leftrightarrow Q(x)为真都成立。所以我们得出结论，\forall x P(x)和\forall Q(x)都为真。那么接下来，假设\forall x P(x) \leftrightarrow \forall x Q (x)为真，那么\forall x P(x)为真，且\forall x Q(x)为真。因此，如果a在论域中，那么P(a)为真，且Q(a)为真。可以得出，对于所有的a，P(a)\leftrightarrow Q(a)为真。因而可以得出\forall x P(x) \leftrightarrow Q(x)为真，这样我们可以推出结论，\forall x(P(x) \leftrightarrow Q(x)) \equiv \forall x P(x) \leftrightarrow \forall x Q(x)$
+
+## 第四十五题
+
+* $我们可以通过两件事证明\exists x (P(x) \vee Q(x))和\exists x P(x)Q(x)是逻辑等价的。$
