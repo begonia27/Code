@@ -390,4 +390,14 @@
 
 ## 第四十五题
 
-* $我们可以通过两件事证明\exists x (P(x) \vee Q(x))和\exists x P(x)Q(x)是逻辑等价的。$
+* $我们可以通过两件事证明\exists x (P(x) \vee Q(x))和\exists x P(x)Q(x)是逻辑等价的。$$首先要证明当\exists x(p(x) \vee Q(x))为真时，\exists x p(x) \vee \exists x Q(x)为真，然后再证明当\exists x p(x) \vee \exists x Q(x)为真时，\exists x (p(x) \vee Q(x))为真$
+
+$假设\exists x (P(x) \vee Q(x))为真，那么就说明在论域中，存在一个$a$，使得P(a) \vee Q(a)为真，所以P(a)为真，Q(a)为真.因为在论域中存在一个个体P(a)为真，且Q(a)为真都成立。所以我们可以得出结论\exists x P(x)和\exists x Q(x)为真。这意味着\exists x P(x) \vee \exists x Q(x)为真，接下来，假设\exists x P(x) \vee \exists x Q(x)卫真，那么\exists x P(x)为真，\exists x Q(x)为真，因此，如果在论域中存在一个$a$，那么P(a)为真，Q(a)为真。因此存在一个$a$,使得P(a) \vee Q(a)为真，所以可以得到\exists x (P(x) \vee Q(x)),所以我们可以得出结论：\exists x (P(x) \vee Q(x) \equiv \exists x P(x) \vee \exists x Q(x))$.
+
+## 第四十六题
+
+* $在(\forall x P(x) \vee A) \equiv \forall x (P(x) \vee A))中，当左边的$x$为真，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为真，右边的$x$为假时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为假时，逻辑等价式的左右两边都为真。因此，(\forall x P(x) \vee A \equiv \forall x (P(x) \vee A))$
+
+## 第四十七题
+
+* $在(\forall x P(x) \wedge A) \equiv \forall x (P(x) \wedge A))中，当左边的$x$为真，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为真，右边的$x$为假时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为假时，逻辑等价式的左右两边都为真。因此，(\forall x P(x) \wedge A \equiv \forall x (P(x) \wedge A))$
