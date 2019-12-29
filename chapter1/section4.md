@@ -1,4 +1,4 @@
-# 第四节
+3# 第四节
 
 ## 第一题
 
@@ -394,10 +394,81 @@
 
 $假设\exists x (P(x) \vee Q(x))为真，那么就说明在论域中，存在一个$a$，使得P(a) \vee Q(a)为真，所以P(a)为真，Q(a)为真.因为在论域中存在一个个体P(a)为真，且Q(a)为真都成立。所以我们可以得出结论\exists x P(x)和\exists x Q(x)为真。这意味着\exists x P(x) \vee \exists x Q(x)为真，接下来，假设\exists x P(x) \vee \exists x Q(x)卫真，那么\exists x P(x)为真，\exists x Q(x)为真，因此，如果在论域中存在一个$a$，那么P(a)为真，Q(a)为真。因此存在一个$a$,使得P(a) \vee Q(a)为真，所以可以得到\exists x (P(x) \vee Q(x)),所以我们可以得出结论：\exists x (P(x) \vee Q(x) \equiv \exists x P(x) \vee \exists x Q(x))$.
 
-## 第四十六题
+## 第四十六题(a)
 
-* $在(\forall x P(x) \vee A) \equiv \forall x (P(x) \vee A))中，当左边的$x$为真，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为真，右边的$x$为假时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为假时，逻辑等价式的左右两边都为真。因此，(\forall x P(x) \vee A \equiv \forall x (P(x) \vee A))$
+* $在(\forall x P(x) \vee A) \equiv \forall x (P(x) \vee A)中，当左边的$x$为真，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为真，右边的$x$为假时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为假时，逻辑等价式的左右两边都为真。因此，(\forall x P(x) \vee A \equiv \forall x (P(x) \vee A)$
 
-## 第四十七题
+## 第四十六题（b）
 
-* $在(\forall x P(x) \wedge A) \equiv \forall x (P(x) \wedge A))中，当左边的$x$为真，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为真，右边的$x$为假时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为假时，逻辑等价式的左右两边都为真。因此，(\forall x P(x) \wedge A \equiv \forall x (P(x) \wedge A))$
+* $在(\exists x P(x) \vee A) \equiv \exists x (P(x) \vee A)中，当左边的$x$为真，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为真，右边的$x$为假时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为假时，逻辑等价式的左右两边都为真。因此，(\exists x P(x) \vee A \equiv \exists x (P(x) \vee A)$
+
+## 第四十七题(a)
+
+* $在(\forall x P(x) \wedge A) \equiv \forall x (P(x) \wedge A)中，当左边的$x$为真，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为真，右边的$x$为假时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为假时，逻辑等价式的左右两边都为真。因此，(\forall x P(x) \wedge A \equiv \forall x (P(x) \wedge A)$
+
+## 第四十七题（b)
+
+* $在(\exists x P(x) \wedge A) \equiv \exists x (P(x) \wedge A)中，当左边的$x$为真，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为真，右边的$x$为假时，逻辑等价式的左右两边都为假。当左边的$x$为假，右边的$x$为真时，逻辑等价式的左边为假，右边为真。当左边的$x$为假，右边的$x$为假时，逻辑等价式的左边为假，右边为真。因此，(\exists x P(x) \wedge A \equiv \exists x (P(x) \wedge A)$
+
+## 第四十八题(a)
+
+* $在(\forall x (A \rightarrow P(x)) \equiv A \rightarrow \forall x P(x)中，当左边的$x$为真，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为真，右边的$x$为假时，逻辑等价式的左右两边都为假。当左边的$x$为假，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为假时，逻辑等价式的左右两边都为真。因此，(\forall x (A \rightarrow P(x)) \equiv A \rightarrow \forall x P(x)$
+
+## 第四十八题（b)
+
+* $在(\exists x (A \rightarrow P(x)) \equiv A \rightarrow \exists x P(x)中，当左边的$x$为真，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为真，右边的$x$为假时，逻辑等价式的左右两边都为假。当左边的$x$为假，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为假时，逻辑等价式的左右两边都为真。因此，(\exists x (A \rightarrow P(x)) \equiv A \rightarrow \exists x P(x)$
+
+## 第四十九题(a)
+
+* $在(\forall x (P(x) \rightarrow A) \equiv \exists x P(x) \rightarrow A中，当左边的$x$为真，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为真，右边的$x$为假时，逻辑等价式的左右两边都为假。当左边的$x$为假，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为假时，逻辑等价式的左右两边都为真。因此，(\forall x (P(x) \rightarrow A) \equiv \exists x P(x) \rightarrow A$
+
+## 第四十九题(b)
+
+* $在(\exists x (P(x) \rightarrow A) \equiv \forall x P(x) \rightarrow A中，当左边的$x$为真，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为真，右边的$x$为假时，逻辑等价式的左右两边都为假。当左边的$x$为假，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为假时，逻辑等价式的左右两边都为真。因此，(\exists x (P(x) \rightarrow A) \equiv \forall x P(x) \rightarrow A$
+
+## 第五十题
+
+* $在\forall x P(x) \vee \forall x Q(x)中，当左边的$x$为真时，右边的$x$为真时，逻辑等价式为假。当左边的$x$为假时，右边的$x$为真时，逻辑等价式为真。当左边的$x$为真时，右边的$x$为假时，逻辑等价式为真。当左边的$x$为真时，右边的$x$为真时，逻辑等价式为真。在\forall x (P(x) \vee x Q(x))中，当左边的$x$为真时，右边的$x$为真时，逻辑等价式为假。当左边的$x$为假时，右边的$x$为真时，逻辑等价式为假。当左边的$x$为真时，右边的$x$为假时，逻辑等价式为假。当左边的$x$为真时，右边的$x$为真时，逻辑等价式为真。因此，\forall x P(x) \vee \forall x Q(x)和\forall x (P(x) \vee x Q(x))不是逻辑等价的。$
+
+## 第五十一题
+
+* $在\exists x P(x) \wedge \exists x P(x)中，当左边的$x$为真时，右边的$x$为真时，逻辑等价式为假。当左边的$x$为真时，右边的$x$为真时，逻辑等价式为假。当左边的$x$为假时，右边的$x$为假时，逻辑等价式为真。当左边的$x$为假时，右边的$x$为真时，逻辑等价式为真。当左边的$x$为假时，右边的$x$为假时，逻辑等价式为真。$
+
+## 第五十二题
+
+* a.F
+* b.F
+* c.T
+* d.F
+
+## 第五十三题
+
+* a.有唯一的x使得P(x)为真；存在一个x使得P(x)为真
+* b.所有的x使得P(x)为真；有唯一的x使得P(x)为真
+* c.有唯一的x使得P(x)不为真；不是所有的x都使得P(x)为真
+
+## 第五十四题
+
+* $\neg p(1) \wedge \neg p(2) \wedge p(3) \vee p(1) \wedge \neg p(2) \wedge \neg p(3) \vee \neg p(1) \wedge p(2) \wedge \neg p(3)$
+
+## 第五十五题
+
+* a. Yes
+* b. No
+* c. juana,kiko
+* d. cs301
+
+## 第五十六题
+
+* a. No
+* b. Yes
+* c. cs301
+* d. grossman
+
+## 第五十七题
+
+```prolog
+sibling (X,Y):-mother(M,Y)，father(F,x)
+```
+
+上述语句意味着如果存在一个人$Y$，使得M是Y的母亲，并且存在一个人，使得F是x的父亲，则sibling(X,Y)为真。
