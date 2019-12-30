@@ -468,7 +468,15 @@ $假设\exists x (P(x) \vee Q(x))为真，那么就说明在论域中，存在�
 ## 第五十七题
 
 ```prolog
-sibling (X,Y):-mother(M,Y)，father(F,x)
+sibling (X,Y):-mother(M,Y),father(F,X)
 ```
 
-上述语句意味着如果存在一个人$Y$，使得M是Y的母亲，并且存在一个人，使得F是x的父亲，则sibling(X,Y)为真。
+$上述语句意味着如果存在一个人Y，使得M是Y的母亲，并且使得F是x的父亲，则sibling(X,Y)为真。$
+
+## 第五十八题
+
+```prolog
+grandfather (X,Y):-father(X,Z),father(Z,Y);father(X,Z),mather(Z,Y).
+```
+
+$上述语句意味着如果存在一个人Z，使得X是Z的父亲，并且使得Z是Y的父亲或者X是Z的父亲，X是Y的母亲的父亲，则garandfather(x,Y)为真$
