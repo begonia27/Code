@@ -480,3 +480,10 @@ grandfather (X,Y):-father(X,Z),father(Z,Y);father(X,Z),mather(Z,Y).
 ```
 
 $上述语句意味着如果存在一个人Z，使得X是Z的父亲，并且使得Z是Y的父亲或者X是Z的父亲，X是Y的母亲的父亲，则garandfather(x,Y)为真$
+
+## 第五十九题
+
+* a.$\neg \exists x (P(x) \rightarrow Q(x)) \equiv \forall x \neg (P(x) \rightarrow Q(x) \equiv \forall x (P(x) \wedge Q(x))$
+* b.$\forall x (Q(x) \rightarrow R(x))$
+* c.$\neg \exists x (P(x) \rightarrow R(x))$
+* d.$不可以$
