@@ -21,7 +21,8 @@
 
 * a. $丹佛是科罗拉多的首府,为真$
 * b. $底特律是波士顿的首府,为假$
-* c. $纽约是纽约的首府,为假$
+* c. $马萨诸塞是波士顿的首府,为假$
+* d. $纽约是纽约的首府,为假$
 
 ## 第四题
 
@@ -32,9 +33,9 @@
 ## 第五题
 
 * a. $一些学生在每个工作日花5个多小时上课$
-* b. $全体学生在每个工作日都花5个多小时上课$
-* c. $一些学生在每个工作日都没有花5个多小时上课$
-* d. $全体学生在每个工作日都没有花5个多小时上课$
+* b. $每个学生在每个工作日都花5个多小时上课$
+* c. $一些学生在每个工作日没有花5个多小时上课$
+* d. $没有学生在每个工作日花5个多小时上课$\\“所有的人都没花”和“没有人花了”这两个是一个意思，但是在表达上面第一个更为顺畅
   
 ## 第六题
 
@@ -48,9 +49,9 @@
 ## 第七题
 
 * a. $所有的喜剧演员都很有趣$
-* b. $所有的人都是喜剧演员，所有的人都很有趣$
-* c. $有个喜剧演员他很有趣$
-* d. $有个人是喜剧演员，有个人很有趣$
+* b. $所有的人都是喜剧演员，所有的人都很有趣$\\该语句可以写成“所有的人都是有趣的喜剧演员”
+* c. $存在一个人，如果这个人是喜剧演员，那么他是很有趣的$
+* d. $有个喜剧演员很有趣$\\此句如果写成“某个人是喜剧演员，某个人很有趣的”会有歧义，因为不能确定第一个“某个人”和第二个“某个人”是指同一个人。
 
 ## 第八题
 
@@ -98,7 +99,7 @@
 * a. $\forall n(n + 1 > n),为真$
 * b. $\exists n(2n = 3n),为真$
 * c. $\exists n(n = -n),为真$
-* d. $\forall n(3n = 4n),为假$
+* d. $\forall n(3n <= 4n),为真$
 
 ## 第十四题
 
@@ -112,7 +113,7 @@
 * a. $\forall n (n^2 >= 0),为真$
 * b. $\exists n (n^2 = 2),为假$
 * c. $\forall n (n^2 >= n),为真$
-* d. $\exists n (n^2 < 0),为真$
+* d. $\exists n (n^2 < 0),为假$\\这样的题出错了真的不应该！！！
 
 ## 第十六题
 
@@ -145,7 +146,7 @@
 * b. $p(1) \wedge p(2) \wedge p(3) \wedge p(4) \wedge p(5)$
 * c. $\neg (p(1) \vee p(2) \vee p(3) \vee p(4) \vee p(5)$
 * d. $\neg (p(1) \wedge p(2) \wedge p(3) \wedge p(4) \wedge p(5))$
-* e. $p(1) \vee p(2) \wedg p(4) \wedge p(5) \vee \neg p(1) \vee \neg p(2) \vee \neg p(3) \vee \neg p(4) \vee \neg p(5)$
+* e. $p(1) \vee p(2) \wedg p(4) \wedge p(5) \vee (\neg p(1) \vee \neg p(2) \vee \neg p(3) \vee \neg p(4) \vee \neg p(5))$\\这句话里或与且的地方千万不能少了大括号，不然就是错误的写法
 
 ## 第二十题
 
@@ -157,17 +158,19 @@
 
 ## 第二十一题
 
-* a. $为真：所有的人都学离散数学$
-* a. $为假：有一个人没有在学离散数学$
+* $可以有多个解$
+
+* a. $为真：所有学习离散数学的人$
+* a. $为假：世界上所有的学生$
   
-* b. $为真：所有人的年龄都超过21岁$
-* b. $为假：有一个人的年龄没有超过21岁$
+* b. $为真：班上的所有学生$
+* b. $为假：这家医院的护士$
   
-* c. $为真：所有的人都有相同的妈妈$
-* c. $为假：有两个人没有相同的妈妈$
+* c. $为真：这个社区的所有儿童$
+* c. $为假：这个国家的所有成年人$
   
-* d. $为真：所有不同的人都有相同的祖母$
-* d. $为假：有两个不同的人有相同的祖母$
+* d. $为真：王俊凯和易烊千玺$
+* d. $为假：这家培训机构里的所有教师$
 
 ## 第二十二题
 
@@ -183,23 +186,29 @@
 * d. $为真：所有的人都认识两个以上的其他人$
 * d. $为假：有一个人不认识两个以上的其他人$
 
-## 第二十三题（令论域为班上的学生）
+## 第二十三题-1
+
+（令论域为班上的学生）\\同一道题的两种小题里要用不同的条件标注出来，并且条件不要放在题号的里面，要另起一行说明
 
 * a. $\exists x p(x)(其中p(x)为x会说印地语)$
 * b. $\forall x p(x)(其中p(x)为x很友好)$
 * c. $\exists x \neg p(x)(其中p(x)为x出生在加利福尼亚)$
 * d. $\exists x p(x)(其中p(x)为x曾演过电影)$
-* e. $\neg \forall x p(x)(其中p(x)为x上过逻辑编程课程)$
+* e. $\forall \neg p(x)(其中p(x)为x上过逻辑编程课程)$
 
-## 第二十三题（令论域为所有人）
+## 第二十三题-2
 
-* a. $\forall (z(x) \rightarrow p(x))(其中z(x)为班上的学生，p(x)为x会说印地语)$
+（令论域为所有人）
+
+* a. $\exists (z(x) \wedge p(x))(其中z(x)为班上的学生，p(x)为x会说印地语)$
 * b. $\forall (z(x) \wedge p(x))(其中z(x)为班上的学生，p(x)为x很友好)$
 * c. $\forall (z(x) \wedge \neg p(x))(其中z(x)为班上的学生，p(x)为x出生在加利福尼亚)$
 * d. $\forall (z(x) \rightarrow p(x))(其中z(x)为班上的学生，p(x)为x曾演过电影)$
-* e. $\forall (z(x) \wedge p(x))(其中z(x)为班上的学生，p(x)为x上过逻辑编程课程)$
+* e. $\forall (z(x) \rightarrorw \neg p(x))(其中z(x)为班上的学生，p(x)为x上过逻辑编程课程)$
 
-## 第二十四题（令论域为班上的学生）
+## 第二十四题-1
+
+（令论域为班上的学生）
 
 * a. $\forall x p(x)(其中p(x)为x有移动电话)$
 * b. $\forall x p(x)(其中p(x)为x曾看过外国影片)$
@@ -207,7 +216,9 @@
 * d. $\forall x p(x)(其中p(x)为x会求解二次方程)$
 * e. $\exists x \neg p(x)(其中p(x)为x想变富)$
 
-## 第二十四题（令论域为所有人,其中z(x)为班上的学生）
+## 第二十四题-2
+
+（令论域为所有人,其中z(x)为班上的学生）
 
 * a. $\forall (z(x) \rightarrow p(x))(其中p(x)为x有移动电话)$
 * b. $\forall (z(x) \wedge p(x))(其中p(x)为x曾看过外国影片)$
@@ -215,13 +226,15 @@
 * d. $\forall (z(x) \wedge p(x))(其中p(x)为x会求解二次方程)$
 * e. $\forall (z(x) \rightarrow \neg p(x))(其中p(x)为x想变富)$
 
-## 第二十五题（令论域为所有人,其中z(x)为x是你的朋友,p(x)为x是完美的）
+## 第二十五题
+
+（令论域为所有人,其中z(x)为x是你的朋友,p(x)为x是完美的）
 
 * a. $\forall \neg p(x)$
-* b. $\neg \forall \neg p(x)$
+* b. $\neg \forall p(x)$
 * c. $\forall (z(x) \rightarrow p(x))$
 * d. $\exists (z(x) \rightarrow p(x))$
-* e. $\neg \forall (z(x) \wedge p(x))$
+* e. $\forall (z(x) \wedge p(x)) or (\forall x z(x)) \wedge (\forall x p(x))$
 * f. $\neg \forall (z(x) \vee \exists \neg p(x))$
 
 ## 第二十六题
@@ -248,27 +261,29 @@
 
 ## 第二十七题
 
-* a. $\exists x(a(x) \rightarrow b(x))(论域为所有人，其中a(x)为地球上所有的人x,x如果是学校里的人，则x在越南居住过)$
-   $\exists x \neg a(x)(令论域为学校里的人，其中a(x)为学校里的人x,x在越南居住过)$
-   $\exists x \neg a(x,y)(令论域为班上的人，其中a(x,y)x在y居住过)$
+* a. $\exists x(a(x) \wedge b(x))(论域为所有人，其中a(x)为地球上所有的人x,x如果是学校里的人，则x在越南居住过)$
+   $\exists x a(x)(令论域为学校里的人，其中a(x)为学校里的人x,x在越南居住过)$
+   $\exists x a(x) \wedge b(x,y)(令论域为班上的人，其中b(x,y)x在y居住过)$
 
-* b. $\exists x \neg (a(x) \rightarrow b(x))(论域为所有人，其中a(x)为地球上所有的人x,x如果是学校里的人，则x不会说印地语)$
+* b. $\exists x \neg (a(x) \wedge b(x))(论域为所有人，其中a(x)为地球上所有的人x,x如果是学校里的人，则x不会说印地语)$
    $\exists x \neg (a(x))(令论域为学校里的人，其中a(x)为学校里的人x,x不会说印地语)$
-   $\exists x \neg (a(x,y)(令论域为班上的人，其中\neg a(x,y)x为x不会y)$
+   $\exists x (a(x) \wedge \neg (b(x,y)(令论域为班上的人，其中\neg a(x,y)x为x不会y)$
 
-* c. $\forall x (a(x) \rightarrow b(x))(令论域为所有人，其中a(x)为对于所有人x,x如果是学校里的人，那么x会用Java、Prolog和C++)$
-   $\exists x a(x)(令论域为学校里的人，其中a(x)为对于学校里的某个人x,x会用Java、Prolog和C++)$
-   $\exists x a(x,y)(令论域为班上的儿,其中a(x,y)为对于班上的某个人x,x会用y)$
+* c. $\exists x (p(x) \wedge a(x) \wedge b(x) \wedge c(x))(令论域为所有人，其中p(x)为对于所有人x,x如果是学校里的人，那么a(x)为会用Java;b(x)为x会用Prolog;c(x)为x会用C++)$
+   $\exists x (a(x) \wedge b(x) \wedge c(x)(令论域为学校里的人，那么a(x)为会用Java;b(x)为x会用Prolog;c(x)为x会用C++)$
+   $\exists x (q(x,Java) \wedge q(x,Prolog) \wedge q(x,C++)(令论域为班上的人,其中q(x,y)为对于班上的某个人x,x会用编程语言y)$
 
-* d. $\forall x (a(x) \rightarrow b(x))(令论域为所有人，其中a(x)为对于所有人x,x若为班上的人，则x都喜欢吃太泰国食物)$
-   $\forall x (a(x) \rightarrow b(x))(令论域为学校里的人，其中a(x)为对于学校里的人x,x若为班上的人，则x喜欢吃泰国食物)$
-   $\forall x a(x,y)(令论域为班上的人，其中a(x,y)为对于班上的人x,x喜欢吃y)$
+* d. $\forall x (a(x) \rightarrow b(x))(令论域为所有人，其中a(x)为对于所有人x,x若为班上的人，则x都喜欢吃泰国食物)$
+   $\forall x a(x)(令论域为学校里的人，其中a(x)为对于学校里的人x,x若为班上的人，则x喜欢吃泰国食物)$
+   $\forall x a(x) \rightarrorw b(x,y)(令论域为班上的人，其中a(x,y)为对于班上的人x,x喜欢吃y)$
 
-* e. $\exists x \neg (a(x) \rightarrow b(x))(令论域为地球上所有的人,其中a(x)为对于所有的人x,x若为班上的人，则x不会玩曲棍球)$
-   $\exists x \neg (a(x) \rightarrow b(x))(令论域为学校里的人,其中a(x)为对于学校里的人x,x若为班上的人,则x不会玩曲棍球)$
-   $\exists x \neg (a(x,y)(令论域为班上的人，其中\neg a(x,y)为对于班上的人x,x不会y)$
+* e. $\exists x (a(x) \wedge \neg b(x))(令论域为地球上所有的人,其中a(x)为对于所有的人x,x若为班上的人,则x不会玩曲棍球)$
+   $\exists x \neg a(x)(令论域为学校里的人,其中a(x)为对于学校里的人x,x若为班上的人,则x不会玩曲棍球)$
+   $\exists x (a(x) \wedge \neg b(x,y))(令论域为班上的人,其中\neg a(x,y)为对于班上的人x,x不会y)$
 
-## 第二十八题(a(x)为x在正确的位置上，b(x)为x状况良好)
+## 第二十八题
+
+(a(x)为x在正确的位置上，b(x)为x状况良好)
 
 * a. $\exists x a(x)$
 * b. $\forall x (a(x) \wedge b(x))$
@@ -276,12 +291,14 @@
 * d. $\neg \forall x(a(x) \wedge b(x))$
 * e. $\exists x (\neg a(x) \rightarrow b(x))$
 
-## 第二十九题(a(x)为x是永真式，b(x)是矛盾式)
+## 第二十九题
+
+(a(x)为x是永真式，b(x)是矛盾式)
 
 * a. $\exists x a(x)$
-* b. $\forall x (\neg b(x) \rightarrow a(x))$
-* c. $\forall x (\neg (a(x) \wedge b(x) \vee \neg (a(x) \wedge b(x)) \rightarrow a(x))$
-* d. $\forall x (a(x) \wedge a(x) \rightarrow a(x))$
+* b. $\forall x (b(x) \rightarrow a(\neg x))$\\可以理解为矛盾式是永真式的否定
+* c. $\exists x \exists y(\neg (a(x) \wedge b(x) \vee \neg (a(y) \wedge b(y) \wedge a(a \vee b)) \rightarrow a(x))$\\这道题里面有两个变元，一定要重点注意，不能都写成一个x
+* d. $\forall x \forall y(a(x) \wedge a(y) \rightarrow a(x \wedge y))$]\\这道题里面涉及到两个不同的永真式，所以在填写变元的时候一定要注意写两个！
 
 ## 第三十题
 
@@ -307,11 +324,11 @@
 
 ## 第三十三题
 
-* a. $\exists x \neg (a(x) \rightarrow b(x))(a(x)为x若为一些狗，则x不会学习新的技巧)$
-* b. $\forall x \neg (a(x) \rightarrow b(x))(a(x)为x若为所有的兔子，则x不会微积分)$
-* c. $\forall x \neg (a(x) \rightarrow b(x))(a(x)为x若为所有的鸟，则x不会飞)$
-* d. $\neg \forall x \neg a(x)(a(x)为x若为所有的狗，则x不会说话)$
-* e. $\forall x \neg (a(x) \rightarrow b(x))(a(x)为x若为所有的人，则x不会法语和俄语)$
+* a. $\forall x \neg a(x)(a(x)为x若为一些狗，则x不会学习新的技巧)则句子为：没有年长的狗学习新的技巧$
+* b. $\exists x (a(x)(a(x)为x若为所有的兔子，则x不会微积分)则句子为：有一只兔子会微积分$
+* c. $\exists x \neg a(x)(a(x)为x若为所有的鸟，则x不会飞)则句子为：有一只鸟不会飞$
+* d. $\exists x a(x)(a(x)为x若为所有的狗，则x不会说话)则句子为：有一只狗会说话$
+* e. $\neg \exists x (a(x) \wedge b(x))(a(x)为x若为所有的人，则x不会法语和俄语)则句子为：班上有人会法语和俄语$
 
 ## 第三十四题
 
@@ -324,7 +341,7 @@
 
 * a. $没有反例$
 * b. $x = 0$
-* c. $x < 1$
+* c. $x =2$
 
 ## 第三十六题
 
