@@ -35,45 +35,45 @@
 * a. $一些学生在每个工作日花5个多小时上课$
 * b. $每个学生在每个工作日都花5个多小时上课$
 * c. $一些学生在每个工作日没有花5个多小时上课$
-* d. $没有学生在每个工作日花5个多小时上课$\\“所有的人都没花”和“没有人花了”这两个是一个意思，但是在表达上面第一个更为顺畅
+* d. $没有学生在每个工作日花5个多小时上课$<!--“所有的人都没花”和“没有人花了”这两个是一个意思，但是在表达上面第一个更为顺畅-->
   
 ## 第六题
 
 * a. $你所在学校的一些学生已经去过北达科他$
 * b. $你所在学校的所有学生已经去过北达科他$
 * c. $你所在学校的所有学生都没有去过北达科他$
-* d. $你所在学校的一些学生都没有去过北达科他$
-* e. $你所在学校的一些学生都没有去过北达科他$
-* f. $你所在学校的全体学生都没有去过北达科他$
+* d. $你所在学校的一些学生没有去过北达科他$
+* e. $并不是你所在学校的所有学生都去过北达科他$
+* f. $你所在学校的所有学生都没有去过北达科他$<!--原句写的是“全体学生”，意思等同于“所有学生”-->
 
 ## 第七题
 
 * a. $所有的喜剧演员都很有趣$
-* b. $所有的人都是喜剧演员，所有的人都很有趣$\\该语句可以写成“所有的人都是有趣的喜剧演员”
+* b. $所有的人都是喜剧演员，所有的人都很有趣$<!--该语句可以写成“所有的人都是有趣的喜剧演员”-->
 * c. $存在一个人，如果这个人是喜剧演员，那么他是很有趣的$
-* d. $有个喜剧演员很有趣$\\此句如果写成“某个人是喜剧演员，某个人很有趣的”会有歧义，因为不能确定第一个“某个人”和第二个“某个人”是指同一个人。
+* d. $有个喜剧演员很有趣$<!--此句如果写成“某个人是喜剧演员，某个人很有趣的”会有歧义，因为不能确定第一个“某个人”和第二个“某个人”是指同一个人-->
 
 ## 第八题
 
-* a. $所有的兔子都很跳跃$
-* b. $所有的动物都是兔子，所有的动物都很跳跃$
-* c. $有一只兔子很跳跃$
-* d. $有一只动物是兔子，有一只动物很跳跃$
+* a. $如果所有的动物都是兔子的话，那么所有的动物都很跳跃$<!--千万要注意不能和第二句有所混淆，一个是如果那么的关系，一个是且的关系-->
+* b. $所有的动物都是兔子，并且都很跳跃$<!--原句的后半句写的是所有的动物都很跳跃，对比答案不是很妥当，用一个“且”字更好-->
+* c. $存在一些动物，如果它们是兔子的话，那么它们很跳跃$
+* d. $存在一些动物，它们是兔子并且很跳跃$
 
 ## 第九题
 
 * a. $\exists x(p(x) \wedge Q(x))$
 * b. $\exists x(p(x) \wedge Q(x))$
 * c. $\forall x(p(x) \vee Q(x))$
-* d. $\neg \forall (p(x) \vee Q(x))$
+* d. $\neg \forall x(p(x) \vee Q(x))$
 
 ## 第十题
 
-* a. $\exists (c(x) \wedge D(x) \wedge F(x))$
-* b. $\forall (c(x) \wedge D(x) \vee F(x))$
-* c. $\exists (c(x) \wedge F(x) \neg D(x))$
-* d. $\neg \exists (c(x) \wedge d(x) \wedge F(x)$
-* e. $c(x) \vee D(x) \vee F(x) \rightarrow \exists x$
+* a. $\exists x(c(x) \wedge D(x) \wedge F(x))$
+* b. $\forall x(c(x) \wedge D(x) \vee F(x))$
+* c. $\exists x(c(x) \wedge F(x) \neg D(x))$
+* d. $\neg \exists x(c(x) \wedge d(x) \wedge F(x)$
+* e. $(\exists x c(x)) \wedge (\exists x D(x)) \vee (\exists x F(x))$
 
 ## 第十一题
 
@@ -106,14 +106,14 @@
 * a. $\exists x (x^3 \equiv -1),为真$
 * b. $\exists x (x^4 < x^2),为真$
 * c. $\forall x ((-x)^2 \equiv x^2),为真$
-* d. $\forall x (2x > x)$
+* d. $\forall x (2x > x),为假$<!--过程再重要，也别忘了写结论！-->
 
 ## 第十五题
 
 * a. $\forall n (n^2 >= 0),为真$
 * b. $\exists n (n^2 = 2),为假$
 * c. $\forall n (n^2 >= n),为真$
-* d. $\exists n (n^2 < 0),为假$\\这样的题出错了真的不应该！！！
+* d. $\exists n (n^2 < 0),为假$<!--这样的题出错了真的不应该-->
 
 ## 第十六题
 
@@ -133,28 +133,28 @@
   
 ## 第十八题
 
-* a. $p(-2) \vee p(-1) \vee p(0) \vee p(1) \vee p(2)$
-* b. $p(-2) \wedge p(-2) \wedge p(-1) \wedge p(0) \wedge p(1) \wedge p(2)$
-* c. $\neg p(-2) \vee \neg p(-1) \vee \neg (0) \vee \neg (1) \vee \neg (2)$
-* d. $\neg p(-2) \wedge \neg p(-1) \wedge p(0) \wedge p(1) \wedge p(2)$
-* e. $\neg (p(-2) \vee p(-1) \vee p(0) \vee p(1) \vee \neg p(2))$
-* f. $\neg (p(-2) \wedge p(-1) \wedge p(0) \wedge p(1) \wedge (2))$
+* a. $P(-2) \vee P(-1) \vee P(0) \vee P(1) \vee P(2)$
+* b. $P(-2) \wedge P(-1) \wedge P(0) \wedge P(1) \wedge P(2)$
+* c. $\neg P(-2) \vee \neg P(-1) \vee \neg P(0) \vee \neg P(1) \vee \neg P(2)$
+* d. $\neg P(-2) \wedge \neg P(-1) \wedge P(0) \wedge P(1) \wedge P(2)$
+* e. $\neg (P(-2) \vee P(-1) \vee P(0) \vee P(1) \vee P(2))$
+* f. $\neg (P(-2) \wedge P(-1) \wedge P(0) \wedge P(1) \wedge (2))$
 
 ## 第十九题
 
-* a. $p(1) \vee p(2) \vee p(3) \vee p(4) \vee p(5)$
-* b. $p(1) \wedge p(2) \wedge p(3) \wedge p(4) \wedge p(5)$
-* c. $\neg (p(1) \vee p(2) \vee p(3) \vee p(4) \vee p(5)$
-* d. $\neg (p(1) \wedge p(2) \wedge p(3) \wedge p(4) \wedge p(5))$
-* e. $p(1) \vee p(2) \wedge p(4) \wedge p(5) \vee (\neg p(1) \vee \neg p(2) \vee \neg p(3) \vee \neg p(4) \vee \neg p(5))$\\这句话里或与且的地方千万不能少了大括号，不然就是错误的写法
+* a. $P(1) \vee P(2) \vee P(3) \vee P(4) \vee P(5)$
+* b. $P(1) \wedge P(2) \wedge P(3) \wedge P(4) \wedge P(5)$
+* c. $\neg (P(1) \vee P(2) \vee P(3) \vee P(4) \vee P(5)$
+* d. $\neg (P(1) \wedge P(2) \wedge P(3) \wedge P(4) \wedge P(5))$
+* e. $P(1) \vee P(2) \wedge P(4) \wedge P(5) \vee (\neg P(1) \vee \neg P(2) \vee \neg P(3) \vee \neg P(4) \vee \neg P(5))$<!--这句话里或与且的地方千万不能少了大括号，不然就是错误的写法-->
 
 ## 第二十题
 
-* a. $p(-5) \vee p(-3) \vee p(-1) \vee p(1) \vee p(3) \vee p(5)$
-* b. $p(-5) \wedge p(-3) \wedge p(-1) \wedge p(1) \wedge p(3) \wedge p(5)$
-* c. $p(-5) \wedge p(-3) \wedge p(-1) \wedge p(3) \wedge (5)$
-* d. $p(1) \vee p(3) \wedge p(5)$
-* e. $\neg p(-5) \vee \neg p(-3) \vee \neg p(-1) \vee \neg p(1) \vee \neg p(3) \vee \neg p(5)$
+* a. $P(-5) \vee P(-3) \vee P(-1) \vee P(1) \vee P(3) \vee P(5)$
+* b. $P(-5) \wedge P(-3) \wedge P(-1) \wedge P(1) \wedge P(3) \wedge P(5)$
+* c. $(-5 \neq 1) \rightarrow P(-5) \wedge (-3 \neq 1) \rightarrow P(-3) \wedge (-1 \neq 1) \rightarrow P(-1) \wedge (1 \neq 1) \rightarrow P(1) \wedge (3 \neq 1) \rightarrow P(3) \wedge (5 \neq 1) \rightarrow P(5)$<!--\neq 代表的是符号不等于-->
+* d. $(-5 >0) \wedge P(-5) \vee (-3 >0) \wedge P(-3) \vee (-1 >0) \wedge P(-1) \vee (1 >0) \wedge P(1) \vee (3 >0) \wedge P(3) \vee (5 >0) \wedge P(5) $
+* e. $\neg P(-5) \vee \neg P(-3) \vee \neg P(-1) \vee \neg P(1) \vee \neg P(3) \vee \neg P(5)$
 
 ## 第二十一题
 
@@ -188,7 +188,7 @@
 
 ## 第二十三题-1
 
-（令论域为班上的学生）\\同一道题的两种小题里要用不同的条件标注出来，并且条件不要放在题号的里面，要另起一行说明
+（令论域为班上的学生）<!--同一道题的两种小题里要用不同的条件标注出来，并且条件不要放在题号的里面，要另起一行说明-->
 
 * a. $\exists x p(x)(其中p(x)为x会说印地语)$
 * b. $\forall x p(x)(其中p(x)为x很友好)$
@@ -296,9 +296,9 @@
 (a(x)为x是永真式，b(x)是矛盾式)
 
 * a. $\exists x a(x)$
-* b. $\forall x (b(x) \rightarrow a(\neg x))$\\可以理解为矛盾式是永真式的否定
-* c. $\exists x \exists y(\neg (a(x) \wedge b(x) \vee \neg (a(y) \wedge b(y) \wedge a(a \vee b)) \rightarrow a(x))$\\这道题里面有两个变元，一定要重点注意，不能都写成一个x
-* d. $\forall x \forall y(a(x) \wedge a(y) \rightarrow a(x \wedge y))$]\\这道题里面涉及到两个不同的永真式，所以在填写变元的时候一定要注意写两个！
+* b. $\forall x (b(x) \rightarrow a(\neg x))$<!--可以理解为矛盾式是永真式的否定-->
+* c. $\exists x \exists y(\neg (a(x) \wedge b(x) \vee \neg (a(y) \wedge b(y) \wedge a(a \vee b)) \rightarrow a(x))$<!--这道题里面有两个变元，一定要重点注意，不能都写成一个x-->
+* d. $\forall x \forall y(a(x) \wedge a(y) \rightarrow a(x \wedge y))$]<!--这道题里面涉及到两个不同的永真式，所以在填写变元的时候一定要注意写两个！-->
 
 ## 第三十题
 
@@ -351,8 +351,8 @@
 
 ## 第三十七题
 
-* a. $\forall x ((a(x,25000) \vee (b(x,25)) \rightarrow c(x)))(其中a(x)为乘客x在飞行中超过25000英里,b(x)为乘客x在一年内乘坐航班的次数超过25次),c(x)为乘客x被确认为有贵宾资格$\\本句不能使用存在量词，因为这个规定适用于所有的乘客
-* b. $\forall x ((a(x) \vee b(x,3)) \wedge b(x,3.5)) \rightarrow c(x)(其中a(x,3)为选手x可以参加马拉松比赛，b(x)为选手x参加马拉松比赛的时间不超过y小时)，c(x)是选手x是男性$\\本句可以将男选手和女选手的参赛时间用变元b(x,y)来表示
+* a. $\forall x ((a(x,25000) \vee (b(x,25)) \rightarrow c(x)))(其中a(x)为乘客x在飞行中超过25000英里,b(x)为乘客x在一年内乘坐航班的次数超过25次),c(x)为乘客x被确认为有贵宾资格$<!--本句不能使用存在量词，因为这个规定适用于所有的乘客-->
+* b. $\forall x ((a(x) \vee b(x,3)) \wedge b(x,3.5)) \rightarrow c(x)(其中a(x,3)为选手x可以参加马拉松比赛，b(x)为选手x参加马拉松比赛的时间不超过y小时)，c(x)是选手x是男性<!--本句可以将男选手和女选手的参赛时间用变元b(x,y)来表示-->
 * c. $A \rightarrow ((a(60) \vee (a(45) \wedge b(x)) \wedge \forall y、c(x,y)))\rightarrow d(x))(其中A是学生A取得硕士学位，a(60)为学生x修满60个学分，a(45)为学生x修满45个学分，b(x)为学生x写了硕士论文，c(x,y)为学生x所有必修课程的成绩为x或者更高,d(x)为学生x取得硕士学位)$
 * d. $\exists x (a(x,21) \wedge b(x,4.0))(其中a(x,y)为学生x在一星期内修了多余y个学分课程，b(x,z)为x获得了平均绩点z)$
 
@@ -383,7 +383,7 @@
 * a. $\forall x a(x,10) \rightarrow b(x,1)(其中a(x)是磁盘有10MB以上的空闲空间，b(x是在非空的消息集合中至少可以保存一条邮件消息)$
 * b. $\exists x a(x) \rightarrow \forall y b(y)(其中a(x)是每当有主动报警，b(x)是队列中的消息会被传送出去)$
 * c. $\neg \exists x a(x) \rightarrow \forall x b(x)(其中a(x)是除了主控制台之外，b(x)是诊断控制器跟踪所有的系统状态)$
-* d. $\forall x (\neg a(x) \rightarrow x b(x))(其中a(x)是被主叫方列入特殊列表上的参与电话会议的每一方，b(x)是除了被主叫方列入特殊列表上的参与电话会议的每一方都会被记账)$\\这句不能使用存在量词，要使用全称量词。
+* d. $\forall x (\neg a(x) \rightarrow x b(x))(其中a(x)是被主叫方列入特殊列表上的参与电话会议的每一方，b(x)是除了被主叫方列入特殊列表上的参与电话会议的每一方都会被记账)$<!--这句不能使用存在量词，要使用全称量词。-->
 
 ## 第四十二题
 
