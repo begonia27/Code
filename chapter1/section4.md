@@ -180,51 +180,51 @@
 * b. $为真：全校的老师$
 * b. $为假：这个社区里所有的人$
   
-* c. $为真：所有的人都有相同的名字(first name)$
-* c. $为假：有两个人没有相同的名字(first name)$
+* c. $为真：这家医院里的所有婴儿$
+* c. $为假：这个地区所有的人$
   
-* d. $为真：所有的人都认识两个以上的其他人$
-* d. $为假：有一个人不认识两个以上的其他人$
+* d. $为真：这所学校里的学生$
+* d. $为假：大鹏和小明$
 
 ## 第二十三题-1
 
 （令论域为班上的学生）<!--同一道题的两种小题里要用不同的条件标注出来，并且条件不要放在题号的里面，要另起一行说明-->
 
-* a. $\exists x p(x)(其中p(x)为x会说印地语)$
-* b. $\forall x p(x)(其中p(x)为x很友好)$
-* c. $\exists x \neg p(x)(其中p(x)为x出生在加利福尼亚)$
-* d. $\exists x p(x)(其中p(x)为x曾演过电影)$
-* e. $\forall \neg p(x)(其中p(x)为x上过逻辑编程课程)$
+* a. $\exists x P(x)(其中P(x)为x会说印地语)$
+* b. $\forall x P(x)(其中P(x)为x很友好)$
+* c. $\exists x \neg P(x)(其中P(x)为x出生在加利福尼亚)$
+* d. $\exists x P(x)(其中P(x)为x曾演过电影)$
+* e. $\forall \neg P(x)(其中P(x)为x上过逻辑编程课程)$
 
 ## 第二十三题-2
 
 （令论域为所有人）
 
-* a. $\exists (z(x) \wedge p(x))(其中z(x)为班上的学生，p(x)为x会说印地语)$
-* b. $\forall (z(x) \wedge p(x))(其中z(x)为班上的学生，p(x)为x很友好)$
-* c. $\forall (z(x) \wedge \neg p(x))(其中z(x)为班上的学生，p(x)为x出生在加利福尼亚)$
-* d. $\forall (z(x) \rightarrow p(x))(其中z(x)为班上的学生，p(x)为x曾演过电影)$
-* e. $\forall (z(x) \rightarrow \neg p(x))(其中z(x)为班上的学生，p(x)为x上过逻辑编程课程)$
+* a. $\exists (z(x) \wedge P(x))(其中z(x)为班上的学生，p(x)为x会说印地语)$
+* b. $\forall (z(x) \wedge P(x))(其中z(x)为班上的学生，p(x)为x很友好)$
+* c. $\forall (z(x) \wedge \neg P(x))(其中z(x)为班上的学生，p(x)为x出生在加利福尼亚)$
+* d. $\forall (z(x) \rightarrow P(x))(其中z(x)为班上的学生，p(x)为x曾演过电影)$
+* e. $\forall (z(x) \rightarrow \neg P(x))(其中z(x)为班上的学生，p(x)为x上过逻辑编程课程)$
 
 ## 第二十四题-1
 
 （令论域为班上的学生）
 
-* a. $\forall x p(x)(其中p(x)为x有移动电话)$
-* b. $\forall x p(x)(其中p(x)为x曾看过外国影片)$
-* c. $\exists x \neg p(x)(其中p(x)为x会游泳)$
-* d. $\forall x p(x)(其中p(x)为x会求解二次方程)$
-* e. $\exists x \neg p(x)(其中p(x)为x想变富)$
+* a. $\forall x P(x) (其中P(x)为x有移动电话)$
+* b. $\exists x P(x) (其中P(x)为x曾看过外国影片)$
+* c. $\exists x \neg P(x)(其中P(x)为x会游泳)$
+* d. $\forall x P(x)(其中P(x)为x会求解二次方程)$
+* e. $\exists x \neg P(x)(其中p(x)为x想变富)$
 
 ## 第二十四题-2
 
 （令论域为所有人,其中z(x)为班上的学生）
 
-* a. $\forall (z(x) \rightarrow p(x))(其中p(x)为x有移动电话)$
-* b. $\forall (z(x) \wedge p(x))(其中p(x)为x曾看过外国影片)$
-* c. $\forall (z(x) \wedge \neg p(x))(其中p(x)为x会游泳)$
-* d. $\forall (z(x) \wedge p(x))(其中p(x)为x会求解二次方程)$
-* e. $\forall (z(x) \rightarrow \neg p(x))(其中p(x)为x想变富)$
+* a. $\forall (z(x) \rightarrow P(x))(其中p(x)为x有移动电话)$
+* b. $\exists (z(x) \wedge P(x))(其中p(x)为x曾看过外国影片)$
+* c. $\forall (z(x) \wedge \neg P(x))(其中p(x)为x会游泳)$
+* d. $\forall (z(x) \rightarrow P(x))(其中P(x)为x会求解二次方程)$
+* e. $\forall (z(x) \wedge \neg P(x))(其中p(x)为x想变富)$
 
 ## 第二十五题
 
@@ -239,25 +239,25 @@
 
 ## 第二十六题
 
-* a. $\exists x(a(x) \rightarrow b(x))(令论域为所有地球上的人,其中a(x)为x去过乌兹别克斯坦)$
-   $\exists x (a(x)(令论域为学校里的人,其中a(x)为x去过乌兹别克斯坦)$
-   $\exists x (a(x,y))(令论域为班上的人,其中a(x,y)为x去过y)$
+* a. $\exists x(a(x) \wedge b(x))(令论域为所有地球上的人,其中a(x)为x去过乌兹别克斯坦)$
+   $\exists x a(x)(令论域为学校里的人,其中a(x)为x去过乌兹别克斯坦)$
+   $\exists x (a(x) \wedge (x,y))(令论域为班上的人,其中a(x,y)为x去过y)$
 
-* b. $\forall x (a(x) \rightarrow b(x))(令论域为所有地球上的人,其中a(x)为x学过微积分和C++)$
-   $\forall x (a(x)\rightarrow b(x))(令论域为学校里的人,其中a(x)为x学过微积分和C++)$
-   $\forall x (c(x \wedge y))(令论域为班上的人,其中c(x \wedge y)为x学过y)$
+* b. $\forall x (a(x) \wedge b(x))(令论域为所有地球上的人,其中a(x)为x学过微积分和C++)$
+   $\forall x c(x) \rightarrow (a(x) \wedge b(x))(令论域为学校里的人,其中a(x)为x学过微积分和C++)$
+   $\forall x (c(x) \rightarrow a(x,calculus) \wedge a(x,C++))(令论域为班上的人,其中a(x,calculus) 为x学过微积分,a(x,C++)为x学过C++$
 
-* c. $\neg \exists (a(x) \rightarrow b(x))(令论域为所有地球上的人,其中a(x)为x没有同时拥有自行车和摩托车)$
-   $\neg \exists (a(x) \rightarrow b(x))(令论域为学校里的人,其中a(x)为x没有同时拥有自行车和摩托车)$
-   $\neg \exists (a(x) \rightarrow b(x,y))(令论域为班上的人,其中a(x)为x没有同时拥有y)$
+* c. $\forall x c(x) \rightarrow \neg (a(x) \wedge b(x))(令论域为所有地球上的人,其中a(x) \wedge b(x)为x同时拥有自行车和摩托车)$
+   $\forall x \neg (a(x) \wedge b(x))(令论域为学校里的人,其中a(x)为x没有同时拥有自行车和摩托车)$
+   $\forall x c(x) \rightrrow (a(x,bicycle) \wedge b(x,motorcycle))(令论域为班上的人,其中a(x)为x同时拥有y)$
 
-* d. $\exists x \neg (a(x) \rightarrow b(x))(令论域为所有地球上的人,其中a(x)为x不快乐)$
-   $\exists x \neg b(x)(令论域为学校里的人,其中b(x)为x不快乐)$
-   $\exists x \neg b(x)(令论域为班上的人,其中\neg b(x)为x不快乐)$
+* d. $\exists x (a(x) \wedge \neg b(x,happy))(令论域为所有地球上的人,其中a(x)为x很快乐)$
+   $\exists x \neg b(x)(令论域为学校里的人,其中b(x)为x很快乐)$
+   $\exists x \neg b(x)(令论域为班上的人,其中\neg b(x)为x很快乐)$
 
 * e. $\forall x (a(x) \rightarrow b(x))(令论域为所有地球上的人，其中a(x)为x生于20世纪)$
    $\forall x b(x)(令论域为学校里的人，其中b(x)为x生于20世纪)$
-   $\forall x (b(x,y))x(令论域为班上的人，其中b(x,y)为x生于y)$
+   $\forall x a(x) \rightarrow b(x,20)(令论域为班上的人，其中b(x,y)为x生于20世纪)$
 
 ## 第二十七题
 
@@ -283,13 +283,13 @@
 
 ## 第二十八题
 
-(a(x)为x在正确的位置上，b(x)为x状况良好)
+(a(x)为x在正确的位置上,b(x)为x状况良好,c(x)为你的一个工具)
 
-* a. $\exists x a(x)$
-* b. $\forall x (a(x) \wedge b(x))$
+* a. $\exists x \neg a(x)$
+* b. $\forall x c(x) \rightarrow (a(x) \wedge b(x))$
 * c. $\forall x (a(x) \wedge b(x))$
-* d. $\neg \forall x(a(x) \wedge b(x))$
-* e. $\exists x (\neg a(x) \rightarrow b(x))$
+* d. $\neg \exists x(a(x) \wedge b(x)) \equiv \forall x \neg (a(x) \wedge b(x))$
+* e. $\exists x (c(x) \wedge \neg a(x) \wedge b(x))$
 
 ## 第二十九题
 
@@ -316,11 +316,11 @@
 
 ## 第三十二题
 
-* a. $\exists x \neg (a(x) \rightarrow b(x))(a(x)为x若为一些狗，则x不长跳蚤)$
-* b. $\exists x \neg (a(x) \rightarrow b(x))(a(x)为x若为一匹马，则x不会做加法)$
-* c. $\forall x \neg (a(x) \rightarrow b(x))(a(x)为x若为一只考拉，则x不会爬树)$
-* d. $\forall x (a(x) \rightarrow b(x))(a(x)为x若为所有的猴子,则x会说法语)$
-* e. $\exists x \neg (a(x) \rightarrow b(x))(a(x)为x若为一只猪，则x不会游泳和捕鱼)$
+* a. $\exists x \neg a(x)(a(x)为x若为一些狗，则x不长跳蚤)$
+* b. $\forall x \neg a(x)(a(x)为x若为所有的狗，则x不会做加法)$
+* c. $\neg \exists a(x) or \forall x \neg a(x)(a(x)为x若为一只考拉，则x不会爬树)$
+* d. $\forall x (a(x) \rightarrow b(x))(a(x)为x若为一只猴子,则x会说法语)$
+* e. $\forall x (\neg a(x) \vee \neg b(x))(a(x)为x若为所有的猪，则x不会游泳和捕鱼)$
 
 ## 第三十三题
 
@@ -332,10 +332,10 @@
 
 ## 第三十四题
 
-* a. $\neg \exists x a(x)(所有的司机都遵守驾驶速度限制)$
-* b. $\neg \forall x \neg a(x)(一些瑞典电影很幽默)$
-* c. $\neg \forall x a(x)(有一些人可以保守秘密)$
-* d. $\forall x a(x)(班上所有的人都有良好的心态)$
+* a. $\forall x a(x)(a(x)为x若是所有的司机，则x会遵守驾驶速度限制)(则句子为：所有的司机都遵守驾驶速度限制)$
+* b. $\exists x \neg a(x)(a(x)为x若是一部瑞典电影，则x很幽默)(则句子为：一些瑞典电影很幽默)$<!--注意：不严肃就是幽默，翻译的时候要注意句子中的信达雅，不要思维僵化-->
+* c. $\exists x a(x)(a(x)为x若是一些人，则x可以保守秘密)(则句子为：有一些人可以保守秘密)$
+* d. $\forall x a(x)(a(x)为x若是班上所有的人，则x可以保守秘密)(则句子为：班上所有的人都有良好的心态)$
 
 ## 第三十五题
 
@@ -346,7 +346,7 @@
 ## 第三十六题
 
 * a. $x = 1$
-* b. $x = \sqrt {2}$
+* b. $x = \sqrt {2} and \sqrt {-2}$
 * c. $x = 0$
 
 ## 第三十七题
@@ -373,10 +373,10 @@
 
 ## 第四十题
 
-* a. $\forall x (a(x) \rightarrow \exists y b(y))(其中a(x,30)是硬盘中的空闲空间不小于30MB,b(y)是系统向用户发送警告消息)$
-* b. $\forall x (a(x) \rightarrow \neg (b(x) \wedge c(x)))(其中a(x)是文件系统有错误，b(x)是文件系统中的目录可以被打开，c(x)是文件能关闭)$
-* c. $\forall x (a(x) \rightarrow \neg b(x))(其中a(x)是有登录用户，b(x)是备份文件系统)$
-* d. $\forall x ((a(x,8) \rightarrow \wedge b(x,56)) \rightarrow c(x)(a(x)是至少有8MB内存，b(x)是连接速度至少为56kbps),c(x)是可以进行视频点播$
+* a. $(a(x) \rightarrow \forall x b(x)(其中a(x,30)是硬盘中的空闲空间不小于30MB,b(x)是系统向用户发送警告消息)$
+* b. $a(x)  \rightarrow \forall x \neg (b(x) \wedge \forall x \neg c(x)))(其中a(x)是文件系统有错误，b(x)是文件系统中的目录可以被打开，c(x)是文件能关闭)$
+* c. $\exists x (a(x) \rightarrow \neg b(x))(其中a(x)是有登录用户，b(x)是备份文件系统)$
+* d. $((a(8) \wedge b(56)) \rightarrow c(x)(a(x)是至少有8MB内存，b(x)是连接速度至少为56kbps),c(x)是可以进行视频点播$<!--注意：有些地方不是从一开始就有全称量词或者存在量词的，要根据语境来判断-->
 
 ## 第四十一题
 
