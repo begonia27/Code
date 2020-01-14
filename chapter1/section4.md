@@ -390,9 +390,9 @@
 其中a(x)是用户可以访问电子邮箱,b(x)是文件系统是开放状态，c(x)是防火墙处于诊断状态，d(x)是代理服务器处于诊断状态，e(x，100-500)是吞吐量为100-500kbps,f(x)是路由器工作正常。
 
 * a. $\forall x a(x)$
-* b. $\exists x \neg b(x) \rightarrow \forall x a(x)$
-* c. $\exists x d(x) \rightarrow \exists x c(x)$
-* d. $\forall x (a(x,100-500) \wedge \forall x d(x)) \rightarrow \exists x f(x)$
+* b. $\neg b(x) \rightarrow \forall x a(x)$
+* c. $\exists x d(x) \rightarrow c(x)$
+* d. $(a(100) \wedge \neg a(500) \wedge d(x)) \rightarrow \exists x f(x)$
 
 ## 第四十三题
 
@@ -401,9 +401,9 @@
 
 ## 第四十四题
 
-* $\forall x (p(x) \leftrightarrow Q(x))\equiv \forall x P(x) \leftrightarrow \forall x Q(x)$
-* $我们可以通过两件事证明\forall x (p(x) \leftrightarrow Q(x))和\forall x P(x) \leftrightarrow \forall x Q(x)为真。首先，我们证明如果\forall x (p(x) \leftrightarrow Q(x))为真，那么\forall x P(x) \leftrightarrow \forall x Q(x)为真。其次我们证明如果\forall x P(x) \leftrightarrow \forall x Q(x)为真，那么\forall x (p(x) \leftrightarrow Q(x))为真。$
-* $因此假设\forall x (p(x) \leftrightarrow Q(x))为真，这意味着如果a在论域中，那么P(x) \leftrightarrow Q(x)为真。所以，P(x)为真，且Q(x)为真。因为对论域中每个个体P(x)为真，且Q(a) \leftrightarrow Q(x)为真都成立。所以我们得出结论，\forall x P(x)和\forall Q(x)都为真。那么接下来，假设\forall x P(x) \leftrightarrow \forall x Q (x)为真，那么\forall x P(x)为真，且\forall x Q(x)为真。因此，如果a在论域中，那么P(a)为真，且Q(a)为真。可以得出，对于所有的a，P(a)\leftrightarrow Q(a)为真。因而可以得出\forall x P(x) \leftrightarrow Q(x)为真，这样我们可以推出结论，\forall x(P(x) \leftrightarrow Q(x)) \equiv \forall x P(x) \leftrightarrow \forall x Q(x)$
+* $\forall x (p(x) \leftrightarrow Q(x)) \equiv \forall x P(x) \leftrightarrow \forall x Q(x)$
+* $我们可以通过两件事证明\forall x (P(x) \leftrightarrow Q(x))和\forall x P(x) \leftrightarrow \forall x Q(x)为真。首先，我们证明如果\forall x (p(x) \leftrightarrow Q(x))为真，那么\forall x P(x) \leftrightarrow \forall x Q(x)为真。其次我们证明如果\forall x P(x) \leftrightarrow \forall x Q(x)为真，那么\forall x (P(x) \leftrightarrow Q(x))为真。$
+* $因此假设\forall x (P(x) \leftrightarrow Q(x))为真，这意味着如果a在论域中，那么P(x) \leftrightarrow Q(x)为真。所以，P(x)为真，且Q(x)为真。因为对论域中每个个体P(x)为真，且Q(a) \leftrightarrow Q(x)为真都成立。所以我们得出结论，\forall x P(x)和\forall Q(x)都为真。那么接下来，假设\forall x P(x) \leftrightarrow \forall x Q (x)为真，那么\forall x P(x)为真，且\forall x Q(x)为真。因此，如果a在论域中，那么P(a)为真，且Q(a)为真。可以得出，对于所有的a，P(a)\leftrightarrow Q(a)为真。因而可以得出\forall x P(x) \leftrightarrow Q(x)为真，这样我们可以推出结论，\forall x(P(x) \leftrightarrow Q(x)) \equiv \forall x P(x) \leftrightarrow \forall x Q(x)$
 
 ## 第四十五题
 
@@ -449,7 +449,7 @@ $假设\exists x (P(x) \vee Q(x))为真，那么就说明在论域中，存在�
 
 ## 第五十一题
 
-* $在\exists x P(x) \wedge \exists x Q(x)中，当左边的$x$为真时，右边的$x$为真时，逻辑等价式为真。当左边的$x$为真时，右边的$x$为假时，逻辑等价式为真。当左边的$x$为假时，右边的$x$为真时，逻辑等价式为真。当左边的$x$为假时，右边的$x$为假时，逻辑等价式为真。$
+* $在\exists x P(x) \wedge \exists x Q(x)中，当左边的$x$为真时，右边的$x$为真时，逻辑等价式为真。当左边的$x$为真时，右边的$x$为假时，逻辑等价式为真。当左边的$x$为假时，右边的$x$为真时，逻辑等价式为真。当左边的$x$为假时，右边的$x$为假时，逻辑等价式为真。因此，\exists x P(x) \wedge \exists x Q (x)和 \exists x (P(x) \wedge Q(x))不是逻辑等价的$
 
 ## 第五十二题
 
@@ -466,7 +466,7 @@ $假设\exists x (P(x) \vee Q(x))为真，那么就说明在论域中，存在�
 
 ## 第五十四题
 
-* $\neg p(1) \wedge \neg p(2) \wedge p(3) \vee p(1) \wedge \neg p(2) \wedge \neg p(3) \vee \neg p(1) \wedge p(2) \wedge \neg p(3)$
+* $\neg p(1) \wedge \neg p(2) \wedge p(3) \vee \neg p(1) \wedge p(2) \wedge \neg p(3) \vee p(1) \wedge \neg p(2) \wedge \neg p(3)$<!--原句书写的顺序有问题，但是答案没错。养成良好的习惯，在大型项目的代码里，如果全部都按照正序或者倒序书写的话，将提高代码的可阅读性-->
 
 ## 第五十五题
 
@@ -508,9 +508,9 @@ $上述语句意味着如果存在一个人Z，使得X是Z的父亲，并且使�
 
 ## 第六十题
 
-* a. $\forall x (P(x) \wedge Q(x))$
+* a. $\forall x (P(x) \rightarrow Q(x))$
 * b. $\exists x (R(x) \wedge \neg Q(x))$
-* c. $\exists x (R(x) \rightarrow \neg P(x))$
+* c. $\exists x (R(x) \wedge \neg P(x))$
 * d. $可以$
 
 ## 第六十一题
@@ -523,8 +523,8 @@ $上述语句意味着如果存在一个人Z，使得X是Z的父亲，并且使�
 
 ## 第六十二题
 
-* a. $\neg \exists (P(x) \wedge S(x))$
-* b. $\neg \exists (R(x) \wedge \neg S(x))$
+* a. $\forall x P(x) \rightarrow \neg S(x)$
+* b. $\forall x (R(x) \rightarrow S(x))$
 * c. $\forall x (Q(x) \rightarrow P(x))$
 * d. $\forall x (Q(x) \rightarrow \neg R(x))$
 * e. $可以$
