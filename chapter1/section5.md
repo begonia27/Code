@@ -79,4 +79,24 @@ date:2020/1/20-->
 * g) $\exists y \forall x \neg L(x,y)$
 * h) $\exists x \exists y (L(Lynn,x) \wedge L(Lynn,y))$
 * i) $\forall x \forall y (L(x,x) \wedge L(y,y))$
-* j) $\exists x \exists y L(x,y) \wedge \exists x \forall y \neg L(x,y)$
+* j) $\exists x \exists y (L(x,x) \wedge \exists x \forall y \neg L(x,y))$
+
+## 第十题
+
+* a) $\forall x \exists y F(x,Fred)$
+* b) $\exists x \forall y F(Evelyn,y)$
+* c) $\forall x \exists y F(x,y)$
+* d) $\neg \exists x \forall y F(x,y)$
+* e) $\forall y \exists x F(x,y)$
+* f) $\exists x \exists y (F(x,Fred) \wedge F(Jerry))$
+* g) $\exists x \exists y F(Nancy,y)$
+* h) $\exists y \forall x F(x,y)$
+* i) $\neg \exists x \exists y (F(x,x) \wedge F(y,y))$
+* j) $\exists x \exists y (\neg F(x,x) \wedge F(x,y))$
+
+## 第十一题
+
+* a) $\exists x \exists y A(S(Lois) \wedge F(Michaels))$
+* b) $\forall x \exists y A(S(c) \rightarrow F(Gross))$
+* c) $\forall x \exists y A(S(x) \leftrightarrow F(Miller))$
+* d) $\exists x \neg \forall y A(S(x) \wedge F(y))$
