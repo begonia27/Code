@@ -6,7 +6,7 @@ date:2020/1/20-->
 ## 第一题
 
 * a) 所有的 $x$ 都小于任意一个 $y$
-* b) 所有的 $x$ 和所有的 $y$ ,如果 $x >= 0$ 并且 $y >= 0$ ，那么 $x$ 和 $y$ 的乘积都为正数
+* b) 所有的 $x$ 和所有的 $y$ ,如果 $x >= 0$ 并且 $y >= 0$ ，那么 $x$ 和 $y$ 的乘积都为非负数
 * c) 所有的 $x$ 和所有的 $y$ 的乘积都等于任意一个 $z$
 
 ## 第二题
@@ -19,7 +19,7 @@ date:2020/1/20-->
 
 * a) 班上存在一个学生 $x$ 和 班上存在一个学生 $y$ , $x$ 已经发送电子邮件给 $y$了
 * b) 班上存在一个学生 $x$ 和 班上所有的学生 $y$ ,一个学生 $x$ 已经所有的学生 $y$ 发送过邮件了
-* c) 班上的所有学生 $x$ 都已经发电子邮件消息给一个学生 $y$ 了
+* c) 班上的所有学生 $x$ 都已经发电子邮件消息给至少一个学生 $y$ 了
 * d) 班上的一个学生 $y$ 被班上所有的学生 $x$ 发送过电子邮件消息
 * e) 班上的所有学生 $y$ 都被班上的一个学生 $x$ 发送过电子邮件消息
 * f) 班上的所有学生 $x$ 都已经发电子邮件消息给班上的所有学生 $y$了
@@ -37,7 +37,7 @@ date:2020/1/20-->
 
 * a) 学生 $Sarah Smith$ 访问过网站 $www.att.com$
 * b) 存在一个学生 $x$ 访问过网站 $www.imdb.org$
-* c) 存在一个学生 $Jose Orez$ 访问过所有的网站
+* c) 存在一个学生 $Jose Orez$ 访问过至少一个网站
 * d) 存在一个网站 $y$ 被 $Ashok Puri$ 和 $Cindy Yoon$ 都访问过
 * e) 存在一个人 $y$ 和所有的网站 $z$ ,如果 $y$ 和 $David Belcher$ 不是同一个人，并且 $David Belcher$ 访问过 $z$ ,那么 $y$ 也访问过 $z$
 * f) 存在一个人 $x$ 和存在一个人 $y$ 以及所有的网站 $z$ ,如果 $x$ 和 $y$ 不是同一个人，并且 $x$ 访问过$z$ 当且仅当 $y$ 也访问过 $z$
@@ -70,16 +70,16 @@ date:2020/1/20-->
 
 ## 第九题
 
-* a) $\forall x \forall y (L(x,Jerry) \wedge L(y,Jerry))$
-* b) $\forall x \forall y L(x,y) \rightarrow \exists x \exists y L(x,y)$
+* a) $\forall x L(x,Jerry)$
+* b) $\forall x \exists y L(x,y)$
 * c) $\exists y \forall x L(x,y)$
-* d) $\neg \exists x \exists y L(x,y) \rightarrow \forall x \forall y L(x,y)$
-* e) $\exists x \exists y \neg L(Lydia,y)$
-* f) $\exists x \exists y \neg L(x,y)$
-* g) $\exists y \forall x \neg L(x,y)$
-* h) $\exists x \exists y (L(Lynn,x) \wedge L(Lynn,y))$
-* i) $\forall x \forall y (L(x,x) \wedge L(y,y))$
-* j) $\exists x \exists y (L(x,x) \wedge \exists x \forall y \neg L(x,y))$
+* d) $\forall x \exists y \neg L(x,y)$
+* e) $\exists x \neg L(Lydia,y)$
+* f) $\exists x \forall y \neg L(x,y)$
+* g) $\exists x (\forall y L(x,y) \wedge z ((\forall w L(w,z)) \rightarrow z = x)$
+* h) $\exists x \exists y (x \not = y \wedge L(Lynn,x) \wedge \forall z (L(Lynn,z) \rightarrow (z = x \vee z = y)))$
+* i) $\forall x L(x,x)$
+* j) $\exists x \forall y (L(x,y) \rightarrow x = y)$
 
 ## 第十题
 
@@ -96,14 +96,14 @@ date:2020/1/20-->
 
 ## 第十一题
 
-* a) $A(Lois,Michaels)$
-* b) $\forall x (s(x) \rightarrow A(x,Gross))$
-* c) $\forall x (F(x) \rightarrow A(x,Miller) \vee A(Miller,x))$
-* d) $\exists x (s(x) \wedge (\forall y (F(x) \rightarrow \neg A(x,y))))$
-* e) $\exists y (F(y) \wedge (\forall y (F(y) \rightarrow A(x,y))))$
-* f) $\exists x (s(x) \wedge (\forall y (s(x) \rightarrow A(x,y))))$
-* g) $\exists x (F(x) \wedge (\forall y (F(y) \rightarrow A(x,y))))$
-* h) $\exists x (s(x) \wedge (\forall y (F(y) \rightarrow A(x,y))))$
+* a) $A(Lois,Michaels教授)$
+* b) $\forall x (s(x) \rightarrow A(x,Gross教授))$
+* c) $\forall x (F(x) \rightarrow A(x,Miller教授) \vee A(Miller教授,x))$
+* d) $\exists x (s(x) \wedge (\forall y (F(y) \rightarrow \neg A(x,y))))$
+* e) $\exists x (F(x) \wedge (\forall y (S(y) \rightarrow A(x,y))))$
+* f) $\forall x (F(y) \wedge (\exists x (s(x) \vee A(x,y))))$
+* g) $\exists x (F(x) \wedge (\forall y (F(y) \wedge (y \not = x) \rightarrow A(x,y))))$
+* h) $\exists x (s(x) \wedge (\forall y (F(y) \rightarrow \neg A(y,x))))$
 
 ## 第十二题
 
@@ -128,16 +128,16 @@ date:2020/1/20-->
 * a) $\neg M(Chou,Koko)$
 * b) $\neg M(Arlene,Sarah) \vee \neg T(Arlene,Sarah)$
 * c) $\neg M(Deborah,Jose)$
-* d) $\forall x \exists y M(x,Ken)$
-* e) $\neg \exists x T(x,Nina)$
-* f) $\forall x (T(x,Avi) \vee M(x,Avi))$
-* g) $\exists x (M(x,y) \wedge \forall y ((y \not = x) \rightarrow (\neg M(x,y))))$
-* h) $\exists x ((M(x,y) \vee T(x,y)) \wedge \forall y (y \not = x) \rightarrow (\neg M(x,y) \vee \neg T(x,y)))$
-* i) $\exists x \exists y (M(x,y) \leftrightarrow M(y,x))$
-* j) $\exists (M(x,x) \wedge \forall y (y \not = x) \rightarrow \neg (M(x,y)))$
-* k) $\exists x (\neg M(x,y) \wedge \neg T(x,y))$
-* m) $\exists x \exists y (((M(x,y) \wedge T(y,x)) \forall z (z \not = x) \wedge \forall z (z \not = y)) \rightarrow \neg (M(x,z) \wedge T(y,z)))$
-* n) $\exists x \exists y \forall z ((M(x,z) \vee T(x,z)) \vee (T(y,z) \vee M(y,z)))$
+* d) $\forall x M(x,Ken)$
+* e) $\forall x \neg T(x,Nina)$
+* f) $\forall x (T-x,Avi) \vee M(x,Avi))$
+* g) $\exists x \forall y (y \not = x \rightarrow M(x,y))$
+* h) $\exists x \forall y (y \not = x \rightarrow (M(x,y) \vee T(x,y)))$
+* i) $\exists x \exists y (x \not = y \wedge M(x,y) \wedge M(y,x))$
+* j) $\exists (M(x,x)$
+* k) $\exists x \forall y (x \not = y \rightarrow (\neg M(y,x) \vee \neg T(y,x))$
+* m) $\exists x \exists y (x \not = y \rightarrow (\neg M(x,y) \wedge \neg T(y,x))$
+* n) $\exists x \exists y (x \not = y \wedge \forall z ((M(x,z) \vee T(y,z)) \vee (T(x,z) \vee M(y,z))))$
 
 ## 第十四题
 
@@ -198,12 +198,16 @@ date:2020/1/20-->
 
 ## 第二十一题
 
+* $\forall e (e > 0) = (a^{2} + b^{2} + c^{2} + d^{2})$
+
 ## 第二十二题
+
+* $\exists a (a > 0) = ! (a^{2} + b^{2} + c^{2})$（其中论域为全体整数）
 
 ## 第二十三题
 
-* a)
-* b)
+* a) $\forall x \forall y ((x < 0) \wedge (y < 0) \rightarrow (x * y > 0))$
+* b) $\exists x P(x - x) = 0$
 * c) $\forall x \exists y \exists z ((x < 0) \wedge (y < 0) \rightarrow \neg \forall \sqrt {z} )$
 * d) $\exists z \exists x \exists y (z = x ^{2} + y^{2})$
 
@@ -424,6 +428,8 @@ date:2020/1/20-->
 * c) $\exists x \neg (P(x) \vee Q(x))$
 
 ## 第五十一题
+
+* 我们将要说明如何将表达式转换为前束范式，如果其子表达式可转换为前束范式，则任何一个表达式都可以从里到外转换为前束范式。由1.4节的练习45可知，可以假定命题中只使用逻辑联结符 $\vee$ 和 $\neg$ 。注意不带量词的命题本身就是前束范式形式。现在假定命题形如 $QxP(x)$ ，其中 $Q$ 为量词。因为 $P(x)$ 是比原命题短的表达式，所以可以将它转换为 $PNF$ 。$Qx$ 后面跟上这 $PNF$ 仍然是一个 $PNF$ ，且等价于原命题。其次，假定命题形如 $\neg P$ 。如果 $P$ 已经是 $PNF$ 形式，则我们可以用1.4节表2的等价式把否定符号穿过所有量词，则用1.4节练习46可以把量词移到它们两个的前面。如果 $P$ 和 $Q$ 均含量词，可以用1.4节练习45、练习48或练习49 $b$ 重写 $P \vee Q$ 使两个量词都出现在形如 $R \vee S$ 的析取命题之前，然后再把 $R \vee S$ 转换为 $PNF$ 。
 
 ## 第五十二题
 
