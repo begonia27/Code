@@ -39,7 +39,7 @@ date:2020/3/18-->
 
 * $p \rightarrow q$:如果 $Randy$ 很用功,则他是一个笨孩子
 * $q \rightarrow r$:如果 $randy$ 是一个笨孩子，则他不会得到工作
-* $p \rightarrow q$:假言三段论
+* $p \rightarrow r$:假言三段论
 * $p \wedge (p \rightarrow r) \rightarrow r$:假言推理
 
 ## 第六题
