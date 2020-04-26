@@ -187,11 +187,11 @@ date:2020/1/20-->
 * a) $\forall x \forall y ((x < 0) \wedge (y < 0) \rightarrow (x + y < 0))$
 * b) $\neg \forall x \forall y ((x > 0) \wedge (y > 0) \rightarrow (x - y > 0))$
 * c) $\forall x \forall y ((x ^{2} + y ^{2}) - (x + y) ^ 2 \geq 0)$
-* d) $\forall x \forall y (|x * y | = |x| * |y|)$
+* d) $\forall x \forall y (|x *y | = |x|*|y|)$
 
 ## 第二十题
 
-* a) $\forall x \forall y ((x < 0) * (y < 0) \rightarrow (x * y > 0)$)
+* a) $\forall x \forall y ((x < 0) *(y < 0) \rightarrow (x* y > 0)$)
 * b) $\forall x \forall y ((x > 0) + (y > 0) \rightarrow ((x - y) /2 > 0))$
 * c) $\exists x \exists y (((x < 0) - (y < 0)) \wedge (x - y \geq 0))$
 * d) $\forall x \forall y (|x + y| - (|x| + |y| < 0))$
@@ -381,11 +381,11 @@ date:2020/1/20-->
 
 ## 第四十一题
 
-* $\forall x \forall y \forall z ((x * y) * z \equiv x * (y * z))$
+* $\forall x \forall y \forall z ((x *y)*z \equiv x *(y*z))$
 
 ## 第四十二题
 
-* $\forall a \forall b \forall c ((a + b) * c \equiv a * c + b * c)$
+* $\forall a \forall b \forall c ((a + b) *c \equiv a*c + b * c)$
 
 ## 第四十三题
 
