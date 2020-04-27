@@ -245,45 +245,45 @@
 
 * b. $\forall x (a(x) \wedge b(x))$ （令论域为所有地球上的人,其中 $a(x)$ 为 $x$ 学过微积分和 $C++$ ）
    $\forall x c(x) \rightarrow (a(x) \wedge b(x))$ （令论域为学校里的人，其中 $a(x)$ 为 $x$ 学过微积分和 $C++$ ）
-   $\forall x (c(x) \rightarrow a(x,calculus) \wedge a(x,C++))(令论域为班上的人，其中a(x,calculus) 为x学过微积分，a(x,C++)为x学过C++
+   $\forall x (c(x) \rightarrow a(x,calculus) \wedge a(x,C++))$ （令论域为班上的人，其中 $a(x,calculus)$ 为 $x$ 学过微积分， $a(x,C++)$ 为 $x$ 学过 $C++$ ）
 
-* c. $\forall x c(x) \rightarrow \neg (a(x) \wedge b(x))(令论域为所有地球上的人，其中a(x) \wedge b(x)为x同时拥有自行车和摩托车)
-   $\forall x \neg (a(x) \wedge b(x))(令论域为学校里的人，其中a(x)为x没有同时拥有自行车和摩托车)
-   $\forall x c(x) \rightrrow (a(x,bicycle) \wedge b(x,motorcycle))(令论域为班上的人，其中a(x)为x同时拥有y)
+* c. $\forall x c(x) \rightarrow \neg (a(x) \wedge b(x))$ （令论域为所有地球上的人，其中 $a(x) \wedge b(x)$ 为 $x$ 同时拥有自行车和摩托车）
+   $\forall x \neg (a(x) \wedge b(x))$ （令论域为学校里的人，其中 $a(x)$ 为 $x$ 没有同时拥有自行车和摩托车）
+   $\forall x c(x) \rightrrow (a(x,bicycle) \wedge b(x,motorcycle))$ （令论域为班上的人，其中 $a(x)$ 为 $x$ 同时拥有 $y$ ）
 
-* d. $\exists x (a(x) \wedge \neg b(x,happy))(令论域为所有地球上的人，其中a(x)为x很快乐)
-   $\exists x \neg b(x)(令论域为学校里的人，其中b(x)为x很快乐)
-   $\exists x \neg b(x)(令论域为班上的人，其中\neg b(x)为x很快乐)
+* d. $\exists x (a(x) \wedge \neg b(x,happy))$ （令论域为所有地球上的人，其中 $a(x)$ 为 $x$ 很快乐）
+   $\exists x \neg b(x)$ （令论域为学校里的人，其中 $b(x)$ 为 $x$ 很快乐）
+   $\exists x \neg b(x)$ （令论域为班上的人，其中 $\neg b(x)$ 为 $x$ 很快乐）
 
-* e. $\forall x (a(x) \rightarrow b(x))(令论域为所有地球上的人，其中a(x)为x生于20世纪)
-   $\forall x b(x)(令论域为学校里的人，其中b(x)为x生于20世纪)
-   $\forall x a(x) \rightarrow b(x,20)(令论域为班上的人，其中b(x,y)为x生于20世纪)
+* e. $\forall x (a(x) \rightarrow b(x))$ （令论域为所有地球上的人，其中 $a(x)$ 为 $x$ 生于 $20$ 世纪）
+   $\forall x b(x)$ （令论域为学校里的人，其中 $b(x)$ 为 $x$ 生于 $20$ 世纪）
+   $\forall x a(x) \rightarrow b(x,20)$ （令论域为班上的人，其中 $b(x,y)$ 为 $x$ 生于 $20$ 世纪）
 
 ## 第二十七题
 
-* a. $\exists x(a(x) \wedge b(x))(论域为所有人，其中a(x)为地球上所有的人x,x如果是学校里的人，则x在越南居住过)$
-   $\exists x a(x)(令论域为学校里的人，其中a(x)为学校里的人x,x在越南居住过)$
-   $\exists x a(x) \wedge b(x,y)(令论域为班上的人，其中b(x,y)x在y居住过)$
+* a. $\exists x(a(x) \wedge b(x))$ （论域为所有人，其中 $a(x)$ 为地球上所有的人 $x$ ，$x$ 如果是学校里的人，则 $x$ 在越南居住过）
+   $\exists x a(x)$ （令论域为学校里的人，其中 $a(x)$ 为学校里的人 $x$ ， $x$ 在越南居住过）
+   $\exists x a(x) \wedge b(x,y)$ （令论域为班上的人，其中 $b(x,y)$ 为 $x$ 在 $y$ 居住过）
 
-* b. $\exists x \neg (a(x) \wedge b(x))(论域为所有人，其中a(x)为地球上所有的人x,x如果是学校里的人，则x不会说印地语)$
-   $\exists x \neg (a(x))(令论域为学校里的人，其中a(x)为学校里的人x,x不会说印地语)$
-   $\exists x (a(x) \wedge \neg (b(x,y)(令论域为班上的人，其中\neg a(x,y)x为x不会y)$
+* b. $\exists x \neg (a(x) \wedge b(x))$ （论域为所有人，其中 $a(x)$ 为地球上所有的人 $x$ ， $x$ 如果是学校里的人，则 $x$ 不会说印地语）
+   $\exists x \neg (a(x))$ （令论域为学校里的人，其中 $a(x)$ 为学校里的人 $x$ ， $x$ 不会说印地语）
+   $\exists x (a(x) \wedge \neg (b(x,y)$ （令论域为班上的人，其中 $\neg a(x,y)$ 为 $x$ 不会 $y$ ）
 
-* c. $\exists x (p(x) \wedge a(x) \wedge b(x) \wedge c(x))(令论域为所有人，其中p(x)为对于所有人x,x如果是学校里的人，那么a(x)为会用Java;b(x)为x会用Prolog;c(x)为x会用C++)$
-   $\exists x (a(x) \wedge b(x) \wedge c(x)(令论域为学校里的人，那么a(x)为会用Java;b(x)为x会用Prolog;c(x)为x会用C++)$
-   $\exists x (q(x,Java) \wedge q(x,Prolog) \wedge q(x,C++)(令论域为班上的人,其中q(x,y)为对于班上的某个人x,x会用编程语言y)$
+* c. $\exists x (p(x) \wedge a(x) \wedge b(x) \wedge c(x))$ （令论域为所有人，其中 $p(x)$ 为对于所有人 $x$ ， $x$ 如果是学校里的人，那么 $a(x)$ 为会用 $Java$ ； $b(x)$ 为 $x$ 会用 $Prolog$ ； $c(x)$ 为 $x$ 用 $C++$ ）
+   $\exists x (a(x) \wedge b(x) \wedge c(x)$ （令论域为学校里的人，那么 $a(x)$ 为会用 $Java$ ； $b(x)$ 为 $x$ 会用 $Prolog$ ； $c(x)$ 为 $x$ 会用 $C++$ ）
+   $\exists x (q(x,Java) \wedge q(x,Prolog) \wedge q(x,C++)$ （令论域为班上的人，其中 $q(x,y)$ 为对于班上的某个人 $x$ ， $x$ 会用编程语言 $y$ ）
 
-* d. $\forall x (a(x) \rightarrow b(x))(令论域为所有人，其中a(x)为对于所有人x,x若为班上的人，则x都喜欢吃泰国食物)$
-   $\forall x a(x)(令论域为学校里的人，其中a(x)为对于学校里的人x,x若为班上的人，则x喜欢吃泰国食物)$
-   $\forall x a(x) \rightarrow b(x,y)(令论域为班上的人，其中a(x,y)为对于班上的人x,x喜欢吃y)$
+* d. $\forall x (a(x) \rightarrow b(x))$ （令论域为所有人，其中 $a(x)$ 为对于所有人 $x$ ， $x$ 若为班上的人，则 $x$ 都喜欢吃泰国食物）
+   $\forall x a(x)$ （令论域为学校里的人，其中 $a(x)$ 为对于学校里的人 $x$ ， $x$ 若为班上的人，则 $x$ 喜欢吃泰国食物）
+   $\forall x a(x) \rightarrow b(x,y)$ （令论域为班上的人，其中 $a(x,y)$ 为对于班上的人 $x$ ， $x$ 喜欢吃 $y$ ）
 
-* e. $\exists x (a(x) \wedge \neg b(x))(令论域为地球上所有的人,其中a(x)为对于所有的人x,x若为班上的人,则x不会玩曲棍球)$
-   $\exists x \neg a(x)(令论域为学校里的人,其中a(x)为对于学校里的人x,x若为班上的人,则x不会玩曲棍球)$
-   $\exists x (a(x) \wedge \neg b(x,y))(令论域为班上的人,其中\neg a(x,y)为对于班上的人x,x不会y)$
+* e. $\exists x (a(x) \wedge \neg b(x))$ （令论域为地球上所有的人,其中 $a(x)$ 为对于所有的人 $x$ ， $x$ 若为班上的人，则 $x$ 不会玩曲棍球）
+   $\exists x \neg a(x)$ （令论域为地球上所有的人,其中 $a(x)$ 为对于所有的人 $x$ ， $x$ 若为班上的人，则 $x$ 不会玩曲棍球）
+   $\exists x (a(x) \wedge \neg b(x,y))$ （令论域为班上的人 ，其中 $\neg a(x,y)$ 为对于班上的人 $x$ ， $x$ 不会 $y$ ）
 
 ## 第二十八题
 
-(a(x)为x在正确的位置上,b(x)为x状况良好,c(x)为你的一个工具)
+（ $a(x)$ 为 $x$ 在正确的位置上， $b(x)$ 为 $x$ 状况良好， $c(x)$ 为你的一个工具）
 
 * a. $\exists x \neg a(x)$
 * b. $\forall x c(x) \rightarrow (a(x) \wedge b(x))$
@@ -293,7 +293,7 @@
 
 ## 第二十九题
 
-(a(x)为x是永真式，b(x)是矛盾式)
+（ $a(x)$ 为 $x$ 是永真式， $b(x)$ 是矛盾式）
 
 * a. $\exists x a(x)$
 * b. $\forall x (b(x) \rightarrow a(\neg x))$<!--可以理解为矛盾式是永真式的否定-->
@@ -316,32 +316,32 @@
 
 ## 第三十二题
 
-* a. $\exists x \neg a(x)(a(x)为x若为一些狗，则x不长跳蚤)$
-* b. $\forall x \neg a(x)(a(x)为x若为所有的狗，则x不会做加法)$
-* c. $\neg \exists a(x) or \forall x \neg a(x)(a(x)为x若为一只考拉，则x不会爬树)$
-* d. $\forall x (a(x) \rightarrow b(x))(a(x)为x若为一只猴子,则x会说法语)$
-* e. $\forall x (\neg a(x) \vee \neg b(x))(a(x)为x若为所有的猪，则x不会游泳和捕鱼)$
+* a. $\exists x \neg a(x)$ （ $a(x)$ 为 $x$ 若为一些狗，则 $x$ 不长跳蚤）
+* b. $\forall x \neg a(x)$ （ $a(x)$ 为 $x$ 若为所有的狗，则 $x$ 不会做加法）
+* c. $\neg \exists a(x) or \forall x \neg a(x)$ （ $a(x)$ 为 $x$ 若为一只考拉，则 $x$ 不会爬树）
+* d. $\forall x (a(x) \rightarrow b(x))$ （ $a(x)$ 为 $x$ 若为一只猴子，则 $x$ 会说法语）
+* e. $\forall x (\neg a(x) \vee \neg b(x))$ （ $a(x)$ 为 $x$ 若为所有的猪，则 $x$ 不会游泳和捕鱼）
 
 ## 第三十三题
 
-* a. $\forall x \neg a(x)(a(x)为x若为一些狗，则x不会学习新的技巧)则句子为：没有年长的狗学习新的技巧$
-* b. $\exists x (a(x)(a(x)为x若为所有的兔子，则x不会微积分)则句子为：有一只兔子会微积分$
-* c. $\exists x \neg a(x)(a(x)为x若为所有的鸟，则x不会飞)则句子为：有一只鸟不会飞$
-* d. $\exists x a(x)(a(x)为x若为所有的狗，则x不会说话)则句子为：有一只狗会说话$
-* e. $\neg \exists x (a(x) \wedge b(x))(a(x)为x若为所有的人，则x不会法语和俄语)则句子为：班上有人会法语和俄语$
+* a. $\forall x \neg a(x)$ （ $a(x)$ 为 $x$ 若为一些狗，则 $x$ 不会学习新的技巧）则句子为：没有年长的狗学习新的技巧
+* b. $\exists x (a(x)$ （ $a(x)$ 若为所有的兔子，则 $x$ 不会微积分）则句子为：有一只兔子会微积分
+* c. $\exists x \neg a(x)$ （ $a(x)$ 若为所有的鸟，则 $x$ 不会飞）则句子为：有一只鸟不会飞
+* d. $\exists x a(x)$ （ $a(x)$ 若为所有的狗，则 $x$ 不会说话）则句子为：有一只狗会说话
+* e. $\neg \exists x (a(x) \wedge b(x))$ （ $a(x)$ 若为所有的人，则 $x$ 不会法语和俄语）则句子为：班上有人会法语和俄语
 
 ## 第三十四题
 
-* a. $\forall x a(x)(a(x)为x若是所有的司机，则x会遵守驾驶速度限制)(则句子为：所有的司机都遵守驾驶速度限制)$
-* b. $\exists x \neg a(x)(a(x)为x若是一部瑞典电影，则x很幽默)(则句子为：一些瑞典电影很幽默)$<!--注意：不严肃就是幽默，翻译的时候要注意句子中的信达雅，不要思维僵化-->
-* c. $\exists x a(x)(a(x)为x若是一些人，则x可以保守秘密)(则句子为：有一些人可以保守秘密)$
-* d. $\forall x a(x)(a(x)为x若是班上所有的人，则x可以保守秘密)(则句子为：班上所有的人都有良好的心态)$
+* a. $\forall x a(x)$ （ $a(x)$ 若是所有的司机，则 $x$ 会遵守驾驶速度限制）（则句子为：所有的司机都遵守驾驶速度限制）
+* b. $\exists x \neg a(x)$ （ $a(x)$ 若是一部瑞典电影，则 $x$ 很幽默）（则句子为：一些瑞典电影很幽默）<!--注意：不严肃就是幽默，翻译的时候要注意句子中的信达雅，不要思维僵化-->
+* c. $\exists x a(x)$ （ $a(x)$ 若是一些人，则 $x$ 可以保守秘密）（则句子为：有一些人可以保守秘密）
+* d. $\forall x a(x)$ （ $a(x)$ 若是班上所有的人，则 $x$ 可以保守秘密）（则句子为：班上所有的人都有良好的心态）
 
 ## 第三十五题
 
-* a. $没有反例$
+* a. 没有反例
 * b. $x = 0$
-* c. $x =2$
+* c. $x = 2$
 
 ## 第三十六题
 
@@ -351,43 +351,43 @@
 
 ## 第三十七题
 
-* a. $\forall x ((a(x,25000) \vee (b(x,25)) \rightarrow c(x)))(其中a(x)为乘客x在飞行中超过25000英里,b(x)为乘客x在一年内乘坐航班的次数超过25次),c(x)为乘客x被确认为有贵宾资格$<!--本句不能使用存在量词，因为这个规定适用于所有的乘客-->
-* b. $\forall x ((a(x) \vee b(x,3)) \wedge b(x,3.5)) \rightarrow c(x)(其中a(x,3)为选手x可以参加马拉松比赛，b(x)为选手x参加马拉松比赛的时间不超过y小时)，c(x)是选手x是男性<!--本句可以将男选手和女选手的参赛时间用变元b(x,y)来表示-->
-* c. $A \rightarrow ((a(60) \vee (a(45) \wedge b(x)) \wedge \forall y、c(x,y)))\rightarrow d(x))(其中A是学生A取得硕士学位，a(60)为学生x修满60个学分，a(45)为学生x修满45个学分，b(x)为学生x写了硕士论文，c(x,y)为学生x所有必修课程的成绩为x或者更高,d(x)为学生x取得硕士学位)$
-* d. $\exists x (a(x,21) \wedge b(x,4.0))(其中a(x,y)为学生x在一星期内修了多余y个学分课程，b(x,z)为x获得了平均绩点z)$
+* a. $\forall x ((a(x,25000) \vee (b(x,25)) \rightarrow c(x)))$ （其中 $a(x)$ 为乘客 $x$ 在飞行中超过25000英里， $b(x)$ 为乘客 $x$ 在一年内乘坐航班的次数超过 $25$ 次)， $c(x)$ 为乘客 $x$ 被确认为有贵宾资格 ）<!--本句不能使用存在量词，因为这个规定适用于所有的乘客-->
+* b. $\forall x ((a(x) \vee b(x,3)) \wedge b(x,3.5)) \rightarrow c (x)$ （其中a(x,3)为选手x可以参加马拉松比赛， $b(x)$ 为选手x参加马拉松比赛的时间不超过y小时)，c(x)是选手 $x$ 是男性<!--本句可以将男选手和女选手的参赛时间用变元b(x,y)来表示-->
+* c. $A \rightarrow ((a(60) \vee (a(45) \wedge b(x)) \wedge \forall y、c(x,y)))\rightarrow d(x))$ （其中 $A$ 是学生 $A$ 取得硕士学位， $a(60)$ 为学生 $x$ 修满 $60$ 个学分， $a(45)$ 为学生 $x$ 修满 $45$ 个学分， $b(x)$ 为学生 $x$ 写了硕士论文， $c(x,y)$ 为学生 $x$ 所有必修课程的成绩为 $x$ 或者更高， $d(x)$ 为学生 $x$ 取得硕士学位）
+* d. $\exists x (a(x,21) \wedge b(x,4.0))$ （其中 $a(x,y)$ 为学生 $x$ 在一星期内修了多余 $y$ 个学分课程， $b(x,z)$ 为 $x$ 获得了平均绩点 $z$ ）
 
 ## 第三十八题
 
-* a. $有一些系统处于开放状态$
-* b. $都有的系统都处于故障状态或者所有的系统都处于诊断状态$
-* c. $有一些系统处于开放装态或者有一些系统处于诊断状态$
-* d. $有一些系统不处于可用状态$
-* e. $所有的系统架构都处于不工作状态$
+* a. 有一些系统处于开放状态
+* b. 都有的系统都处于故障状态或者所有的系统都处于诊断状态
+* c. 有一些系统处于开放装态或者有一些系统处于诊断状态
+* d. 有一些系统不处于可用状态
+* e. 所有的系统架构都处于不工作状态
 
 ## 第三十九题
 
-* a. $如果有一些打印机不能提供服务，并且打印机很忙，那么有一些打印作业会丢失$
-* b. $如果所有的打印机都很忙，那么有一些打印作业会在队列中$
-* c. $如果所有的打印作业在队列中，并且打印作业丢失了，那么有一些打印机不能提供打印服务了$
-* d. $如果所有的打印机都很忙，并且打印作业在队列中，那么有一些打印作业丢失了$
+* a. 如果有一些打印机不能提供服务，并且打印机很忙，那么有一些打印作业会丢失
+* b. 如果所有的打印机都很忙，那么有一些打印作业会在队列中
+* c. 如果所有的打印作业在队列中，并且打印作业丢失了，那么有一些打印机不能提供打印服务了
+* d. 如果所有的打印机都很忙，并且打印作业在队列中，那么有一些打印作业丢失了
 
 ## 第四十题
 
-* a. $(a(x) \rightarrow \forall x b(x)(其中a(x,30)是硬盘中的空闲空间不小于30MB,b(x)是系统向用户发送警告消息)$
-* b. $a(x)  \rightarrow \forall x \neg (b(x) \wedge \forall x \neg c(x)))(其中a(x)是文件系统有错误，b(x)是文件系统中的目录可以被打开，c(x)是文件能关闭)$
-* c. $\exists x (a(x) \rightarrow \neg b(x))(其中a(x)是有登录用户，b(x)是备份文件系统)$
-* d. $((a(8) \wedge b(56)) \rightarrow c(x)(a(x)是至少有8MB内存，b(x)是连接速度至少为56kbps),c(x)是可以进行视频点播$<!--注意：有些地方不是从一开始就有全称量词或者存在量词的，要根据语境来判断-->
+* a. $(a(x) \rightarrow \forall x b(x)$ （其中 $a(x,30)$ 是硬盘中的空闲空间不小于 $30MB$ ， $b(x)$ 是系统向用户发送警告消息）
+* b. $a(x)  \rightarrow \forall x \neg (b(x) \wedge \forall x \neg c(x))$ （其中 $a(x)$ 是文件系统有错误， $b(x)$ 是文件系统中的目录可以被打开， $c(x)$ 是文件能关闭）
+* c. $\exists x (a(x) \rightarrow \neg b(x)$ （其中 $a(x)$ 是有登录用户， $b(x)$ 是备份文件系统）
+* d. $((a(8) \wedge b(56)) \rightarrow c(x)$ （ $a(x)$ 是至少有 $8MB$ 内存， $b(x)$ 是连接速度至少为 $56kbps$ ， $c(x)$ 是可以进行视频点播）<!--注意：有些地方不是从一开始就有全称量词或者存在量词的，要根据语境来判断-->
 
 ## 第四十一题
 
-* a. $\forall x a(x,10) \rightarrow b(x,1)(其中a(x)是磁盘有10MB以上的空闲空间，b(x是在非空的消息集合中至少可以保存一条邮件消息)$
-* b. $\exists x a(x) \rightarrow \forall y b(y)(其中a(x)是每当有主动报警，b(x)是队列中的消息会被传送出去)$
-* c. $\neg \exists x a(x) \rightarrow \forall x b(x)(其中a(x)是除了主控制台之外，b(x)是诊断控制器跟踪所有的系统状态)$
-* d. $\forall x (\neg a(x) \rightarrow x b(x))(其中a(x)是被主叫方列入特殊列表上的参与电话会议的每一方，b(x)是除了被主叫方列入特殊列表上的参与电话会议的每一方都会被记账)$<!--这句不能使用存在量词，要使用全称量词。-->
+* a. $\forall x a(x,10) \rightarrow b(x,1)$ （其中 $a(x)$ 是磁盘有 $10MB$ 以上的空闲空间， $b(x)$ 是在非空的消息集合中至少可以保存一条邮件消息）
+* b. $\exists x a(x) \rightarrow \forall y b(y)$ （其中 $a(x)$ 是每当有主动报警， $b(x)$ 是队列中的消息会被传送出去）
+* c. $\neg \exists x a(x) \rightarrow \forall x b(x)$ （其中 $a(x)$ 是除了主控制台之外， $b(x)$ 是诊断控制器跟踪所有的系统状态）
+* d. $\forall x (\neg a(x) \rightarrow x b(x))$ （其中 $a(x)$ 是被主叫方列入特殊列表上的参与电话会议的每一方， $b(x)$ 是除了被主叫方列入特殊列表上的参与电话会议的每一方都会被记账）<!--这句不能使用存在量词，要使用全称量词。-->
 
 ## 第四十二题
 
-其中a(x)是用户可以访问电子邮箱,b(x)是文件系统是开放状态，c(x)是防火墙处于诊断状态，d(x)是代理服务器处于诊断状态，e(x，100-500)是吞吐量为100-500kbps,f(x)是路由器工作正常。
+其中 $a(x)$ 是用户可以访问电子邮箱， $b(x)$ 是文件系统是开放状态， $c(x)$ 是防火墙处于诊断状态， $d(x)$ 是代理服务器处于诊断状态， $e(x，100-500)$ 是吞吐量为 $100-500kbps$ ， $f(x)$ 是路由器工作正常。
 
 * a. $\forall x a(x)$
 * b. $\neg b(x) \rightarrow \forall x a(x)$
@@ -396,73 +396,73 @@
 
 ## 第四十三题
 
-* $\forall x (P(x) \rightarrow Q(x)) 和 \forall x P(x) \rightarrow \forall x Q(x)不等价$
-* $这两个逻辑表达式一共有4个可能的情况，分别是同真、同假、前者真，后者假；前者假，后者真。当前者真而后者假时，\forall x (P(x) \rightarrow Q(x)为假，而\forall x P(x) \rightarrow Q(x)为真。$
+* $\forall x (P(x) \rightarrow Q(x))$ 和 $\forall x P(x) \rightarrow \forall x Q(x)$ 不等价
+* 这两个逻辑表达式一共有 $4$ 个可能的情况，分别是同真、同假、前者真，后者假；前者假，后者真。当前者真而后者假时， $\forall x (P(x) \rightarrow Q(x)$ 为假，而 $\forall x P(x) \rightarrow Q(x)$ 为真。
 
 ## 第四十四题
 
 * $\forall x (p(x) \leftrightarrow Q(x)) \equiv \forall x P(x) \leftrightarrow \forall x Q(x)$
-* $我们可以通过两件事证明\forall x (P(x) \leftrightarrow Q(x))和\forall x P(x) \leftrightarrow \forall x Q(x)为真。首先，我们证明如果\forall x (p(x) \leftrightarrow Q(x))为真，那么\forall x P(x) \leftrightarrow \forall x Q(x)为真。其次我们证明如果\forall x P(x) \leftrightarrow \forall x Q(x)为真，那么\forall x (P(x) \leftrightarrow Q(x))为真。$
-* $因此假设\forall x (P(x) \leftrightarrow Q(x))为真，这意味着如果a在论域中，那么P(x) \leftrightarrow Q(x)为真。所以，P(x)为真，且Q(x)为真。因为对论域中每个个体P(x)为真，且Q(a) \leftrightarrow Q(x)为真都成立。所以我们得出结论，\forall x P(x)和\forall Q(x)都为真。那么接下来，假设\forall x P(x) \leftrightarrow \forall x Q (x)为真，那么\forall x P(x)为真，且\forall x Q(x)为真。因此，如果a在论域中，那么P(a)为真，且Q(a)为真。可以得出，对于所有的a，P(a)\leftrightarrow Q(a)为真。因而可以得出\forall x P(x) \leftrightarrow Q(x)为真，这样我们可以推出结论，\forall x(P(x) \leftrightarrow Q(x)) \equiv \forall x P(x) \leftrightarrow \forall x Q(x)$
+* 我们可以通过两件事证明 $\forall x (P(x) \leftrightarrow Q(x))$ 和 $\forall x P(x) \leftrightarrow \forall x Q(x)$ 为真。首先，我们证明如果 $\forall x (p(x) \leftrightarrow Q(x))$ 为真，那么 $\forall x P(x) \leftrightarrow \forall x Q(x)$ 为真。其次我们证明如果 $\forall x P(x) \leftrightarrow \forall x Q(x)$ 为真，那么 $\forall x (P(x) \leftrightarrow Q(x))$ 为真。
+* 因此假设 $\forall x (P(x) \leftrightarrow Q(x))$ 为真，这意味着如果 $a$ 在论域中，那么 $P(x) \leftrightarrow Q(x)$ 为真。所以， $P(x)$ 为真，且 $Q(x)$ 为真。因为对论域中每个个体 $P(x)$ 为真，且 $Q(a) \leftrightarrow Q(x)$ 为真都成立。所以我们得出结论， $\forall x P(x)$ 和 $\forall Q(x)$ 都为真。那么接下来，假设 $\forall x P(x) \leftrightarrow \forall x Q (x)$ 为真，那么 $\forall x P(x)$ 为真，且 $\forall x Q(x)$ 为真。因此，如果 $a$ 在论域中，那么 $P(a)$ 为真，且 $Q(a)$ 为真。可以得出，对于所有的 $a$ ， $P(a)\leftrightarrow Q(a)$ 为真。因而可以得出 $\forall x P(x) \leftrightarrow Q(x)$ 为真，这样我们可以推出结论， $\forall x(P(x) \leftrightarrow Q(x)) \equiv \forall x P(x) \leftrightarrow \forall x Q(x)$
 
 ## 第四十五题
 
-* $我们可以通过两件事证明\exists x (P(x) \vee Q(x))和\exists x P(x)Q(x)是逻辑等价的。$$首先要证明当\exists x(p(x) \vee Q(x))为真时，\exists x p(x) \vee \exists x Q(x)为真，然后再证明当\exists x p(x) \vee \exists x Q(x)为真时，\exists x (p(x) \vee Q(x))为真$
+* 我们可以通过两件事证明 $\exists x (P(x) \vee Q(x))和\exists x P(x)Q(x)$ 是逻辑等价的。首先要证明当 $\exists x(p(x) \vee Q(x))为真时，\exists x p(x) \vee \exists x Q(x)$ 为真，然后再证明当 $\exists x p(x) \vee \exists x Q(x)$ 为真时， $\exists x (p(x) \vee Q(x))$ 为真
 
-$假设\exists x (P(x) \vee Q(x))为真，那么就说明在论域中，存在一个$a$，使得P(a) \vee Q(a)为真，所以P(a)为真，Q(a)为真.因为在论域中存在一个个体P(a)为真，且Q(a)为真都成立。所以我们可以得出结论\exists x P(x)和\exists x Q(x)为真。这意味着\exists x P(x) \vee \exists x Q(x)为真，接下来，假设\exists x P(x) \vee \exists x Q(x)为真，那么\exists x P(x)为真，\exists x Q(x)为真，因此，如果在论域中存在一个$a$，那么P(a)为真，Q(a)为真。因此存在一个$a$,使得P(a) \vee Q(a)为真，所以可以得到\exists x (P(x) \vee Q(x)),所以我们可以得出结论：\exists x (P(x) \vee Q(x)) \equiv \exists x P(x) \vee \exists x Q(x)$.
+* 假设 $\exists x (P(x) \vee Q(x))$ 为真，那么就说明在论域中，存在一个 $a$ ，使得 $P(a) \vee Q(a)$ 为真，所以 $P(a)$ 为真， $Q(a)$ 为真。因为在论域中存在一个个体 $P(a)$ 为真，且 $Q(a)$ 为真都成立。所以我们可以得出结论 $\exists x P(x)$ 和 $\exists x Q(x)$ 为真。这意味着 $\exists x P(x) \vee \exists x Q(x)$ 为真，接下来，假设 $\exists x P(x) \vee \exists x Q(x)$ 为真，那么 $\exists x P(x)$ 为真， $\exists x Q(x)$ 为真，因此，如果在论域中存在一个 $a$ ，那么 $P(a)$ 为真， $Q(a)$ 为真。因此存在一个 $a$ ，使得 $P(a) \vee Q(a)$ 为真，所以可以得到 $\exists x (P(x) \vee Q(x))$ ，所以我们可以得出结论： $\exists x (P(x) \vee Q(x)) \equiv \exists x P(x) \vee \exists x Q(x)$
 
 ## 第四十六题(a)
 
-* $在(\forall x P(x) \vee A) \equiv \forall x (P(x) \vee A)中，当左边的$x$为真，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为真，右边的$x$为假时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为假时，逻辑等价式的左右两边都为真。因此，(\forall x P(x) \vee A \equiv \forall x (P(x) \vee A)$
+* 在 $(\forall x P(x) \vee A) \equiv \forall x (P(x) \vee A)$ 中，当左边的 $x$ 为真，右边的 $x$ 为真时，逻辑等价式的左右两边都为真。当左边的 $x$ 为真，右边的 $x$ 为假时，逻辑等价式的左右两边都为真。当左边的 $x$ 为假，右边的 $x$ 为真时，逻辑等价式的左右两边都为真。当左边的 $x$ 为假，右边的 $x$ 为假时，逻辑等价式的左右两边都为真。因此， $(\forall x P(x) \vee A \equiv \forall x (P(x) \vee A)$
 
 ## 第四十六题（b）
 
-* $在(\exists x P(x) \vee A) \equiv \exists x (P(x) \vee A)中，当左边的$x$为真，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为真，右边的$x$为假时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为假时，逻辑等价式的左右两边都为真。因此，(\exists x P(x) \vee A \equiv \exists x (P(x) \vee A)$
+* 在 $(\exists x P(x) \vee A) \equiv \exists x (P(x) \vee A)$ 中，当左边的 $x$ 为真，右边的 $x$ 为真时，逻辑等价式的左右两边都为真。当左边的 $x$ 为真，右边的 $x$ 为假时，逻辑等价式的左右两边都为真。当左边的 $x$ 为假，右边的 $x$ 为真时，逻辑等价式的左右两边都为真。当左边的 $x$ 为假，右边的 $x$ 为假时，逻辑等价式的左右两边都为真。因此， $(\exists x P(x) \vee A \equiv \exists x (P(x) \vee A)$
 
 ## 第四十七题(a)
 
-* $在(\forall x P(x) \wedge A) \equiv \forall x (P(x) \wedge A)中，当A为真，逻辑等价式的左右两边都为真。当A为假时，逻辑等价式的左边为假，右边是对于每个x，P(x) \wedge A为假。因此，(\forall x P(x) \wedge A \equiv \forall x (P(x) \wedge A)$
+* 在 $(\forall x P(x) \wedge A) \equiv \forall x (P(x) \wedge A)$ 中，当 $A$ 为真，逻辑等价式的左右两边都为真。当 $A$ 为假时，逻辑等价式的左边为假，右边是对于每个 $x$ ， $P(x) \wedge A$ 为假。因此， $(\forall x P(x) \wedge A \equiv \forall x (P(x) \wedge A)$
 
 ## 第四十七题（b)
 
-* $在(\exists x P(x) \wedge A) \equiv \exists x (P(x) \wedge A)中，当A为真，逻辑等价式的左右两边都为真。当A为假时，逻辑等价式的左右两边都为假。因此，(\exists x P(x) \wedge A \equiv \exists x (P(x) \wedge A)$
+* 在 $(\exists x P(x) \wedge A) \equiv \exists x (P(x) \wedge A)$ 中，当 $A$ 为真，逻辑等价式的左右两边都为真。当 $A$ 为假时，逻辑等价式的左右两边都为假。因此， $(\exists x P(x) \wedge A \equiv \exists x (P(x) \wedge A)$
 
 ## 第四十八题(a)
 
-* $在(\forall x (A \rightarrow P(x)) \equiv A \rightarrow \forall x P(x)中，当左边的$x$为真，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为真，右边的$x$为假时，逻辑等价式的左右两边都为假。当左边的$x$为假，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为假时，逻辑等价式的左右两边都为真。因此，(\forall x (A \rightarrow P(x)) \equiv A \rightarrow \forall x P(x)$
+* 在 $(\forall x (A \rightarrow P(x)) \equiv A \rightarrow \forall x P(x)$ 中，当左边的 $x$ 为真，右边的 $x$ 为真时，逻辑等价式的左右两边都为真。当左边的 $x$ 为真，右边的 $x$ 为假时，逻辑等价式的左右两边都为假。当左边的 $x$ 为假，右边的 $x$ 为真时，逻辑等价式的左右两边都为真。当左边的 $x$ 为假，右边的 $x$ 为假时，逻辑等价式的左右两边都为真。因此，$(\forall x (A \rightarrow P(x)) \equiv A \rightarrow \forall x P(x)$
 
 ## 第四十八题（b)
 
-* $在(\exists x (A \rightarrow P(x)) \equiv A \rightarrow \exists x P(x)中，当左边的$x$为真，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为真，右边的$x$为假时，逻辑等价式的左右两边都为假。当左边的$x$为假，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为假时，逻辑等价式的左右两边都为真。因此，(\exists x (A \rightarrow P(x)) \equiv A \rightarrow \exists x P(x)$
+* 在 $(\exists x (A \rightarrow P(x)) \equiv A \rightarrow \exists x P(x)$ 中，当左边的 $x$ 为真，右边的 $x$ 为真时，逻辑等价式的左右两边都为真。当左边的 $x$ 为真，右边的 $x$ 为假时，逻辑等价式的左右两边都为假。当左边的 $x$ 为假，右边的 $x$ 为真时，逻辑等价式的左右两边都为真。当左边的 $x$ 为假，右边的 $x$ 为假时，逻辑等价式的左右两边都为真。因此，$(\exists x (A \rightarrow P(x)) \equiv A \rightarrow \exists x P(x)$
 
 ## 第四十九题(a)
 
-* $在(\forall x (P(x) \rightarrow A) \equiv \exists x P(x) \rightarrow A中，当左边的$x$为真，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为真，右边的$x$为假时，逻辑等价式的左右两边都为假。当左边的$x$为假，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为假时，逻辑等价式的左右两边都为真。因此，(\forall x (P(x) \rightarrow A) \equiv \exists x P(x) \rightarrow A$
+* 在 $(\forall x (P(x) \rightarrow A) \equiv \exists x P(x) \rightarrow A$ 中，当左边的 $x$ 为真，右边的 $x$ 为真时，逻辑等价式的左右两边都为真。当左边的 $x$ 为真，右边的 $x$ 为假时，逻辑等价式的左右两边都为假。当左边的 $x$ 为假，右边的 $x$ 为真时，逻辑等价式的左右两边都为真。当左边的 $x$ 为假，右边的 $x$ 为假时，逻辑等价式的左右两边都为真。因此，$(\forall x (P(x) \rightarrow A) \equiv \exists x P(x) \rightarrow A$
 
 ## 第四十九题(b)
 
-* $在(\exists x (P(x) \rightarrow A) \equiv \forall x P(x) \rightarrow A中，当左边的$x$为真，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为真，右边的$x$为假时，逻辑等价式的左右两边都为假。当左边的$x$为假，右边的$x$为真时，逻辑等价式的左右两边都为真。当左边的$x$为假，右边的$x$为假时，逻辑等价式的左右两边都为真。因此，(\exists x (P(x) \rightarrow A) \equiv \forall x P(x) \rightarrow A$
+* 在 $(\exists x (P(x) \rightarrow A) \equiv \forall x P(x) \rightarrow A$ 中，当左边的 $x$ 为真，右边的 $x$ 为真时，逻辑等价式的左右两边都为真。当左边的 $x$ 为真，右边的 $x$ 为假时，逻辑等价式的左右两边都为假。当左边的 $x$ 为假，右边的 $x$ 为真时，逻辑等价式的左右两边都为真。当左边的 $x$ 为假，右边的 $x$ 为假时，逻辑等价式的左右两边都为真。因此，$(\exists x (P(x) \rightarrow A) \equiv \forall x P(x) \rightarrow A$
 
 ## 第五十题
 
-* $在\forall x P(x) \vee \forall x Q(x)中，当左边的$x$为真时，右边的$x$为真时，逻辑等价式为假。当左边的$x$为假时，右边的$x$为真时，逻辑等价式为真。当左边的$x$为真时，右边的$x$为假时，逻辑等价式为真。当左边的$x$为真时，右边的$x$为真时，逻辑等价式为真。在\forall x (P(x) \vee x Q(x))中，当左边的$x$为真时，右边的$x$为真时，逻辑等价式为假。当左边的$x$为假时，右边的$x$为真时，逻辑等价式为假。当左边的$x$为真时，右边的$x$为假时，逻辑等价式为假。当左边的$x$为真时，右边的$x$为真时，逻辑等价式为真。因此，\forall x P(x) \vee \forall x Q(x)和\forall x (P(x) \vee x Q(x))不是逻辑等价的。$
+* 在 $\forall x P(x) \vee \forall x Q(x)$ 中，当左边的 $x$ 为真时，右边的 $x$ 为真时，逻辑等价式为假。当左边的 $x$ 为假时，右边的 $x$ 为真时，逻辑等价式为真。当左边的 $x$ 为真时，右边的 $x$ 为假时，逻辑等价式为真。当左边的 $x$ 为真时，右边的 $x$ 为真时，逻辑等价式为真。在 $\forall x (P(x) \vee x Q(x))$ 中，当左边的 $x$ 为真时，右边的 $x$ 为真时，逻辑等价式为假。当左边的 $x$ 为假时，右边的 $x$ 为真时，逻辑等价式为假。当左边的 $x$ 为真时，右边的 $x$ 为假时，逻辑等价式为假。当左边的 $x$ 为真时，右边的 $x$ 为真时，逻辑等价式为真。因此， $\forall x P(x) \vee \forall x Q(x)和\forall x (P(x) \vee x Q(x))$ 不是逻辑等价的。
 
 ## 第五十一题
 
-* $在\exists x P(x) \wedge \exists x Q(x)中，当左边的$x$为真时，右边的$x$为真时，逻辑等价式为真。当左边的$x$为真时，右边的$x$为假时，逻辑等价式为真。当左边的$x$为假时，右边的$x$为真时，逻辑等价式为真。当左边的$x$为假时，右边的$x$为假时，逻辑等价式为真。因此，\exists x P(x) \wedge \exists x Q (x)和 \exists x (P(x) \wedge Q(x))不是逻辑等价的$
+* 在 $\exists x P(x) \wedge \exists x Q(x)$ 中，当左边的 $x$ 为真时，右边的 $x$ 为真时，逻辑等价式为真。当左边的 $x$ 为真时，右边的 $x$ 为假时，逻辑等价式为真。当左边的 $x$ 为假时，右边的 $x$ 为真时，逻辑等价式为真。当左边的 $x$ 为假时，右边的 $x$ 为假时，逻辑等价式为真。因此， $\exists x P(x) \wedge \exists x Q (x)和 \exists x (P(x) \wedge Q(x))$ 不是逻辑等价的
 
 ## 第五十二题
 
-* a. F
-* b. F
-* c. T
-* d. F
+* a. $F$
+* b. $F$
+* c. $T$
+* d. $F$
 
 ## 第五十三题
 
-* a. $真值为真。有唯一的x使得P(x)为真；存在一个x使得P(x)为真$
-* b. $真值为假。所有的x使得P(x)为真；有唯一的x使得P(x)为真，由于不确定\forall x P(x) \rightarrow \exists ! x P(x)的论域是否只有一个元素，所以不能说明$
-* c. $真值为假。有唯一的x使得P(x)不为真；不是所有的x都使得P(x)为真$
+* a. 真值为真。有唯一的 $x$ 使得 $P(x)$ 为真；存在一个 $x$ 使得 $P(x)$ 为真
+* b. 真值为假。所有的 $x$ 使得 $P(x)$ 为真；有唯一的 $x$ 使得 $P(x)$ 为真，由于不确定 $\forall x P(x) \rightarrow \exists ! x P(x)$ 的论域是否只有一个元素，所以不能说明
+* c. 真值为假。有唯一的 $x$ 使得 $P(x)$ 不为真；不是所有的 $x$ 4都使得 $P(x)$ 为真
 
 ## 第五十四题
 
@@ -470,18 +470,18 @@ $假设\exists x (P(x) \vee Q(x))为真，那么就说明在论域中，存在�
 
 ## 第五十五题
 
-* a. Yes
-* b. No
-* c. juana,kiko
-* d. math273,cs301
-* e. juana,kiko
+* a. $Yes$
+* b. $No$
+* c. $juana$ ，$kiko$
+* d. $math273$ ，$cs301$
+* e. $juana$ ，$kik0$
 
 ## 第五十六题
 
-* a. No
-* b. Yes
-* c. cs301
-* d. grossman
+* a. $No$
+* b. $Yes$
+* c. $cs301$
+* d. $grossman$
 
 ## 第五十七题
 
@@ -489,29 +489,29 @@ $假设\exists x (P(x) \vee Q(x))为真，那么就说明在论域中，存在�
 sibling (X,Y):-mother(M,X),-mother(M,Y),-father(F,X),-father(F,Y)
 ```
 
-$上述语句意味着如果存在一个人Y，使得M是X和Y的母亲，并且使得F是x和Y的父亲，则sibling(X,Y)为真。$
+上述语句意味着如果存在一个人 $Y$ ，使得 $M$ 是 $X$ 和 $Y$ 的母亲，并且使得 $F$ 是 $x$ 和 $Y$ 的父亲，则 $sibling(X,Y)$ 为真。
 
 ## 第五十八题
 
 ```prolog
-grandfather (X,Y):-father(X,Z),father(Z,Y);father(X,Z),mather(Z,Y).
+grandfather (X,Y):-father(X,Z),father(Z,Y);father(X,Z),mather(Z,Y)
 ```
 
-$上述语句意味着如果存在一个人Z，使得X是Z的父亲，并且使得Z是Y的父亲或者X是Z的父亲，X是Y的母亲的父亲，则garandfather(x,Y)为真$
+上述语句意味着如果存在一个人 $Z$ ，使得 $X$ 是 $Z$ 的父亲，并且使得 $Z$ 是 $Y$ 的父亲或者 $X$ 是 $Z$ 的父亲， $X$ 是 $Y$ 的母亲的父亲，则 $garandfather(x,Y)$ 为真
 
 ## 第五十九题
 
 * a. $\neg \exists x (P(x) \rightarrow Q(x)) \equiv \forall x \neg (P(x) \rightarrow Q(x)$
 * b. $\forall x (Q(x) \rightarrow R(x))$
 * c. $\neg \exists x (P(x) \rightarrow R(x)) \equiv \forall x (P(x)) \rightarrow  \neg R(x)$
-* d. $不可以,因为前提并没有排除除了无知者之外还有其他爱慕虚荣的人$
+* d. 不可以，因为前提并没有排除除了无知者之外还有其他爱慕虚荣的人
 
 ## 第六十题
 
 * a. $\forall x (P(x) \rightarrow Q(x))$
 * b. $\exists x (R(x) \wedge \neg Q(x))$
 * c. $\exists x (R(x) \wedge \neg P(x))$
-* d. $可以$
+* d. 可以
 
 ## 第六十一题
 
@@ -519,7 +519,7 @@ $上述语句意味着如果存在一个人Z，使得X是Z的父亲，并且使�
 * b. $\forall x (R(x) \rightarrow \neg S(x))$
 * c. $\forall x (\neg (Q(x) \rightarrow S(x))$
 * d. $\forall x (P(x) \wedge \neg R(x))$
-* e. $可以，因为可以使用a和c推出的结论与b进行比较，从而得出d的结论$
+* e. 可以，因为可以使用 $a$ 和 $c$ 推出的结论与 $b$ 进行比较，从而得出 $d$ 的结论
 
 ## 第六十二题
 
@@ -527,4 +527,4 @@ $上述语句意味着如果存在一个人Z，使得X是Z的父亲，并且使�
 * b. $\forall x (R(x) \rightarrow S(x))$
 * c. $\forall x (Q(x) \rightarrow P(x))$
 * d. $\forall x (Q(x) \rightarrow \neg R(x))$
-* e. $可以$
+* e. 可以
