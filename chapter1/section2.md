@@ -113,12 +113,12 @@
 ## 第十三题
 
 * 位于美国境内的 $and$ 新泽西州 $and$ 海滩
-* (位于英吉利海峡的 $and$ 泽西岛 $and$ 海滩) $not$（新泽西岛）$and$ (海滩)
+* （位于英吉利海峡的 $and$ 泽西岛 $and$ 海滩） $not$ （新泽西岛） $and$ （海滩）
 
 ## 第十四题
 
 * 西边的 $and$ 弗吉尼亚 $and$ 徒步旅行
-* ($not$ 西边的 $and$ 弗吉尼亚) $and$ 徒步旅行
+* （$not$ 西边的 $and$ 弗吉尼亚） $and$ 徒步旅行
   
 ## 第十五题
 
@@ -364,7 +364,7 @@
 * 令 $p$ 为 $A$ 说真话，令 $q$ 为 $B$ 说真话，令 $r$ 为 $C$ 说真话
 * 令 $\neg p$ 为 $A$ 说假话，令 $\neg q$ 为 $B$ 说假话，令 $\neg r$ 为 $C$ 说假话
 * 则根据题意可得： $A$ 说的话为 $p$ ， $B$ 说的话为 $q$ ， $C$ 说的话为 $\neg p$
-* 因此可以得到： $p \leftrightarrow p$  ， $$$ q \l eft rightarrow q$ ， $$$ \neg  p  \leftrightarrow r$
+* 因此可以得到： $p \leftrightarrow p$  ， $q \leftrightarrow q$ ， $\neg p \leftrightarrow r$
 * |$p$|$q$|$r$|$\neg p$|$p \leftrightarrow p$|$q \leftrightarrow q$|$\neg p \leftrightarrow r$|
   |----|----|----|----|----|----|----|
   |$0$|$0$|$0$|$1$|$1$|$1$|$0$|

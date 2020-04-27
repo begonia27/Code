@@ -6,121 +6,121 @@
 * b.$p(4)的真值是4 <= 4,为真$
 * c.$p(6)的真值是6 <= 4,为假$ -->
 
-* a. $p(0)$ 的真值是 $0 <= 4$ ，为**真**
-* b. $p(4)$ 的真值是 $4 <= 4$ ，为**真**
-* c. $p(6)$ 的真值是 $6 <= 4$ ，为**假**
+1. a. $p(0)$ 的真值是 $0 <= 4$ ，为 **真**
+2. b. $p(4)$ 的真值是 $4 <= 4$ ，为 **真**
+3. c. $p(6)$ 的真值是 $6 <= 4$ ，为 **假**
 
 ## 第二题
 
-* a. 单词 *orange* 含字母a,为**真**
-* b. 单词 *lemon* 含字母a,为**假**
-* c. 单词 *true* 含字母a,为**假**
-* d. 单词 *false* 含字母a,为**真**
+* a. 单词 *orange* 含字母 $a$ ，为 **真**
+* b. 单词 *lemon* 含字母 $a$ ，为 **假**
+* c. 单词 *true* 含字母 $a$ ，为 **假**
+* d. 单词 *false* 含字母 $a$ ，为 **真**
 
 ## 第三题
 
-* a. $丹佛是科罗拉多的首府,为真$
-* b. $底特律是波士顿的首府,为假$
-* c. $马萨诸塞是波士顿的首府,为假$
-* d. $纽约是纽约的首府,为假$
+* a. 丹佛是科罗拉多的首府，为真
+* b. 底特律是波士顿的首府，为假
+* c. 马萨诸塞是波士顿的首府，为假
+* d. 纽约是纽约的首府，为假
 
 ## 第四题
 
-* a. $x = 0,0 > 1,为假$
-* b. $x = 1,1 > 1,为假$
-* c. $x = 2,2 > 1,为真$
+* a. $x = 0$ ， $0 > 1$ ，为假
+* b. $x = 1$ ， $1 > 1$ ，为假
+* c. $x = 2$ ， $2 > 1$ ，为真
 
 ## 第五题
 
-* a. $一些学生在每个工作日花5个多小时上课$
-* b. $每个学生在每个工作日都花5个多小时上课$
-* c. $一些学生在每个工作日没有花5个多小时上课$
-* d. $没有学生在每个工作日花5个多小时上课$<!--“所有的人都没花”和“没有人花了”这两个是一个意思，但是在表达上面第一个更为顺畅-->
+* a. 一些学生在每个工作日花 $5$ 个多小时上课
+* b. 每个学生在每个工作日都花 $5$ 个多小时上课
+* c. 一些学生在每个工作日没有花 $5$ 个多小时上课
+* d. 没有学生在每个工作日花 $5$ 个多小时上课<!--“所有的人都没花”和“没有人花了”这两个是一个意思，但是在表达上面第一个更为顺畅-->
   
 ## 第六题
 
-* a. $你所在学校的一些学生已经去过北达科他$
-* b. $你所在学校的所有学生已经去过北达科他$
-* c. $你所在学校的所有学生都没有去过北达科他$
-* d. $你所在学校的一些学生没有去过北达科他$
-* e. $并不是你所在学校的所有学生都去过北达科他$
-* f. $你所在学校的所有学生都没有去过北达科他$<!--原句写的是“全体学生”，意思等同于“所有学生”-->
+* a. 你所在学校的一些学生已经去过北达科他
+* b. 你所在学校的所有学生已经去过北达科他
+* c. 你所在学校的所有学生都没有去过北达科他
+* d. 你所在学校的一些学生没有去过北达科他
+* e. 并不是你所在学校的所有学生都去过北达科他
+* f. 你所在学校的所有学生都没有去过北达科他<!--原句写的是“全体学生”，意思等同于“所有学生”-->
 
 ## 第七题
 
-* a. $所有的喜剧演员都很有趣$
-* b. $所有的人都是喜剧演员，所有的人都很有趣$<!--该语句可以写成“所有的人都是有趣的喜剧演员”-->
-* c. $存在一个人，如果这个人是喜剧演员，那么他是很有趣的$
-* d. $有个喜剧演员很有趣$<!--此句如果写成“某个人是喜剧演员，某个人很有趣的”会有歧义，因为不能确定第一个“某个人”和第二个“某个人”是指同一个人-->
+* a. 所有的喜剧演员都很有趣
+* b. 所有的人都是喜剧演员，所有的人都很有趣<!--该语句可以写成“所有的人都是有趣的喜剧演员”-->
+* c. 存在一个人，如果这个人是喜剧演员，那么他是很有趣的
+* d. 有个喜剧演员很有趣<!--此句如果写成“某个人是喜剧演员，某个人很有趣的”会有歧义，因为不能确定第一个“某个人”和第二个“某个人”是指同一个人-->
 
 ## 第八题
 
-* a. $如果所有的动物都是兔子的话，那么所有的动物都很跳跃$<!--千万要注意不能和第二句有所混淆，一个是如果那么的关系，一个是且的关系-->
-* b. $所有的动物都是兔子，并且都很跳跃$<!--原句的后半句写的是所有的动物都很跳跃，对比答案不是很妥当，用一个“且”字更好-->
-* c. $存在一些动物，如果它们是兔子的话，那么它们很跳跃$
-* d. $存在一些动物，它们是兔子并且很跳跃$
+* a. 如果所有的动物都是兔子的话，那么所有的动物都很跳跃<!--千万要注意不能和第二句有所混淆，一个是如果那么的关系，一个是且的关系-->
+* b. 所有的动物都是兔子，并且都很跳跃<!--原句的后半句写的是所有的动物都很跳跃，对比答案不是很妥当，用一个“且”字更好-->
+* c. 存在一些动物，如果它们是兔子的话，那么它们很跳跃
+* d. 存在一些动物，它们是兔子并且很跳跃
 
 ## 第九题
 
-* a. $\exists x(p(x) \wedge Q(x))$
-* b. $\exists x(p(x) \wedge Q(x))$
-* c. $\forall x(p(x) \vee Q(x))$
-* d. $\neg \forall x(p(x) \vee Q(x))$
+* a. $\exists x(P(x) \wedge Q(x))$
+* b. $\exists x(P(x) \wedge Q(x))$
+* c. $\forall x(P(x) \vee Q(x))$
+* d. $\neg \forall x(P(x) \vee Q(x))$
 
 ## 第十题
 
-* a. $\exists x(c(x) \wedge D(x) \wedge F(x))$
-* b. $\forall x(c(x) \wedge D(x) \vee F(x))$
-* c. $\exists x(c(x) \wedge F(x) \neg D(x))$
-* d. $\neg \exists x(c(x) \wedge d(x) \wedge F(x)$
-* e. $(\exists x c(x)) \wedge (\exists x D(x)) \vee (\exists x F(x))$
+* a. $\exists x(C(x) \wedge D(x) \wedge F(x))$
+* b. $\forall x(C(x) \wedge D(x) \vee F(x))$
+* c. $\exists x(C(x) \wedge F(x) \neg D(x))$
+* d. $\neg \exists x(C(x) \wedge D(x) \wedge F(x)$
+* e. $(\exists x C(x)) \wedge (\exists x D(x)) \vee (\exists x F(x))$
 
 ## 第十一题
 
-* a. $0 = 0,为真$
-* b. $1 = 1,为真$
-* c. $2 = 2^2,为假$
-* d. $-1 = (-1)^2,为假$
-* e. $\exists x p(x),为真$
-* f. $\forall x p(x),为假$
+* a. $0 = 0$ 为真
+* b. $1 = 1$ ，为真
+* c. $2 = 2^2$ ，为假
+* d. $-1 = (-1)^2$ ，为假
+* e. $\exists x p(x)$ ，为真
+* f. $\forall x p(x)$ ，为假
 
 ## 第十二题
 
-* a. $0 + 1 > 0,为真$
-* b. $(-1) + 1 > -2,为真$
-* c. $1 + 1 > 2,为假$
-* d. $\exists xQ(x),为真$
-* e. $\forall xQ(x),为假$
-* f. $\neg \forall xQ(x),为真$
-* g. $\neg \exists xQ(X),为假$
+* a. $0 + 1 > 0$ ，为真
+* b. $(-1) + 1 > -2$ ，为真
+* c. $1 + 1 > 2$ ，为假
+* d. $\exists xQ(x)$ ，为真
+* e. $\forall xQ(x)$ ，为假
+* f. $\neg \forall xQ(x)$ ，为真
+* g. $\neg \exists xQ(X)$ ，为假
 
 ## 第十三题
 
-* a. $\forall n(n + 1 > n),为真$
-* b. $\exists n(2n = 3n),为真$
-* c. $\exists n(n = -n),为真$
-* d. $\forall n(3n <= 4n),为真$
+* a. $\forall n(n + 1 > n)$ ，为真
+* b. $\exists n(2n = 3n)$ ，为真
+* c. $\exists n(n = -n)$ ，为真
+* d. $\forall n(3n <= 4n)$ ，为真
 
 ## 第十四题
 
-* a. $\exists x (x^3 \equiv -1),为真$
-* b. $\exists x (x^4 < x^2),为真$
-* c. $\forall x ((-x)^2 \equiv x^2),为真$
-* d. $\forall x (2x > x),为假$<!--过程再重要，也别忘了写结论！-->
+* a. $\exists x (x^3 \equiv -1)$ ，为真
+* b. $\exists x (x^4 < x^2)$ ，为真
+* c. $\forall x ((-x)^2 \equiv x^2)$ ，为真
+* d. $\forall x (2x > x)$ ，为假<!--过程再重要，也别忘了写结论！-->
 
 ## 第十五题
 
-* a. $\forall n (n^2 >= 0),为真$
-* b. $\exists n (n^2 = 2),为假$
-* c. $\forall n (n^2 >= n),为真$
-* d. $\exists n (n^2 < 0),为假$<!--这样的题出错了真的不应该-->
+* a. $\forall n (n^2 >= 0)$ ，为真
+* b. $\exists n (n^2 = 2)$ ，为假
+* c. $\forall n (n^2 >= n)$ ，为真
+* d. $\exists n (n^2 < 0)$ ，为假<!--这样的题出错了真的不应该-->
 
 ## 第十六题
 
-* a. $\exists x (x^2 = 2),为真$
-* b. $\exists x (x^2 = -1),为假$
-* c. $\forall x (x^2 >= 1),为真$
-* d. $\forall x (x^2 != x),为假$
+* a. $\exists x (x^2 = 2)$ ，为真
+* b. $\exists x (x^2 = -1)$ ，为假
+* c. $\forall x (x^2 >= 1)$ ，为真
+* d. $\forall x (x^2 != x)$ ，为假
 
 ## 第十七题
 
@@ -153,82 +153,82 @@
 * a. $P(-5) \vee P(-3) \vee P(-1) \vee P(1) \vee P(3) \vee P(5)$
 * b. $P(-5) \wedge P(-3) \wedge P(-1) \wedge P(1) \wedge P(3) \wedge P(5)$
 * c. $(-5 \neq 1) \rightarrow P(-5) \wedge (-3 \neq 1) \rightarrow P(-3) \wedge (-1 \neq 1) \rightarrow P(-1) \wedge (1 \neq 1) \rightarrow P(1) \wedge (3 \neq 1) \rightarrow P(3) \wedge (5 \neq 1) \rightarrow P(5)$<!--\neq 代表的是符号不等于-->
-* d. $(-5 >0) \wedge P(-5) \vee (-3 >0) \wedge P(-3) \vee (-1 >0) \wedge P(-1) \vee (1 >0) \wedge P(1) \vee (3 >0) \wedge P(3) \vee (5 >0) \wedge P(5) $
+* d. $(-5 >0) \wedge P(-5) \vee (-3 >0) \wedge P(-3) \vee (-1 >0) \wedge P(-1) \vee (1 >0) \wedge P(1) \vee (3 >0) \wedge P(3) \vee (5 >0) \wedge P(5)$
 * e. $\neg P(-5) \vee \neg P(-3) \vee \neg P(-1) \vee \neg P(1) \vee \neg P(3) \vee \neg P(5)$
 
 ## 第二十一题
 
-* $可以有多个解$
+* 可以有多个解
 
-* a. $为真：所有学习离散数学的人$
-* a. $为假：世界上所有的学生$
+* a. 为真：所有学习离散数学的人
+* a. 为假：世界上所有的学生
   
-* b. $为真：班上的所有学生$
-* b. $为假：这家医院的护士$
+* b. 为真：班上的所有学生
+* b. 为假：这家医院的护士
   
-* c. $为真：这个社区的所有儿童$
-* c. $为假：这个国家的所有成年人$
+* c. 为真：这个社区的所有儿童
+* c. 为假：这个国家的所有成年人
   
-* d. $为真：王俊凯和易烊千玺$
-* d. $为假：这家培训机构里的所有教师$
+* d. 为真：王俊凯和易烊千玺
+* d. 为假：这家培训机构里的所有教师
 
 ## 第二十二题
 
-* a. $为真：所有的印度人$
-* a. $为假：世界上所有的人$
+* a. 为真：所有的印度人
+* a. 为假：世界上所有的人
   
-* b. $为真：全校的老师$
-* b. $为假：这个社区里所有的人$
+* b. 为真：全校的老师
+* b. 为假：这个社区里所有的人
   
-* c. $为真：这家医院里的所有婴儿$
-* c. $为假：这个地区所有的人$
+* c. 为真：这家医院里的所有婴儿
+* c. 为假：这个地区所有的人
   
-* d. $为真：这所学校里的学生$
-* d. $为假：大鹏和小明$
+* d. 为真：这所学校里的学生
+* d. 为假：大鹏和小明
 
 ## 第二十三题-1
 
 （令论域为班上的学生）<!--同一道题的两种小题里要用不同的条件标注出来，并且条件不要放在题号的里面，要另起一行说明-->
 
-* a. $\exists x P(x)(其中P(x)为x会说印地语)$
-* b. $\forall x P(x)(其中P(x)为x很友好)$
-* c. $\exists x \neg P(x)(其中P(x)为x出生在加利福尼亚)$
-* d. $\exists x P(x)(其中P(x)为x曾演过电影)$
-* e. $\forall \neg P(x)(其中P(x)为x上过逻辑编程课程)$
+* a. $\exists x P(x)$ （其中 $P(x)$ 为 $x$ 会说印地语）
+* b. $\forall x P(x)$ （其中 $P(x)$ 为 $x$ 很友好）
+* c. $\exists x \neg P(x)$ （其中 $P(x)$ 为 $x$ 出生在加利福尼亚）
+* d. $\exists x P(x)$ （其中 $P(x)$ 为 $x$ 曾演过电影）
+* e. $\forall \neg P(x)$ （其中 $P(x)$ 为 $x$ 上过逻辑编程课程）
 
 ## 第二十三题-2
 
 （令论域为所有人）
 
-* a. $\exists (z(x) \wedge P(x))(其中z(x)为班上的学生，p(x)为x会说印地语)$
-* b. $\forall (z(x) \wedge P(x))(其中z(x)为班上的学生，p(x)为x很友好)$
-* c. $\forall (z(x) \wedge \neg P(x))(其中z(x)为班上的学生，p(x)为x出生在加利福尼亚)$
-* d. $\forall (z(x) \rightarrow P(x))(其中z(x)为班上的学生，p(x)为x曾演过电影)$
-* e. $\forall (z(x) \rightarrow \neg P(x))(其中z(x)为班上的学生，p(x)为x上过逻辑编程课程)$
+* a. $\exists (z(x) \wedge P(x))$ （其中 $z(x)$ 为班上的学生， $p(x)$ 为 $x$ 会说印地语）
+* b. $\forall (z(x) \wedge P(x))$ （其中 $z(x)$ 为班上的学生， $p(x)$ 为 $x$ 很友好）
+* c. $\forall (z(x) \wedge \neg P(x))$ （其中 $z(x)$ 为班上的学生， $p(x)$ 为 $x$ 出生在加利福尼亚）
+* d. $\forall (z(x) \rightarrow P(x))$ （其中 $z(x)$ 为班上的学生， $p(x)$ 为 $x$ 曾演过电影）
+* e. $\forall (z(x) \rightarrow \neg P(x))$ （其中 $z(x)$ 为班上的学生， $p(x)$ 为 $x$ 上过逻辑编程课程）
 
 ## 第二十四题-1
 
 （令论域为班上的学生）
 
-* a. $\forall x P(x) (其中P(x)为x有移动电话)$
-* b. $\exists x P(x) (其中P(x)为x曾看过外国影片)$
-* c. $\exists x \neg P(x)(其中P(x)为x会游泳)$
-* d. $\forall x P(x)(其中P(x)为x会求解二次方程)$
-* e. $\exists x \neg P(x)(其中p(x)为x想变富)$
+* a. $\forall x P(x)$ （其中 $P(x)$ 为 $x$ 有移动电话）
+* b. $\exists x P(x)$ （其中 $P(x)$ 为 $x$ 曾看过外国影片）
+* c. $\exists x \neg P(x)$ （其中 $P(x)$ 为 $x$ 会游泳）
+* d. $\forall x P(x)$ （其中 $P(x)$ 为 $x$ 会求解二次方程）
+* e. $\exists x \neg P(x)$ （其中 $p(x)$ 为 $x$ 想变富）
 
 ## 第二十四题-2
 
-（令论域为所有人,其中z(x)为班上的学生）
+（令论域为所有人，其中 $z(x)$ 为班上的学生）
 
-* a. $\forall (z(x) \rightarrow P(x))(其中p(x)为x有移动电话)$
-* b. $\exists (z(x) \wedge P(x))(其中p(x)为x曾看过外国影片)$
-* c. $\forall (z(x) \wedge \neg P(x))(其中p(x)为x会游泳)$
-* d. $\forall (z(x) \rightarrow P(x))(其中P(x)为x会求解二次方程)$
-* e. $\forall (z(x) \wedge \neg P(x))(其中p(x)为x想变富)$
+* a. $\forall (z(x) \rightarrow P(x))$ （其中 $p(x)$ 为 $x$ 有移动电话）
+* b. $\exists (z(x) \wedge P(x))$ （其中 $p(x)$ 为 $x$ 曾看过外国影片）
+* c. $\forall (z(x) \wedge \neg P(x))$ （其中 $p(x)$ 为 $x$ 会游泳）
+* d. $\forall (z(x) \rightarrow P(x))$ （其中 $P(x)$ 为 $x$ 会求解二次方程）
+* e. $\forall (z(x) \wedge \neg P(x))$ （其中 $p(x)$ 为 $x$ 想变富）
 
 ## 第二十五题
 
-（令论域为所有人,其中z(x)为x是你的朋友,p(x)为x是完美的）
+（令论域为所有人，其中 $z(x)$ 为 $x$ 是你的朋友， $p(x)$ 为 $x$ 是完美的）
 
 * a. $\forall \neg p(x)$
 * b. $\neg \forall p(x)$
@@ -239,25 +239,25 @@
 
 ## 第二十六题
 
-* a. $\exists x(a(x) \wedge b(x))(令论域为所有地球上的人,其中a(x)为x去过乌兹别克斯坦)$
-   $\exists x a(x)(令论域为学校里的人,其中a(x)为x去过乌兹别克斯坦)$
-   $\exists x (a(x) \wedge (x,y))(令论域为班上的人,其中a(x,y)为x去过y)$
+* a. $\exists x(a(x) \wedge b(x))$ （令论域为所有地球上的人，其中 $a(x)$ 为 $x$ 去过乌兹别克斯坦）
+   $\exists x a(x)$ （令论域为学校里的人 ，其中 $a(x)$ 为 $x$ 去过乌兹别克斯坦）
+   $\exists x (a(x) \wedge (x,y))$ （令论域为班上的人，其中 $a(x,y)$ 为 $x$ 去过 $y$ ）
 
-* b. $\forall x (a(x) \wedge b(x))(令论域为所有地球上的人,其中a(x)为x学过微积分和C++)$
-   $\forall x c(x) \rightarrow (a(x) \wedge b(x))(令论域为学校里的人,其中a(x)为x学过微积分和C++)$
-   $\forall x (c(x) \rightarrow a(x,calculus) \wedge a(x,C++))(令论域为班上的人,其中a(x,calculus) 为x学过微积分,a(x,C++)为x学过C++$
+* b. $\forall x (a(x) \wedge b(x))$ （令论域为所有地球上的人,其中 $a(x)$ 为 $x$ 学过微积分和 $C++$ ）
+   $\forall x c(x) \rightarrow (a(x) \wedge b(x))$ （令论域为学校里的人，其中 $a(x)$ 为 $x$ 学过微积分和 $C++$ ）
+   $\forall x (c(x) \rightarrow a(x,calculus) \wedge a(x,C++))(令论域为班上的人，其中a(x,calculus) 为x学过微积分，a(x,C++)为x学过C++
 
-* c. $\forall x c(x) \rightarrow \neg (a(x) \wedge b(x))(令论域为所有地球上的人,其中a(x) \wedge b(x)为x同时拥有自行车和摩托车)$
-   $\forall x \neg (a(x) \wedge b(x))(令论域为学校里的人,其中a(x)为x没有同时拥有自行车和摩托车)$
-   $\forall x c(x) \rightrrow (a(x,bicycle) \wedge b(x,motorcycle))(令论域为班上的人,其中a(x)为x同时拥有y)$
+* c. $\forall x c(x) \rightarrow \neg (a(x) \wedge b(x))(令论域为所有地球上的人，其中a(x) \wedge b(x)为x同时拥有自行车和摩托车)
+   $\forall x \neg (a(x) \wedge b(x))(令论域为学校里的人，其中a(x)为x没有同时拥有自行车和摩托车)
+   $\forall x c(x) \rightrrow (a(x,bicycle) \wedge b(x,motorcycle))(令论域为班上的人，其中a(x)为x同时拥有y)
 
-* d. $\exists x (a(x) \wedge \neg b(x,happy))(令论域为所有地球上的人,其中a(x)为x很快乐)$
-   $\exists x \neg b(x)(令论域为学校里的人,其中b(x)为x很快乐)$
-   $\exists x \neg b(x)(令论域为班上的人,其中\neg b(x)为x很快乐)$
+* d. $\exists x (a(x) \wedge \neg b(x,happy))(令论域为所有地球上的人，其中a(x)为x很快乐)
+   $\exists x \neg b(x)(令论域为学校里的人，其中b(x)为x很快乐)
+   $\exists x \neg b(x)(令论域为班上的人，其中\neg b(x)为x很快乐)
 
-* e. $\forall x (a(x) \rightarrow b(x))(令论域为所有地球上的人，其中a(x)为x生于20世纪)$
-   $\forall x b(x)(令论域为学校里的人，其中b(x)为x生于20世纪)$
-   $\forall x a(x) \rightarrow b(x,20)(令论域为班上的人，其中b(x,y)为x生于20世纪)$
+* e. $\forall x (a(x) \rightarrow b(x))(令论域为所有地球上的人，其中a(x)为x生于20世纪)
+   $\forall x b(x)(令论域为学校里的人，其中b(x)为x生于20世纪)
+   $\forall x a(x) \rightarrow b(x,20)(令论域为班上的人，其中b(x,y)为x生于20世纪)
 
 ## 第二十七题
 

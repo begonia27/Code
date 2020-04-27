@@ -2,7 +2,7 @@
 
 ## 第一题
 
-* a. 波士顿是马萨诸塞州首府（真值是：波士顿是马萨诸塞州首府
+* a. 波士顿是马萨诸塞州首府（真值是：波士顿是马萨诸塞州首府）
 * b. 迈阿密是佛罗里达州首府（真值是：迈阿密不是佛罗里达州首府）
 * c. $2 + 3 = 5$ ；（真值是： $true$）
 * d. $5 + 7 = 10$ ；（真值是： $false$）
@@ -360,7 +360,7 @@ $|p$|$\neg p$|$p \leftrightarrow \neg p$|
  |$F$|$F$|$F$|$F$|$T$|
 
 * e.
- 
+
  |$p$|$q$|$\neg p$|$p \leftrightarrow q$|$q \rightarrow \neg p$|$(q \rightarrow \neg p) \leftrightarrow (p \leftrightarrow q)$|
 |----|----|----|----|----|----|
 |$T$|$T$|$F$|$F$|$T$|$F$|
@@ -573,7 +573,7 @@ $|p$|$\neg p$|$p \leftrightarrow \neg p$|
 |$F$|$F$|$F$|$F$|$F$|
 
 * c.
- 
+
 |$p$|$q$|$r$|$p \wedge q$|$(p \wedge q) \vee r$|
 |----|----|----|----|----|
 |$T$|$T$|$T$|$T$|$T$|
