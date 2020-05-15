@@ -30,3 +30,32 @@ date:2020/5/13-->
 2. $\{x | a,b,c,d,e\}$
 3. $\emptyset$
 4. $\{x | f,g,h\}$
+
+## 第五题
+
+$\bar (\bar A) = \{x | \neg (\neg (x \in A))\} = A$
+
+## 第六题
+
+1. $A \bigcup \emptyset = \{x | (x \in A) \vee (x \in \emptyset) \} = \{x | x \in A \wedge F \} = \{x | x \in A \} = A$
+2. $A \bigcap U = \{x | (x \in A) \wedge (x \in U) \} = \{x | x \in A \wedge T \} = \{x | x \in A \} = A$
+
+## 第七题
+
+1. $A \bigcup U = \{x | (x \in A) \vee (x \in U) \} = \{x | x \in A \vee T \} = \{x | x \in A \} = A$
+2. $A \bigcap \emptyset = \{x | (x \in A) \wedge (x \in \emptyset) \} = \{x | x \in A \wedge F \} = \{x | x \in F \} = \emptyset$
+
+## 第八题
+
+1. $A \bigcup A = \{x | (x \in A) \vee (x \in A) \} = \{x | (x \in A) \vee A \} = \{x | x \in A \} = A$
+2. $A \bigcap A = \{x | (x \in A) \wedge (x \in A) \} = \{x | (x \in A) \wedge A \} = \{x | x \in A \} = A$
+
+## 第九题
+
+1. $A \bigcup A = \{x | (x \in A) \vee (x \in \bar A) \} = \{x | (x \in A) \vee (\neg (x \in A)) \} = \{x | x \in U \} = U$
+2. $A \bigcap A = \{x | (x \in A) \wedge (x \in \bar A) \} = \{x | x in A \wedge (\neg (x \in A)) \} = \{x | x \in \emptyset \} = \emptyset$
+
+## 第十题
+
+1. $A - \emptyset = \{x | (x \in A) \wedge (x \in \bar \emptyset) \} = \{x | (x \in A) \wedge (x \in U) \} = \{x \in A \}$
+2. $\emptyset - A = \{x | (x \in \emptyset) \wedge (x \in \bar A) \} = \{x | (x \in \emptyset) \wedge \neg (x \in A) \} = \{x \in \emptyset \} = \emptyset$
