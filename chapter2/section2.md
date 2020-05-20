@@ -26,8 +26,8 @@ date:2020/5/13-->
 
 ## 第四题
 
-1. $\{x | a,b,c,d,e,f,g,h\}$
-2. $\{x | a,b,c,d,e\}$
+1. $\{x | a,b,c,d,e,f,g,h\} = B$
+2. $\{x | a,b,c,d,e\} = A$
 3. $\emptyset$
 4. $\{x | f,g,h\}$
 
@@ -37,13 +37,13 @@ $\bar (\bar A) = \{x | \neg (\neg (x \in A))\} = A$
 
 ## 第六题
 
-1. $A \bigcup \emptyset = \{x | (x \in A) \vee (x \in \emptyset) \} = \{x | x \in A \wedge F \} = \{x | x \in A \} = A$
+1. $A \bigcup \emptyset = \{x | (x \in A) \vee (x \in \emptyset) \} = \{x | x \in A \vee F \} = \{x | x \in A \} = A$
 2. $A \bigcap U = \{x | (x \in A) \wedge (x \in U) \} = \{x | x \in A \wedge T \} = \{x | x \in A \} = A$
 
 ## 第七题
 
-1. $A \bigcup U = \{x | (x \in A) \vee (x \in U) \} = \{x | x \in A \vee T \} = \{x | x \in A \} = A$
-2. $A \bigcap \emptyset = \{x | (x \in A) \wedge (x \in \emptyset) \} = \{x | x \in A \wedge F \} = \{x | x \in F \} = \emptyset$
+1. $A \bigcup U = \{x | (x \in A) \vee (x \in U) \} = \{x | x \in A \vee T \} = \{x | T \} = U$
+2. $A \bigcap \emptyset = \{x | (x \in A) \wedge (x \in \emptyset) \} = \{x | x \in A \wedge F \} = \{x | F \} = \emptyset$
 
 ## 第八题
 
@@ -53,11 +53,11 @@ $\bar (\bar A) = \{x | \neg (\neg (x \in A))\} = A$
 ## 第九题
 
 1. $A \bigcup A = \{x | (x \in A) \vee (x \in \bar A) \} = \{x | (x \in A) \vee (\neg (x \in A)) \} = \{x | x \in U \} = U$
-2. $A \bigcap A = \{x | (x \in A) \wedge (x \in \bar A) \} = \{x | x in A \wedge (\neg (x \in A)) \} = \{x | x \in \emptyset \} = \emptyset$
+2. $A \bigcap A = \{x | (x \in A) \wedge (x \in \bar A) \} = \{x | x \in A \wedge (\neg (x \in A)) \} = \{x | x \in \emptyset \} = \emptyset$
 
 ## 第十题
 
-1. $A - \emptyset = \{x | (x \in A) \wedge (x \in \bar \emptyset) \} = \{x | (x \in A) \wedge (x \in U) \} = \{x \in A \}$
+1. $A - \emptyset = \{x | (x \in A) \wedge (x \in \bar \emptyset) \} = \{x | (x \in A) \wedge (x \in U) \} = \{x \in A \} = A$
 2. $\emptyset - A = \{x | (x \in \emptyset) \wedge (x \in \bar A) \} = \{x | (x \in \emptyset) \wedge \neg (x \in A) \} = \{x \in \emptyset \} = \emptyset$
 
 ## 第十一题
@@ -75,8 +75,8 @@ $A \bigcap (A \bigcup B) = \{x | ((x \in A) \wedge (x \in A) \vee ((x \in A) \we
 
 ## 第十四题
 
-$A = {1,3,5,6,7,8,9}$
-$B = {2,3,6,9,10}$
+$A = \{1,3,5,6,7,8,9\}$
+$B = \{2,3,6,9,10\}$
 
 ## 第十五题
 
@@ -188,13 +188,13 @@ $(A - B) - (B - C) = \{x | (x \in A) \wedge (x \notin C) \wedge ((x \notin B) \w
 1. $B \subseteq A$
 2. $A \subseteq B$
 3. $A \subseteq B$
-4. $A = B$
+4. 没什么可说的，因为它总为真。
 5. $A = B$
 
 ## 第三十题
 
-1. 能
-2. 能
+1. 不能
+2. 不能
 3. 能
 
 ## 第三十一题
@@ -273,12 +273,12 @@ $|A| + |B| + |C|$ 代表的是集合 $A$ $B$ $C$ 三者之间的全部元素的�
 ## 第四十七题
 
 1. $Z^{+}$
-2. 1
+2. $1$
 
 ## 第四十八题
 
-1. $(z^{+},1]$
-2. 1
+1. $A_{n} = \{···,-2,-1,0,1,···,n\}$
+2. $\{···,-2,-1,0,1\}$
 
 ## 第四十九题
 
@@ -294,16 +294,16 @@ $|A| + |B| + |C|$ 代表的是集合 $A$ $B$ $C$ 三者之间的全部元素的�
 
 ## 第五十一题
 
-1. $i$ ； $1$
-2. $i$ ； $-i$
-3. $i$ ； $-1$
-4. $Z^{+}$ ； $i$
+1. $Z$ ； $-1,0,1$
+2. $Z-{0}$ ； $\emptyset$
+3. $R$ ； $[-1,1]]$
+4. $[1,\infty)$ ； $\emptyset$
 
 ## 第五十二题
 
 1. $0011100000$
 2. $1010010001$
-3. $00111001110$
+3. $0111001110$
 
 ## 第五十三题
 
@@ -340,7 +340,7 @@ $|A| + |B| + |C|$ 代表的是集合 $A$ $B$ $C$ 三者之间的全部元素的�
 1. $\{1,2,3,{1,2,3}\}$
 2. $\{\emptyset\}$
 3. $\{\emptyset,{\emptyset}\}$
-4. $\{\emptyset,\{\emptyset\},{\emptyset,{\emptyset}}\}$
+4. $\{\emptyset,\{\emptyset\},\{\emptyset,\{\emptyset\}\}\}$
 
 ## 第六十题
 
@@ -349,9 +349,9 @@ $n + 1$
 ## 第六十一题
 
 1. ${3·a,3·b,1·c,4·d}$
-2. ${2·a,2·b,1·c,4·d}$
-3. ${1·a,0·b,1·c,4·d}$
-4. ${0·a,1·b,1·c,4·d}$
+2. ${2·a,2·b}$
+3. ${1·a,1·c}$
+4. ${1·b,4·d}$
 5. ${5·a,5·b,1·c,4·d}$
 
 ## 第六十二题
@@ -359,7 +359,7 @@ $n + 1$
 1. $A \bigcup B$
 2. $A \bigcap B$
 3. $B - A$
-4. $A \bigoplus B$
+4. $A + B$
 
 ## 第六十三题
 
