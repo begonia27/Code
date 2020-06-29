@@ -95,7 +95,7 @@
 
 1. >集合 $A$ 是集合 $B$ 的子集当且仅当 $A$ 的每个元素也是 $B$ 的元素；用记号 $A \subseteq B$ 表示 **集合 *$A$* 是集合 *$B$* 的子集** 。
 2. >$A \subseteq B$ 当且仅当量化式 $\forall x (x \in A \rightarrow x \in B)$ 为真。
-3. >证明 $A$ **是** $B$ 的 **子集** ：要证明 $A \sunseteq B$ ，需要证明如果 $x$ 属于 $A$ 则 $x$ 也属于 $B$ 。
+3. >证明 $A$ **是** $B$ 的 **子集** ：要证明 $A \subseteq B$ ，需要证明如果 $x$ 属于 $A$ 则 $x$ 也属于 $B$ 。
 4. >证明 $A$ **不是** $B$ 的子集，要证明 $A \not \subseteq B$ ，需要找一个 $x \in A$ 使得 $x \not \in B$ 。
 5. >每个非空集合 $S$ 都至少有两个子集，空集和集合 $S$ 本身，即 $\empty \subseteq S$ 和 $S \subseteq S$ 。
 6. >若集合 $A$ 是集合 $B$ 的子集但是 $A \not = B$ 时，就写成 $A \subset B$ 并说 $A$ 是 $B$ 的真子集。
@@ -226,301 +226,106 @@
 22. >模糊集合 $S$ 和 $T$ 的 **并集** 是模糊集合 $S \bigcup T$ ，其中每个元素的隶属度是 **该元素在 $S$ 和 $T$ 中成员度的最大值** 。
 23. >模糊集合 $S$ 和 $T$ 的 **交集** 是模糊集合 $S \bigcap T$ ，其中每个元素的隶属度是 **该元素在 $S$ 和 $T$ 中成员度的最小值** 。
 
-%49.
-        \begin{practices}
-            令 $x = n + m$ ，其中 $n$ 为整数部分， $0 \leq m < 1$ 。
-            $\lfloor n + m \rfloor = n, \lceil n + m \rceil = n + 1$ 。
-            由不等式性质可得出 $x - 1 < \lfloor x \rfloor \leq x \leq \lceil x \rceil x + 1$ 。
-            证毕。
-        \end{practices}
+---
 
-%50.
-        \begin{practices}
-            令 $x = n + l$ ，其中 $n$ 为整数部分， $0 \leq l < 1$ 。
-            $\lceil n + l + m \rceil = n + m + 1, \lceil n + l \rceil + m = n + 1 + m$ 。
-            证毕。
-        \end{practices}
+## 2.3 函数
 
-        %51.
-        \begin{practices}
-            令 $x = m + l$ ，其中 $m$ 为整数部分， $0 \leq l < 1$ 。
+### 2.3.1 引言
 
-            \begin{enumerate}[A.]
-                \item
-                {
-                    如果 $m + l < n$ ，那么 $\lfloor m + l \rfloor = m < n$ 。
-                    如果 $\lfloor m + l \rfloor = m < n, x < n$ 。
-                }
-                \item
-                {
-                    如果 $n < m + l$ ，那么 $n < m + 1 = \lceil m + l \rceil$ 。
-                    如果 $n < \lceil m + l \rceil$ ，那么 $ n \leq m + 1, n < m + l$ 。
-                }
-            \end{enumerate}
-        \end{practices}
+1. >在数学和计算机科学中，**函数** 的概念分外重要，在离散数学中函数用于定义像 **序列** 和 **字符串** 这样的 **离散结构** 。
+2. >**递归函数** 是基于 **自身** 来定义的函数。
+3. >令 $A$ 和 $B$ 为 **非空集合** 。从 $A$ 到 $B$ 的函数 $f$ 是对元素的一种指派，对 $A$ 的每个元素恰好指派到 $B$ 的一个元素。如果 $B$ 中元素 $b$ 是唯一由函数 $f$ 指派给 $A$ 中的元素 $a$ 的，则我们就写成 $f(a) = b$ 。如果 $f$ 是从 $A$ 到 $B$ 的函数，就写成 $f : A \rightarrow B$ 。
+4. >函数有时也称为 **映射** 或者 **变换** 。
+5. >有许多 **描述函数的方式** 。有时候明确 **说明指派关系** 。有时候也 **用计算机程序来描述函数** 。
+6. >对 $A$ 到 $B$ 的关系，如果对每一个元素 $a \in A$ 都有且仅有一个序偶 $(a,b)$ ，则它就定义了 $A$ 到 $B$ 的一个函数 $f$ 。这个函数通过指派 $f(a) = b$ 来定义，其中 **$(a,b)$ 是关系中唯一以 $a$ 为第一个元素的序偶** 。
+7. >如果 $f$ 是从 $A$ 到 $B$ 的函数，我们就说 $A$ 是 $f$ 的 **定义域** ，而 $B$ 是 $f$ 的 **陪域** 。
+8. >如果 $f(a) = b$ ，我们就说 $b$ 是 $A$ 的 **像** ，而 $a$ 是 $b$ 的 **原像** 。
+9. >$f$ 的 **值域** 或 **像** 是 $A$ 中元素的 **所有像的集合** 。
+10. >如果 $f$ 是从 $A$ 到 $B$ 的函数，我们说 $f$ 把 $A$ **映射** 到 $B$ 。
+11. >当定义一个函数的时候，我们需要 **指定它的定义域** 、**陪域** 、**定义域中元素到陪域的映射** 。当两个函数有相同的定义域、陪域，定义域中的每个元素映射到陪域中相同的元素时，这两个函数是相等的。
+12. >如果 **改变** 函数的定义域或陪域，那么将得到一个 **不同的函数** 。
+13. >如果改变元素的 **映射关系** ，也会得到一个 **不同的函数** 。
+14. >一个函数称为是 **实值函数** 如果其 **陪域是实数集合** ，称为 **整数值函数** 如果其**陪域是整数集合** 。
+15. >具有 **相同定义域的两个实值函数** 或 **两个整数值函数** 可以 **相加** 和 **相乘** 。
+16. >令 $f_1$ 和 $f_2$ 是从 $A$ 到 $R$ 的函数，那么 *$f_1 + f_2$* 和 *$f_1f_2$* 也是从 *$A$* 到 *$R$* 的函数，其定义为对于任意 $x \in A$ 。
+17. >$(f_1 + f_2)(x) = f_1(x) + f_2(x)$
+18. >$(f_1f_2)(x) = f_1(x)f_2(x)$
+19. >当 $f$ 是一个从 $A$ 到 $B$ 的函数时，可以定义 $A$ 的 **子集的像** 。
+20. >令 $f$ 为从 $A$ 到 $B$ 的函数， $S$ 为 $A$ 的一个 **子集** 。
+21. >$S$ 在函数 $f$ 下的像是由 *$S$* 中元素的像组成的 $B$ 的子集。我们用 *$f(S)$* 表示 $S$ 的像。
+22. >$f(S) = {t | \exists s \in S (t = f(s))}$ ，我们也用简写 *${f(s) | s \in S }$* 来表示这个集合。
 
-%51.
-        \begin{practices}
-            令 $x = m + l$ ，其中 $m$ 为整数部分， $0 \leq l < 1$ 。
+### 2.3.2 一对一函数和映上函数
 
-            \begin{enumerate}[A.]
-                \item
-                {
-                    如果 $m + l < n$ ，那么 $\lfloor m + l \rfloor = m < n$ 。
-                    如果 $\lfloor m + l \rfloor = m < n, x < n$ 。
-                }
-                \item
-                {
-                    如果 $n < m + l$ ，那么 $n < m + 1 = \lceil m + l \rceil$ 。
-                    如果 $n < \lceil m + l \rceil$ ，那么 $ n \leq m + 1, n < m + l$ 。
-                }
-            \end{enumerate}
-        \end{practices}
+1. >函数 $f$ 是 **一对一** 或 **单射函数** ，当且仅当对于 $f$ 的定义域中所有的 $a$ 和 $b$ 有 $f(a) = f(b)$ 蕴含 $a = b$ 。
+2. >函数 $f$ 是 **一对一** 的 **当且仅当** 只要 *$a \not = b$* 就有 *$f(a) \not = f(b)$* 。
+3. >我们可以用量词来表达 $f$ 是一对一的，如 *$\forall a \forall b = f(b) = f(b) \rightarrow a = b$* 。
+4. >注意，如果函数 $f(x) = x^2$ 的 **定义域** 限制在 *$Z+$* 上，，那么它就是 **一对一** 的。
+5. >当限定的一个函数的定义域时，我们得到了一个新的函数，**受限定义域中的元素函数值与原函数值相同** ，受限函数对于受限定义域以外的原定义域中的元素 **无定义** 。
+6. >定义域和陪域都是 **实数集子集** 的函数 $f$ 称为是 **递增的** ，如果对 $f$ 的定义域中的 $x$ 和 $y$ ，当 $x < y$ 时有 $f(x) <= f(y)$ ；称为是 **严格递增的** ，如果当 $x < y$ 时有 $f(x) < f(y)$ 。类似的， $f$ 称为是 **递减的** ，如果对 $f$ 的定义域中的 $x$ 和 $y$ ，当 $x < y$ 时有 $f(x) >= f(y)$ ；称为是 **严格递减的** ，如果当 $x < y$ 时有 $f(x) > f(y)$ 。
+7. >**有些函数的值域和陪域相等** 。即陪域中的每个成员都是定义域中的某个元素的像，具有这一性质的函数称为 **映上函数** 。
+8. >一个从 $A$ 到 $B$ 的函数 $f$ 称为 **映上函数** 或 **满射函数** ，当且仅当对每个 $b \in B$ 有元素 $a \in A$ 使得 $a \in A$ 使得 $f(a) = b$ 。
+9. >一个函数 $f$ 是映上的如果 $\forall y \exists x (f(x)) = y$ 。其中 *$x$* 的 **论域是函数的定义域** ， *$y$* 的 **论域是函数的陪域** 。
+10. >函数 $f$ 是 **一一对应** 或 **双射函数** ，如果它 **既是一对一的又是映上的** 。这样的函数称为是**双射的** 。
+11. >假定 $f$ 是从集合 $A$ 到 **自身的函数** ，如果 $A$ 是 **有限的** ，那么 $f$ 是一对一的当且仅当它是映上的。当 $A$ 为 **无限时** ，这一结论 **不一定成立** 。
+12. >恒等函数 *$\iota A$* 是这样的函数，它 **给每个元素指派到自身** 。
+13. >函数 $iota A$ 是一对一的和映上的，所以它是 **双射函数** 。
+14. >总结一下：为了 **建立一个函数是否为一对一的和映上的需要证明些什么** ：假设 $f : A \rightarrow B$ 。要证明 $f$ 是单射的：证明对于任意 $x$ ， $y \in A$ ，如果 $f(x) = f(y)$ ，则 $x = y$ 。要证明 $f$ 不是单射的：找到特定的 $x$ ， $y \in A$ ，使得 $f(x) \not = f(y)$ 且 $x = y$ 。要证明 $f$ 是满射的：考虑任意元素 $y \in B$ ， 并找到一个元素$x \in A$ ，使得 $f(x) = f(y)$ 。要证明 $f$ 不是满射的：找到一个特定的 $y \in B$ ，使得对于任意 $x \in A$ 有 $f(x) \not = y$ 。
 
-%52.
-        \begin{practices}
-            \begin{enumerate}[A.]
-                \item
-                {
-                    如果 $m + l \leq n$ ，$\lceil m + l \rceil < m + 1$ ，又因为 $n$ 为整数，所以 $\lceil m + l \rceil \leq n$ 。
-                    如果 $\lceil m + l \rceil \leq n$ ，那么 $m + 1 \leq n$ ，所以 $x \leq n$ 。
-                }
-                \item
-                {
-                    如果 $n \leq m + l$ ，那么 $n \leq m < \lfloor x \rfloor$ 。
-                    如果 $n \leq \lfloor x \rfloor$ ，那么 $n \leq m \leq m + l$ 。
-                }
-            \end{enumerate}
-        \end{practices}
+### 2.3.3 反函数和函数的组合
 
-%53.
-        \begin{practices}
-            如果 $n$ 为偶数，则有 $n = 2k$ ， $\lfloor 2k / 2 \rfloor = k = n / 2$ 。
-            如果 $n$ 为奇数，则有 $n = 2k + 1$ ， $\lfloor k + 0.5 \rfloor = k = (n - 1) / 2$ 。
-        \end{practices}
+1. >我们可以定义一个从 $B$ 到 $A$ 中的新函数，把 *$f$* 给出的 **对应关系颠倒过来** ，这就导致了 **反函数** 。
+2. >令 $f$ 为从集合 $A$ 到集合 $B$ 的元素一一对应。 $f$ 的反函数（或逆函数）是这样的函数，它 **指派给 $B$ 中的元素 $b$ 的是 $A$ 中使得 $f(a) = b$ 的唯一元素 $a$** 。
+3. >$f$ 的反函数用 *$f^-1$* 表示。
+4. >当 *$f(a)  = b$* 时， *$f^-1(b) = a$* 。
+5. >如果 $f$ **不是一对一的** ，则陪域中的某元素 $b$ 是定义域中 **多个元素的像** 。如果 $f$ **不是映上的** ，那么对于陪域中的某个元素 $b$ ， 定义域中 **不存在元素 $a$ 使 $f(a) = b$** 。
+6. >**一一对应关系** 称为 **可逆的** ，因为可以定义这个函数的反函数；如果函数 **不是一一对应关系** ，就说它是 **不可逆的** ，**因为这样的函数不存在反函数** 。
+7. >令 $g$ 为从集合 $A$ 到集合 $B$ 的函数， $f$ 是从集合 $B$ 到集合 $C$ 的函数，函数 $f$ 和 $g$ 的合成，记作 *$f \circ g$* ，定义为 **对任意 $a \in A$ ， $(f \circ g)(a) = f(g(a))$** 。
+8. >函数 $f \circ g$ 指派给 $A$ 的元素 $a$ 就是 $f$ 指派给 $g(a)$ 的元素。
+9. >$f \circ g$ **没有定义** 除非 $g$ 的值域是 $f$ 的定义域中的子集。
+10. >尽管书中例 $23$ 中对函数 $f$ 和 $g$ 而言 $f \circ g$ 和 $g \circ f$ 均有定义， **$f \circ g$ 和 $g \circ f$ 并不相等** 。
+11. >在 **构造函数和它的反函数的合成** 时，不论以什么次序合成，得到的 **都是恒等函数** 。
+12. >*$f^-1 \circ f(a) = f^-1(f(a)) = f^-1(b) = a$* 。
+13. >*$f \circ f^-1(b) = f(f^-1(b)) = f(a) = b$* 。
 
-        %54.
-        \begin{practices}
-            令 $x = n + m$ ，其中 $n$ 为整数部分， $0 \leq m < 1$ 。
-            则 $-x = -n - m = -n - 1 + (1 - m)$ ，故可证。
-        \end{practices}
+### 2.3.4 函数的图
 
-        %55.
-        \begin{practices}
-            同上。
-        \end{practices}
+1. >$A * B$ 中的 **序偶集合** 和每个从 $A$ 到 $B$ 的函数 **关联起来** 。
+2. >这种 **序偶集合** 称为该 **函数的图** 。
+3. >令 $f$ 为从集合 $A$ 到 $B$ 的函数，**函数 $f$ 的图像是序偶集合 ${(a,b)} | a \in A$ 且 $f (a) = b$** 。
+4. >根据定义，从 $A$ 到 $B$ 的函数 $f$ 是 $A * B$ 中 **包含下面序偶的子集** ，其中 **序偶中第二项等于由 $f$ 指派给第一项的 $B$ 中的元素** 。
 
-        %56.
-        \begin{practices}
-            $\lfloor b \rfloor - \lceil a \rceil + 1$
-        \end{practices}
+### 2.3.5 一些重要的函数
 
-        %57.
-        \begin{practices}
-            $\lceil b \rceil - \lfloor a \rfloor - 1$
-        \end{practices}
+1. >离散函数中有两个重要的函数，即 **下取整函数** 和 **上取整函数** 。
+2. >**下取整函数** 把 $x$ 向 **下** 取到 **小于或等于** $x$ **又最接近** $x$ 的 **整数** 。
+3. >下取整函数 **指派给实数 $x$ 的是小于或等于 $x$ 的最大整数** 。
+4. >下取整函数在 $x$ 的值用 *$\lfloor x \rfloor$* 表示。
+5. >**上取整函数** 则把 $x$ **向上取到大于或等于** $x$ 又**最接近于** $x$ 的 **整数** 。
+6. >上取整函数 **指派给实数 $x$ 的是大于或等于 $x$ 的最小整数** 。
+7. >上取整函数在 $x$ 的值用 *$\lceil x \rceil$* 表示。
+8. >下取整函数和上取整函数有广泛的应用，包括 **设计数据存储** 和 **数据传输的应用** 。
+9. >下面是 **上取整函数和下取整函数的有用性质** 。（$n$ 为整数， $x$ 为实数）。
+10. >*$\lfloor x \rfloor = n$ 当且仅当 $n <= x < n + 1$*
+11. >*$\lceil x \rceil = n$ 当且仅当 $n - 1 < x <= n$*
+12. >*$\lfloor x \rfloor = n$ 当且仅当 $x - 1 < n <= x$*
+13. >*$\lceil x \rceil = n$ 当且仅当 $x <= n < x + 1$*
+14. >*$x - 1 < \lfloor x \rfloor <= x <= \lceil x \rceil < x + 1$*
+15. >*$\lfloor - x \rfloor = - \lceil x \rceil$*
+16. >*$\lceil - x \rceil = - \lfloor x \rfloor$*
+17. >*$\lfloor x + n \rfloor = \lceil x \rceil + n$*
+18. >*$\lceil x + n \rceil = \lfloor x \rfloor + n$*
+19. >本书中常用的另一个函数是 **阶乘函数** *$f : N \rightarrow Z+$ ，记为 $f(n) = n!$* 。
+20. >**$f(n) = n!$ 的值** 是 **前 $n$ 个正整数的乘积** 。
+21. >阶乘函数的快速递增通过 **斯特林公式** 可以看得更加清楚，这是一个由高等数学得出的结果， *$n! ~ \sqrt 2 \pi n(n / e)$* 。
+22. >阶乘函数用 *$f(n) ~ g(n)$* 这样的表示法，意思是随着 $n$ 的无限递增值 $f(n) / g(n)$ 趋近于 $1$ 。
+23. >符号 *$~$* 读作 **趋近于** 。
 
-        %58.
-        \begin{practices}
-            \begin{enumerate}[A.]
-                \item 1
-                \item 2
-                \item 63
-                \item 375
-            \end{enumerate}
-        \end{practices}
+### 2.3.6 部分函数
 
-        %59.
-        \begin{practices}
-            \begin{enumerate}[A.]
-                \item 1
-                \item 3
-                \item 126
-                \item 3600
-            \end{enumerate}
-        \end{practices}
-
-        %60.
-        \begin{practices}
-            \begin{enumerate}[A.]
-                \item 3018
-                \item 7075
-                \item 23584
-            \end{enumerate}
-        \end{practices}
-
-        %61.
-        \begin{practices}
-            \begin{enumerate}[A.]
-                \item 100
-                \item 256
-                \item 1030
-                \item 30200
-            \end{enumerate}
-        \end{practices}
-
-        %62.
-        \begin{practices}
-
-        \end{practices}
-
-        %63.
-        \begin{practices}
-
-        \end{practices}
-
-        %64.
-        \begin{practices}
-
-        \end{practices}
-
-        %65.
-        \begin{practices}
-
-        \end{practices}
-
-        %66.
-        \begin{practices}
-
-        \end{practices}
-
-        %67.
-        \begin{practices}
-
-        \end{practices}
-
-        %68.
-        \begin{practices}
-
-        \end{practices}
-
-        %69.
-        \begin{practices}
-            \begin{align*}
-                f^{-1}(x^3 + 1) &= x \\
-                f^{-1}(x) = \sqrt[3]{x - 1}
-            \end{align*}
-        \end{practices}
-
- %70.
-        \begin{practices}
-            \begin{align*}
-                ((f \circ g) \circ (g^{-1} \circ f^{-1}))(a)
-                &= f(g(g^{-1}(f^{-1}(a)))) \\
-                &= f(f^{-1}(a)) \\
-                &= a
-            \end{align*}
-
-            \begin{align*}
-                ((g^{-1} \circ f^{-1}) \circ (f \circ g))(b)
-                &= f^{-1}(g^{-1}(g(f(b)))) \\
-                &= f^{-1}(f(b)) \\
-                &= b
-            \end{align*}
-        \end{practices}
-
-        %71.
-        \begin{practices}
-            \begin{enumerate}[A.]
-                \item $x \in (A \cap B) \leftrightarrow x \in A \wedge x \in B$
-                \item $x \in (A \cup B) \leftrightarrow x \in A \vee x \in B$
-                \item $x \in \bar{A} \leftrightarrow x \notin A$
-                \item $x \in (A \oplus B) \leftrightarrow (x \in A \wedge x \notin B) \vee (x \notin A \wedge x \in B)$
-            \end{enumerate}
-        \end{practices}
-
-        %72.
-        \begin{practices}
-            如果函数是单射，但不是满射，那么基数不会相等。
-            如果函数是满射，但不是单射，那么基数不会相等。
-            证毕。
-        \end{practices}
-
-        %73.
-        \begin{practices}
-            \begin{enumerate}[A.]
-                \item T
-                \item F
-                \item T
-                \item F
-                \item F
-            \end{enumerate}
-        \end{practices}
-
-        %74.
-        \begin{practices}
-            \begin{enumerate}[A.]
-                \item T
-                \item F
-                \item T
-                \item F
-                \item T
-            \end{enumerate}
-        \end{practices}
-
-        %75.
-        \begin{practices}
-            \begin{enumerate}[A.]
-                \item
-                {
-                    令 $x = n^2 + m + \epsilon$ ， $n^2$ 为小于 $x$ 的最大平方数。
-                    $\sqrt{\lfloor x \rfloor}$ 和 $\sqrt{\lfloor n^2 + m \rfloor}$ 都处于 $[n, n+1)$ 之间，故可证。
-                }
-                \item
-                {
-                    同上。
-                }
-            \end{enumerate}
-        \end{practices}
-
-        %76.
-        \begin{practices}
-            令 $x = m + n$ 。
-            当 $n < 1 / 3$ 时，左右都等于 $3m$ 。
-            当 $1 / 3 \leq n < 2 / 3$ 时，左右都等于 $3m + 1$ 。
-            当 $2 / 3 \leq n < 1$ 时，左右都等于 $3m + 2$ 。
-        \end{practices}
-
-        %77.
-        \begin{practices}
-            \begin{enumerate}[A.]
-                \item $n \neq 0$
-                \item T
-                \item $n \neq 0$
-                \item T
-                \item $m > n$
-            \end{enumerate}
-        \end{practices}
-
-        %78.
-        \begin{practices}
-            \begin{enumerate}[A.]
-                \item
-                {
-                    良定义。
-                }
-                \item
-                {
-                    见例77。
-                }
-            \end{enumerate}
-        \end{practices}
-
-        %79.
-        \begin{practices}
-            \begin{enumerate}[A.]
-                \item
-                {
-                    根据题意， $S$ 具有 $m$ 个元素，将第一个元素指派到 $1$ ，第二个指派到 $2$ ， $...$ 第 $m$ 个元素指派到 $m$ 。
-                }
-                \item
-                {
-                    同上。
-                }
-            \end{enumerate}
-        \end{practices}
-
-        %80.
-        \begin{practices}
-            如果 $S$ 为有限集，则真子集 $A$ 与 $S$ 基数不同，不可能存在一一对应关系。
-        \end{practices}
+1. >用于 **计算一个函数的程序可能不会对这个函数的定义域中的所有元素产生正确的函数值** 。
+2. >在抽象的数学里，我们也常讨论那些 **只在实数的一个子集上有定义的函数** ，如 $1 / x$ 、 $\sqrt x$ 和 $arcsin (x)$ 。
+3. >一个集合 $A$ 到集合 $B$ 的 **部分函数** $f$ 是给 $A$ 的一个子集中的每个元素 $a$ 指派到唯一的一个 $B$ 中的元素 $b$ 。**集合 $A$ 和 $B$ 分别称为 $f$ 的域和陪域** 。
+4. >我们说 $f$ 对于 $A$ 中但不在 $f$ 的定义域中的元素 **无定义** 。
+5. >当 $f$ 的定义域等于 $A$ 时，就说 $f$ 是 **全函数** 。
+6. >我们写 *$f : A \rightarrow B$* 来表示 $f$ 是一个从 $A$ 到 $B$ 的部分函数。注意这个和函数的记号是一致的。**该记号的上下文** 可以用来 **判断 $f$ 是部分函数还是全函数** 。
