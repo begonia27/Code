@@ -52,25 +52,25 @@ date:2020/6/28-->
 
 ## 第八题
 
-1. 1
-2. 2
-3. -1
-4. 0
-5. 3
-6. -2
-7. 1
-8. 2
+1. $1$
+2. $2$
+3. $-1$
+4. $0$
+5. $3$
+6. $-2$
+7. $1$
+8. $2$
 
 ## 第九题
 
-1. 1
-2. 0
-3. 0
-4. 0
-5. 3
-6. -1
-7. 2
-8. 1
+1. $1$
+2. $0$
+3. $0$
+4. $0$
+5. $3$
+6. $-1$
+7. $2$
+8. $1$
 
 ## 第十题
 
@@ -200,7 +200,7 @@ date:2020/6/28-->
 
 1. $f(x) = 1$ ，$f(s) = {1,1,1,1,1}$
 2. $f(x) = 2x + 1$ ，$f(s) = {-1,1,5,9,15}$
-3. $f(x) = \leftceil x / 5$ ，$f(s) = {0,0,1,1,2}$
+3. $f(x) = \lceil x / 5 \rceil$ ，$f(s) = {0,0,1,1,2}$
 4. $f(x) = \rightarrow (x^2 + 1) / 3$ ，$f(s) = {0,0,0,5,16}$
 
 ## 第三十一题
@@ -280,9 +280,145 @@ $f(x) = ax + b$ 是可逆的，要证明 $f(x) = ax + b$ 是可逆的，必须�
 
 ## 第四十八题
 
-当 $x$ 为整数时， $\leftfloor x \rightfloor = \leftceil x \rightceil = x$
-当 $x$ 不为整数时，令 $x = n + m$ ，其中 $n$ 为整数部分， $0 <= m <= 1$ 。 $\leftceil n + m \rightceil = n + 1$ ， $\leftfloor n + m \rightfloor = n$
+当 $x$ 为整数时， $\lfloor x \rfloor = \lceil x \rceil = x$
+当 $x$ 不为整数时，令 $x = n + m$ ，其中 $n$ 为整数部分， $0 <= m <= 1$ 。 $\lceil n + m \rceil = n + 1$ ， $\lfloor n + m \rfloor = n$
 
 ## 第四十九题
 
-令 $x = n + m$ ，其中 $n$ 为整数部分， $0 <= m <= 1$ ， $\leftfloor n + m \rightfloor = n$ ，$\leftceil n + m \rightceil = n + 1$ 。由不等式的性质可得出， $x - 1 < \leftfloor x \rightfloor <= x <= \leftceil x \rightceil < x + 1$ 。所以可得结论。
+令 $x = n + m$ ，其中 $n$ 为整数部分， $0 <= m <= 1$ ， $\lfloor n + m \rfloor = n$ ，$\lceil n + m \rceil = n + 1$ 。由不等式的性质可得出， $x - 1 < \lfloor x \rfloor <= x <= \lceil x \rceil < x + 1$ 。所以可得结论。
+
+## 第五十题
+
+令 $x = n + l$ ，其中 $n$ 为整数部分， $0 <= l <= 1$ 。$\lceil n + l + m \rceil = n + m + 1$ ； $\lceil n + l \rceil + m = n + 1 + m$ ，所以可得结论。
+
+## 第五十一题
+
+1. 令 $x = m + l$ ，其中 $m$ 为整数部分， $0 <= l <= 1$ 。若 $m + l < n$ ，则 $\lfloor m + l \rfloor = m < n$ 。若 $\lfloor m + l \rfloor = m < n$ ，则 $x < n$ 。
+2. 若 $n < m + l$ ，则 $n < m + 1 <= \lceil m + l \rceil$ ；若 $n < \lceil m + l \rceil$ ，则 $n <= m + 1$ ， $n < m + l$ 。
+
+## 第五十二题
+
+1. 令 $x = m + l$ ， $\lceil m + l \rceil < m + 1$ ， $\lceil m + l < m + 1 \rceil$ 。又因为 $n$ 为整数，所以 $\lceil m + l <= n \rceil$ 。如果 $\lceil m + l \rceil <= n$ ，那么 $m + 1 <= n$ 。所以 $x <= n$ 。
+2. 如果 $n <= m + l$ ，那么 $n <= m < \lfloor x \rfloor$ ；如果 $n <= \lfloor x \rfloor$ ，那么 $n <= m <= m + l$ 。
+
+## 第五十三题
+
+如果 $n$ 为偶数，则有 $n = 2k$ 。 $2k / 2 = k = n / 2$ 。如果 $n$ 为奇数，则有 $n = 2k + 1$ 。 $lfloor k + 0.5 \rfloor = k = (n - 1) / 2$ 。
+
+## 第五十四题
+
+令 $x = n + m$ ，其中 $n$ 为整数部分， $0 <= m < 1$ ，则 $-x = -n - m + (1 - m)$ ，所以可证。
+
+## 第五十五题
+
+令 $x = n + m$ ，其中 $n$ 为整数部分， $0 <= m < 1$ ，则 $-x = -n - m + (1 - m)$ ，所以可证。
+
+## 第五十六题
+
+$\lfloor b \rfloor - \lceil a \rceil + 1$
+
+## 第五十七题
+
+$\lceil b \rceil - \lceil a \rceil + 1$
+
+## 第五十八题
+
+1. $1$
+2. $2$
+3. $63$
+4. $375$
+
+## 第五十九题
+
+1. $1$
+2. $3$
+3. $126$
+4. $3600$
+
+## 第六十题
+
+1. $3018$
+2. $7075$
+3. $2358$
+
+## 第六十一题
+
+1. $100$
+2. $256$
+3. $1030$
+4. $30200$
+
+## 第六十二题
+
+## 第六十三题
+
+## 第六十四题
+
+## 第六十五题
+
+## 第六十六题
+
+## 第六十七题
+
+## 第六十八题
+
+## 第六十九题
+
+## 第七十题
+
+$((f \circ g) \circ (g^-1 \circ f^-1)) (a)$
+& = $f (g (g^-1 (f^-1)(a)))$
+& = $f(f (f^-1(a)))$
+& = $a$
+
+$((g^-1 \circ f^-1) \circ (f \circ g))(b)$
+& = $(f^-1 (g^-1 (g (f (b)))))$
+& = $f^-1 (f (b))$
+& = $b$
+
+## 第七十一题
+
+1. $x \in (A \bigcap B) \leftrightarrow x \in A \wedge x \in B$
+2. $x \in (A \bigcup B) \leftrightarrow x \in A \vee x \in B$
+3. $x \in \bar A \leftrightarrow x \notin A$
+4. $x \in (A \bigoplus B) \leftrightarrow x \in A \wedge x \notin B \vee (x \notin A \wedge x \in B)$
+
+## 第七十二题
+
+如果函数是单射但不是满射时，那么基数不会相等；如果函数是满射但不是单射时，那么基数不会相等。
+
+## 第七十三题
+
+## 第七十四题
+
+## 第七十五题
+
+1. 令 $x = n^2 + m + \varepsilon$ ， $n^2$ 为小于 $x$ 的最大平方数。 $\sqrt \lfloor x \rfloor$ 和 $\sqrt \lfloor n^2 + m \rfloor$ 都处于 $[n,n + 1)$ 之间，故可证。
+2. 同上。
+
+## 第七十六题
+
+令 $x = m + n$ ，其中 $m$ 为整数， $n$ 为小数。 当 $n < 1 / 3$ 时，左右都等于 $3m$ ；当 $1 / 3 <= n <= 2 / 3$ 时，左右都等于 $3m + 1$ ；当 $2 / 3 <= n <= 1$ 时，左右都等于 $3m + 2$ 。
+
+## 第七十七题
+
+1. $n \not = 0$
+2. $T$
+3. $n \not = 0$
+4. $T$
+5. $m > n$
+
+## 第七十八题
+
+1. 良定义。
+2. 见例 $77$ 。
+
+## 第七十九题
+
+1. 根据题意， $S$ 具有 $m$ 个元素，将第一个元素指派到 $1$ ，第二个元素指派到 $2$ 。第 $m$ 个元素指派到 $m$ 。
+
+2. 同上。
+
+## 第八十题
+
+如果 $S$ 为有限集，则真子集 $A$ 与 $S$ 基数不同，不可能存在一一对应关系。
