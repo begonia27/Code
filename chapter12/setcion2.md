@@ -6,30 +6,30 @@ date:2020/7/15-->
 ## 第一题
 
 1. $\bar x \cdot \bar y \cdot z$
-2. $\bar x \cdot y \bar z$
-3. $\bar x \cdot y z$
-4. $\bar x \bar y \bar z$
+2. $\bar x \cdot y \cdot \bar z$
+3. $\bar x \cdot y \cdot z$
+4. $\bar x \cdot \bar y \cdot \bar z$
 
 ## 第二题
 
 1. $\bar x \cdot \bar y + \bar x \cdot y + x \cdot y$
 2. $x \cdot \bar y$
 3. $x \cdot y + \bar x \cdot y + x \cdot \bar y + \bar x \cdot \bar y$
-4. $\bar y$
+4. $\bar x \cdot y + x \cdot y$
 
 ## 第三题
 
-1. $bar x \cdot \bar y \cdot z + \bar x \cdot y \cdot \bar z + \bar x \cdot y \cdot z + x \cdot \bar y \cdot \bar z + x \cdot \bar y \cdot z + x \cdot y \cdot \bar z + x \cdot y \cdot z$
+1. $\bar x \cdot \bar y \cdot z + \bar x \cdot y \cdot \bar z + \bar x \cdot y \cdot z + x \cdot \bar y \cdot \bar z + x \cdot \bar y \cdot z + x \cdot y \cdot \bar z + x \cdot y \cdot z$
 2. $\bar x \cdot y \cdot z + x \cdot y \cdot \bar z + x \cdot y \cdot z$
-3. $x$
-4. $x \cdot \bar y$
+3. $x \cdot y \cdot z + x \cdot y \cdot \bar z + x \cdot \bar y \cdot z + x \cdot \bar y \cdot \bar z$
+4. $x \cdot \bar y \cdot z + x \cdot \bar y \cdot \bar z$
 
 ## 第四题
 
 1. $\bar x \cdot y \cdot z + \bar x \cdot \bar y \cdot z + \bar x \cdot \bar y \cdot \bar z + \bar x \cdot y \cdot \bar z$
-2. $\bar x \cdot y \cdot \bar z + \bar x \cdot \bar y \cdot z$
-3. 当 $x + y = 0$ ，则 $z$ 一定为 $1$ ，即 $x + y + z$
-4. $\bar (x \cdot y \cdot z) + x \cdot y + \bar z + x \cdot \bar y \cdot z + x \cdot \bar y \cdot \bar z + \bar x \cdot y \cdot z + \bar x \cdot y \cdot \bar z + \bar x \cdot \bar y \cdot z$
+2. $x \cdot \bar y \cdot z + x \cdot \bar y \cdot \bar z + \bar x \cdot y \cdot z + \bar x \cdot y \cdot \bar z + \bar x \cdot \bar y \cdot z + \bar x \cdot \bar y \cdot \bar z$
+3. $\bar z \cdot \bar y \cdot z + \bar z \cdot \bar y \cdot \bar z$
+4. $x \cdot y + \bar z + x \cdot \bar y \cdot z + x \cdot \bar y \cdot \bar z + \bar x \cdot y \cdot z + \bar x \cdot y \cdot \bar z + \bar x \cdot \bar y \cdot z + \bar x \cdot \bar y \cdot \bar z$
 
 ## 第五题
 
@@ -61,24 +61,24 @@ $y_1 + y_2 + \cdot \cdot \cdot + y_n = 0$ 当且仅当 $y_i = 0$ 对 $i = 1 , 2 
 
 ## 第十一题
 
-1. $(x + y + z) \cdot (x + y + \bar z)$
-2. $x + y + z$
-3. $x$
-4. $(x + y) \cdot (x + \bar y) \cdot (\bar x + \bar y)$
+1. $x + y + z$
+2. $(x + y + z) \cdot (x + y + \bar z) \cdot (\bar x + y + z) \cdot (\bar x + y + \bar z)$
+3. $(x + y + z) \cdot (x + y + \bar z) \cdot (\bar x + y + z) \cdot (x + \bar y + \bar z)$
+4. $(x + y + z) \cdot (x + y + \bar z) \cdot (\bar x + y + z) \cdot (x + \bar y + \bar z) + \cdot (\bar x + \bar y + z) \cdot (\bar x + \bar y + \bar z)$
 
 ## 第十二题
 
 1. $\bar (\bar x \cdot \bar y \cdot \bar z)$
-2. $\bar (\bar x \cdot y) \cdot \bar (x \cdot \bar z)$
-3. $\bar (\bar x \cdot y)$
+2. $\bar (\bar x (\cdot y \cdot \bar (x \cdot \bar z)))$
+3. $\bar x \cdot y$
 4. $\bar x \cdot (\bar (\bar x \cdot y \cdot z))$
 
 ## 第十三题
 
 1. $x + y + z$
-2. $\bar (\bar x + y) + \bar (x + \bar z)$
+2. $x + (\bar (y + (\bar x + z)))$
 3. $\bar (x + \bar y)$
-4. $\bar x + (\bar (\bar x + y + z))$
+4. $\bar (x + (x + \bar y + \bar z)))$
 
 ## 第十四题
 
@@ -128,17 +128,17 @@ $y_1 + y_2 + \cdot \cdot \cdot + y_n = 0$ 当且仅当 $y_i = 0$ 对 $i = 1 , 2 
 
 ## 第十七题
 
-1. $x + y + z = (x \mid x) \mid (y \mid y) \mid (z \mid z)$
-2. $(x + z) \cdot y = ((x \mid x) \mid y) \mid ((z \mid z) \mid y)$
-3. $x = \bar x \mid \bar x$
-4. $x \cdot \bar y = (x \mid \bar y) \mid (x \mid \bar y)$
+1. $x + y + z = ((x \mid x) \mid (y \mid y)) \mid ((x \mid x) \mid (y \mid y)) \mid (z \mid z)$
+2. $(x + z) \cdot y = ((x \mid x) \mid (z \mid z) \mid y)$
+3. $x = x$
+4. $x \cdot \bar y = (x \mid (y \mid y) \mid (x \mid (y \mid y)))$
 
 ## 第十八题
 
-1. $x + y + z = (x \downarrow y \downarrow z) \downarrow (x \downarrow y \downarrow z) \downarrow (x \downarrow y \downarrow z)$
-2. $(x + z) \cdot y = ((x \downarrow z) \downarrow (x \downarrow z)) \downarrow (y \downarow y)$
-3. $x = \bar x \downarrow \bar x$
-4. $x \cdot \bar y = (x \downarrow x) \downarrow (\bar y \downarrow \bar y)$
+1. $x + y + z = (((x \downarrow y) \downarrow (x \downarrow y)) \downarrow z) \downarrow (((x \downarrow y) \downarrow (x \downarrow y)) \downarrow z)$
+2. $(x + z) \cdot y = (((x \downarrow z) \downarrow (x \downarrow z)) \downarrow (((x \downarrow z) \downarrow (x \downarrow z))) \downarrow (y \downarrow y)$
+3. 由于它没有运算符，因此它处于所需要的形式。
+4. $x \cdot \bar y = (x \downarrow x) \downarrow ((y \downarrow y) \downarrow (y \downarrow y))$
 
 ## 第十九题
 
