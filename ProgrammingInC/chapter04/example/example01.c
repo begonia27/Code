@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include <stdio.h>
 
 int main(void)
@@ -7,7 +8,7 @@ int main(void)
     double doubleVar = 8.44e+11;
     char charVar = 'W';
 
-    _Bool boolVar = 0;
+    bool boolVar = false;
 
     printf ("integerVar = %i\n",integerVar);
     printf ("floatingVar = %f\n",floatingVar);
