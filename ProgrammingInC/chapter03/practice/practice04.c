@@ -4,14 +4,11 @@
 
 int main(void)
 {
-    //Declare variables
-    int value1, value2, difference;
+    //Declare variables,Assign values and calculate their minus
+    int value1 = 87; 
+    int value2 = 15; 
+    int difference = value1 - value2;
 
-    //Assign values and calculate their minus
-    value1 = 87;
-    value2 = 15;
-    difference = value1 - value2;
-    
     //Display the result
     printf("the difference of %i and %i is %i.\n",value1, value2, difference);
 

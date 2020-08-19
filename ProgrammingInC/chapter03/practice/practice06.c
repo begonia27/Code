@@ -4,7 +4,7 @@ int main(void)
 {
     int answer,result;
 
-    answer = 1000;
+    answer = 100;
     result = answer - 10;
     printf("The result is %i\n", result + 5);
 
