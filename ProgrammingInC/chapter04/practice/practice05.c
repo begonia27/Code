@@ -7,7 +7,7 @@ int main(void)
     c = 'd';
     d = c;
 
-    printf ("d = %c\n",d);
+    printf("d = %c\n",d);
 
     return 0;
 }

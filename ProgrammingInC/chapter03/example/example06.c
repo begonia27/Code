@@ -13,7 +13,7 @@ int main(void)
     sum = value1 + value2;
 
     //Display the result
-    printf ("The sum of %i and %i is %i\n", value1, value2, sum);
+    printf("The sum of %i and %i is %i\n", value1, value2, sum);
 
     return 0;
 }

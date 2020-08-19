@@ -6,7 +6,7 @@ int main(void)
 
     Celsius = (Fahrenheit - 32) / 1.8;
 
-    printf ("Fahrenheit 27 is Celsius %f.\n",Celsius);
+    printf("Fahrenheit 27 is Celsius %f.\n",Celsius);
 
     return 0;
     
