@@ -2,13 +2,20 @@
 
 int main(void)
 {
-    int number = 5, triangularNumber = 0;
+    int number,squareNumber;
 
-    for (number; triangularNumber <= 50; number += 5)
+    printf("SQUARE OF NUMBER\n\n");
+    printf("number    square of number\n");
+    printf("------    ----------------\n");
+
+    squareNumber = 0;
+
+    for (number = 1; number<= 10; ++number)
     {
-        triangularNumber = number * (number + 1) / 2;
-        printf("The triangularNumber for 5 to 50 is %i",triangularNumber);
+        squareNumber = number * number;
+        printf(" %2i              %i\n",number,squareNumber);
     }
 
     return 0;
+
 }
