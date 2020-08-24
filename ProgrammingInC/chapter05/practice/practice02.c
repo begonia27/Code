@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void)
+int main()
 {
     int number,squareNumber;
 
@@ -17,5 +17,4 @@ int main(void)
     }
 
     return 0;
-
 }
