@@ -7,7 +7,7 @@ int main()
     int number_to_test, remainder;
 
     printf("Enter your number to be tested: ");
-    scanf("%i",&number_to_test);
+    scanf("%i", &number_to_test);
 
     remainder = number_to_test % 2;
 

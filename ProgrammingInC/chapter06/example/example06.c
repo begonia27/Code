@@ -7,7 +7,7 @@ int main(void)
     int number,sign;
 
     printf("Please type in a number: ");
-    scanf("%i",&number);
+    scanf("%i", &number);
 
     if (number < 0)
     {
@@ -20,7 +20,7 @@ int main(void)
     else // Must be positive
     sign = 1;
 
-    printf("Sign = %i\n",sign);
+    printf("Sign = %i\n", sign);
 
     return 0;
 }

@@ -11,13 +11,13 @@ int main(void)
 
     //set the number of grade enteries
     printf("How many grade will you be entering? ");
-    scanf("%i",&numberOfGrades);
+    scanf("%i", &numberOfGrades);
 
     for (i = 1; i <= numberOfGrades; ++i)
     {      
         //make user input their grades
         printf("Enter grade #%i: ",i);
-        scanf("%i",&grade);
+        scanf("%i", &grade);
 
         gradeTotal = gradeTotal + grade;
 
@@ -32,8 +32,8 @@ int main(void)
     average = (float)gradeTotal / numberOfGrades;
 
     //display the average and failureCount
-    printf("\nGrade average = %.2f\n",average);
-    printf("Number of failures = %i\n",failureCount);
+    printf("\nGrade average = %.2f\n", average);
+    printf("Number of failures = %i\n", failureCount);
 
     return 0;
 }
