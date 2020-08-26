@@ -1,8 +1,6 @@
-/*Program to evaluate simple expressions of the form value operator value*/
-
 #include <stdio.h>
 
-int main(void)
+int main (void)
 {
     float value1, value2;
     char operator;
