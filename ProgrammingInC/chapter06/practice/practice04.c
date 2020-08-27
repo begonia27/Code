@@ -2,39 +2,46 @@
 
 int main (void)
 {
-    float value1, value2;
+    float numberOne, numberTwo, result;
     char operator;
 
-    printf("Type in  your expression.\n");
-    scanf("%f %c %f", &value1, &operator, &value2);
+    printf("Enter a number with an operater:");
+    scanf("%f %c", &numberOne, &operator);
 
-    if (operator == '+')
+    while (operator != 'E')
     {
-        printf("%.2f\n", value1 + value2);
-    }
-    else if (operator == '-')
-    {
-        printf("%.2f\n", value1 - value2);
-    }
-    else if (operator == '*')
-    {
-        printf("%.2f\n", value1 * value2);
-    }
-    else if (operator == '/')
-    {
-        if (value2 == 0)
+        if (operator == 'S')
         {
-            printf("Division by zero.\n");
+            if (operator == '+')
+            {   
+                result = numberOne + numberTwo;
+                printf("%.2f\n", result);
+            }
+            else if (operator == '-')
+            {
+                printf("%.2f\n", result = numberOne - numberTwo);
+            }
+            else if (operator == '*')
+            {
+                printf("%.2f\n", result = numberOne * numberTwo);
+            }
+            else if (operator == '/')
+            {
+                if (numberTwo == 0)
+                {
+                    printf("Division by zero.\n");
+                }
+                else
+                {
+                    printf("%.2f\n", result = numberOne / numberTwo);             
+                }
+            }
         }
         else
         {
-            printf("%.2f\n",value1 / value2);
+            printf("Unknown operator.\n");
         }
     }
-    else
-    {
-        printf("Unknown operator.\n");
-    }
-    
+        
     return 0;
 }

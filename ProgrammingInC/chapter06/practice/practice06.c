@@ -2,58 +2,47 @@
 
 int main(void)
 {
-    char number, zero, one, two, three, four, five, six, seven, eight, nine;
+    int number;
 
-    printf("Enter your number: \n");
-    scanf("%c", &number);
+    printf("Enter a number:");
+    scanf("%i", &number);
 
-    if (number ='0' && number <= '9')
+    switch(number)
     {
-        if (number ='0')
-        {
-            printf("%c\n", zero);
-        }
-        else if (number = '1')
-        {
-            printf("%c\n", one);
-        }
-        else if (number = '2')
-        {
-            printf("%c\n", two);
-        }
-        else if (number = '3')
-        {
-            printf("%c\n", three);
-        }
-        else if (number = '4')
-        {
-            printf("%c\n", four);
-        }
-        else if (number = '5')
-        {
-            printf("%c\n", five);
-        }
-        else if (number = '6')
-        {
-            printf("%c\n", six);
-        }
-        else if (number = '7')
-        {
-            printf("%c\n", seven);
-        }
-        else if (number = '8')
-        {
-            printf("%c\n",eight);
-        }
-        else if (number = '9')
-        {
-            printf("%c\n", nine);
-        }
+        case 0: 
+            printf("zero"); 
+            break;
+        case 1: 
+            printf("one"); 
+            break;
+        case 2: 
+            printf("two"); 
+            break;
+        case 3: 
+            printf("there"); 
+            break;
+        case 4: 
+            printf("four"); 
+            break;
+        case 5: 
+            printf("five"); 
+            break;
+        case 6: 
+            printf("six"); 
+            break;
+        case 7: 
+            printf("seven"); 
+            break;
+        case 8: 
+            printf("eight"); 
+            break;
+        case 9: 
+            printf("nine"); 
+            break;
+        default: 
+            printf("Unknown operator.\n");
+            break;
     }
-    else
-    {
-        printf("Unknown operator.\n");
-    }
-    
+
     return 0;
 }
