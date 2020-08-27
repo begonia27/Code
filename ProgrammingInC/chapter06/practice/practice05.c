@@ -2,17 +2,21 @@
 
 int main()
 {
-    int number, right_digit, record = 1;
+    int number, right_digit, record;
 
     printf("Enter your number:\n");
     scanf("%i", &number);
 
     if (number < 0)
-    {
+    {    
         number = -number;
-        record = -number;
+        record = 0;
     }
-
+    else
+    {
+        record = 1;
+    }
+    
     do
     {
         right_digit = number % 10;
@@ -21,7 +25,7 @@ int main()
 
     } while (number != 0);
 
-    if (record < 0)
+    if (!record)
     {
         printf("-\n");
     }
