@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-void printMessage (void)
+void printMessage(void)
 {
     printf("Programmming is fun.\n");
 }
 
 int main(void)
 {
-    printMessage ();
+    printMessage();
 
     return 0;
 }

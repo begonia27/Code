@@ -24,7 +24,7 @@ int minimum(int values[10])
     return minValue;
 }
 
-int main (void)
+int main(void)
 {
     int scores[10], i, minScore;
 
@@ -32,18 +32,18 @@ int main (void)
     int minimum(int values[10]);
     
     //提示用户输入10个整型数
-    printf ("Enter 10 scores\n");
+    printf("Enter 10 scores\n");
 
     //通过循环读入用户输入的10个整型数，数组下标分别是0-9
     for (i = 0; i < 10; ++i)
     {
         //每次循环使用scanf函数读取下标与循环变量对应的数组元素
-        scanf ("%i", &scores[i]);
+        scanf("%i", &scores[i]);
     }
 
     //程序调用minimum函数，并将数组作为参数传递给它
     minScore = minimum(scores);
-    printf ("\nMinimum score is %i\n", minScore);
+    printf("\nMinimum score is %i\n", minScore);
 
     return 0;
 }

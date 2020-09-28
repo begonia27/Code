@@ -1,17 +1,17 @@
 #include <stdio.h>
 
-void printMessage (void)
+void printMessage(void)
 {
-    printf ("Programming is fun.\n");
+    printf("Programming is fun.\n");
 }
 
-int main (void)
+int main(void)
 {
     int i;
 
     for (i = 1; i <= 5; ++i)
     {
-        printMessage ();
+        printMessage();
     }
 
     return 0;

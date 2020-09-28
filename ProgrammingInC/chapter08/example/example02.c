@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-void printMessage (void)
+void printMessage(void)
 {
-    printf ("Programming is fun.\n");
+    printf("Programming is fun.\n");
 }
 
-int main (void)
+int main(void)
 {
-    printMessage ();
-    printMessage ();
+    printMessage();
+    printMessage();
 
     return 0;
 }

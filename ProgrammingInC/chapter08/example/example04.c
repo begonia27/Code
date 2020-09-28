@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-void calculateTriangularNumber (int n)
+void calculateTriangularNumber(int n)
 {
     int i, triangularNumber = 0;
 
@@ -11,14 +11,14 @@ void calculateTriangularNumber (int n)
         triangularNumber += i;
     }
 
-    printf ("Triangular number %i is %i\n", n, triangularNumber);
+    printf("Triangular number %i is %i\n", n, triangularNumber);
 }
 
-int main (void)
+int main(void)
 {
-    calculateTriangularNumber (10);
-    calculateTriangularNumber (20);
-    calculateTriangularNumber (30);
+    calculateTriangularNumber(10);
+    calculateTriangularNumber(20);
+    calculateTriangularNumber(30);
 
     return 0;
 }
