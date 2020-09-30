@@ -25,7 +25,7 @@ int main(void)
     int i;
     int array[16] = {34, -5, 6, 0, 12, 100, 56, 22,
         44, -3, -9, 12, 17, 22, 6, 11};
-    voidsort(int a[], int n);
+    void sort(int a[], int n);
 
     printf("The array before the sort:\n");
 
