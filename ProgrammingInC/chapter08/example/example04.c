@@ -18,7 +18,7 @@ int main(void)
 {
     calculateTriangularNumber(10);
     calculateTriangularNumber(20);
-    calculateTriangularNumber(30);
+    calculateTriangularNumber(50);
 
     return 0;
 }
