@@ -1,27 +1,20 @@
 #include <stdio.h>
 
-static int n, number, counter;
-int triangularNumber;
+int n, number, counter, triangularNumber;
 
 void getTriangularNumber(void)
 {
-    for (counter = 1; counter <= 5; ++counter)
-    {
-        printf("What triangular number do you want? ");
-        scanf("%i", &number);
-    }
+    printf("What triangular number do you want? ");
+    scanf("%i", &number);
 }
 
 int convertTriangularNumber(void)
 {
-    for (counter = 1; counter <= 5; ++counter)
-    {
-        triangularNumber = 0;
+    triangularNumber = 0;
 
-        for (n = 1; n <= number; ++n)
-        {
-            triangularNumber += n;
-        }
+    for (n = 1; n <= number; ++n)
+    {
+        triangularNumber += n;
     }
 
     return triangularNumber;
@@ -29,18 +22,17 @@ int convertTriangularNumber(void)
 
 void displayTriangularNumber(void)
 {
-    for (counter = 1; counter <= 5; ++counter)
-    {
-        printf("Triangular number %i is %i\n\n", number,
-           convertTriangularNumber());
-    }
+    printf("Triangular number %i is %i\n\n", number, convertTriangularNumber());
 }
 
 int main(void)
 {
-    getTriangularNumber();
-    convertTriangularNumber();
-    displayTriangularNumber();
+    for (counter = 1; counter <= 5; ++counter)
+    { 
+        getTriangularNumber();
+        convertTriangularNumber();
+        displayTriangularNumber();
+    }
 
     return 0;
 }

@@ -13,7 +13,7 @@ int main(void)
         triangularNumber = triangularNumber + n;
     }
 
-    printf("The 200th triangular number is %-3i\n",triangularNumber);
+    printf("The 200th triangular number is %-3i\n", triangularNumber);
 
     return 0;
 }
