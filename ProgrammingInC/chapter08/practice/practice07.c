@@ -15,19 +15,6 @@ void getNumberAndSquare(void)
 
 long int x_to_the_n(void)
 {
-    if (x < 0)
-    {
-        if (n % 2 == 0)
-        {
-            result = pow(x, n);
-        }
-        else
-        {
-            result = pow(x, n);
-            result = -result;
-        }    
-    }
-
     result = pow(x, n);
 
     return result;
