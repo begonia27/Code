@@ -3,7 +3,7 @@
 #include <math.h>
 
 int a, b, c;
-float x, y;
+float x, y, result;
 
 void getNumber(void)
 {
@@ -17,32 +17,46 @@ void getNumber(void)
     scanf("%i", &c);
 }
 
-float calculateRootOfEquation(void)
+float calculateRootOneOfEquation(void)
 {
-    if (pow(b,2) - 4 * a * c < 0)
+    result = pow(b,2) - 4 * a * c;
+
+    if (result >= 0)
     {
-        printf("The roots of the equation are complex numbers.\n");
+        x = (-b + (sqrt(result))) / (2 * a);
+        //千万不要把(-b + (sqrt(result)))中的括号少加或加错地方，不然计算的值有误
     }
     else
     {
-        x = (-b + (sqrt(pow(b,2) - 4 * a * c)) / (2 * a));
-        y = (-b - (sqrt(pow(b,2) - 4 * a * c)) / (2 * a));
+        printf("The roots of the equation are complex numbers.\n");
     }
-    
-    return x;
-    return y;
+}
+
+float calculateRootTwoOfEquation(void)
+{
+    result = pow(b,2) - 4 * a * c;
+
+    if (result >= 0)
+    {
+        y = (-b - (sqrt(result))) / (2 * a);
+    }
+    else
+    {
+        printf("The roots of the equation are complex numbers.\n");
+    }
 }
 
 void printfNumber(void)
 {
-    printf("the 1st root of equation is %f \n", calculateRootOfEquation());
-    printf("the 2nd root of equation is %f \n", calculateRootOfEquation());
+    printf("the roots one of equation is %f \n", calculateRootOneOfEquation());
+    printf("the roots two of equation is %f \n", calculateRootTwoOfEquation());
 }
 
 int main(void)
 {
     getNumber();
-    calculateRootOfEquation();
+    calculateRootOneOfEquation();
+    calculateRootTwoOfEquation();
     printfNumber();
 
     return 0;
