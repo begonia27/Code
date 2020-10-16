@@ -3,8 +3,6 @@
 #include <stdbool.h>
 #include <math.h>
 
-bool isPrime;
-
 void getNumber(void)
 {
     int number, a;
@@ -17,28 +15,34 @@ void getNumber(void)
 
 int JudgumentNumber(void)
 {
-    int number, n, a;
+    bool isPrime;
+    int n, number, value;
 
     for (n = 2; n < number; ++n)
     {
-        if (number % n != 0)
+        if (number % n == 0)
         {
-            isPrime = 1;//代表是质数
+            break;
+            // 代表不是质数
+            isPrime = false;
         }
         else
         {
-            isPrime = 0;//代表不是质数
+            // 代表是质数
+            isPrime = true;
         }
     }
 }
 
-void printNumber()
+void printNumber(void)
 {
+    bool isPrime;
     int a;
 
-    //为什么不直接在JudgumentNumber()函数里面输入这个布尔判断，因为如果输入了，那么会把每一个判断过的复合要求的数都输出；
-    if (isPrime)
+    if (isPrime == true)
     {
+        /* 此处的a是原始的输入值number,只不过JudgumentNumber()函数里面使用了number,
+            为了不改变原始输入值，因此可以用另一个变量a替换number，来使用 */
         printf("%i is prime", a);
     }
     else
@@ -47,8 +51,11 @@ void printNumber()
     }
 }
 
-int main()
+int main(void)
 {
+    int number, n, a;
+    bool isPrime;
+
     getNumber();
     JudgumentNumber();
     printNumber();

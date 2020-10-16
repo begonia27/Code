@@ -1,4 +1,4 @@
-/* 找出两个非负整数的最小公倍数，并返回结果的函数 */
+// 找出两个非负整数的最小公倍数，并返回结果的函数
 #include <stdio.h>
 
 int u, v, a, b, temp, result;
@@ -23,16 +23,17 @@ int gcd(void)
         v = temp;
     }
 
-    return u;//gcd()函数的返回值一定要有
+    // gcd()函数的返回值一定要有
+    return u;
 }
 
 int leastCommonMultiple()
 {
     if (a >= 0 || b >= 0)
     {
-        result = ((a * b) / gcd());
-        //此处调用gcd()函数是因为gcd()函数和leastCommonMultiple()函数是平行的，只能调用
-        //a和b分别代替了u和v的原始输入值，不会因为gcd()函数使用过而改变，不然计算result时就是错误的值
+        // 此处调用gcd()函数是因为gcd()函数和leastCommonMultiple()函数是平行的，只能调用
+        // a和b分别代替了u和v的原始输入值，不会因为gcd()函数使用过而改变，不然计算result时就是错误的值
+        result = ((a * b) / gcd());  
     }
 
     return result;

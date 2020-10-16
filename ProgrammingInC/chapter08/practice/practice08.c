@@ -22,9 +22,9 @@ float calculateRootOneOfEquation(void)
     result = pow(b,2) - 4 * a * c;
 
     if (result >= 0)
-    {
+    {   
+        // 千万不要把(-b + (sqrt(result)))中的括号少加或加错地方，不然计算的值有误
         x = (-b + (sqrt(result))) / (2 * a);
-        //千万不要把(-b + (sqrt(result)))中的括号少加或加错地方，不然计算的值有误
     }
     else
     {

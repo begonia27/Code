@@ -1,4 +1,4 @@
-/* 找出两个非负整数的最大公约数，并返回结果的函数 */
+// 找出两个非负整数的最大公约数，并返回结果的函数
 #include <stdio.h>
 
 int u, v, a, b, result;
@@ -30,9 +30,9 @@ int greatestCommonDivisor()
 
 void printfNumber(void)
 {
+    // a和b分别代替了u和v的原始输入值，不会因为gcd()函数使用过而改变，不然显示一开始的用户输入值时就是错误的值
     printf("The greatest common divisor of %i and %i is %i\n",
         a, b, greatestCommonDivisor());
-    //a和b分别代替了u和v的原始输入值，不会因为gcd()函数使用过而改变，不然显示一开始的用户输入值时就是错误的值
 }
 
 int main(void)
