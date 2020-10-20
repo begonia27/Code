@@ -3,51 +3,56 @@
 #include <stdbool.h>
 #include <math.h>
 
-int number, a, n;
-bool isPrime = true;
-
-void getNumber(void)
+int getNumber(void)
 {
+    int number;
     printf("Please enter a number to calculate and judgment prime: ");
     scanf("%i", &number);
-    a = number;
+   
+    return number;
 }
 
-void judgumentNumber(void)
+int judgumentNumber(int number, int n)
 {
+    bool isPrime = true;
+
     if (number < 2)
     {
         isPrime = false;
-        
-        // return代表不返回值，因为返回值类型要写成void类型
-        return;
+        return false;
     }
 
     if (number == 2)
     {
         isPrime = true;
-        return;
+        return true;
     }
 
     if (number % 2 == 0)
     {
         isPrime = false;
-        return;
+        return false;
     }
 
     for (n = 3; n < sqrt(number); n += 2)
     {
         if (number % n == 0)
         {
-            isPrime = false;
             // 代表不是质数
+            isPrime = false;
+
             break;
         }
     }
 }
 
 void printNumber(void)
-{
+{   
+    int a, number;
+    bool isPrime;
+
+    a = getNumber();
+
     if (isPrime == true)
     {
         /* 此处的a是原始的输入值number,只不过judgumentNumber()函数里面使用了number,
@@ -62,9 +67,14 @@ void printNumber(void)
 }
 
 int main(void)
-{
+{   
+    int number, n, a;
+    bool isPrime;
+
+    a = number;
+    
     getNumber();
-    judgumentNumber();
+    judgumentNumber(number, n);
     printNumber();
 
     return 0;
