@@ -1,88 +1,75 @@
-//判断输入的值是否是质数
 #include <stdio.h>
 #include <stdbool.h>
 #include <math.h>
 
 int getNumber(void);
-int judgumentNumber(int number);
-void printNumber(void);
+bool judgumentNumber(int value);
+void printfNumber(bool isPrime, int value);
 
 int main(void)
 {
-    int number, n, a;
+    int value;
     bool isPrime;
 
-    a = number;
+    value = getNumber();// 把第一个函数返回的值用一个新的变量value存起来
+    isPrime = judgumentNumber(value);// 这个isPrime和第二个函数返回的isPrime不是同一个东西，名字本来也可以不一样
+    printfNumber(isPrime, value);
 
-    getNumber ();
-    judgumentNumber(number);
-    printNumber();
 
     return 0;
 }
 
 int getNumber(void)
-{   
+{
     int number;
 
-    printf("Please enter a number to calculate and judgment prime: ");
+    printf("Enter a number: ");
     scanf("%i", &number);
 
     return number;
 }
 
-int judgumentNumber(int number)
+bool judgumentNumber(int value)
 {
-    int n;
     bool isPrime = true;
+    int n;
 
-    if (number < 2)
+    if (value < 2)
     {
-        isPrime = false;
         return false;
     }
 
-    if (number == 2)
+    if (value == 2)
     {
-        isPrime = true;
         return true;
     }
 
-    if (number % 2 == 0)
+    if (value % 2 == 0)
     {
-        isPrime = false;
         return false;
     }
 
-    for (n = 3; n < sqrt(number); n += 2)
+    for (n = 3; n < sqrt(value); n += 2)
     {
-        if (number % n == 0)
+        if (value % n == 0)
         {
-            // 代表不是质数
             isPrime = false;
+
             break;
         }
-        else
-        {
-            // 代表是质数
-            isPrime = true;
-            return true;
-        }
     }
+
+    return isPrime;
 }
 
-void printNumber(void)
-{   
-    bool isPrime;
-    int a, number;
-    a = number;
-
-    if (isPrime == true)
+void printfNumber(bool isPrime, int value)
+{
+    if (isPrime)
     {
-        printf("%i is prime", a);
+        printf("%i is prime", value);
     }
     else
     {
-        printf("%i is not prime", a);
+        printf("%i is not prime", value);
     }
 }

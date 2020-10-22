@@ -18,7 +18,7 @@ void judgumentNumber(void)
     if (number < 2)
     {
         isPrime = false;
-        
+
         // return代表不返回值，因为返回值类型要写成void类型
         return;
     }
@@ -58,7 +58,7 @@ void printNumber(void)
     {
         printf("%i is not prime", a);
     }
-    
+
 }
 
 int main(void)

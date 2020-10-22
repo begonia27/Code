@@ -1,44 +1,24 @@
-//判断输入的值是否是质数
+/* 先写一个函数，这个函数接收一个输入的数，然后把这个函数返回出来，在main函数里面里面接收这个值，把这个值存下来 */
 #include <stdio.h>
-#include <stdbool.h>
-#include <math.h>
+
+int getNumber(void);
 
 int main(void)
 {
-    int a, n, number, value;
-    bool isPrime;
+    int a, number;
 
-    printf("Please enter a number to calculate and judgment prime: ");
+    number = getNumber();
+    printf("number is: %i", number);
+
+    return 0;
+}
+
+int getNumber(void)
+{
+    int number;
+
+    printf("Enter a number: ");
     scanf("%i", &number);
 
-     a = number;
-
-    value = sqrt(number);
-    isPrime = true;
-
-    for (n = 2; n < value; ++n)
-    {
-        if (number % n != 0)
-        {
-            // 代表是质数
-            isPrime = true; 
-        }
-        else
-        {
-            // 代表不是质数
-            isPrime = false;
-            break;
-        }
-    }
-
-    if (isPrime == true)
-    {
-        printf("%i is prime", a);
-    }
-    else
-    {
-        printf("%i is not prime", a);
-    }
-    
-    return 0;
+    return number;
 }
