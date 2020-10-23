@@ -15,7 +15,6 @@ int main(void)
     isPrime = judgumentNumber(value);// 这个isPrime和第二个函数返回的isPrime不是同一个东西，名字本来也可以不一样
     printfNumber(isPrime, value);
 
-
     return 0;
 }
 
