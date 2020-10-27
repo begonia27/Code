@@ -19,12 +19,12 @@ int transposeMatrix(int number[], int i, int j)
     int row, column, temp;
 
     int number[4][5] =
-    (
-        (0, 1, 2, 3, 4),
-        (0, 1, 2, 3, 4),
-        (0, 1, 2, 3, 4),
-        (0, 1, 2, 3, 4)
-    );
+    {
+        {0, 1, 2, 3, 4},
+        {0, 1, 2, 3, 4},
+        {0, 1, 2, 3, 4},
+        {0, 1, 2, 3, 4}
+    };
 
     int reverseNumber[row][column];
 
