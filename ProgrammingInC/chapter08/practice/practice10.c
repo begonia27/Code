@@ -1,4 +1,4 @@
-//判断输入的值是否是质数
+//判断输入的值是否是质数(使用全局变量)
 #include <stdio.h>
 #include <stdbool.h>
 #include <math.h>

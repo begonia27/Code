@@ -1,5 +1,4 @@
 // 计算某数平方根的函数
-
 #include <stdio.h>
 #define PEPSILON 0.000000000000001
 

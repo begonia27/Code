@@ -1,3 +1,4 @@
+//判断输入的值是否是质数(使用局部变量)
 #include <stdio.h>
 #include <stdbool.h>
 #include <math.h>
