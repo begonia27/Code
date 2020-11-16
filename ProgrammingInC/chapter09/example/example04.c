@@ -9,12 +9,14 @@ struct date
     int day;
     int year;
 };
-// 计算下一天日期的函数
 
+// 计算下一天日期的函数
 struct date dateUpdate(struct date today)
 {
     struct date tomorrow;
     int numberOfDays(struct date d);
+
+    // printf("%i, %i", today.day, numberOfDays(today));
 
     if (today.day != numberOfDays(today))
     {
@@ -36,7 +38,7 @@ struct date dateUpdate(struct date today)
         tomorrow.month = today.month + 1;
         tomorrow.year = today.year;
     }
-    return tomorrow; 
+    return tomorrow;
 }
 
 // 查找一月中日期数的函数
@@ -47,7 +49,9 @@ int numberOfDays(struct date d)
     const int daysPerMonth[12] = {31, 28, 31, 30, 31, 30,
         31, 31, 30, 31, 30, 31};
 
-    if (isLeapYear && d.month == 2)
+    printf("%p", isLeapYear);
+
+    if (isLeapYear(d) && d.month == 2)
     {
         days = 29;
     }
@@ -66,7 +70,7 @@ bool isLeapYear(struct date d)
     bool leapYearFlag;
 
     if ((d.year % 4 == 0 && d.year % 100 != 0) || d.year % 400 == 0)
-    {   
+    {
         // It's a leap year
         leapYearFlag = true;
     }
@@ -75,8 +79,8 @@ bool isLeapYear(struct date d)
         // Is's not a leap year
         leapYearFlag = false;
     }
-    
-    return leapYearFlag;  
+
+    return leapYearFlag;
 }
 
 int main(void)
@@ -85,7 +89,7 @@ int main(void)
     struct date thisDay, nextDay;
 
     printf("Enter today's date (mm dd yyyy): ");
-    scanf ("%i%i%i", &thisDay.month, &thisDay.day, &thisDay.year);
+    scanf("%i%i%i", &thisDay.month, &thisDay.day, &thisDay.year);
 
     nextDay = dateUpdate(thisDay);
 
