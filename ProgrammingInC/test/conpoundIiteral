@@ -1,0 +1,28 @@
+// 利用复合字面量计算下一天的日期的函数
+
+struct date tomorrow;
+
+int numberOfDays(struct date d);
+
+// 不是月末最后一天
+if (today.day != numberOfDays(today))
+{
+    tomorrow = (struct date){today.month, today.day + 1, today.year};
+}
+
+else 
+{
+    // 是年尾最后一天
+    if (today.month == 12)
+    {
+        tomorrow = (struct date){1, 1, today.year + 1};
+    }
+
+    // 是月末最后一天
+    else
+    {
+        tomorrow = (struct date){today.month + 1, 1, today.year};
+    }
+
+    return tomorrow;
+}
