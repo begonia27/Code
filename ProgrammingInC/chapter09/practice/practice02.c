@@ -8,58 +8,60 @@ struct date
     int day;
 };
 
-int f(struct date thisDay)
+int main(void)
 {
-    int N1 = 1461 * (thisDay.year) / 4 + 153 *
-        (thisDay.month) / 5 + thisDay.day;
+    int f(struct date thisDay);
+    int g(struct date nextDay);
+    int n(void);
+    struct date thisDay, nextDay;
 
+    printf("Two days's apart date is %i\n", n());
+
+    return 0;
+}
+
+int f(struct date thisDay)
+{   
     if (thisDay.month <= 2)
     {
-        thisDay.year = thisDay.year - 1;
+        return thisDay.year - 1;
     }
     else
     {
-        thisDay.year = thisDay.year;
+        return thisDay.year;
     }
-
-    return N1;
 }
 
 int g(struct date nextDay)
-{
-    int N2 = 1461 * (nextDay.year) / 4 + 153 *
-        (nextDay.month) / 5 + nextDay.day;
-
+{   
     if (nextDay.month <= 2)
     {
-        nextDay.month = nextDay.month + 13;
+        return nextDay.month + 13;
     }
     else
     {
-        nextDay.month = nextDay.month + 1;
+        return nextDay.month + 1;
     }
-
-    return N2;
 }
 
-int main(void)
-{
-    struct date thisDay, nextDay;
-
-    int apartDayIs, N1, N2;
+int n(void)
+{   
+    struct date thisDay = {0,0,0};
+    struct date nextDay = {0,0,0};
 
     printf("Please enter one days (yy:mm:dd): ");
     scanf("%i:%i:%i", &thisDay.year, &thisDay.month, &thisDay.day);
 
     printf("Please enter two days (yy:mm:dd): ");
     scanf("%i:%i:%i", &nextDay.year, &nextDay.month, &nextDay.day);
+    
+    int N = 1461 * f(thisDay) / 4 + 153 * 
+        g(thisDay) / 5 + thisDay.day;
 
-    int f(struct date thisDay);
-    int g(struct date nextDay);
+    int M = 1461 * f(nextDay) / 4 + 153 * 
+        g(nextDay) / 5 + nextDay.day;
 
-    apartDayIs = N2 - N1;
+    int apartDayIs = M - N;
 
-    printf("Two days's apart date is %i\n", apartDayIs);
-
-    return 0;
+    return apartDayIs;
 }
