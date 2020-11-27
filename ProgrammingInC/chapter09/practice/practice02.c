@@ -49,10 +49,10 @@ int n(void)
     struct date thisDay = {0,0,0};
     struct date nextDay = {0,0,0};
 
-    printf("Please enter one days (yy:mm:dd): ");
+    printf("Please enter the number one days (yy:mm:dd): ");
     scanf("%i:%i:%i", &thisDay.year, &thisDay.month, &thisDay.day);
 
-    printf("Please enter two days (yy:mm:dd): ");
+    printf("Please enter the number two days (yy:mm:dd): ");
     scanf("%i:%i:%i", &nextDay.year, &nextDay.month, &nextDay.day);
     
     int N = 1461 * f(thisDay) / 4 + 153 * 
