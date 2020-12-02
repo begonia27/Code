@@ -20,7 +20,7 @@ struct date dateUpdate(struct date today)
     {
         tomorrow = (struct date){today.month, today.day +1, today.year};
     }
-    else 
+    else
     {
         if (today.month == 12)
         {
@@ -40,41 +40,19 @@ struct date dateUpdate(struct date today)
 // 查找一月中日期数的函数
 int numberOfDays(struct date d)
 {
-    int days;
     bool isLeapYear(struct date d);
-    const int daysPerMonth[12] = {31, 28, 31, 30, 31, 30,
-        31, 31, 30, 31, 30, 31};
+    const int daysPerMonth[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
-    if (isLeapYear(d) == true && d.month == 2)
-    {
-        days = 29;
-    }
-    else
-    {
-        days = daysPerMonth[d.month - 1];
-    }
+    int day = daysPerMonth[d.month - 1];
 
-    return days;
+    return (isLeapYear(d) == true && d.month == 2) ? day + 1 : day;
 }
 
 // 判断是否为闰年的函数
 
 bool isLeapYear(struct date d)
 {
-    bool leapYearFlag;
-
-    if ((d.year % 4 == 0 && d.year % 100 != 0) || d.year % 400 == 0)
-    {
-        // It's a leap year
-        leapYearFlag = true;
-    }
-    else
-    {
-        // Is's not a leap year
-        leapYearFlag = false;
-    }
-
-    return leapYearFlag;
+    return (d.year % 4 == 0 && d.year % 100 != 0) || d.year % 400 == 0;
 }
 
 int main(void)

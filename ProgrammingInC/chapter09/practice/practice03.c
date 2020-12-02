@@ -28,7 +28,7 @@ int main(void)
 }
 
 struct time elapsed_time(struct time time1, struct time time2)
-{   
+{
     // 第三个成员变量可以不传进来，因此不写在形参列表里
     struct time time3;
 
@@ -37,31 +37,29 @@ struct time elapsed_time(struct time time1, struct time time2)
     scanf("%i:%i:%i", &time1.hour, &time1.minutes, &time1.seconds);
 
     printf("Plsase enter the second time (hh:mm:ss): ");
-    scanf("%i:%i:%i", &time2.hour, &time2.minutes, &time2.seconds); 
+    scanf("%i:%i:%i", &time2.hour, &time2.minutes, &time2.seconds);
+
+    time3.seconds = time2.seconds - time1.seconds;
+    time3.minutes = time2.minutes - time1.minutes;
 
     // 判断输入的两个时间之间相差多长时间（用时分秒表示长度）
-    if (time1.hour || time2.hour != 24)
+    if (time1.hour != 24 || time2.hour != 24)
     {
         time3.hour = time2.hour - time1.hour;
-        time3.minutes = time2.minutes - time1.minutes;
-        time3.seconds = time2.seconds - time1.seconds;
 
         if (time3.hour < 0)
-        {   
+        {
             // hour is a negative number
             time3.hour = time2.hour - time1.hour + 24;
-            time3.minutes = time2.minutes - time1.minutes;
-            time3.seconds = time2.seconds - time1.seconds;
 
             if (time3.minutes < 0)
-            {   
+            {
                 // minutes is a negative number
                 time3.hour = time2.hour - time1.hour + 23;
                 time3.minutes = time2.minutes - time1.minutes + 60;
-                time3.seconds = time2.seconds - time1.seconds;
 
                 if (time3.seconds < 0)
-                {   
+                {
                     // seconds is a negative number
                     time3.hour = time2.hour - time1.hour + 23;
                     time3.minutes = time2.minutes - time1.minutes + 59;
@@ -69,18 +67,13 @@ struct time elapsed_time(struct time time1, struct time time2)
                 }
             }
         }
-
-        // 将计算出的成员变量返回
-        return time3;
     }
     else
-    {   
+    {
         // 在是午夜的情况下
         time3.hour = time2.hour - time1.hour + 24;
-        time3.minutes = time2.minutes - time1.minutes;
-        time3.seconds = time2.seconds - time1.seconds;
-
-        // 将计算出的成员变量返回
-        return time3;
     }
+
+    // 将计算出的成员变量返回
+    return time3;
 }
