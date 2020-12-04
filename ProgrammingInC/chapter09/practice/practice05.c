@@ -93,7 +93,7 @@ int numberOfDays (struct date d)
     bool isleapYear (struct date d);
     const int daysPerMonth[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
-    if (isLeapYear && d.month == 2)
+    if (isleapYear && d.month == 2)
     {
         days = 29;
     }
@@ -105,7 +105,7 @@ int numberOfDays (struct date d)
     return days;
 }
 
-bool isLeapYear(struct date d)
+bool isleapYear(struct date d)
 {
     bool leapYearFlag;
 
