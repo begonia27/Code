@@ -14,31 +14,39 @@ struct dateAndTime
 
 int main(void)
 {
-    struct date clockKeeper (struct date dateAndTime);
-    struct time timeUpdate(struct time now);
-    struct date dateUpdate(struct date today);
-    struct date dateUpdate(struct date today);
-    struct date thisDay, nextDay;
+    struct date clockKeeper(struct dateAndTime change);
+    struct dateAndTime change(void);
+    struct date timeUpdate(struct time now);
+    struct date dateUpdate(struct date timeUpdate);
 
-    printf("Enter now day's date (mm dd yyyy): ");
-    scanf("%i%i%i", &thisDay.month, &thisDay.day, &thisDay.year);
-
-    nextDay = dateUpdate(thisDay);
-
-    printf("Tomorrow's date is %i/%i/%.2i.\n", nextDay.month, nextDay.day, nextDay.year % 100);
+    result = struct date clockKeeper(struct dateAndTime change);
+    printf("The next time is %i %i %i %i %i %i.\n", result.year, result.month, result.day,
+        result.hour, result.minutes, result.seconds);
 
     return 0;
 }
 
-struct date clockKeeper (struct dateAndTime)
+struct date clockKeeper(struct dateAndTime change)
 {
     timeUpdate();
-    dateUpdate();
+    change();
 
+    return clockKeeper;
 }
 
-struct timeUpdate(struct time now)
+struct dateAndTime change(void)
 {
+    nextTime = timeUpdate(nowTime);
+}
+
+struct date timeUpdate(struct time now)
+{
+    struct time nowTime, nextTime;
+
+    printf("Please enter a time (yy mm dd hh mm ss) to calculate next time.\n");
+    scanf("%i %i %i %i %i %i", &nowTime.year, &nowTime.month, &nowTime.day,
+        &nowTime.hour, &nowTime.minutes, &nowTime.seconds);
+
     ++now.seconds;
 
     if (now.seconds == 60)
@@ -46,7 +54,7 @@ struct timeUpdate(struct time now)
         now.seconds = 0;
         ++now.minutes;
 
-        if (now.minutes = 60)
+        if (now.minutes == 60)
         {
             now.minutes = 0;
             ++now.hour;
@@ -62,63 +70,19 @@ struct timeUpdate(struct time now)
     return now;
 }
 
-struct dateUpdate(struct date now)
+struct date dateUpdate(struct date timeUpdate)
 {
-    struct date tomorrow;
-    int numberOfDays (struct date n);
+    if (now.day == 31)
+    {
+        now.day = 1;
+        ++now.month;
 
-    if (now.day != numberOfDays(today))
-    {
-        tomorrow.day = now.day + 1;
-        tomorrow.month = now.month;
-        tomorrow.year = now.year;
-    }
-    else if (now.month == 12)
-    {
-        tomorrow.day = 1;
-        tomorrow.month = 1;
-        tomorrow.year = now.year + 1;
-    }
-    else
-    {
-        tomorrow.day = 1;
-        tomorrow.month = now.month + 1;
-        tomorrow.year = now.year;
-    }
-}
-
-int numberOfDays (struct date d)
-{
-    int days;
-    bool isleapYear (struct date d);
-    const int daysPerMonth[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-
-    if (isleapYear && d.month == 2)
-    {
-        days = 29;
-    }
-    else
-    {
-        days = daysPerMonth[d.month - 1];
+        if (now.month == 12)
+        {
+            now.month = 0;
+            ++now.year;
+        }
     }
 
-    return days;
-}
-
-bool isleapYear(struct date d)
-{
-    bool leapYearFlag;
-
-    if ((d.year % 4 == 0 && d.year % 100 != 0) || d.year % 400 == 0)
-    {
-        // It's a leap year
-        leapYearFlag = true;
-    }
-    else
-    {
-        // Is's not a leap year
-        leapYearFlag = false;
-    }
-
-    return leapYearFlag;
+    return now;
 }
