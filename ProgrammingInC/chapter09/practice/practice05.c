@@ -2,6 +2,10 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+struct dateAndTime timeUpdate(struct dateAndTime nowTime);
+int numberOfDays(struct dateAndTime d);
+bool isLeapYear(struct dateAndTime d);
+
 struct dateAndTime
 {
     int year;
@@ -14,75 +18,101 @@ struct dateAndTime
 
 int main(void)
 {
-    struct date clockKeeper(struct dateAndTime change);
-    struct dateAndTime change(void);
-    struct date timeUpdate(struct time now);
-    struct date dateUpdate(struct date timeUpdate);
+    struct dateAndTime nowTime = {0,0,0,0,0,0};
+    struct dateAndTime nextTime = {0,0,0,0,0,0};
 
-    result = struct date clockKeeper(struct dateAndTime change);
-    printf("The next time is %i %i %i %i %i %i.\n", result.year, result.month, result.day,
-        result.hour, result.minutes, result.seconds);
+    nextTime = timeUpdate(nowTime);
+
+    printf("The next time is %i %i %i %i %i %i\n", nextTime.year, nextTime.month, nextTime.day,
+        nextTime.hour, nextTime.minutes, nextTime.seconds);
 
     return 0;
 }
 
-struct date clockKeeper(struct dateAndTime change)
+struct dateAndTime timeUpdate(struct dateAndTime nowTime)
 {
-    timeUpdate();
-    change();
-
-    return clockKeeper;
-}
-
-struct dateAndTime change(void)
-{
-    nextTime = timeUpdate(nowTime);
-}
-
-struct date timeUpdate(struct time now)
-{
-    struct time nowTime, nextTime;
-
-    printf("Please enter a time (yy mm dd hh mm ss) to calculate next time.\n");
+    printf("Please enter a time (yy mm dd hh mm ss) to calculate next time:\n");
     scanf("%i %i %i %i %i %i", &nowTime.year, &nowTime.month, &nowTime.day,
         &nowTime.hour, &nowTime.minutes, &nowTime.seconds);
 
-    ++now.seconds;
+    ++nowTime.seconds;
 
-    if (now.seconds == 60)
+    if (nowTime.seconds == 60)
     {
-        now.seconds = 0;
-        ++now.minutes;
+        nowTime.seconds = 0;
+        ++nowTime.minutes;
 
-        if (now.minutes == 60)
+        if (nowTime.minutes == 60)
         {
-            now.minutes = 0;
-            ++now.hour;
+            nowTime.minutes = 0;
+            ++nowTime.hour;
 
-            if (now.hour == 24)
+            if (nowTime.hour == 24)
             {
-                now.hour = 0;
-                ++now.day;
+                nowTime.hour = 0;
+
+                // 是月末最后一天
+                if (nowTime.day == numberOfDays(nowTime))
+                {
+                    nowTime.day = 1;
+
+                    // 是年尾最后一个月
+                    if (nowTime.month == 12)
+                    {
+                        nowTime.month = 1;
+                        ++nowTime.year;
+                    }
+                    else
+                    {
+                        ++nowTime.month;
+                    }
+                }
+                else
+                {
+                    ++nowTime.day;
+                }
             }
         }
     }
 
-    return now;
+    return nowTime;
 }
 
-struct date dateUpdate(struct date timeUpdate)
+// 查找一月中日期数的函数
+int numberOfDays(struct dateAndTime d)
 {
-    if (now.day == 31)
-    {
-        now.day = 1;
-        ++now.month;
+    int days;
+    bool isLeapYear(struct dateAndTime d);
+    const int daysPerMonth[12] = {31, 28, 31, 30, 31, 30,
+        31, 31, 30, 31, 30, 31};
 
-        if (now.month == 12)
-        {
-            now.month = 0;
-            ++now.year;
-        }
+    if (isLeapYear(d) && d.month == 2)
+    {
+        days = 29;
+    }
+    else
+    {
+        days = daysPerMonth[d.month - 1];
     }
 
-    return now;
+    return days;
+}
+
+// 判断是否是闰年
+bool isLeapYear(struct dateAndTime d)
+{
+    bool leapYearFlag;
+
+    if ((d.year % 4 == 0 && d.year % 100 != 0) || d.year % 400 == 0)
+    {
+        // It's a leap year
+        leapYearFlag = true;
+    }
+    else
+    {
+        // Is's not a leap year
+        leapYearFlag = false;
+    }
+
+    return leapYearFlag;
 }
