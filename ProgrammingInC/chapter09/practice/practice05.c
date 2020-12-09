@@ -3,8 +3,10 @@
 #include <stdbool.h>
 
 struct dateAndTime timeUpdate(struct dateAndTime nowTime);
+struct dateAndTime dateUpdate(struct dateAndTime nowTime);
 int numberOfDays(struct dateAndTime d);
 bool isLeapYear(struct dateAndTime d);
+struct dateAndTime clockKeeper(struct dateAndTime nowTime);
 
 struct dateAndTime
 {
@@ -21,7 +23,7 @@ int main(void)
     struct dateAndTime nowTime = {0,0,0,0,0,0};
     struct dateAndTime nextTime = {0,0,0,0,0,0};
 
-    nextTime = timeUpdate(nowTime);
+    nextTime = clockKeeper(nowTime);
 
     printf("The next time is %i %i %i %i %i %i\n", nextTime.year, nextTime.month, nextTime.day,
         nextTime.hour, nextTime.minutes, nextTime.seconds);
@@ -50,29 +52,34 @@ struct dateAndTime timeUpdate(struct dateAndTime nowTime)
             if (nowTime.hour == 24)
             {
                 nowTime.hour = 0;
-
-                // 是月末最后一天
-                if (nowTime.day == numberOfDays(nowTime))
-                {
-                    nowTime.day = 1;
-
-                    // 是年尾最后一个月
-                    if (nowTime.month == 12)
-                    {
-                        nowTime.month = 1;
-                        ++nowTime.year;
-                    }
-                    else
-                    {
-                        ++nowTime.month;
-                    }
-                }
-                else
-                {
-                    ++nowTime.day;
-                }
             }
         }
+    }
+
+    return nowTime;
+}
+
+struct dateAndTime dateUpdate(struct dateAndTime nowTime)
+{
+    // 是月末最后一天
+    if (nowTime.day == numberOfDays(nowTime))
+    {
+        nowTime.day = 1;
+
+        // 是年尾最后一个月
+        if (nowTime.month == 12)
+        {
+            nowTime.month = 1;
+            ++nowTime.year;
+        }
+        else
+        {
+            ++nowTime.month;
+        }
+    }
+    else
+    {
+        ++nowTime.day;
     }
 
     return nowTime;
@@ -115,4 +122,12 @@ bool isLeapYear(struct dateAndTime d)
     }
 
     return leapYearFlag;
+}
+
+struct dateAndTime clockKeeper(struct dateAndTime nowTime)
+{
+    nowTime = timeUpdate(nowTime);
+    nowTime = dateUpdate(nowTime);
+
+    return nowTime;
 }
