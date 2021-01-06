@@ -4,7 +4,7 @@
 
 /* 接收一个字符类型的参数（用ascll码表来判断），看是否属于大小写字母，
     如果是，则返回true；如果不是，则返回false*/
-bool alphabetic (const char c)
+bool alphabetic(const char c)
 {
     if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
     {
