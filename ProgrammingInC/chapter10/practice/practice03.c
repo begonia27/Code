@@ -62,7 +62,7 @@ int countWords(const char string[])
         }
     }
 
-    /* 当所有的字符都被判断完了之后，wordCount的值就是本题中最终题意的要求：计算单词的个数，因此将值返回给调用者即可 */
+    // 当所有的字符都被判断完了之后，wordCount的值就是本题中最终题意的要求：计算单词的个数，因此将值返回给调用者即可
     return wordCount;
 }
 
@@ -70,7 +70,6 @@ int main(void)
 {
     // 声明并初始化两个常量字符串
     const char text1[] = "Well, here's goes.";
-    // const char text1[] = "-200";
     const char text2[] = "And here we -3,000 go...again";
 
     // 声明一个整型变量，并调用判断单词的函数
