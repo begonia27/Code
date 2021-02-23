@@ -29,7 +29,7 @@ bool equalStrings(const char s1[], const char s2[])
 int main(void)
 {
     // 声明一个布尔类型的函数，函数接收两个常量字符串
-    bool equalEqual (const char s1[], const char s2[]);
+    bool equalEqual(const char s1[], const char s2[]);
 
     // 对两个字符串进行赋值
     const char stra[] = "string compare test";
