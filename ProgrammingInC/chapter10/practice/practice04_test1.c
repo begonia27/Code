@@ -5,9 +5,9 @@ int main(void)
     const char string[9] = "two words";
     int i;
 
-    for (i = 0; i >= 4 && i < 20; ++i)
+    for (i = 4; i < 9; ++i)
     {
-        printf("result is %c", string[9]);
+        printf("%c\n", string[i]);
     }
 
     return 0;

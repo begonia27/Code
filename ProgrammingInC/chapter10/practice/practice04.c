@@ -3,11 +3,10 @@
 void substring(const char string[], int subscript, int count, char answer)
 {
     int i;
-    char result;
 
-    for (i = 0; i >= subscript; ++i)
+    for (i = 4; string[i] != '\0'; ++i)
     {
-        printf("result is %s\0.\n", string[i]);
+        printf("%c\0.\n", string[i]);
     }
 }
 
@@ -15,15 +14,14 @@ int main(void)
 {
     void substring(const char string[], int subscript, int count, char answer);
 
+    int i;
     const char string[] = "two words";
     char result;
     int subscript, count;
 
-    substring("two word", 4, 20, result);
-
-    if (subscript <= count)
+    if (subscript < count)
     {
-        printf("result is %s\0.\n", result);
+        substring("two words", 4, 20, result);
     }
     else
     {

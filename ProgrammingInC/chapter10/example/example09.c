@@ -34,7 +34,7 @@ int lookup(const struct entry dictionary[], const char search[],
         const int entries)
 {
     int i;
-    bool equalString (const char s1[], const char s2[]);
+    bool equalString(const char s1[], const char s2[]);
 
     for (i = 0; i < entries; ++i)
     {
