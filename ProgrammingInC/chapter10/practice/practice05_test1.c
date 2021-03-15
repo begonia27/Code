@@ -8,7 +8,7 @@ int main()
     const char beSearch[] = "a chatterbox";
     const char search[] = "hat";
 
-    for (i = 0; beSearch[i] != '\0'; ++i)
+    for (i = 0; beSearch[i] != '\0' || search[i] != '\0'; ++i)
     {
         if (beSearch[i] == search[0])
         {
