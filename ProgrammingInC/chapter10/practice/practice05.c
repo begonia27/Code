@@ -1,23 +1,30 @@
 // 比较长单词里是否按顺序包含一个短单词的每一个字符；如果包含，将长单词所包含的第一个开始的字符的右下角标显示出来
 #include <stdio.h>
+#include <stdbool.h>
 
 int findString(const char beSearch[], char search[])
 {
     int i, j;
+    bool contain = true;
 
     for (i = 0; beSearch[i] != '\0'; ++i)
     {
         for (j = 0; search[j] != '\0'; ++j)
         {
-            if (beSearch[i] == search[j])
+            if (beSearch[i] != search[i])
             {
-                break;
+                contain = false;
             }
-
-            ++i;
+            else
+            {
+                contain = true;
+            }
         }
 
-        return i;
+        if (contain = true)
+        {
+            return i;
+        }
     }
 }
 
