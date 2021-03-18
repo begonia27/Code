@@ -34,7 +34,6 @@ int main(void)
     char s3[11];
     int i;
 
-
     // 调用函数，写入实参
     concat(s3, s1, 5, s2, 6);
 

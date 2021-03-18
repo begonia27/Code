@@ -5,27 +5,37 @@
 int findString(const char beSearch[], char search[])
 {
     int i, j;
+    int index = 0, length = 0;
     bool contain = true;
+
+    for (j = 0; search[j] != '\0'; ++j)
+    {
+        ++length;
+    }
 
     for (i = 0; beSearch[i] != '\0'; ++i)
     {
-        for (j = 0; search[j] != '\0'; ++j)
+        // 输出长字符串中所有字符的内存地址
+        // printf("%p\n", beSearch + i);
+
+        for (j = 0; j < length; ++j)
         {
-            if (beSearch[i] != search[i])
+            if (beSearch[i + j] != search[j])
             {
                 contain = false;
             }
-            else
-            {
-                contain = true;
-            }
         }
 
-        if (contain = true)
+        if (contain)
         {
             return i;
         }
+
+        // 循环结束后，将contain重置为true,回到一开始的位置，然后再进行下一轮的判断
+        contain = true;
     }
+
+    return -1;
 }
 
 int main()
