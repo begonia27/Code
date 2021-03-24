@@ -3,8 +3,12 @@
 
 void uppercase(char letter[])
 {
+    int i;
+
     for (int i = 0; letter[i] != '\0'; ++i)
     {
+        printf("%c ", letter[i]);
+
         if (letter[i] >= 'a' && letter[i] <= 'z')
         {
             letter[i] -= 32;
@@ -12,7 +16,7 @@ void uppercase(char letter[])
         }
         else
         {
-            printf("Please enter a letter.");
+            printf("%c", letter[i]);
         }
     }
 }
@@ -22,9 +26,9 @@ int main(void)
     void uppercase(char letter[]);
     int i;
 
-    char letter[] = "c - 'a' + 'A'";
+    char letter[] = "abcdefg";
 
-    uppercase("c - 'a' + 'A'");
+    uppercase("abcdefg");
 
     return 0;
 }
