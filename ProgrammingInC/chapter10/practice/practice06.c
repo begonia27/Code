@@ -9,7 +9,7 @@ char removeString(char text[], int indexOfStart, int countOfDelete, char answer)
     // 输出原字符串的整体
     /*for (countOfAllString = 0; text[countOfAllString] != '\0'; ++countOfAllString)
     {
-        //printf("%c", text[countOfAllString]);
+        // printf("%c", text[countOfAllString]);
     }*/
 
     for (int i = 0; text[i] != '\0'; ++i)
